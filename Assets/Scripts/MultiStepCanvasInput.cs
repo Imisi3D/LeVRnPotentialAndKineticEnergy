@@ -30,7 +30,7 @@ public class MultiStepCanvasInput : MonoBehaviour
 
     public void Start()
     {
-        UpdateCanvasContent();
+        //UpdateCanvasContent();
     }
 
     /**
@@ -45,6 +45,11 @@ public class MultiStepCanvasInput : MonoBehaviour
         public ButtonTextData[] buttonsTexts;
         // The correct answer for this step.
         public string correctAnswer;
+
+        public bool isAutoSolved = false;
+        public Button correctAnswerButton;
+
+
         // if true, then in this step the player must answer correctly. Canvas won't disappear when the answer is wrong unless the maximum number of tries is reached.
         public bool mustAnswerCorrectly = true;
         // Audio for saying wrong. If set, this will be used instead of the component's wrong audio.
@@ -131,7 +136,7 @@ public class MultiStepCanvasInput : MonoBehaviour
         AudioClip playedClip = null;
         bool isCorrect = false;
         print(answeredOptions);
-        if (clickedButtonText.text.Equals(awaitedAnswer) || (awaitedAnswer.Contains(";" + clickedButtonText.text + ";") && !answeredOptions.Contains(";" + clickedButtonText.text + ";"))) 
+        if (clickedButtonText.text.Equals(awaitedAnswer) || (awaitedAnswer.Contains(";" + clickedButtonText.text + ";") && !answeredOptions.Contains(";" + clickedButtonText.text + ";")))
         {
             // if a correct button is clicked
             isCorrect = true;
@@ -200,7 +205,13 @@ public class MultiStepCanvasInput : MonoBehaviour
             {
                 // if has canvas comp, enable it
                 Canvas canvas = toActivate.GetComponent<Canvas>();
-                if (canvas != null) canvas.enabled = true;
+                if (canvas != null)
+                {
+                    canvas.enabled = true;
+                    Collider col = toActivate.GetComponent<Collider>();
+                    if (col != null)
+                        col.enabled = true;
+                }
 
                 // if has MultiStepCanvasInput comp, enable it
                 MultiStepCanvasInput comp = toActivate.GetComponent<MultiStepCanvasInput>();
@@ -216,16 +227,31 @@ public class MultiStepCanvasInput : MonoBehaviour
             // increment current index
             currentIndex++;
             // if no other data exists to update, disable canvas, disable OVRRaycaster and reset buttons' colors
-            print(gameObject.name+":current index: " + currentIndex);
+            print(gameObject.name + ":current index: " + currentIndex);
             if (currentIndex >= steps.Length || steps[currentIndex - 1].ShouldStopAtThis)
             {
-                obj.transform.parent.gameObject.GetComponent<Canvas>().enabled = false;
+                Button[] buttons = obj.transform.parent.GetComponentsInChildren<Button>();
+                if (steps[currentIndex - 1].isAutoSolved)
+                {
+                    StartCoroutine(CallAfterDelay(() =>
+                    {
+                        obj.transform.parent.gameObject.GetComponent<Canvas>().enabled = false;
+                        obj.transform.parent.gameObject.GetComponent<BoxCollider>().enabled = false;
+                        for (int i = 0; i < buttons.Length; i++)
+                            buttons[i].gameObject.GetComponent<Image>().color = color_Default;
+                    }, 1f));
+                }
+                else
+                {
+                    obj.transform.parent.gameObject.GetComponent<Canvas>().enabled = false;
+                    obj.transform.parent.gameObject.GetComponent<BoxCollider>().enabled = false;
+                    for (int i = 0; i < buttons.Length; i++)
+                        buttons[i].gameObject.GetComponent<Image>().color = color_Default;
+                }
                 shouldDisableComp = true;
                 obj.transform.parent.gameObject.GetComponent<ControllerSelection.OVRRaycaster>().enabled = false;
-                Button[] buttons = obj.transform.parent.GetComponentsInChildren<Button>();
-                for (int i = 0; i < buttons.Length; i++)
-                    buttons[i].gameObject.GetComponent<Image>().color = color_Default;
-                print(gameObject.name + ":trying to resume for index " + (currentIndex-1)+ "("+ steps[currentIndex - 1].shouldResumeVoice + ")");
+
+                print(gameObject.name + ":trying to resume for index " + (currentIndex - 1) + "(" + steps[currentIndex - 1].shouldResumeVoice + ")");
                 if (steps[currentIndex - 1].shouldResumeVoice)
                 {
                     print(gameObject.name + ":should resume voice");
@@ -241,8 +267,14 @@ public class MultiStepCanvasInput : MonoBehaviour
             }
             else
             {
-                StartCoroutine(CallAfterDelay(UpdateCanvasContent, 1f));
-                //UpdateCanvasContent();
+                StartCoroutine(CallAfterDelay(UpdateCanvasContent, 2f));
+                if (steps[currentIndex - 1].shouldResumeVoice)
+                {
+                    if (playedClip != null)
+                        StartCoroutine(ResumeProgressAfterDelay(playedClip.length + 0.5f));
+                    else
+                        StartCoroutine(ResumeProgressAfterDelay(0.5f));
+                }
             }
         }
     }
@@ -301,6 +333,25 @@ public class MultiStepCanvasInput : MonoBehaviour
             }
         }
         print(gameObject.name + ":updated canvas content");
+
+        if (steps[currentIndex].isAutoSolved)
+        {
+            if (steps[currentIndex].correctAnswerButton != null)
+            {
+                StartCoroutine(AutoAnswer());
+            }
+        }
+    }
+
+    private IEnumerator AutoAnswer()
+    {
+        print("autoAnswering");
+        yield return new WaitForSeconds(2f);
+        DEBUG_clickedButton = steps[currentIndex].correctAnswerButton.gameObject;
+        Answer();
+        DEBUG_clickedButton = null;
+        //yield return new WaitForSeconds(1f);
+
     }
 
     // Used for testing in editor
@@ -319,5 +370,6 @@ public class MultiStepCanvasInput : MonoBehaviour
     {
         UpdateCanvasContent();
         print("multiStepCanvas::OnEnable");
+
     }
 }

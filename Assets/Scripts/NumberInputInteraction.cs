@@ -81,9 +81,6 @@ public class NumberInputInteraction : MonoBehaviour
 
     public void Start()
     {
-        // updating quality settings.
-        XRSettings.eyeTextureResolutionScale = 1.5f;
-        QualitySettings.antiAliasing = 8;
         // starting Script 1.
         StartCoroutine(initialVoice());
         //StartCoroutine(Recap());
@@ -101,11 +98,7 @@ public class NumberInputInteraction : MonoBehaviour
     // playing the first part (for choosing number).
     private IEnumerator initialVoice()
     {
-        yield return new UnityEngine.WaitForSeconds(0.5f);
-        // re-updating quality settings because of overridden quality in LWRP.
-        QualitySettings.antiAliasing = 8;
-        XRSettings.eyeTextureResolutionScale = 1.5f;
-        yield return new UnityEngine.WaitForSeconds(1.5f);
+        yield return new UnityEngine.WaitForSeconds(2f);
         explain();
         playSound(hello);
         yield return new UnityEngine.WaitForSeconds(hello.length + 0.75f);
@@ -616,7 +609,8 @@ public class NumberInputInteraction : MonoBehaviour
         {
             playSound(FruitGame_youAreInForSurprise);
         }
-        explain();
+        //explain();
+        idle();
         DoYouAgree_Canvas.SetActive(false);
         FruitGame_feedbackCanvas.SetActive(false);
         StartCoroutine(

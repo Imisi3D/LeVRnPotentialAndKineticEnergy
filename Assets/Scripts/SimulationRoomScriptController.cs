@@ -13,6 +13,7 @@ public class SimulationRoomScriptController : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 2;
         int RequiredAssets = 0;
         if (VoiceImageCanvasSync.SceneTransitionParam.Equals("class1"))
             RequiredAssets = 1;
@@ -72,6 +73,11 @@ public class SimulationRoomScriptController : MonoBehaviour
         {
             SetRequiredAssets(3);
             VoiceImageCanvasSync.SceneTransitionParam = "class3";
+        }
+        else if (name.Equals("class4"))
+        {
+            VoiceImageCanvasSync.SceneTransitionParam = "class4";
+            SceneManager.LoadScene("Market");
         }
     }
 

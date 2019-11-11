@@ -62,6 +62,8 @@ public class CanvasControllerForClass2 : MonoBehaviour
                     }
                 }
                 obj.transform.parent.gameObject.GetComponent<Canvas>().enabled = false;
+                BoxCollider col = obj.transform.parent.gameObject.GetComponent<BoxCollider>();
+                col.enabled = false;
                 StartCoroutine(ResumeProgressAfterDelay(1f));
             }
         }
@@ -112,7 +114,8 @@ public class CanvasControllerForClass2 : MonoBehaviour
 
     public void UpdateCanvas(CanvasUpdater canvasUpdater)
     {
-        canvasUpdater.text.text = canvasUpdater.newInstruction;
+        if (canvasUpdater.text != null)
+            canvasUpdater.text.text = canvasUpdater.newInstruction;
         awaitedAnswer = canvasUpdater.newCorrectAnswer;
         string[] buttonsTexts = canvasUpdater.newbuttonsTexts.Split(';');
         for (int i = 0; i < buttonsTexts.Length; i++)
@@ -137,6 +140,8 @@ public class CanvasControllerForClass2 : MonoBehaviour
             else
                 audioSource.PlayOneShot(audio_correct);
             obj.transform.parent.gameObject.GetComponent<Canvas>().enabled = false;
+            BoxCollider col = obj.transform.parent.gameObject.GetComponent<BoxCollider>();
+            col.enabled = false;
             obj.transform.parent.gameObject.GetComponent<ControllerSelection.OVRRaycaster>().enabled = false;
             Button[] buttons = obj.transform.parent.GetComponentsInChildren<Button>();
             for (int i = 0; i < buttons.Length; i++)
@@ -175,6 +180,8 @@ public class CanvasControllerForClass2 : MonoBehaviour
                 playedClip = audio_correct;
             }
             obj.transform.parent.gameObject.GetComponent<Canvas>().enabled = false;
+            BoxCollider col = obj.transform.parent.gameObject.GetComponent<BoxCollider>();
+            col.enabled = false;
             obj.transform.parent.gameObject.GetComponent<ControllerSelection.OVRRaycaster>().enabled = false;
             Button[] buttons = obj.transform.parent.GetComponentsInChildren<Button>();
             for (int i = 0; i < buttons.Length; i++)
@@ -197,6 +204,8 @@ public class CanvasControllerForClass2 : MonoBehaviour
                 playedClip = audio_wrong;
             }
             obj.transform.parent.gameObject.GetComponent<Canvas>().enabled = false;
+            BoxCollider col = obj.transform.parent.gameObject.GetComponent<BoxCollider>();
+            col.enabled = false;
             obj.transform.parent.gameObject.GetComponent<ControllerSelection.OVRRaycaster>().enabled = false;
             Button[] buttons = obj.transform.parent.GetComponentsInChildren<Button>();
             for (int i = 0; i < buttons.Length; i++)
@@ -227,6 +236,8 @@ public class CanvasControllerForClass2 : MonoBehaviour
                 playedClip = audio_correct;
             }
             obj.transform.parent.gameObject.GetComponent<Canvas>().enabled = false;
+            BoxCollider col = obj.transform.parent.gameObject.GetComponent<BoxCollider>();
+            col.enabled = false;
             obj.transform.parent.gameObject.GetComponent<ControllerSelection.OVRRaycaster>().enabled = false;
             Button[] buttons = obj.transform.parent.GetComponentsInChildren<Button>();
             for (int i = 0; i < buttons.Length; i++)
@@ -249,6 +260,8 @@ public class CanvasControllerForClass2 : MonoBehaviour
                 playedClip = audio_wrong;
             }
             obj.transform.parent.gameObject.GetComponent<Canvas>().enabled = false;
+            BoxCollider col = obj.transform.parent.gameObject.GetComponent<BoxCollider>();
+            col.enabled = false;
             obj.transform.parent.gameObject.GetComponent<ControllerSelection.OVRRaycaster>().enabled = false;
             Button[] buttons = obj.transform.parent.GetComponentsInChildren<Button>();
             for (int i = 0; i < buttons.Length; i++)

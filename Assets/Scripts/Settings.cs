@@ -5,19 +5,22 @@ using UnityEngine.XR;
 
 public class Settings : MonoBehaviour
 {
-
-    void Awake()
+    private float startTime = 0;
+    private void Start()
     {
-        QualitySettings.antiAliasing = 8;
-        XRSettings.eyeTextureResolutionScale = 2f;
-        StartCoroutine(setSettings());
+        startTime = Time.time;
     }
 
-    IEnumerator setSettings()
+    private void Update()
     {
-        yield return new WaitForSeconds(2f);
-        QualitySettings.antiAliasing = 8;
-        XRSettings.eyeTextureResolutionScale = 2f;
-    }
+        if(Time.time < 10 + startTime)
+        {
+            if(QualitySettings.antiAliasing == 8)
+            {
+                QualitySettings.antiAliasing = 8;
+                XRSettings.eyeTextureResolutionScale = 1.75f;
 
+            }
+        }
+    }
 }

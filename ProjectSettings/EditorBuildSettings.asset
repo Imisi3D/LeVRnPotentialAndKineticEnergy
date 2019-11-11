@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
     path: Assets/OVRInputSelection/Scenes/selection_ui.unity
     guid: 7adfd19eba27b40748b2a0f7ae856c08
   - enabled: 1

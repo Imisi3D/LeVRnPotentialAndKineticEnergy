@@ -43,7 +43,10 @@ public class CanvasControl : MonoBehaviour
 
             // hiding canvas.
             gameObject.GetComponent<Canvas>().enabled = false;
-            collider.SetActive(false);
+            BoxCollider col = gameObject.GetComponent<BoxCollider>();
+            if (col != null) col.enabled = false;
+
+            if (collider != null) collider.SetActive(false);
 
             // starting next step in voice (the delay is used to skip "correct" being said).
             StartCoroutine(ToNextStepAfterDelay(1f));

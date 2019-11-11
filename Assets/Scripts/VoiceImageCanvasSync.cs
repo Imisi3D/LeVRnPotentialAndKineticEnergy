@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class VoiceImageCanvasSync : MonoBehaviour
 {
+    private void Awake()
+    {
+        Time.timeScale = 2;
+    }
     /**
      * Holder of data for a sprite to be updated
      */
@@ -165,6 +169,7 @@ public class VoiceImageCanvasSync : MonoBehaviour
         print("currentAudioIndex: " + currentAudioIndex);
         if (currentAudioIndex >= SyncData.Length - 1)
         {
+            idle();
             if (nextSynchronizer != null)
             {
                 nextSynchronizer.enabled = true;
@@ -178,9 +183,9 @@ public class VoiceImageCanvasSync : MonoBehaviour
             return;
         }
         currentVoiceTimingData = SyncData[++currentAudioIndex];
-        foreach(ImageRefUpdateData data in imageRefs)
+        foreach (ImageRefUpdateData data in imageRefs)
         {
-            if(data.index == currentAudioIndex && data.image != null)
+            if (data.index == currentAudioIndex && data.image != null)
             {
                 UsedImageRef.enabled = false;
                 UsedImageRef = data.image;
@@ -243,6 +248,8 @@ public class VoiceImageCanvasSync : MonoBehaviour
             if (scheduledTime <= Time.time && scheduledTime > Time.time - Time.deltaTime)
             {
                 canvasData.canvas.GetComponent<Canvas>().enabled = canvasData.newState;
+                Collider col = canvasData.canvas.GetComponent<BoxCollider>();
+                if (col != null) col.enabled = canvasData.newState;
                 MultiStepCanvasInput comp = canvasData.canvas.GetComponent<MultiStepCanvasInput>();
                 if (comp != null)
                 {
