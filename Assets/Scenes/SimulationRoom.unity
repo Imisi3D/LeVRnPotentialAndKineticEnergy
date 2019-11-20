@@ -802,7 +802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &79285386
 Transform:
   m_ObjectHideFlags: 0
@@ -1296,7 +1296,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 9ea65889e4beb6c408f4954029bc5440, type: 3}
     forCorrect: {fileID: 8300000, guid: 9ea65889e4beb6c408f4954029bc5440, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 1992282863}
     sprite: {fileID: 21300000, guid: 54d8aa42ec322794db4975cf39659677, type: 3}
@@ -1324,7 +1324,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 9ea65889e4beb6c408f4954029bc5440, type: 3}
     forCorrect: {fileID: 8300000, guid: 9ea65889e4beb6c408f4954029bc5440, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 1992282863}
     sprite: {fileID: 21300000, guid: 6a445660ba64b594787db6849f2f5cc8, type: 3}
@@ -1352,7 +1352,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 9ea65889e4beb6c408f4954029bc5440, type: 3}
     forCorrect: {fileID: 8300000, guid: 9ea65889e4beb6c408f4954029bc5440, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 1992282863}
     sprite: {fileID: 21300000, guid: a738a80efc8cb5e4a82cedd0f4ece759, type: 3}
@@ -1380,7 +1380,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 9ea65889e4beb6c408f4954029bc5440, type: 3}
     forCorrect: {fileID: 8300000, guid: 9ea65889e4beb6c408f4954029bc5440, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 1992282863}
     sprite: {fileID: 21300000, guid: 0b2b845985efa174f9bb98f55e633040, type: 3}
@@ -1408,7 +1408,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 9ea65889e4beb6c408f4954029bc5440, type: 3}
     forCorrect: {fileID: 8300000, guid: 9ea65889e4beb6c408f4954029bc5440, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 1992282863}
     sprite: {fileID: 21300000, guid: 8437b01d6a7f1264fb48a71e1ae1d4ee, type: 3}
@@ -1604,7 +1604,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 0}
     forCorrect: {fileID: 0}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 1992282863}
     sprite: {fileID: 21300000, guid: 67ded42063e6c3f4c8ff694adda56ac4, type: 3}
@@ -1632,7 +1632,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 0}
     forCorrect: {fileID: 0}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 834126733}
     sprite: {fileID: 21300000, guid: f98ee4a36c3989843909aa9b1ecc32c8, type: 3}
@@ -1660,7 +1660,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 0}
     forCorrect: {fileID: 0}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 834126733}
     sprite: {fileID: 21300000, guid: 530c9589aa38ece46a1ab6420053654a, type: 3}
@@ -1688,7 +1688,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 0}
     forCorrect: {fileID: 0}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 834126733}
     sprite: {fileID: 21300000, guid: c6f97e45845a6f94da68ff65f84a2ba2, type: 3}
@@ -1716,7 +1716,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 0}
     forCorrect: {fileID: 0}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 834126733}
     sprite: {fileID: 21300000, guid: a17fe5317ebeeda4a9fe8c05b8b25915, type: 3}
@@ -1744,7 +1744,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 0}
     forCorrect: {fileID: 0}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 834126733}
     sprite: {fileID: 21300000, guid: 147b894f3a05e6e47b35a67bdf1a8cbe, type: 3}
@@ -1772,7 +1772,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 0}
     forCorrect: {fileID: 0}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 834126733}
     sprite: {fileID: 21300000, guid: 5f4bc3008377abe47a3cd8b862396e1d, type: 3}
@@ -2302,7 +2302,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -2328,7 +2328,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -2354,7 +2354,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -2380,7 +2380,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -2406,7 +2406,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -2432,7 +2432,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -2458,7 +2458,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -2484,7 +2484,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 0
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 1
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -2510,7 +2510,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -2519,7 +2519,7 @@ MonoBehaviour:
     NextToActivate: {fileID: 0}
     ImageOnActivation: {fileID: 0}
   - instruction:
-      text: hich of the following is an algebraic fraction?
+      text: Which of the following is an algebraic fraction?
       component: {fileID: 609450368}
     buttonsTexts:
     - text: "16ab\xB2/4ab"
@@ -2536,7 +2536,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -2562,7 +2562,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -2571,7 +2571,7 @@ MonoBehaviour:
     NextToActivate: {fileID: 0}
     ImageOnActivation: {fileID: 0}
   - instruction:
-      text: What do we get when we divide 16ab2 by 4?
+      text: "What do we get when we divide 16ab\xB2 by 4?"
       component: {fileID: 609450368}
     buttonsTexts:
     - text: "4ab\xB2"
@@ -2588,7 +2588,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -2614,7 +2614,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -2640,7 +2640,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 984134523}
     sprite: {fileID: 21300000, guid: 038b58cb498a70347b82a61eca88ab14, type: 3}
@@ -2666,7 +2666,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 984134523}
     sprite: {fileID: 21300000, guid: 4f5ae2d0d98eb7541b28f0feaa329cb5, type: 3}
@@ -2692,7 +2692,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 984134523}
     sprite: {fileID: 21300000, guid: 9da9d2a005fadad41a3d0581198f9006, type: 3}
@@ -2718,7 +2718,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 984134523}
     sprite: {fileID: 21300000, guid: 79a6a3cfdf3ed234b84e376cab2633d3, type: 3}
@@ -2744,7 +2744,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 984134523}
     sprite: {fileID: 21300000, guid: e331274cadab97148acb26eec70b0be3, type: 3}
@@ -2770,7 +2770,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 984134523}
     sprite: {fileID: 21300000, guid: 79094a7650eaf1d478ea69313a0b8326, type: 3}
@@ -2796,7 +2796,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 984134523}
     sprite: {fileID: 21300000, guid: 90db7a2eb21f63448a3c3ba203cdd978, type: 3}
@@ -2822,7 +2822,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 984134523}
     sprite: {fileID: 21300000, guid: 150d4470d5758cc43aa6d48adab7d801, type: 3}
@@ -2848,7 +2848,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 984134523}
     sprite: {fileID: 21300000, guid: 5b7bd56832ff314468184c69e34ed646, type: 3}
@@ -2874,7 +2874,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 984134523}
     sprite: {fileID: 21300000, guid: 6b1037e67a3994945bec48bff3e5bd7f, type: 3}
@@ -2900,7 +2900,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 984134523}
     sprite: {fileID: 21300000, guid: 83b1a90220d485b479d747ace4af2d82, type: 3}
@@ -2926,7 +2926,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 984134523}
     sprite: {fileID: 21300000, guid: 47e21dc12d17bec42a3af7c307839eed, type: 3}
@@ -2952,7 +2952,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 984134523}
     sprite: {fileID: 21300000, guid: 355f92f6886882a46ab0774d07eeee56, type: 3}
@@ -3924,6 +3924,7 @@ GameObject:
   - component: {fileID: 254509783}
   - component: {fileID: 254509782}
   - component: {fileID: 254509781}
+  - component: {fileID: 254509784}
   m_Layer: 5
   m_Name: btn_class2
   m_TagString: Untagged
@@ -4034,6 +4035,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254509779}
   m_CullTransparentMesh: 0
+--- !u!65 &254509784
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254509779}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 300, y: 500, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &254960540
 GameObject:
   m_ObjectHideFlags: 0
@@ -5322,11 +5336,8 @@ MonoBehaviour:
     sprites:
     - image: {fileID: 21300000, guid: 97bd63dcff0231340bf576a230a52700, type: 3}
       time: 0.1
-    canvasses:
-    - canvas: {fileID: 178120164}
-      time: 1
-      newState: 1
-    shouldAudioStop: 1
+    canvasses: []
+    shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: fd9afb136f77e684ca51b7f2e7f3b80a, type: 3}
     sprites:
@@ -5361,10 +5372,25 @@ MonoBehaviour:
     canvasses: []
     shouldAudioStop: 0
     GoToIndex: -1
+  - voice: {fileID: 8300000, guid: ac5ac6fc87ffe1b46a6f13fc535cb5db, type: 3}
+    sprites:
+    - image: {fileID: 21300000, guid: 42364b4926fec4c4da68db9e49132a01, type: 3}
+      time: 0.1
+    - image: {fileID: 21300000, guid: e748d739e0b7ec540803d33b1a6dce3c, type: 3}
+      time: 3
+    - image: {fileID: 21300000, guid: c6e1ef040b59ad640b5f9c035bb1d862, type: 3}
+      time: 5.5
+    - image: {fileID: 21300000, guid: b80904079ed0a9e48b269641fa210a89, type: 3}
+      time: 9
+    canvasses: []
+    shouldAudioStop: 0
+    GoToIndex: -1
   - voice: {fileID: 8300000, guid: aabbd9e758909da4a9714f11453b2f9f, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: a8dc1e89f6506ce40925b21f32976227, type: 3}
       time: 0.1
+    - image: {fileID: 21300000, guid: 678ce06683a1c1047a6759ff1a4c2c68, type: 3}
+      time: 12
     canvasses: []
     shouldAudioStop: 0
     GoToIndex: -1
@@ -5405,6 +5431,7 @@ GameObject:
   - component: {fileID: 402502924}
   - component: {fileID: 402502923}
   - component: {fileID: 402502922}
+  - component: {fileID: 402502925}
   m_Layer: 5
   m_Name: btn_class3
   m_TagString: Untagged
@@ -5515,6 +5542,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402502920}
   m_CullTransparentMesh: 0
+--- !u!65 &402502925
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402502920}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 300, y: 500, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &402908883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7828,6 +7868,7 @@ GameObject:
   - component: {fileID: 667753626}
   - component: {fileID: 667753625}
   - component: {fileID: 667753624}
+  - component: {fileID: 667753627}
   m_Layer: 5
   m_Name: btn_class4
   m_TagString: Untagged
@@ -7938,6 +7979,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667753622}
   m_CullTransparentMesh: 0
+--- !u!65 &667753627
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667753622}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 300, y: 500, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &685959721
 GameObject:
   m_ObjectHideFlags: 0
@@ -8578,16 +8632,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Papa_Ejik_Asking
       objectReference: {fileID: 0}
-    - target: {fileID: -6762035234228532323, guid: 1305e5d9811fddf46b035efdad67dec9,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00040362542
-      objectReference: {fileID: 0}
-    - target: {fileID: -6762035234228532323, guid: 1305e5d9811fddf46b035efdad67dec9,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.21394306
-      objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: 1305e5d9811fddf46b035efdad67dec9,
         type: 3}
       propertyPath: m_Controller
@@ -8657,6 +8701,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.09565713
+      objectReference: {fileID: 0}
+    - target: {fileID: -6762035234228532323, guid: 1305e5d9811fddf46b035efdad67dec9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00040362542
+      objectReference: {fileID: 0}
+    - target: {fileID: -6762035234228532323, guid: 1305e5d9811fddf46b035efdad67dec9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.21394306
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1305e5d9811fddf46b035efdad67dec9, type: 3}
@@ -8862,18 +8916,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 814838643}
-  m_LocalRotation: {x: -0, y: 0.091571204, z: -0, w: 0.9957986}
-  m_LocalPosition: {x: 0, y: 0, z: 5.217}
-  m_LocalScale: {x: 0.002, y: 0.002, z: 0.002}
+  m_LocalRotation: {x: -0, y: 0.12551077, z: -0, w: 0.99209225}
+  m_LocalPosition: {x: 0, y: 0, z: 5.152}
+  m_LocalScale: {x: 0.0024255358, y: 0.0024255358, z: 0.0024255358}
   m_Children:
   - {fileID: 984134522}
   m_Father: {fileID: 79285386}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 10.508, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 14.4210005, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 3.213, y: -0.24}
-  m_SizeDelta: {x: 500, y: 790}
+  m_AnchoredPosition: {x: 3.544, y: -0.455}
+  m_SizeDelta: {x: 590, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &814838645
 MonoBehaviour:
@@ -10308,7 +10362,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 355f92f6886882a46ab0774d07eeee56, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14136,6 +14190,7 @@ GameObject:
   - component: {fileID: 1455439299}
   - component: {fileID: 1455439298}
   - component: {fileID: 1455439297}
+  - component: {fileID: 1455439300}
   m_Layer: 5
   m_Name: btn_class1
   m_TagString: Untagged
@@ -14246,6 +14301,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455439295}
   m_CullTransparentMesh: 0
+--- !u!65 &1455439300
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455439295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 300, y: 500, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1458242597
 GameObject:
   m_ObjectHideFlags: 0
@@ -15879,16 +15947,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Papa_Ejik_Asking
       objectReference: {fileID: 0}
-    - target: {fileID: -6762035234228532323, guid: 1305e5d9811fddf46b035efdad67dec9,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00040362542
-      objectReference: {fileID: 0}
-    - target: {fileID: -6762035234228532323, guid: 1305e5d9811fddf46b035efdad67dec9,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.21394306
-      objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: 1305e5d9811fddf46b035efdad67dec9,
         type: 3}
       propertyPath: m_Controller
@@ -15958,6 +16016,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.09565713
+      objectReference: {fileID: 0}
+    - target: {fileID: -6762035234228532323, guid: 1305e5d9811fddf46b035efdad67dec9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00040362542
+      objectReference: {fileID: 0}
+    - target: {fileID: -6762035234228532323, guid: 1305e5d9811fddf46b035efdad67dec9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.21394306
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1305e5d9811fddf46b035efdad67dec9, type: 3}
@@ -16773,7 +16841,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 0
     forWrong: {fileID: 8300000, guid: 4685c49ef98c1a0439ee3326422bb584, type: 3}
     forCorrect: {fileID: 8300000, guid: 3c9942d6203d23947bcc9963857f83b1, type: 3}
-    maximumNumberOfTries: 1
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -16799,7 +16867,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 0
     forWrong: {fileID: 8300000, guid: 2c7afab3908934a498186e5a2e4b17bb, type: 3}
     forCorrect: {fileID: 8300000, guid: 3e58bc8f74fb636419537b0a515f9034, type: 3}
-    maximumNumberOfTries: 1
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -16825,7 +16893,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 0
     forWrong: {fileID: 8300000, guid: ee66f434274142c408e2669193cbacb0, type: 3}
     forCorrect: {fileID: 8300000, guid: d9c84aac6c981bc469a390c259d761a3, type: 3}
-    maximumNumberOfTries: 1
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -16851,7 +16919,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 0
     forWrong: {fileID: 8300000, guid: ee66f434274142c408e2669193cbacb0, type: 3}
     forCorrect: {fileID: 8300000, guid: d9c84aac6c981bc469a390c259d761a3, type: 3}
-    maximumNumberOfTries: 1
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -16877,7 +16945,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 0
     forWrong: {fileID: 8300000, guid: 0309ac417cdbc0c4cbb7271beb7e43b6, type: 3}
     forCorrect: {fileID: 8300000, guid: 7e8772c30b1c98447b36c196551673a6, type: 3}
-    maximumNumberOfTries: 1
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -16903,7 +16971,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 0
     forWrong: {fileID: 8300000, guid: 4ce2927f86165244f87af0e02957e8ce, type: 3}
     forCorrect: {fileID: 8300000, guid: f1ab80a5a1bd43e4e924f5fbef842502, type: 3}
-    maximumNumberOfTries: 1
+    maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -16986,8 +17054,8 @@ MonoBehaviour:
     maximumNumberOfTries: 2
     toPlayAfterAttemptsDone: {fileID: 8300000, guid: cd311a90ca1dbca4b8df40f1d94087a9,
       type: 3}
-    imageComponent: {fileID: 0}
-    sprite: {fileID: 0}
+    imageComponent: {fileID: 834126733}
+    sprite: {fileID: 21300000, guid: 75ace7aaa7919bb42b8a3c38a7f193bc, type: 3}
     ShouldStopAtThis: 1
     shouldResumeVoice: 1
     NextToActivate: {fileID: 0}
@@ -17380,21 +17448,23 @@ MonoBehaviour:
   - image: {fileID: 834126733}
     index: 56
   - image: {fileID: 834126733}
-    index: 66
+    index: 67
   - image: {fileID: 834126733}
     index: 81
+  - image: {fileID: 834126733}
+    index: 86
   - image: {fileID: 834126733}
     index: 95
   - image: {fileID: 1992282863}
     index: 61
   - image: {fileID: 1992282863}
-    index: 75
-  - image: {fileID: 834126733}
-    index: 86
+    index: 76
+  - image: {fileID: 1992282863}
+    index: 85
   - image: {fileID: 1992282863}
     index: 94
   - image: {fileID: 1992282863}
-    index: 100
+    index: 101
   imageRefSwitchingIndex: 0
   collider: {fileID: 0}
   SyncData:
@@ -17634,9 +17704,7 @@ MonoBehaviour:
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d44bacc9dba821647a97387f0d030617, type: 3}
-    sprites:
-    - image: {fileID: 21300000, guid: 5cb12452d83ad4843a3c0813bc608a23, type: 3}
-      time: 1
+    sprites: []
     canvasses: []
     shouldAudioStop: 0
     GoToIndex: -1
@@ -17716,7 +17784,7 @@ MonoBehaviour:
     sprites:
     - image: {fileID: 21300000, guid: 25c6c1703579203469af1cc43762c2fa, type: 3}
       time: 0.1
-    - image: {fileID: 21300000, guid: cdff5b0577c5df24d96f657fa0b8557d, type: 3}
+    - image: {fileID: 21300000, guid: a469c0055e8a8ac49847979ddc208730, type: 3}
       time: 4.5
     canvasses:
     - canvas: {fileID: 111136655}
@@ -17737,7 +17805,9 @@ MonoBehaviour:
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e49c90ffeb92d524dadfa0f85e1fd2a9, type: 3}
-    sprites: []
+    sprites:
+    - image: {fileID: 21300000, guid: 2c3012a2904d07044af02cadfb3c5dc2, type: 3}
+      time: 0.1
     canvasses: []
     shouldAudioStop: 0
     GoToIndex: -1
@@ -17848,7 +17918,7 @@ MonoBehaviour:
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 7b9c6df36e3ad934ea4e008c4ccb795b, type: 3}
     sprites:
-    - image: {fileID: 21300000, guid: aabc159f2d5a78847bdf22edd8eb1e7b, type: 3}
+    - image: {fileID: 21300000, guid: 2fd2dcbc58d32e6449a0c9349af0cc6e, type: 3}
       time: 0.1
     canvasses: []
     shouldAudioStop: 0
@@ -18132,7 +18202,7 @@ MonoBehaviour:
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: c6bec938ccedd4f4688691426423fd08, type: 3}
     sprites:
-    - image: {fileID: 21300000, guid: 09f2513a09d42a9449a490abc0ce6e79, type: 3}
+    - image: {fileID: 21300000, guid: fc2ee86ea80f19a4eb17516f218056c7, type: 3}
       time: 2
     canvasses:
     - canvas: {fileID: 1750942778}
@@ -20134,7 +20204,7 @@ MonoBehaviour:
   DEBUG_clickedButton: {fileID: 0}
   steps:
   - instruction:
-      text: "Can any number further divide 3x\xB2-2x and -2 without remainder?s"
+      text: "Can any number further divide 3x\xB2-2x and -2 without remainders?"
       component: {fileID: 196023826}
     buttonsTexts:
     - text: Yes
@@ -21447,27 +21517,14 @@ MonoBehaviour:
     sprites:
     - image: {fileID: 21300000, guid: 7e9e80c7231fb5a43a740278799e0fcf, type: 3}
       time: 0.1
-    canvasses: []
-    shouldAudioStop: 0
-    GoToIndex: -1
-  - voice: {fileID: 8300000, guid: 04853bc78d9cad249b03b62b03353cc3, type: 3}
-    sprites:
     - image: {fileID: 21300000, guid: b670814068971d64cbfec9f14e7929b7, type: 3}
-      time: 0.1
-    canvasses: []
-    shouldAudioStop: 0
-    GoToIndex: -1
-  - voice: {fileID: 8300000, guid: d5832ed59202c734f800243d8ebf758c, type: 3}
-    sprites:
+      time: 10
     - image: {fileID: 21300000, guid: fd9c814350e0bb04c9b7d7ebdf3b55ab, type: 3}
-      time: 0.1
-    canvasses: []
-    shouldAudioStop: 0
-    GoToIndex: -1
-  - voice: {fileID: 8300000, guid: 7f772b75a81892d409ad0b9f16b85779, type: 3}
-    sprites:
+      time: 15
+    - image: {fileID: 21300000, guid: 10f1e759d9127354fa21df410b426267, type: 3}
+      time: 21
     - image: {fileID: 21300000, guid: aa6c627e81ffe8f47a61a56fc07f47d1, type: 3}
-      time: 0.1
+      time: 26
     canvasses: []
     shouldAudioStop: 0
     GoToIndex: -1

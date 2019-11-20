@@ -13,7 +13,6 @@ public class SimulationRoomScriptController : MonoBehaviour
 
     private void Awake()
     {
-        Time.timeScale = 2;
         int RequiredAssets = 0;
         if (VoiceImageCanvasSync.SceneTransitionParam.Equals("class1"))
             RequiredAssets = 1;

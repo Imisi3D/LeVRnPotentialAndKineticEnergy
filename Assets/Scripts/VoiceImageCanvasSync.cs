@@ -6,10 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class VoiceImageCanvasSync : MonoBehaviour
 {
-    private void Awake()
-    {
-        Time.timeScale = 2;
-    }
     /**
      * Holder of data for a sprite to be updated
      */
