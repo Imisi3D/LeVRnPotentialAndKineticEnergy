@@ -21232,7 +21232,7 @@ MonoBehaviour:
     - {fileID: 2068447090}
     - {fileID: 1579203561}
     - {fileID: 4201467}
-  - updateIndex: 35
+  - updateIndex: 32
     text: {fileID: 513442922}
     newInstruction: "What is the H.C.F of 6a\xB2b and 8ab\xB2?"
     newbuttonsTexts: 2;a;2ab;3ab
@@ -21242,7 +21242,7 @@ MonoBehaviour:
     - {fileID: 2068447090}
     - {fileID: 1579203561}
     - {fileID: 4201467}
-  - updateIndex: 36
+  - updateIndex: 33
     text: {fileID: 513442922}
     newInstruction: "What is 6a\xB2b divided by 2ab?"
     newbuttonsTexts: 3;a;2b;3a
@@ -21252,7 +21252,7 @@ MonoBehaviour:
     - {fileID: 2068447090}
     - {fileID: 1579203561}
     - {fileID: 4201467}
-  - updateIndex: 37
+  - updateIndex: 34
     text: {fileID: 513442922}
     newInstruction: "What is of 8ab\xB2 divided by 2ab?"
     newbuttonsTexts: 4;a;4b;2
@@ -21262,7 +21262,7 @@ MonoBehaviour:
     - {fileID: 2068447090}
     - {fileID: 1579203561}
     - {fileID: 4201467}
-  - updateIndex: 39
+  - updateIndex: 36
     text: {fileID: 514923553}
     newInstruction: Which of the following is the opposite of factorisation?
     newbuttonsTexts: expression;expansion;substitution
