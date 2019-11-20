@@ -227,6 +227,9 @@ public class NumberInputInteraction : MonoBehaviour
         inputCanvas.GetComponent<Canvas>().enabled = false;
         inputCanvas_collider.SetActive(false);
         YesNoCanvas.SetActive(true);
+        BoxCollider col = YesNoCanvas.GetComponent<BoxCollider>();
+        if (col != null) col.enabled = true;
+
     }
 
     // starts explanation process
@@ -250,6 +253,8 @@ public class NumberInputInteraction : MonoBehaviour
         yield return new UnityEngine.WaitForSeconds(0.5f);
         YesNoCanvas.GetComponent<Canvas>().enabled = false;
         YesNoCanvas_collider.SetActive(false);
+        BoxCollider col = YesNoCanvas.GetComponent<BoxCollider>();
+        if (col != null) col.enabled = false;
         yield return new UnityEngine.WaitForSeconds(AnswerForYes.length + 0.2f);
 
         StartCoroutine(nextExplination());
@@ -582,12 +587,16 @@ public class NumberInputInteraction : MonoBehaviour
         {
             playSound(FruitGame_greatToHear);
             DoYouAgree_Canvas.GetComponent<Canvas>().enabled = false;
+            BoxCollider col = DoYouAgree_Canvas.GetComponent<BoxCollider>();
+            if (col != null) col.enabled = false;
             yield return new UnityEngine.WaitForSeconds(FruitGame_greatToHear.length + 1.0f);
         }
         else if (feedback.Equals("boring"))
         {
             playSound(FruitGame_weShallDoMoreInterestingThings);
             DoYouAgree_Canvas.GetComponent<Canvas>().enabled = false;
+            BoxCollider col = DoYouAgree_Canvas.GetComponent<BoxCollider>();
+            if (col != null) col.enabled = false;
             yield return new UnityEngine.WaitForSeconds(FruitGame_weShallDoMoreInterestingThings.length + 1.0f);
         }
 
@@ -596,6 +605,9 @@ public class NumberInputInteraction : MonoBehaviour
         ask();
         yield return new UnityEngine.WaitForSeconds(FruitGame_algebraIsNotHard.length - 6f);
         DoYouAgree_Canvas.GetComponent<Canvas>().enabled = true;
+        BoxCollider box = DoYouAgree_Canvas.GetComponent<BoxCollider>();
+        if (box != null) box.enabled = true;
+
         FeedbackQuestionText.text = "Do you agree?";
     }
 
@@ -633,6 +645,8 @@ public class NumberInputInteraction : MonoBehaviour
         inputCanvas.GetComponent<Canvas>().enabled = false;
         inputCanvas_collider.SetActive(false);
         YesNoCanvas.SetActive(false);
+        BoxCollider col = YesNoCanvas.GetComponent<BoxCollider>();
+        if (col != null) col.enabled = false;
         YesNoCanvas_collider.SetActive(false);
         StartFruitGame();
     }
