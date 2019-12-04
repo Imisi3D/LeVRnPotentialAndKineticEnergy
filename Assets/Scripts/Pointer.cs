@@ -19,7 +19,14 @@ public class Pointer : MonoBehaviour
     // called when pointer is updating location and rotation.
     public UnityAction<Vector3, GameObject> OnPointerUpdate = null;
     // object that this pointer is pointing on (fruit, toygun...)
-    private GameObject currentObject = null;
+    public GameObject currentObject = null;
+
+    public GameObject attachedObject = null;
+    public GameObject handAnchor;
+    public GameObject MessageCanvas;
+    public Text MessageContent;
+    private float WhenWasMessageCanvasLatelyActivated = 0f;
+
 
     private void Awake()
     {
@@ -36,14 +43,32 @@ public class Pointer : MonoBehaviour
 
     void Update()
     {
-        if (QualitySettings.antiAliasing != 8)
+        Vector3 hitPoint = UpdateLine();
+        GameObject lastObj = currentObject;
+        currentObject = UpdatePointerStatus();
+        if (lastObj != null && lastObj != currentObject)
         {
-            QualitySettings.antiAliasing = 8;
-            UnityEngine.XR.XRSettings.eyeTextureResolutionScale = 1.8f;
+            VRObject obj = lastObj.GetComponent<VRObject>();
+            if (obj != null) obj.applyHighlight(HighlightOptions.none);
         }
 
-        Vector3 hitPoint = UpdateLine();
-        currentObject = UpdatePointerStatus();
+        // checking if the object which is selected by pointer is a possible target for a draggable object and if true, call the interaction for that target.
+        if (currentObject != null)
+        {
+            // if the pointer points on VRObject, then highlight that object
+            VRObject obj = currentObject.GetComponent<VRObject>();
+            if (obj != null) obj.applyHighlight(HighlightOptions.correct);
+
+            if (attachedObject != null)
+            {
+                VRDraggableObjectTarget target = currentObject.GetComponent<VRDraggableObjectTarget>();
+                if (target != null)
+                {
+                    target.react(this);
+                }
+            }
+        }
+
         if (OnPointerUpdate != null)
             OnPointerUpdate(hitPoint, currentObject);
 
@@ -59,6 +84,12 @@ public class Pointer : MonoBehaviour
             {
                 interactible.Pressed();
                 print("interactible pressed");
+            }
+            else
+            {
+                VRObject obj = currentObject.GetComponent<VRObject>();
+                obj.interact();
+                obj.interact(this);
             }
         }
     }
@@ -146,5 +177,47 @@ public class Pointer : MonoBehaviour
             return;
         Interactible interactible = currentObject.GetComponent<Interactible>();
         interactible.Pressed();
+    }
+
+    public void Drag(GameObject obj)
+    {
+        if (attachedObject == null)
+        {
+            attachedObject = obj;
+            attachedObject.transform.parent = handAnchor.transform;
+            attachedObject.transform.localPosition = Vector3.zero;
+        }
+        else
+        {
+            //MessageContent.text = ;
+            //MessageCanvas.SetActive(true);
+            //StartCoroutine(HideMessageAfterDelay(3));
+            //WhenWasMessageCanvasLatelyActivated = Time.time;
+            DisplayMessage(
+                "You can not drag more than one object at the same time.",
+                3
+                );
+        }
+    }
+
+    public void Drop()
+    {
+
+    }
+
+    private IEnumerator HideMessageAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        if (WhenWasMessageCanvasLatelyActivated + 2.8f > Time.time)
+            StartCoroutine(HideMessageAfterDelay(WhenWasMessageCanvasLatelyActivated + 3 - Time.time));
+        MessageCanvas.SetActive(false);
+    }
+
+    public void DisplayMessage(string msg, float delay)
+    {
+        MessageContent.text = msg;
+        MessageCanvas.SetActive(true);
+        StartCoroutine(HideMessageAfterDelay(delay));
+        WhenWasMessageCanvasLatelyActivated = Time.time;
     }
 }

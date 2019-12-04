@@ -34,6 +34,22 @@ public class VoiceImageCanvasSync : MonoBehaviour
         public bool newState = true;
     }
 
+    [System.Serializable]
+    public class ObjectData
+    {
+        public GameObject gameObject;
+        public float time = 0.1f;
+        public bool newActive = false;
+    }
+
+    [System.Serializable]
+    public class ComponentData
+    {
+        public CustomComponent component;
+        public float time = 0.1f;
+        public bool newEnabled = false;
+    }
+
     /**
      * Holder of data for step.
      */
@@ -42,12 +58,23 @@ public class VoiceImageCanvasSync : MonoBehaviour
     {
         // Audio clip to play.
         public AudioClip voice;
+
         // sprites that should be used for the image reference.
         public SpriteSync[] sprites;
-        // canvasses that should be shown/hidden in the length of this audio.
+
+        // canvasses that should be shown/hidden while this audio is playing.
         public CanvasSync[] canvasses;
+
+        // objects that will be activated/deactivated while this audio is playing.
+        public ObjectData[] Objects;
+
+        // objects that will be enabled/disabled while this audio is playing.
+        public ComponentData[] Components;
+
         // true means audio will stop after playing this clip.
         public bool shouldAudioStop = false;
+
+        // if this index is >= 0 and this one has a canvas, wrong answer in the interaction with that canvas will set current index to this one.
         public int GoToIndex = -1;
     }
 
@@ -63,7 +90,7 @@ public class VoiceImageCanvasSync : MonoBehaviour
     public Image imageRef2;
 
     /**
-     * Data holder for the current used image component for disaplying sprites.
+     * Data holder for the current used image component for displaying sprites.
      */
 
     [System.Serializable]
@@ -120,35 +147,78 @@ public class VoiceImageCanvasSync : MonoBehaviour
     // Updates the animator to perform asking animation.
     private void ask()
     {
-        animator_cloth.SetBool("idle", false);
-        animator_cloth.SetBool("ask", true);
+        if (animator_cloth != null)
+        {
+            animator_cloth.SetBool("idle", false);
+            animator_cloth.SetBool("ask", true);
+        }
+        else
+        {
+            Debug.LogError("cloth animator is not set");
+        }
 
-        animator_body.SetBool("idle", false);
-        animator_body.SetBool("ask", true);
+        if (animator_body)
+        {
+            animator_body.SetBool("idle", false);
+            animator_body.SetBool("ask", true);
+        }
+        else
+        {
+            Debug.LogError("body animator is not set");
+        }
     }
-
     // Updates the animator to perform idle animation.
     private void idle()
     {
-        animator_cloth.SetBool("idle", true);
-        animator_body.SetBool("idle", true);
 
-        animator_cloth.SetBool("ask", false);
-        animator_body.SetBool("ask", false);
+        if (animator_cloth != null)
+        {
+            animator_cloth.SetBool("idle", true);
+            animator_cloth.SetBool("ask", false);
+        }
+        else
+        {
+            Debug.LogError("cloth animator is not set");
+        }
+
+        if (animator_body)
+        {
+            animator_body.SetBool("idle", true);
+            animator_body.SetBool("ask", false);
+        }
+        else
+        {
+            Debug.LogError("body animator is not set");
+        }
+
     }
 
     // Updates the animator to perform explanation animation.
     private void explain()
     {
-        int randomInt = UnityEngine.Random.Range(0, 2);
+        // uncomment commmented lines in this block to support 2 animation of explaination (choosing which one should be used is randomly picked).
+        //int randomInt = UnityEngine.Random.Range(0, 2);
+        if (animator_cloth != null)
+        {
+            animator_cloth.SetBool("idle", false);
+            //animator_cloth.SetInteger("talkingIndex", randomInt);
+            animator_cloth.SetBool("ask", false);
+        }
+        else
+        {
+            Debug.LogError("cloth animator is not set");
+        }
 
-        animator_cloth.SetBool("idle", false);
-        animator_cloth.SetInteger("talkingIndex", randomInt);
-        animator_cloth.SetBool("ask", false);
-
-        animator_body.SetBool("idle", false);
-        animator_body.SetInteger("talkingIndex", randomInt);
-        animator_body.SetBool("ask", false);
+        if (animator_body)
+        {
+            animator_body.SetBool("idle", false);
+            //animator_body.SetInteger("talkingIndex", randomInt);
+            animator_body.SetBool("ask", false);
+        }
+        else
+        {
+            Debug.LogError("body animator is not set");
+        }
     }
 
     private IEnumerator CallAfterDelay(System.Action Param, float delay)
@@ -254,6 +324,22 @@ public class VoiceImageCanvasSync : MonoBehaviour
                 canvasData.canvas.GetComponent<ControllerSelection.OVRRaycaster>().enabled = canvasData.newState;
                 //collider.SetActive(canvasData.newState);
             }
+        }
+
+        // syncing objects
+        foreach (ObjectData objData in currentVoiceTimingData.Objects)
+        {
+            float scheduledTime = objData.time + LastAudioClipStartTime;
+            if (scheduledTime <= Time.time && scheduledTime > Time.time - Time.deltaTime)
+                objData.gameObject.SetActive(objData.newActive);
+        }
+
+        // syncing components
+        foreach (ComponentData comp in currentVoiceTimingData.Components)
+        {
+            float scheduledTime = comp.time + LastAudioClipStartTime;
+            if (scheduledTime <= Time.time && scheduledTime > Time.time - Time.deltaTime)
+                comp.component.enabled = comp.newEnabled;
         }
 
         // if audio clip finished and can play next audio then start next sync
