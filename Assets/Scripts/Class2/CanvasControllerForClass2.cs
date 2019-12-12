@@ -69,9 +69,31 @@ public class CanvasControllerForClass2 : MonoBehaviour
         }
         else
         {
+            remainingTrials--;
             obj.GetComponent<Image>().color = wrong;
             //btn.image.color = wrong;
             audioSource.PlayOneShot(audio_wrong);
+            if (remainingTrials < 0)
+            {
+                remainingCorrect = 1;
+                Button[] buttons = obj.transform.parent.GetComponentsInChildren<Button>();
+                //Image[] btnImages = new Image[buttons.Length];
+                for (int i = 0; i < buttons.Length; i++)
+                {
+                    buttons[i].gameObject.GetComponent<Image>().color = defaultColor;
+                }
+                foreach (specificUpdate update in updates)
+                {
+                    if (obj == update.trigger)
+                    {
+                        update.action?.Invoke(update.newText);
+                    }
+                }
+                obj.transform.parent.gameObject.GetComponent<Canvas>().enabled = false;
+                BoxCollider col = obj.transform.parent.gameObject.GetComponent<BoxCollider>();
+                col.enabled = false;
+                StartCoroutine(ResumeProgressAfterDelay(0.5f));
+            }
         }
     }
 
@@ -91,6 +113,7 @@ public class CanvasControllerForClass2 : MonoBehaviour
     public class CanvasUpdater
     {
         public int updateIndex;
+        public int MaximumNumberOfTries = 2;
         public Text text;
         public string newInstruction;
         public string newbuttonsTexts;
@@ -117,6 +140,7 @@ public class CanvasControllerForClass2 : MonoBehaviour
         if (canvasUpdater.text != null)
             canvasUpdater.text.text = canvasUpdater.newInstruction;
         awaitedAnswer = canvasUpdater.newCorrectAnswer;
+        remainingTrials = canvasUpdater.MaximumNumberOfTries;
         string[] buttonsTexts = canvasUpdater.newbuttonsTexts.Split(';');
         for (int i = 0; i < buttonsTexts.Length; i++)
         {
@@ -126,6 +150,7 @@ public class CanvasControllerForClass2 : MonoBehaviour
     }
 
     private string awaitedAnswer = "3";
+    private int remainingTrials = 6;
     public void Answer(AudioClip clip = null)
     {
         GameObject obj = EventSystem.current.currentSelectedGameObject;
@@ -133,6 +158,7 @@ public class CanvasControllerForClass2 : MonoBehaviour
             obj = DEBUG_button;
 
         Text clickedButtonText = obj.GetComponentInChildren<Text>();
+        print("remainingTrials: " + remainingTrials);
         if (clickedButtonText.text.Equals(awaitedAnswer))
         {
             if (clip != null)
@@ -152,11 +178,25 @@ public class CanvasControllerForClass2 : MonoBehaviour
         }
         else
         {
+            remainingTrials--;
             obj.GetComponent<Image>().color = wrong;
             if (clip != null)
                 audioSource.PlayOneShot(clip);
             else
                 audioSource.PlayOneShot(audio_wrong);
+            if (remainingTrials < 0)
+            {
+                obj.transform.parent.gameObject.GetComponent<Canvas>().enabled = false;
+                BoxCollider col = obj.transform.parent.gameObject.GetComponent<BoxCollider>();
+                col.enabled = false;
+                obj.transform.parent.gameObject.GetComponent<ControllerSelection.OVRRaycaster>().enabled = false;
+                Button[] buttons = obj.transform.parent.GetComponentsInChildren<Button>();
+                for (int i = 0; i < buttons.Length; i++)
+                {
+                    buttons[i].gameObject.GetComponent<Image>().color = defaultColor;
+                }
+                StartCoroutine(ResumeProgressAfterDelay(0.5f));
+            }
         }
     }
 
@@ -282,6 +322,18 @@ public class CanvasControllerForClass2 : MonoBehaviour
         if (Input.GetKeyDown("y"))
         {
             AnswerAndUpdateIndex();
+        }
+        if (Input.GetKeyDown("u"))
+        {
+            Answer();
+        }
+        if (Input.GetKeyDown("i"))
+        {
+            selectAndKeepColor(false);
+        }
+        if (Input.GetKeyDown("p"))
+        {
+            selectAndKeepColor(true);
         }
     }
 }

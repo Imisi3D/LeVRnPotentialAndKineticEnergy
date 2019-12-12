@@ -581,6 +581,7 @@ public class NumberInputInteraction : MonoBehaviour
 
     private IEnumerator ReactToFeedback(string feedback)
     {
+        FruitGame_feedbackCanvas.GetComponent<Canvas>().enabled = false;
         FruitGame_OptionsCanvas.SetActive(false);
         explain();
         if (feedback.Equals("fun"))
@@ -605,6 +606,7 @@ public class NumberInputInteraction : MonoBehaviour
         ask();
         yield return new UnityEngine.WaitForSeconds(FruitGame_algebraIsNotHard.length - 6f);
         DoYouAgree_Canvas.GetComponent<Canvas>().enabled = true;
+        FruitGame_feedbackCanvas.GetComponent<Canvas>().enabled = true;
         BoxCollider box = DoYouAgree_Canvas.GetComponent<BoxCollider>();
         if (box != null) box.enabled = true;
 
@@ -631,6 +633,7 @@ public class NumberInputInteraction : MonoBehaviour
                 {
                     idle();
                     part2.SetActive(true);
+                    gameObject.SetActive(false);
                     //part2.GetComponent<VoiceImageCanvasSync>().Start();
                 },
                 1f

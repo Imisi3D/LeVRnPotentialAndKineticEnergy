@@ -13,6 +13,9 @@ public class CanvasControl : MonoBehaviour
     public AudioClip correct;
     public GameObject collider;
 
+    public Color color_wrong;
+    public Color color_correct;
+
     public Text instructionText;
     public Text btn_1_text;
     public Text btn_2_text;
@@ -36,6 +39,7 @@ public class CanvasControl : MonoBehaviour
         if (reaction.ToUpper().Equals("wrong".ToUpper()))
         {
             audioSource.PlayOneShot(wrong);
+
         }
         else if (reaction.ToUpper().Equals("correct".ToUpper()))
         {

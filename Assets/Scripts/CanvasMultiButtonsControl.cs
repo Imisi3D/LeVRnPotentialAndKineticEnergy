@@ -65,6 +65,7 @@ public class CanvasMultiButtonsControl : MonoBehaviour
             availableTries = 2;
             currentStep++;
             gameObject.GetComponent<Canvas>().enabled = false;
+            audioSource.PlayOneShot(correct);
             BoxCollider col = gameObject.GetComponent<BoxCollider>();
             if (col != null) col.enabled = false;
             currentCorrect = "btn_14";
@@ -87,10 +88,20 @@ public class CanvasMultiButtonsControl : MonoBehaviour
             {
                 availableTries = 2;
                 audioSource.PlayOneShot(wrong);
-                synchronizer.Start();
+                synchronizer.NextSync();
+                currentStep++;
+                currentCorrect = "btn_14";
                 gameObject.GetComponent<Canvas>().enabled = false;
                 BoxCollider col = gameObject.GetComponent<BoxCollider>();
                 if (col != null) col.enabled = false;
+                foreach (Step_Action step in actions)
+                {
+                    if (step.step == currentStep)
+                    {
+                        step.action?.Invoke();
+                        break;
+                    }
+                }
             }
         }
     }

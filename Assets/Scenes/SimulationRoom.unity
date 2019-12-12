@@ -4292,8 +4292,7 @@ MonoBehaviour:
         m_MethodName: Answer
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 9ea65889e4beb6c408f4954029bc5440,
-            type: 3}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -4743,6 +4742,8 @@ MonoBehaviour:
   - voice: {fileID: 8300000, guid: a11ae07cb411f4047ba5eb60f09bf0be, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: a59309a755ceee34c9021b19cdde3769, type: 3}
@@ -4750,6 +4751,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 350bfd1d3e3fd6942ad44656260805a8, type: 3}
       time: 9
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 2d128b8bb0d8be84b9a6d2c5692542cb, type: 3}
@@ -4758,11 +4761,15 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 14
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d799d02a93220884bb62da3fefedcf85, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d9513677584972248b55a2888cf7aced, type: 3}
@@ -4771,6 +4778,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 2
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: ebae3db6450234b4e866e5a89c62927c, type: 3}
@@ -4779,6 +4788,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 5
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9a72904abece1be40807af1e243bd5db, type: 3}
@@ -4789,6 +4800,8 @@ MonoBehaviour:
     - canvas: {fileID: 1174286111}
       time: 9
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 73bf50b525ded434ebc67c7dad16df58, type: 3}
@@ -4799,6 +4812,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 7
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e4357aa4401e1264ea30b7bbb21b1b9c, type: 3}
@@ -4807,6 +4822,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 8
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: f9a881ff4edea8549ace1c20519b9fb6, type: 3}
@@ -4814,6 +4831,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 88b043a28d4027344b687a326bffeace, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 0ad62ca85969ea248b4f95a82e82c29a, type: 3}
@@ -4822,6 +4841,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 4
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 5e7e0eb8bc4adc24fa93e4e2955b0e89, type: 3}
@@ -4829,6 +4850,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 86de8592ed8dc264ea69cf28dcd9907b, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d131a64b3368a8c49a6d29b4483694e3, type: 3}
@@ -4836,6 +4859,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 5c95a1f8da5111c4dae51f433d597921, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: be10712c12698ea47bf0ab405899aa92, type: 3}
@@ -4846,6 +4871,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 32
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: caa67aec529c4034f84be63401a4a41d, type: 3}
@@ -4854,6 +4881,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 11
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: b5a1a081bf32ee7428f01957a3ca41b8, type: 3}
@@ -4861,6 +4890,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: e8c9a059486aea8438f9ce3ba119b220, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: bc6e8bfcf64c26d40b58b512382790ff, type: 3}
@@ -4869,6 +4900,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 3
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: daf7cdbbc20dfd84eafc20d89883465c, type: 3}
@@ -4879,6 +4912,8 @@ MonoBehaviour:
     - canvas: {fileID: 1174286111}
       time: 7
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d2f3750cb3ba426488f4893990104d84, type: 3}
@@ -4886,6 +4921,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 53034f65ff7da01458c84df0add7deab, type: 3}
       time: 5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 96a9d244d004b394f82f3b78fb53798a, type: 3}
@@ -4894,6 +4931,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 8
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 5c6b66adbaaac3d4481751d03e6b51f4, type: 3}
@@ -4904,6 +4943,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 25
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 7bd0527d0037fb942aea9523a957b669, type: 3}
@@ -4912,6 +4953,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 12
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 8cd8806107fa65d4eac966177eb84146, type: 3}
@@ -4922,6 +4965,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 5
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: ab971654825e8d74ea20c1d2b89a96f2, type: 3}
@@ -4932,6 +4977,8 @@ MonoBehaviour:
     - canvas: {fileID: 1174286111}
       time: 9
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 34011eee5f3d88745896c1b9cbb7c68f, type: 3}
@@ -4939,6 +4986,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: ad4a33c4214f7aa44a7b249108558974, type: 3}
       time: 15.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e7ad86e0f09f8764a9e8bbf4919f057b, type: 3}
@@ -4946,6 +4995,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: adfd06b6362b0b548acc8396c81a90c5, type: 3}
       time: 3
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: a3632f814c55db045aac4ecfd65047a2, type: 3}
@@ -4956,6 +5007,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 10
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e47a5d228ba9a8b4dba99357a4c92603, type: 3}
@@ -4963,6 +5016,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 3e8bcfc7c649d0b4f8b44008438f76b5, type: 3}
       time: 10
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 2c9700e04e896cf479eb92ddd20f1fc4, type: 3}
@@ -4973,6 +5028,8 @@ MonoBehaviour:
     - canvas: {fileID: 1174286111}
       time: 16
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: cf41e33bd9267764eac3d8573a7d880f, type: 3}
@@ -4981,6 +5038,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 14
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: a7d0e2693026a1f429ab51ded50d14db, type: 3}
@@ -4988,11 +5047,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 9da9d2a005fadad41a3d0581198f9006, type: 3}
       time: 8
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: b8bf876e2b20e274f872d3856a82fe3e, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 786d80fd796d6644c8df474b4b445966, type: 3}
@@ -5000,16 +5063,22 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 90569f0f823cfdb4f865f50f00913885, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 308ec9cd4cf70d146973407c1c15e664, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 0adf726549c952840a2adfc4b4ec55c8, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 663e872a4b572c94bb50492db3cc2347, type: 3}
@@ -5019,6 +5088,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 8dc201daa1c4baa4aa3102fa11c3582d, type: 3}
       time: 7
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 8bd6e23f536557849bf16cdcb081445d, type: 3}
@@ -5029,6 +5100,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 6
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d000382ff9c22764fab61a2471947d18, type: 3}
@@ -5036,6 +5109,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 79a6a3cfdf3ed234b84e376cab2633d3, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 3018a6dbb030c1c4ba0ca567f7e79a77, type: 3}
@@ -5046,6 +5121,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 2
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 3c44f9c678d689b4f9d4db9a3cac1705, type: 3}
@@ -5053,6 +5130,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: e331274cadab97148acb26eec70b0be3, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: a038f184c32c994489b74bb83e2c3f23, type: 3}
@@ -5060,6 +5139,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: dd21fb1d05e41db4ca8d78c08137f281, type: 3}
       time: 3
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 41386fc2b7c1f214cb4a723c5c02a5e8, type: 3}
@@ -5067,6 +5148,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: bec9ef1c80b6fe745a4a85682c0c0bb8, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 616ae1a96343b894b96698e435559e3c, type: 3}
@@ -5074,6 +5157,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: b4f7dbbd0ddf47744bbe48484d43aa8b, type: 3}
       time: 2
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 2b1623ae230b3dc4892781a1a51e9385, type: 3}
@@ -5081,6 +5166,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 7667c3d406d70df4c91b0834266ad8a2, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: c208c1f657f48b24ca608fa0f3d5a5f0, type: 3}
@@ -5088,11 +5175,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 5aece986dbb0d3d45b9d303653eb25ae, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 6009fc474d6ee1543bd6e99837830e51, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 7d07f62e2c46a49439b6af67457ee227, type: 3}
@@ -5103,6 +5194,8 @@ MonoBehaviour:
     - canvas: {fileID: 1174286111}
       time: 18
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 0656f0f6cb01b4d4f960f4eb254496c7, type: 3}
@@ -5113,6 +5206,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 18
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: c8e18b9d5388ee34581a32c5c5891171, type: 3}
@@ -5123,6 +5218,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 11
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: af594989b69f1294c81d635b8a1821cf, type: 3}
@@ -5130,6 +5227,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 90db7a2eb21f63448a3c3ba203cdd978, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: efe269b4cda126a40acfdf4daffe1057, type: 3}
@@ -5137,6 +5236,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 6e185b8246de1184f8996d5a680762f4, type: 3}
       time: 13
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d9e4e0d0c8c7ce846848b23676e3d6cd, type: 3}
@@ -5146,11 +5247,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 39938f6414533284d83653e1f2565f10, type: 3}
       time: 10
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 78f23289bbec98b4bb54831ae3c5956f, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: c68633729c522e746a452fe347c4c37a, type: 3}
@@ -5160,6 +5265,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 81e5c8742cf63744da61d9c3b73b6db1, type: 3}
       time: 6
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e9520b8488d5a7748a910c5f332fbff1, type: 3}
@@ -5167,6 +5274,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 9ea41a45dd7d9b0478e63ad19614b4fd, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 3a787ac088afd584cad31eae9a59b498, type: 3}
@@ -5174,6 +5283,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 01c1b793d16fec646bc83f8a622ae188, type: 3}
       time: 4
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9a15f04d6c8bf524eb5bb5cd36f08514, type: 3}
@@ -5182,6 +5293,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 1
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: bd06f3c5f8b447b45bff3dcf263b559e, type: 3}
@@ -5189,6 +5302,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 150d4470d5758cc43aa6d48adab7d801, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: fd4358e1c352dd349bd291e1d19d035e, type: 3}
@@ -5199,6 +5314,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 1
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e1ec7641aa260324780179b08aaac91f, type: 3}
@@ -5206,6 +5323,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 5b7bd56832ff314468184c69e34ed646, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 5e187a9eac3c8d74ca4260676a0df4d6, type: 3}
@@ -5213,6 +5332,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: c1b990dc167854446bd8144d128a4873, type: 3}
       time: 7
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 1cbdbbb31ecf9b94b801409ebe917ccb, type: 3}
@@ -5220,6 +5341,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: f0a035cce733de24db678482bbb36d94, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: a7737f5828f12e54d9a7406249387bda, type: 3}
@@ -5227,6 +5350,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 0b71eb6dd7b05514396fae95c6b0b051, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 49dc3ce9176fa9f46bbc296f8708129b, type: 3}
@@ -5234,6 +5359,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: a6fcd899aeb932245b5ca2fb1b503bfa, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 544c97ba813a6bf4ba490548ca15d7f3, type: 3}
@@ -5241,6 +5368,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 2f0a8210c478ab341be489064798f313, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 920ac03717342ad479875e2f0dcf53dc, type: 3}
@@ -5248,6 +5377,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 12584b93505c2a243b68110b4d971348, type: 3}
       time: 3
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 7b36e3f205aa02a4482d1fb707fc0f13, type: 3}
@@ -5256,6 +5387,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 1
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: b1e397468776d674c86ca4e8d1ed604d, type: 3}
@@ -5263,6 +5396,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 6b1037e67a3994945bec48bff3e5bd7f, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 0a463cfdc82a4f4418b44200edb2759c, type: 3}
@@ -5273,6 +5408,8 @@ MonoBehaviour:
     - canvas: {fileID: 178120164}
       time: 1
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: a89253ebfe0107c4f88a7d669bbff487, type: 3}
@@ -5280,6 +5417,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 83b1a90220d485b479d747ace4af2d82, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 89e9357a5603c71498a212ff3de65675, type: 3}
@@ -5287,6 +5426,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: e154afe308563a84087b3a9e4ac77684, type: 3}
       time: 7.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 1874394a314a2f149ab265302d0fb9bd, type: 3}
@@ -5294,11 +5435,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: dcc51c30bda5625418603a57fbbd0db6, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e619bf24c8ffdde45a1be0d7cda8e12d, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 965da3bede408ca4f9b695121ba1426f, type: 3}
@@ -5306,11 +5451,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: efa57fc68cc75d544a2f1a4b17e6a93c, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 94b0c2db9e1fecd49b1440545905c257, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 36de43da6a8c296449e5b558965412d9, type: 3}
@@ -5318,6 +5467,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: da9c65d18a88c7648b49547efcdd207d, type: 3}
       time: 3.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 5580775ba6386e6439171ec458788a00, type: 3}
@@ -5325,11 +5476,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 41276d537d323314c963f7dfee99f0fa, type: 3}
       time: 3
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: b6d097f107077a0478ee2a046e98d5af, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: f7baeaa4a8613a04398ca11ecda0f2d7, type: 3}
@@ -5337,6 +5492,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 97bd63dcff0231340bf576a230a52700, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: fd9afb136f77e684ca51b7f2e7f3b80a, type: 3}
@@ -5344,6 +5501,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 47e21dc12d17bec42a3af7c307839eed, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: f7baeaa4a8613a04398ca11ecda0f2d7, type: 3}
@@ -5351,6 +5510,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 347add5f7c9bd5640bbaebca022a8a3b, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 3d93bba02b3c6a149a635040a9d4532d, type: 3}
@@ -5358,6 +5519,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 355f92f6886882a46ab0774d07eeee56, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9ca3fae04b26e204db4fc52eb618b156, type: 3}
@@ -5365,11 +5528,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 310f0d508b48ec44ebeb9395e421126c, type: 3}
       time: 8
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 99e76fbd3b6ad6943b225ef91f6b2073, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: ac5ac6fc87ffe1b46a6f13fc535cb5db, type: 3}
@@ -5383,6 +5550,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: b80904079ed0a9e48b269641fa210a89, type: 3}
       time: 9
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: aabbd9e758909da4a9714f11453b2f9f, type: 3}
@@ -5392,6 +5561,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 678ce06683a1c1047a6759ff1a4c2c68, type: 3}
       time: 12
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 0b5a5ca658c5cf246b9a2c6ab94b6172, type: 3}
@@ -5399,17 +5570,23 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 17c9725fcfbacbb4d956c00cde23ad47, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 281106434f8281947ad19a0bce7559a4, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   currentVoiceTimingData:
     voice: {fileID: 0}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   animator_body: {fileID: 865106814}
@@ -8631,16 +8808,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Papa_Ejik_Asking
       objectReference: {fileID: 0}
-    - target: {fileID: -6762035234228532323, guid: 1305e5d9811fddf46b035efdad67dec9,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00040362542
-      objectReference: {fileID: 0}
-    - target: {fileID: -6762035234228532323, guid: 1305e5d9811fddf46b035efdad67dec9,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.21394306
-      objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: 1305e5d9811fddf46b035efdad67dec9,
         type: 3}
       propertyPath: m_Controller
@@ -8710,6 +8877,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.09565713
+      objectReference: {fileID: 0}
+    - target: {fileID: -6762035234228532323, guid: 1305e5d9811fddf46b035efdad67dec9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00040362542
+      objectReference: {fileID: 0}
+    - target: {fileID: -6762035234228532323, guid: 1305e5d9811fddf46b035efdad67dec9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.21394306
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1305e5d9811fddf46b035efdad67dec9, type: 3}
@@ -11915,7 +12092,7 @@ MonoBehaviour:
     mustAnswerCorrectly: 1
     forWrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
     forCorrect: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
-    maximumNumberOfTries: 20
+    maximumNumberOfTries: 1
     toPlayAfterAttemptsDone: {fileID: 0}
     imageComponent: {fileID: 0}
     sprite: {fileID: 0}
@@ -15531,8 +15708,7 @@ MonoBehaviour:
         m_MethodName: Answer
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 2975f3cfc336f5b418d5c4840bcd2491,
-            type: 3}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -16004,6 +16180,11 @@ MonoBehaviour:
   interactibleMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  currentObject: {fileID: 0}
+  attachedObject: {fileID: 0}
+  handAnchor: {fileID: 0}
+  MessageCanvas: {fileID: 0}
+  MessageContent: {fileID: 0}
 --- !u!224 &1607408077
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16035,16 +16216,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Papa_Ejik_Asking
-      objectReference: {fileID: 0}
-    - target: {fileID: -6762035234228532323, guid: 1305e5d9811fddf46b035efdad67dec9,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00040362542
-      objectReference: {fileID: 0}
-    - target: {fileID: -6762035234228532323, guid: 1305e5d9811fddf46b035efdad67dec9,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.21394306
       objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: 1305e5d9811fddf46b035efdad67dec9,
         type: 3}
@@ -16115,6 +16286,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.09565713
+      objectReference: {fileID: 0}
+    - target: {fileID: -6762035234228532323, guid: 1305e5d9811fddf46b035efdad67dec9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00040362542
+      objectReference: {fileID: 0}
+    - target: {fileID: -6762035234228532323, guid: 1305e5d9811fddf46b035efdad67dec9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.21394306
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1305e5d9811fddf46b035efdad67dec9, type: 3}
@@ -17564,6 +17745,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: e82cfedd6bf21144e87dce83df4eda30, type: 3}
       time: 11
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 04241ef40cbf59742afb01bb6f693bd2, type: 3}
@@ -17571,6 +17754,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: e4ec859162f92f54e8fe60343c459638, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9c28253a2feb7ab4eadc52974968f45a, type: 3}
@@ -17579,11 +17764,15 @@ MonoBehaviour:
     - canvas: {fileID: 1396979046}
       time: 1
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: 0
   - voice: {fileID: 8300000, guid: aaf2a65eacb91444bbc7d3625bdc6f65, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 33ce1c003923a614e81fc514ab738e5e, type: 3}
@@ -17591,6 +17780,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 61665146c69fe224d9fe938f76f3328d, type: 3}
       time: 3
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 2e9dbca39138f0148b09bf30928c673c, type: 3}
@@ -17598,6 +17789,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: be51ba89936f4ce44a1a708007347624, type: 3}
       time: 3
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9c28253a2feb7ab4eadc52974968f45a, type: 3}
@@ -17606,6 +17799,8 @@ MonoBehaviour:
     - canvas: {fileID: 1396979046}
       time: 1
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: 3
   - voice: {fileID: 8300000, guid: a04c6b4a2f1355d438d11c4e268e5afe, type: 3}
@@ -17613,6 +17808,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 0bfb60152f3a40b4b9c9ca96c09f1bdc, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e6a91feac4f0b4346a1e98fdfda374e2, type: 3}
@@ -17620,6 +17817,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: bafae75fc7ef9e148be5913c54464a66, type: 3}
       time: 3
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: bf6fab944e0ee644d9f1bb3575acd134, type: 3}
@@ -17627,6 +17826,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: be2dd5ac26b4f2e42836d048e2cf813e, type: 3}
       time: 3
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 92e99fe62262ad940a131f20751265cb, type: 3}
@@ -17634,6 +17835,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 973c0748d45a5f34a88ccc8be79a1fe4, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 236f5525f5788c94e87070b3358a115c, type: 3}
@@ -17641,6 +17844,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: ac13a3e0f88a48744854f14eefd81c66, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 89d387271f448e545b4b41f382caa2c1, type: 3}
@@ -17648,6 +17853,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 283ac5c32e58f3147bbd24fe38203c51, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 18dfd0cb019b2ee489ef57cd9efd7138, type: 3}
@@ -17655,6 +17862,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: bd8b05b3291edad4aabd5d06220c9c92, type: 3}
       time: 1.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: c97545015bf68aa48be45f4e4104d3a9, type: 3}
@@ -17662,11 +17871,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 1ceaa7459e8912b489c1b5a15d5a0ea8, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 72f7b1602e7c5574e87d52e08fd30de2, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: a67ea65fe3c6eb649b9d02b620bb7f6f, type: 3}
@@ -17674,11 +17887,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 50280e343f0bccb43be4d86bf1f12ccf, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 6f454bae04f206f478585bb94bb3f376, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: af653ce7c9153ab499485aa279d6d649, type: 3}
@@ -17686,6 +17903,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 1f4d7f69388856544805b72bb00bfff2, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9c28253a2feb7ab4eadc52974968f45a, type: 3}
@@ -17694,6 +17913,8 @@ MonoBehaviour:
     - canvas: {fileID: 1396979046}
       time: 1
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: 7
   - voice: {fileID: 8300000, guid: 1af04aa12a2204146a260680cdb8d8b1, type: 3}
@@ -17701,6 +17922,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 8387ec39181fef9499673fc5a0200728, type: 3}
       time: 2
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: c944a96b9186afe4e9996404786ea3df, type: 3}
@@ -17708,6 +17931,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: a38d9d727e9eaf74a97ee1f209938839, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: dc5d6c9fab5cb1d478b36f23775fcf84, type: 3}
@@ -17715,6 +17940,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 3bd6e8adb04e72b48a2e04e0f00b6ffc, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d1cc2ca8c1176f84e8a2efa374db72bb, type: 3}
@@ -17722,6 +17949,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: bba0ae96948253a4d9c2224b3819d93a, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 8789f7e2ff89cce4784cac44d66338fa, type: 3}
@@ -17729,6 +17958,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 5531b2794d78c4c47936d0083ccacd94, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 31432e0df04d5e842b39eba49d3ac2f4, type: 3}
@@ -17736,6 +17967,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: bda57a8b81e1166438bc3cc6825a7058, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 187e6033ee0f5874983b9c6c41e3c75a, type: 3}
@@ -17743,6 +17976,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 8b9e1bcb9ccf43b4abadf1f31e9f4450, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 87727c97460f4bc4cb4d9d250d2cffa8, type: 3}
@@ -17750,6 +17985,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: d33c2d34ca04d27419d42529b4f64c3f, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 832c2f81d433ed147ad122fb470f3ca8, type: 3}
@@ -17757,6 +17994,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: cb7ec1c5f786d2e4c93977bf7dbb30dd, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 79a5fa9a59d57274a901400d63719170, type: 3}
@@ -17764,6 +18003,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: c4381047c5136c54c924898a47722b69, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 4844f0a8be64d1d4c882c5e76a88342e, type: 3}
@@ -17771,6 +18012,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 5cd9c7a0477facb4aa0c65e7a0de16c4, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 1aa37d34d6c2e48439bfdff8f25f61d0, type: 3}
@@ -17778,6 +18021,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: e23ec36cbbd478e46965000ab5a0d807, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9adac853f80796946b36161ea1b636cf, type: 3}
@@ -17785,16 +18030,22 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 4b571fd30ebd04c41ba9216cbe4c0462, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 48b42f56bd5dc4a4799f6272ff0ce1a6, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d44bacc9dba821647a97387f0d030617, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 1ad550690c346c144a9c3e57b9a0a99f, type: 3}
@@ -17802,6 +18053,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 638819cb1943d2e4a8c1810abeee666e, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 4a18fafe1f1649e48b0945fcb9616e46, type: 3}
@@ -17809,6 +18062,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 4102703b35bff9242afc952259dff30b, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9c28253a2feb7ab4eadc52974968f45a, type: 3}
@@ -17817,6 +18072,8 @@ MonoBehaviour:
     - canvas: {fileID: 1396979046}
       time: 1
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: 20
   - voice: {fileID: 8300000, guid: 8b168404905a8ca47af2061fa27a6786, type: 3}
@@ -17829,6 +18086,8 @@ MonoBehaviour:
     - canvas: {fileID: 111136655}
       time: 11.9
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 5e4fb829561132a4a8048f5c2fbfe5e5, type: 3}
@@ -17837,6 +18096,8 @@ MonoBehaviour:
     - canvas: {fileID: 111136655}
       time: 14
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d6184229ad0f47249b3911d41fa8c9e9, type: 3}
@@ -17845,11 +18106,15 @@ MonoBehaviour:
     - canvas: {fileID: 111136655}
       time: 6
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 85403b5fbe2c11a4d8306a159666fa51, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 2e98d49c2b0030f41bcc14be9732b026, type: 3}
@@ -17862,11 +18127,15 @@ MonoBehaviour:
     - canvas: {fileID: 111136655}
       time: 6
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d0469fac5cf09e145a6d4804a35e14a3, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: ef69eefe1eeb8de4488d7d19a9e66163, type: 3}
@@ -17879,6 +18148,8 @@ MonoBehaviour:
     - canvas: {fileID: 111136655}
       time: 3.9
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9ea65889e4beb6c408f4954029bc5440, type: 3}
@@ -17891,6 +18162,8 @@ MonoBehaviour:
     - canvas: {fileID: 111136655}
       time: 1
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e49c90ffeb92d524dadfa0f85e1fd2a9, type: 3}
@@ -17898,6 +18171,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 2c3012a2904d07044af02cadfb3c5dc2, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 5d5bd9812f0d94e448747f014a050886, type: 3}
@@ -17905,6 +18180,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: bc2febfa61923fe4b9f599d917099704, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: ca7d3a9921c7b754d87bb5112395bf29, type: 3}
@@ -17912,6 +18189,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 3540526e373e0c54bb60fba2e1efdf76, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9c28253a2feb7ab4eadc52974968f45a, type: 3}
@@ -17920,11 +18199,15 @@ MonoBehaviour:
     - canvas: {fileID: 1396979046}
       time: 1
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: 46
   - voice: {fileID: 8300000, guid: 2a8a1a7f5ac14274084140779bc1c772, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d3f18d0fc247dfb489553f45e891c710, type: 3}
@@ -17932,16 +18215,22 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 5759f421d18733b478299539048d7350, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 1485eb67255ea774093528e8c0697613, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 885ff900dff72bd4b95d47b13403b9bb, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 6d6c08c6a7596a942b5a79eed72e6a82, type: 3}
@@ -17949,6 +18238,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 7cb60f984feb1d648a85a3817e9f159d, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 8e134e019f4303d44941d513b2bdf36c, type: 3}
@@ -17956,6 +18247,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 3d1fc0e258e9a934784d8672dfc1b6bc, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 0675a6152865c1e4e994bd4f891a8247, type: 3}
@@ -17963,6 +18256,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: a07d88d206e5bdb47b1674b70df6dbb8, type: 3}
       time: 2
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 5be53dfd28deadd4fb05c312d555eadf, type: 3}
@@ -17970,6 +18265,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: ea763021004a0ff4aaecdc3bf998e553, type: 3}
       time: 3
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: a4a5609ee202b084eb09c5fbc74d0672, type: 3}
@@ -17977,6 +18274,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: b856d7c07d32a1d428d3d44ddb1456b0, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: a7ad776922780ca4eb07ae75f87fc060, type: 3}
@@ -17984,6 +18283,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: ea3b1cb1fab625546aa69fc5ac79c25a, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 7a2ecb51babe0884aba6253a69ab3b6a, type: 3}
@@ -17991,6 +18292,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 37338bfd63933f248bfb6a53f39b00ad, type: 3}
       time: 3
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 994a221acff96574286589acdcd55e06, type: 3}
@@ -17998,11 +18301,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 578bc80aa1bb1ff44aa9fd53ea321150, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 5cb7e129bbcd68a409b680eef0c9717c, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 7b9c6df36e3ad934ea4e008c4ccb795b, type: 3}
@@ -18010,6 +18317,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: aabc159f2d5a78847bdf22edd8eb1e7b, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d885780630c8dc34ab27ffe0494a3838, type: 3}
@@ -18017,11 +18326,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 2fd2dcbc58d32e6449a0c9349af0cc6e, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 8eaff36a4d91cc3448935ff7b84d4144, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: a3177813f9de8ef488536f8ed86cdd5f, type: 3}
@@ -18029,6 +18342,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: fb4c52a79643efd43b89555f8503c02b, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e7d5abb704984584fb8bf45f6c560e5e, type: 3}
@@ -18041,6 +18356,8 @@ MonoBehaviour:
     - canvas: {fileID: 1750942778}
       time: 12
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 96be46be622012d478ab180f41cd80e8, type: 3}
@@ -18048,6 +18365,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: f0a36be2f2508f34f8593752e12120a4, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: f9d7025ca0ec85b4a98d4c3c6d8c7ff9, type: 3}
@@ -18056,6 +18375,8 @@ MonoBehaviour:
     - canvas: {fileID: 1750942778}
       time: 9
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 47255cc1e3474d2469c9cf35cd73b825, type: 3}
@@ -18063,6 +18384,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: dd29e1a86342026459e096ac83f7d77e, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 8bd03786eef575d4e85cd27569d19089, type: 3}
@@ -18073,6 +18396,8 @@ MonoBehaviour:
     - canvas: {fileID: 1750942778}
       time: 7
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 678da6e46a1a9d94c8c5ed5a82aa922e, type: 3}
@@ -18080,6 +18405,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 3f70482ec41a9b5488e70f17024e397a, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: a0eb6f41e9ed82f4fabdfcd35066a76a, type: 3}
@@ -18088,6 +18415,8 @@ MonoBehaviour:
     - canvas: {fileID: 1750942778}
       time: 7
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 94171f4aef6365442aaff6c4dcee3236, type: 3}
@@ -18095,6 +18424,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: d7d3166b241853a4f9bceb1d54d9792d, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9444418dba2fac44c85ec10142e22dba, type: 3}
@@ -18102,6 +18433,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: fb3ec76c2b253e345834615f58b31711, type: 3}
       time: 5.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: bb9e4225496eecb48ba14d121092f80b, type: 3}
@@ -18109,6 +18442,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 3b6b7454761603542bfdaf078fcd5bc3, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 91a34dfb75b42914880bef84af2f2e5d, type: 3}
@@ -18116,6 +18451,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 9808949e4d10959489b4d876c137a550, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 70cf4c04d2f9f3c498b092616319035f, type: 3}
@@ -18123,6 +18460,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 0275c81dbc0a23e408c1b67e0f7b7e7a, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 853f0c9c25f27294189a5fbbff0785b5, type: 3}
@@ -18130,11 +18469,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: c54115d076a23e748a006f38f5c64f3f, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 71ac6951f41c48846902087cfccb3011, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 6fc15229e3796b84aa29b78b606a9492, type: 3}
@@ -18142,11 +18485,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 16fcb659c280ed249ae681853041eea8, type: 3}
       time: 3
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: a1f39d1f051153748843bc8606e7fe44, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e5d79a21fdc9632408d9205a7df7d2b8, type: 3}
@@ -18154,6 +18501,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 25890cc9ab1d6e64e8f8d108e45a485b, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 218eae75a9054234db08e5475ef61ce3, type: 3}
@@ -18163,6 +18512,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: f2699bbc5df9e7c49b751091b4f7d859, type: 3}
       time: 5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: aeaacda3db4d8cc44823a3806394c089, type: 3}
@@ -18170,6 +18521,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: bf79eb2f91080ee4c83c796ba9106720, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: f343a2565c9c9b64fb5bb20a747ae55d, type: 3}
@@ -18177,6 +18530,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 75881501bba387a428a406faa6bff7a6, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: dd9ac26d1c31c8f40ab5e331e8c548ff, type: 3}
@@ -18189,6 +18544,8 @@ MonoBehaviour:
     - canvas: {fileID: 1750942778}
       time: 13
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d7e44361f676d544683503e2ff69802c, type: 3}
@@ -18196,6 +18553,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 51371afd8c4bf894a855df0578ffd45d, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 304af4cc25ee54949b0c64d95259977e, type: 3}
@@ -18204,6 +18563,8 @@ MonoBehaviour:
     - canvas: {fileID: 1750942778}
       time: 8
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: cdb35333dd67f8e4ca12b1f0ef2eaba1, type: 3}
@@ -18211,6 +18572,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 116019cca4cd8004ebb69d3b2218b255, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 8ab30b092f8edee4bac158a1c3e3d04c, type: 3}
@@ -18218,6 +18581,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 7c827939e66f60b4cb2394177ae5194f, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: db6f820de8985a84491362b5470f20eb, type: 3}
@@ -18227,6 +18592,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: f428f7167ce8af348a20628235a5faaa, type: 3}
       time: 5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e505681ed3be1534182999358e327942, type: 3}
@@ -18234,6 +18601,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: fc0b27ac6463d4148b0e3884a6b772a3, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 4199330593416f04eb6cc81637cc159a, type: 3}
@@ -18241,6 +18610,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: f2efa4277ee679f48936fca82d79b8c0, type: 3}
       time: 2
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: da60ff062c4b39f4dad33cc9492c3b62, type: 3}
@@ -18251,6 +18622,8 @@ MonoBehaviour:
     - canvas: {fileID: 1750942778}
       time: 9
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: c261959aa8dd727459bdd5e03dfe93f5, type: 3}
@@ -18261,6 +18634,8 @@ MonoBehaviour:
     - canvas: {fileID: 111136655}
       time: 2
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 311e83b8153282a4ab6c0dab406da157, type: 3}
@@ -18269,6 +18644,8 @@ MonoBehaviour:
     - canvas: {fileID: 1750942778}
       time: 7
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 8ecd22fa467a4bc488c4f9cdb984f337, type: 3}
@@ -18279,6 +18656,8 @@ MonoBehaviour:
     - canvas: {fileID: 111136655}
       time: 2
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: eb86b8d0bba603f488d5aed7aff3b99a, type: 3}
@@ -18287,6 +18666,8 @@ MonoBehaviour:
     - canvas: {fileID: 2006597203}
       time: 7
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: c6bec938ccedd4f4688691426423fd08, type: 3}
@@ -18297,6 +18678,8 @@ MonoBehaviour:
     - canvas: {fileID: 1750942778}
       time: 2
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 3c47a8d638b812e428aa511b6ca4448e, type: 3}
@@ -18307,17 +18690,23 @@ MonoBehaviour:
     - canvas: {fileID: 1490118021}
       time: 4
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: f19367a434a9a5949a61c0d1a8908d37, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   currentVoiceTimingData:
     voice: {fileID: 0}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   animator_body: {fileID: 1622313391}
@@ -18350,18 +18739,21 @@ MonoBehaviour:
   text_01: {fileID: 0}
   canvasUpdatersHolder:
   - updateIndex: 2
+    MaximumNumberOfTries: 2
     text: {fileID: 508824739}
     newInstruction: Do you understand?
     newbuttonsTexts: 
     newCorrectAnswer: YES
     buttonsTexts: []
   - updateIndex: 49
+    MaximumNumberOfTries: 2
     text: {fileID: 508824739}
     newInstruction: Do you understand?
     newbuttonsTexts: 
     newCorrectAnswer: YES
     buttonsTexts: []
   - updateIndex: 38
+    MaximumNumberOfTries: 2
     text: {fileID: 0}
     newInstruction: 
     newbuttonsTexts: 
@@ -19094,6 +19486,11 @@ MonoBehaviour:
   interactibleMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  currentObject: {fileID: 0}
+  attachedObject: {fileID: 0}
+  handAnchor: {fileID: 0}
+  MessageCanvas: {fileID: 0}
+  MessageContent: {fileID: 0}
 --- !u!120 &1887474670
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -21282,6 +21679,7 @@ MonoBehaviour:
   text_01: {fileID: 0}
   canvasUpdatersHolder:
   - updateIndex: 18
+    MaximumNumberOfTries: 1
     text: {fileID: 513442922}
     newInstruction: Which number can divide through?
     newbuttonsTexts: 2;5;6;3
@@ -21292,6 +21690,7 @@ MonoBehaviour:
     - {fileID: 1579203561}
     - {fileID: 4201467}
   - updateIndex: 20
+    MaximumNumberOfTries: 1
     text: {fileID: 513442922}
     newInstruction: Which number can divide through?
     newbuttonsTexts: 4;a;b;c
@@ -21302,6 +21701,7 @@ MonoBehaviour:
     - {fileID: 1579203561}
     - {fileID: 4201467}
   - updateIndex: 24
+    MaximumNumberOfTries: 1
     text: {fileID: 513442922}
     newInstruction: What is the H.C.F?
     newbuttonsTexts: 3;a;3b;b
@@ -21312,6 +21712,7 @@ MonoBehaviour:
     - {fileID: 1579203561}
     - {fileID: 4201467}
   - updateIndex: 30
+    MaximumNumberOfTries: 1
     text: {fileID: 513442922}
     newInstruction: "What is the H.C.F of ab\xB2c and 2abd?"
     newbuttonsTexts: 2;a;ab;b
@@ -21322,6 +21723,7 @@ MonoBehaviour:
     - {fileID: 1579203561}
     - {fileID: 4201467}
   - updateIndex: 32
+    MaximumNumberOfTries: 1
     text: {fileID: 513442922}
     newInstruction: "What is the H.C.F of 6a\xB2b and 8ab\xB2?"
     newbuttonsTexts: 2;a;2ab;3ab
@@ -21332,6 +21734,7 @@ MonoBehaviour:
     - {fileID: 1579203561}
     - {fileID: 4201467}
   - updateIndex: 33
+    MaximumNumberOfTries: 1
     text: {fileID: 513442922}
     newInstruction: "What is 6a\xB2b divided by 2ab?"
     newbuttonsTexts: 3;a;2b;3a
@@ -21342,6 +21745,7 @@ MonoBehaviour:
     - {fileID: 1579203561}
     - {fileID: 4201467}
   - updateIndex: 34
+    MaximumNumberOfTries: 1
     text: {fileID: 513442922}
     newInstruction: "What is of 8ab\xB2 divided by 2ab?"
     newbuttonsTexts: 4;a;4b;2
@@ -21352,6 +21756,7 @@ MonoBehaviour:
     - {fileID: 1579203561}
     - {fileID: 4201467}
   - updateIndex: 36
+    MaximumNumberOfTries: 1
     text: {fileID: 514923553}
     newInstruction: Which of the following is the opposite of factorisation?
     newbuttonsTexts: expression;expansion;substitution
@@ -21361,6 +21766,7 @@ MonoBehaviour:
     - {fileID: 1200112360}
     - {fileID: 1124355932}
   - updateIndex: 10
+    MaximumNumberOfTries: 2
     text: {fileID: 1532227312}
     newInstruction: Which is the H.C.F?
     newbuttonsTexts: 1;5;a;b;5a;5b;ab;5ab
@@ -21400,11 +21806,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 4b359f45dc6451041a46ef5ec5b3a03e, type: 3}
       time: 15
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d339bafbdfb684b419b3dbb3899c541c, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 7d80e7e1207e9b442bac5c3d39a3c631, type: 3}
@@ -21412,31 +21822,43 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: d889776ba4eebe74aaf6ac1dc49bbc3e, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 77b6b97cec8f3b1439a2108f1664d835, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: f0fa2f689dd114b4c8e76ff025577359, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 727a7d5c487ac8b47aa23a88415fd958, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9d398eb609cd1724293bc041c21b451d, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: cfcaf6b55298acf418365fdbb7615a72, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 54bcfcda9f57f5546a1825908fcda4cc, type: 3}
@@ -21444,6 +21866,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 72000f232ed7c9f4185246426e6693ff, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 16875a78c4301d246867afd106d58c97, type: 3}
@@ -21451,6 +21875,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 17c0e02ccba912347a7b53d59ceab0eb, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 2889c35e0ef78684da72b1add2ca6354, type: 3}
@@ -21459,11 +21885,15 @@ MonoBehaviour:
     - canvas: {fileID: 855802637}
       time: 0.1
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 42ad5a69f8c34f64aabd595f80a93123, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 4b519dec731f5654e9b4674475b7a110, type: 3}
@@ -21471,6 +21901,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: b71f388ed805f0e498bb97115ebd3eeb, type: 3}
       time: 13.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 71257f9d0ff310248b40ed56a546892c, type: 3}
@@ -21478,6 +21910,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 62398127da5f2024a966c68bf6bf0e94, type: 3}
       time: 3.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: eeada0005c7358948b060c0e39e2f5df, type: 3}
@@ -21485,6 +21919,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 0f90ca2851ae3eb4d85cdc896b7a6ebd, type: 3}
       time: 1.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e4dc1c5af6d1cdf46a58ca2fe37a6d33, type: 3}
@@ -21492,6 +21928,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 536890f548e03b242b14b13f23af92c0, type: 3}
       time: 1.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: eea00bb7e6eb83c41a8953e002b6b5d2, type: 3}
@@ -21499,6 +21937,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 61dd5d654accc8946be6cc4f7c574803, type: 3}
       time: 1.8
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: f8e350dfda4bb154c996bc09b240923d, type: 3}
@@ -21506,6 +21946,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 3db8cbc3bfc7726419a1e4308c3d93b1, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 7af90f2caabbcd4428b99097be3b79fb, type: 3}
@@ -21516,6 +21958,8 @@ MonoBehaviour:
     - canvas: {fileID: 1972593457}
       time: 8.8
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 58f8bbf22834dfc4580ffdac4049e264, type: 3}
@@ -21525,6 +21969,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 7023fb804b770e541acb8e732e266dc2, type: 3}
       time: 8
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: ce067d1752f12e645926a547b04231b5, type: 3}
@@ -21533,6 +21979,8 @@ MonoBehaviour:
     - canvas: {fileID: 1972593457}
       time: 8.9
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: fc41732d63292d64aaf11885b12d87d4, type: 3}
@@ -21540,6 +21988,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 96b00cd006b102d42a43c4de95a367f5, type: 3}
       time: 3
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 350566061b4a2fb4f998b7303bd537d0, type: 3}
@@ -21547,6 +21997,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 9c8e43349dc9bfc44a05089941e64478, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 1154a212ab59a8a459b06e200118a1a9, type: 3}
@@ -21555,6 +22007,8 @@ MonoBehaviour:
     - canvas: {fileID: 1236614602}
       time: 2
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9ffa0a25b6c6e384284a5f969aef7b99, type: 3}
@@ -21563,6 +22017,8 @@ MonoBehaviour:
     - canvas: {fileID: 1972593457}
       time: 1
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 836f47095fb60714697e2b76e61bebe1, type: 3}
@@ -21570,21 +22026,29 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 1d0d34c286d8a8b42b3f86ced943387e, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 592f95deb849f7a48b904b9dc2618acf, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 816945f000aa704428d3beda8ccfbb80, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 968f437a0415e3c4a96930245abd4979, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 5c889b0b60a4a8c4fbc8d78f1bf1220a, type: 3}
@@ -21592,6 +22056,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: ce598d713ce97574594b16082acb04f4, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 5dd3e2f36fe24934e83b98e81213991c, type: 3}
@@ -21600,6 +22066,8 @@ MonoBehaviour:
     - canvas: {fileID: 1972593457}
       time: 9.7
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 1e397d7e551a8d646af886b5c223fd5e, type: 3}
@@ -21615,6 +22083,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: aa6c627e81ffe8f47a61a56fc07f47d1, type: 3}
       time: 26
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 923feb24b2feade4db591bd52dc504b1, type: 3}
@@ -21625,6 +22095,8 @@ MonoBehaviour:
     - canvas: {fileID: 1972593457}
       time: 11.5
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: f3b2872d35145e24f8992288099b3206, type: 3}
@@ -21635,6 +22107,8 @@ MonoBehaviour:
     - canvas: {fileID: 1972593457}
       time: 11.5
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 4ae1d2633fb278f4eab0f6bafa82785e, type: 3}
@@ -21645,6 +22119,8 @@ MonoBehaviour:
     - canvas: {fileID: 1972593457}
       time: 4.7
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e96e65c69f41abf45b3a7f594523a982, type: 3}
@@ -21652,6 +22128,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 84036d16736f7834b9f3a2285e197946, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 5f1d6a40b5e7fc54db40e328892e69ce, type: 3}
@@ -21660,17 +22138,23 @@ MonoBehaviour:
     - canvas: {fileID: 383915840}
       time: 21
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 87dd0886c897cce4f9028484a7d02d37, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   currentVoiceTimingData:
     voice: {fileID: 0}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   animator_body: {fileID: 799887414}

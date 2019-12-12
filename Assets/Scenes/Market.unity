@@ -1754,7 +1754,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &103929794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1778,6 +1778,8 @@ MonoBehaviour:
   - voice: {fileID: 8300000, guid: ee2b58b45eb9e3246b047d009f4f4ee4, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 8e3af36aefed84d4aa6e46553dc7cb81, type: 3}
@@ -1785,11 +1787,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 4b359f45dc6451041a46ef5ec5b3a03e, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d339bafbdfb684b419b3dbb3899c541c, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 7d80e7e1207e9b442bac5c3d39a3c631, type: 3}
@@ -1797,56 +1803,78 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: d889776ba4eebe74aaf6ac1dc49bbc3e, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 77b6b97cec8f3b1439a2108f1664d835, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: f0fa2f689dd114b4c8e76ff025577359, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 727a7d5c487ac8b47aa23a88415fd958, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9d398eb609cd1724293bc041c21b451d, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: cfcaf6b55298acf418365fdbb7615a72, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 54bcfcda9f57f5546a1825908fcda4cc, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 16875a78c4301d246867afd106d58c97, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d3950dc30c1ab6c40a0c36d1848b8153, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 2889c35e0ef78684da72b1add2ca6354, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 42ad5a69f8c34f64aabd595f80a93123, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 4b519dec731f5654e9b4674475b7a110, type: 3}
@@ -1854,6 +1882,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: b71f388ed805f0e498bb97115ebd3eeb, type: 3}
       time: 13.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 71257f9d0ff310248b40ed56a546892c, type: 3}
@@ -1861,6 +1891,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 62398127da5f2024a966c68bf6bf0e94, type: 3}
       time: 3.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: eeada0005c7358948b060c0e39e2f5df, type: 3}
@@ -1868,6 +1900,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 0f90ca2851ae3eb4d85cdc896b7a6ebd, type: 3}
       time: 1.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e4dc1c5af6d1cdf46a58ca2fe37a6d33, type: 3}
@@ -1875,6 +1909,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 536890f548e03b242b14b13f23af92c0, type: 3}
       time: 1.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: eea00bb7e6eb83c41a8953e002b6b5d2, type: 3}
@@ -1882,6 +1918,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 61dd5d654accc8946be6cc4f7c574803, type: 3}
       time: 1.8
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: f8e350dfda4bb154c996bc09b240923d, type: 3}
@@ -1889,6 +1927,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 3db8cbc3bfc7726419a1e4308c3d93b1, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 7af90f2caabbcd4428b99097be3b79fb, type: 3}
@@ -1899,6 +1939,8 @@ MonoBehaviour:
     - canvas: {fileID: 1897330325}
       time: 8.8
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 58f8bbf22834dfc4580ffdac4049e264, type: 3}
@@ -1908,6 +1950,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 7023fb804b770e541acb8e732e266dc2, type: 3}
       time: 8
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: ce067d1752f12e645926a547b04231b5, type: 3}
@@ -1916,6 +1960,8 @@ MonoBehaviour:
     - canvas: {fileID: 1897330325}
       time: 8.9
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: fc41732d63292d64aaf11885b12d87d4, type: 3}
@@ -1923,6 +1969,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 96b00cd006b102d42a43c4de95a367f5, type: 3}
       time: 3
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 350566061b4a2fb4f998b7303bd537d0, type: 3}
@@ -1930,6 +1978,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 9c8e43349dc9bfc44a05089941e64478, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 1154a212ab59a8a459b06e200118a1a9, type: 3}
@@ -1938,6 +1988,8 @@ MonoBehaviour:
     - canvas: {fileID: 154761955}
       time: 2
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9ffa0a25b6c6e384284a5f969aef7b99, type: 3}
@@ -1946,6 +1998,8 @@ MonoBehaviour:
     - canvas: {fileID: 1897330325}
       time: 1
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 836f47095fb60714697e2b76e61bebe1, type: 3}
@@ -1953,21 +2007,29 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 1d0d34c286d8a8b42b3f86ced943387e, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 592f95deb849f7a48b904b9dc2618acf, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 816945f000aa704428d3beda8ccfbb80, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 968f437a0415e3c4a96930245abd4979, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 5c889b0b60a4a8c4fbc8d78f1bf1220a, type: 3}
@@ -1975,6 +2037,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: ce598d713ce97574594b16082acb04f4, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 5dd3e2f36fe24934e83b98e81213991c, type: 3}
@@ -1983,6 +2047,8 @@ MonoBehaviour:
     - canvas: {fileID: 1897330325}
       time: 9.7
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 1e397d7e551a8d646af886b5c223fd5e, type: 3}
@@ -1990,6 +2056,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 7e9e80c7231fb5a43a740278799e0fcf, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 04853bc78d9cad249b03b62b03353cc3, type: 3}
@@ -1997,6 +2065,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: b670814068971d64cbfec9f14e7929b7, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: d5832ed59202c734f800243d8ebf758c, type: 3}
@@ -2004,6 +2074,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: fd9c814350e0bb04c9b7d7ebdf3b55ab, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 7f772b75a81892d409ad0b9f16b85779, type: 3}
@@ -2011,6 +2083,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: aa6c627e81ffe8f47a61a56fc07f47d1, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 923feb24b2feade4db591bd52dc504b1, type: 3}
@@ -2021,6 +2095,8 @@ MonoBehaviour:
     - canvas: {fileID: 1897330325}
       time: 11.5
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: f3b2872d35145e24f8992288099b3206, type: 3}
@@ -2031,6 +2107,8 @@ MonoBehaviour:
     - canvas: {fileID: 1897330325}
       time: 11.5
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 4ae1d2633fb278f4eab0f6bafa82785e, type: 3}
@@ -2041,6 +2119,8 @@ MonoBehaviour:
     - canvas: {fileID: 1897330325}
       time: 4.7
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e96e65c69f41abf45b3a7f594523a982, type: 3}
@@ -2048,6 +2128,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 84036d16736f7834b9f3a2285e197946, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 5f1d6a40b5e7fc54db40e328892e69ce, type: 3}
@@ -2056,17 +2138,23 @@ MonoBehaviour:
     - canvas: {fileID: 1656246193}
       time: 21
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 87dd0886c897cce4f9028484a7d02d37, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   currentVoiceTimingData:
     voice: {fileID: 0}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   animator_body: {fileID: 383604241}
@@ -2117,6 +2205,7 @@ MonoBehaviour:
   text_01: {fileID: 0}
   canvasUpdatersHolder:
   - updateIndex: 20
+    MaximumNumberOfTries: 2
     text: {fileID: 1594213913}
     newInstruction: Which number can divide through?
     newbuttonsTexts: 2;5;6;3
@@ -2127,6 +2216,7 @@ MonoBehaviour:
     - {fileID: 1259523509}
     - {fileID: 591269648}
   - updateIndex: 22
+    MaximumNumberOfTries: 2
     text: {fileID: 1594213913}
     newInstruction: Which number can divide through?
     newbuttonsTexts: 4;a;b;c
@@ -2137,6 +2227,7 @@ MonoBehaviour:
     - {fileID: 1259523509}
     - {fileID: 591269648}
   - updateIndex: 26
+    MaximumNumberOfTries: 2
     text: {fileID: 1594213913}
     newInstruction: What is the H.C.F?
     newbuttonsTexts: 3;a;3b;b
@@ -2147,6 +2238,7 @@ MonoBehaviour:
     - {fileID: 1259523509}
     - {fileID: 591269648}
   - updateIndex: 32
+    MaximumNumberOfTries: 2
     text: {fileID: 1594213913}
     newInstruction: What is the H.C.F of ab^2c and 2abd?
     newbuttonsTexts: 2;a;ab;b
@@ -2157,6 +2249,7 @@ MonoBehaviour:
     - {fileID: 1259523509}
     - {fileID: 591269648}
   - updateIndex: 37
+    MaximumNumberOfTries: 2
     text: {fileID: 1594213913}
     newInstruction: What is the H.C.F of 6a^2b and 8ab^2?
     newbuttonsTexts: 2;a;2ab;3ab
@@ -2167,6 +2260,7 @@ MonoBehaviour:
     - {fileID: 1259523509}
     - {fileID: 591269648}
   - updateIndex: 38
+    MaximumNumberOfTries: 2
     text: {fileID: 1594213913}
     newInstruction: What is the H.C.F of 6a^2b divided by 2ab?
     newbuttonsTexts: 3;a;2b;3a
@@ -2177,6 +2271,7 @@ MonoBehaviour:
     - {fileID: 1259523509}
     - {fileID: 591269648}
   - updateIndex: 39
+    MaximumNumberOfTries: 2
     text: {fileID: 1594213913}
     newInstruction: What is the H.C.F of 8ab^2 divided by 2ab?
     newbuttonsTexts: 4;a;4b;2
@@ -2187,6 +2282,7 @@ MonoBehaviour:
     - {fileID: 1259523509}
     - {fileID: 591269648}
   - updateIndex: 41
+    MaximumNumberOfTries: 2
     text: {fileID: 1970341952}
     newInstruction: Which of the following is the opposite of factorisation?
     newbuttonsTexts: expression;expansion;substitution
@@ -3669,14 +3765,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 1865348757}
-  - {fileID: 829883475}
   Assets:
   - {fileID: 0}
   - {fileID: 203591598}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 1457037307}
-  - {fileID: 829883473}
 --- !u!4 &160731036
 Transform:
   m_ObjectHideFlags: 0
@@ -4485,7 +4579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &203591599
 Transform:
   m_ObjectHideFlags: 0
@@ -11810,6 +11904,11 @@ MonoBehaviour:
   interactibleMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  currentObject: {fileID: 0}
+  attachedObject: {fileID: 0}
+  handAnchor: {fileID: 0}
+  MessageCanvas: {fileID: 0}
+  MessageContent: {fileID: 0}
 --- !u!120 &611601099
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -13831,6 +13930,7 @@ GameObject:
   - component: {fileID: 694119966}
   - component: {fileID: 694119967}
   - component: {fileID: 694119968}
+  - component: {fileID: 694119969}
   m_Layer: 0
   m_Name: optionsCanvas
   m_TagString: Untagged
@@ -13931,7 +14031,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694119961}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7bcfc9624edda74c996ade669acc07d, type: 3}
   m_Name: 
@@ -13941,6 +14041,8 @@ MonoBehaviour:
   wrong: {fileID: 8300000, guid: 6b98ab3357324cd47b58c98639232d44, type: 3}
   correct: {fileID: 8300000, guid: ba09a0d75b4682e40b67e2da2a9c18c4, type: 3}
   collider: {fileID: 883075065}
+  color_wrong: {r: 0, g: 0, b: 0, a: 0}
+  color_correct: {r: 0, g: 0, b: 0, a: 0}
   instructionText: {fileID: 566874230}
   btn_1_text: {fileID: 412302789}
   btn_2_text: {fileID: 1910913281}
@@ -13976,6 +14078,85 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 150, y: 70, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &694119969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694119961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 974d4d1c63fef7e48b2bb29a7f5fe64e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DEBUG_clickedButton: {fileID: 0}
+  steps:
+  - instruction:
+      text: What is 3 x 5 ?
+      component: {fileID: 566874230}
+    buttonsTexts:
+    - text: 15
+      component: {fileID: 412302789}
+    - text: 10
+      component: {fileID: 1910913281}
+    - text: 5
+      component: {fileID: 1494666560}
+    - text: 35
+      component: {fileID: 118894220}
+    correctAnswer: 15
+    isAutoSolved: 0
+    correctAnswerButton: {fileID: 0}
+    mustAnswerCorrectly: 1
+    forWrong: {fileID: 0}
+    forCorrect: {fileID: 0}
+    maximumNumberOfTries: 2
+    toPlayAfterAttemptsDone: {fileID: 0}
+    imageComponent: {fileID: 0}
+    sprite: {fileID: 0}
+    ShouldStopAtThis: 1
+    shouldResumeVoice: 1
+    NextToActivate: {fileID: 0}
+    ImageOnActivation: {fileID: 0}
+  - instruction:
+      text: What is 3 x 7 ?
+      component: {fileID: 566874230}
+    buttonsTexts:
+    - text: 21
+      component: {fileID: 412302789}
+    - text: 6
+      component: {fileID: 1910913281}
+    - text: 10
+      component: {fileID: 1494666560}
+    - text: 37
+      component: {fileID: 118894220}
+    correctAnswer: 21
+    isAutoSolved: 0
+    correctAnswerButton: {fileID: 0}
+    mustAnswerCorrectly: 1
+    forWrong: {fileID: 0}
+    forCorrect: {fileID: 0}
+    maximumNumberOfTries: 2
+    toPlayAfterAttemptsDone: {fileID: 0}
+    imageComponent: {fileID: 0}
+    sprite: {fileID: 0}
+    ShouldStopAtThis: 1
+    shouldResumeVoice: 1
+    NextToActivate: {fileID: 0}
+    ImageOnActivation: {fileID: 0}
+  color_Default: {r: 1, g: 1, b: 1, a: 1}
+  color_Old: {r: 1, g: 1, b: 1, a: 1}
+  color_Correct: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
+  color_Wrong: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
+  audioSource: {fileID: 486143357}
+  audio_correct: {fileID: 8300000, guid: a15a4e51d3ec58440952d240b7ac85df, type: 3}
+  audio_wrong: {fileID: 8300000, guid: dfeb235dfc0e8c94c87e719c81063577, type: 3}
+  synchronizer: {fileID: 829883475}
+  currentIndex: 0
+  awaitedAnswer: 
+  possibleTries: 1
+  correctAnswersCount: 0
+  answeredOptions: ;;
 --- !u!1 &695577481
 GameObject:
   m_ObjectHideFlags: 0
@@ -15815,21 +15996,29 @@ MonoBehaviour:
   - voice: {fileID: 8300000, guid: 98942ab8854a0db40b7773d9f0005578, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 31201258dd07c8542b67ce377992fede, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 68ea8c71eb493ed4a9adaef617052f37, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: df57512e855f67c4fb4ce2975a500e04, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 249f07c6cac41f5409d07059e065575c, type: 3}
@@ -15837,31 +16026,43 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 04ebafcb0ac29404d9bdb40a3bd88be9, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: f448ff61000166546983b789b00c1225, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 2175f6ce04defda4e823915c3ce83b6b, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: c974f0b65c059d049959ef59e3148c2a, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: be39103b5e1892e4aab745e4cfeda460, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 4da6f244d6de3764c96b6c8fdda2c3b7, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 4ea011c269375a1499d0712cf4b884b1, type: 3}
@@ -15869,11 +16070,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 6c1e59926e6767141b81d2ef44d63a4c, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 466352e4a1c6d2e48b1ffa8edefc3f92, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 0f17da4b31eb63f41b0fe31e49ccb482, type: 3}
@@ -15881,6 +16086,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 4c02e80b67d708448a1851af4007f382, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 96fcc7427b1447f4abeeee7f72510310, type: 3}
@@ -15889,6 +16096,8 @@ MonoBehaviour:
     - canvas: {fileID: 1744900351}
       time: 19.5
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e56741775762d67459c5e13c52570b70, type: 3}
@@ -15899,6 +16108,8 @@ MonoBehaviour:
     - canvas: {fileID: 1073344718}
       time: 8.9
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 2d49fe9a3764a63468e7f9c88062bfab, type: 3}
@@ -15906,6 +16117,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 535880f492c818b4b997d38058e7c93c, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 0c0e7c2561c550c47a931d6e60859b5b, type: 3}
@@ -15915,6 +16128,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 5a34ac24d4de86e44baf85bdee37fa63, type: 3}
       time: 12.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: bf6a890b13f4012439ba0394bb6cfef7, type: 3}
@@ -15923,6 +16138,8 @@ MonoBehaviour:
     - canvas: {fileID: 1087566738}
       time: 11.9
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9fce6118cd52fe3439ff078b87988047, type: 3}
@@ -15930,6 +16147,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 35dadf17522fdea4f82e66cfe50f2171, type: 3}
       time: 17.8
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 07d8145e2925e254491b9b2b0aab56ee, type: 3}
@@ -15940,6 +16159,8 @@ MonoBehaviour:
     - canvas: {fileID: 1087566738}
       time: 9.9
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 3490666ee7d23c04aa316efd8a122625, type: 3}
@@ -15949,6 +16170,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: d1ae0847e3057914ea6d63ba25825548, type: 3}
       time: 16.9
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: dc45b59f0e6dad74e8136f3f9f4ed285, type: 3}
@@ -15956,6 +16179,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 3c68a921a79b9a54fbf33e401b841d0f, type: 3}
       time: 11.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: a911ecf0b108374488af9a435ef0d44c, type: 3}
@@ -15963,6 +16188,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: e9431594b58977b4c8160839f3326245, type: 3}
       time: 5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 6cba95eb0512f0a46b901fac59669147, type: 3}
@@ -15970,17 +16197,23 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: a914de116709a7d49aa91d17be4a421a, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 98942ab8854a0db40b7773d9f0005578, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   currentVoiceTimingData:
     voice: {fileID: 0}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   animator_body: {fileID: 383604241}
@@ -16210,7 +16443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &829883474
 Transform:
   m_ObjectHideFlags: 0
@@ -16251,11 +16484,15 @@ MonoBehaviour:
   - voice: {fileID: 8300000, guid: fc0d0c7cd75c8324ab00af494c22454e, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: f2b1400086321ae46938ab5bd3480956, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 71e80dc22fcd0bf4dbbce64197c14e2f, type: 3}
@@ -16267,6 +16504,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: bc24b54676e67a843a0fac504f5e03c5, type: 3}
       time: 33.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 01c5cfc9cf3f2494dbb45cab5c096a68, type: 3}
@@ -16277,6 +16516,8 @@ MonoBehaviour:
     - canvas: {fileID: 694119961}
       time: 20.5
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e281a564af3df204ea0a571506a0654a, type: 3}
@@ -16285,6 +16526,8 @@ MonoBehaviour:
     - canvas: {fileID: 694119961}
       time: 8.5
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 933ae55fcbfe4e94896ee62eec68f4e3, type: 3}
@@ -16292,6 +16535,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 1306adfd5ad535d4bbc041cab7aa98b7, type: 3}
       time: 16.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: eeebbbc281dde074ebb3c6ca90cb958f, type: 3}
@@ -16301,6 +16546,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 4c860db25492dd94595da5f07ca07cb9, type: 3}
       time: 8
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 756ed9fc6bc6cb545ab7c5e13433da3e, type: 3}
@@ -16308,6 +16555,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 7557fd80d4fa2fc438148d0cb161cc79, type: 3}
       time: 10.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 286e61358fcbf664197665afe2e35d3d, type: 3}
@@ -16315,6 +16564,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 0cd799e3750a97945bfe7e357e87eb28, type: 3}
       time: 11.6
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 303d6bcda2afbf34b9776e9b18fd2788, type: 3}
@@ -16322,21 +16573,29 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: cf07247f6a7f94844b4516b0911f52c3, type: 3}
       time: 8
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: b3b6cb18743d08048bc418b2f21ebd81, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 26625e86e0bf08d409cbbcdd513a3de8, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: a231401ba883de6478eb57d2e5521437, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 00842dd70dc012549a123d3c29848f35, type: 3}
@@ -16344,6 +16603,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: dd624bb6ef342294c921cf9806b9a4a5, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9c5e51d3a82ad564fa5a3dd5a98d42f6, type: 3}
@@ -16351,6 +16612,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: c42642a4b25807447b2e1d2155135891, type: 3}
       time: 1.5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 7da8716318728ab4ca689703883335a0, type: 3}
@@ -16358,6 +16621,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 6e67656f19640be47809926dcf28c312, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: e7849d7954a198848806784a28ad3390, type: 3}
@@ -16365,11 +16630,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: ad9f9218e702ed443941e201581f2e83, type: 3}
       time: 2.4
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: efd8e53bb277a364d87c823d4cc76e31, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 27e9b4f72a9edcc47b32b33f1f8ab6b3, type: 3}
@@ -16377,6 +16646,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 4ae90c8effe44a047b3e93b0392af42b, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: b2132e578814195449b6089a15dc735c, type: 3}
@@ -16384,6 +16655,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: a3d987801a883d045b7522077edfd03c, type: 3}
       time: 3
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: cfda3f31077d6154da7e5de00a9e293a, type: 3}
@@ -16391,6 +16664,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 265947f95d5286e49bbf4e75221c2128, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 7cfbad85e1c28b64095b53556f9ebbf0, type: 3}
@@ -16402,11 +16677,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 192c8a06a5b813349abea1647ea21597, type: 3}
       time: 17
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: da445fe58dfb97643aae5777bc87e178, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 4b0cc61ef6b0e2441bad4b214cd95bcd, type: 3}
@@ -16414,11 +16693,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: b79c865c10a43ae44bf1139a9d55e0ce, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 4cfca8c579ad4f54a907653bed7eb302, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: c6d984debba2f8c4db162f757423611c, type: 3}
@@ -16426,11 +16709,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 39712c9f16e842d44b29754bac247b7e, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 28c48c48dafff684397ff45451d6eadb, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 850010825dd3636448aa1f8928d72f0b, type: 3}
@@ -16438,11 +16725,15 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 33744cd6f7d579d438bf3209f60613eb, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 64fd7fe0362c4a040b1f8f647f27bed1, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 27ba6a7f9fc0ae24fabe418907616483, type: 3}
@@ -16450,6 +16741,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 8ecdb4d7d28c97340ba40273f3f8e2da, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: b0ecda8a344aa3849a3c65f4dbe3acfc, type: 3}
@@ -16462,6 +16755,8 @@ MonoBehaviour:
     - canvas: {fileID: 1634504042}
       time: 13.5
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 078f265d3e869d64988d01f23151531a, type: 3}
@@ -16469,6 +16764,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 645aae0f4698ae443a9046f660e8a343, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 3731222c4bde30741b07b4e08d861c07, type: 3}
@@ -16476,6 +16773,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 645aae0f4698ae443a9046f660e8a343, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: bf8cd4a6134926a40b91d710ee26458e, type: 3}
@@ -16483,6 +16782,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 645aae0f4698ae443a9046f660e8a343, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 716e777d1319feb4bb4f4d0d2a374482, type: 3}
@@ -16495,6 +16796,8 @@ MonoBehaviour:
     - canvas: {fileID: 1634504042}
       time: 3.5
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 806253610f53a92478a8ee817c90b8f8, type: 3}
@@ -16504,17 +16807,23 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 6fefdd7ded9be014c98226e5067f5efd, type: 3}
       time: 5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: c87f229e96f2e384fb0149be0ad2d698, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   currentVoiceTimingData:
     voice: {fileID: 0}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   animator_body: {fileID: 1014968362}
@@ -24566,6 +24875,11 @@ MonoBehaviour:
   interactibleMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  currentObject: {fileID: 0}
+  attachedObject: {fileID: 0}
+  handAnchor: {fileID: 0}
+  MessageCanvas: {fileID: 0}
+  MessageContent: {fileID: 0}
 --- !u!224 &1199660671
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29565,7 +29879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1457037308
 Transform:
   m_ObjectHideFlags: 0
@@ -34462,12 +34776,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 694119966}
-        m_MethodName: React
-        m_Mode: 5
+      - m_Target: {fileID: 694119969}
+        m_MethodName: Answer
+        m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: wrong
@@ -35105,12 +35419,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 694119966}
-        m_MethodName: React
-        m_Mode: 5
+      - m_Target: {fileID: 694119969}
+        m_MethodName: Answer
+        m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: wrong
@@ -37833,12 +38147,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 694119966}
-        m_MethodName: React
-        m_Mode: 5
+      - m_Target: {fileID: 694119969}
+        m_MethodName: Answer
+        m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: correct
@@ -38033,6 +38347,8 @@ MonoBehaviour:
   - voice: {fileID: 8300000, guid: 8293ac9626e827a4987199d1d1efd23f, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 9ca848133f8359241b9f85fb4727d5fd, type: 3}
@@ -38041,6 +38357,8 @@ MonoBehaviour:
     - canvas: {fileID: 2077840054}
       time: 6
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 514623445dd11684895d1a56c1b01df5, type: 3}
@@ -38049,6 +38367,8 @@ MonoBehaviour:
     - canvas: {fileID: 980022409}
       time: 10
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: a191cf28e6bb4d948bc55ae46da85b23, type: 3}
@@ -38057,11 +38377,15 @@ MonoBehaviour:
     - canvas: {fileID: 980022409}
       time: 24
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 601b22fceffc4c9489c132902fb41c73, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 95d4462951135954aa79bd31ad7aa60d, type: 3}
@@ -38070,6 +38394,8 @@ MonoBehaviour:
     - canvas: {fileID: 980022409}
       time: 13
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 79fca250ae929504a939d4263f89d4bd, type: 3}
@@ -38077,6 +38403,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 24a9eeafcacf64b4fa6a561a3441f954, type: 3}
       time: 5
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 7ca1ee0c43f1088419b74a6eabbaad4c, type: 3}
@@ -38084,6 +38412,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: c115eda76129ab647b688ebb84f38028, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: bebd517542314744fb2ceefec24786ba, type: 3}
@@ -38091,6 +38421,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 5a40d9adf6ab569478efc2ce378622e6, type: 3}
       time: 4
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: fd5faaadfa64fd045a428887ea38ef81, type: 3}
@@ -38098,6 +38430,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 5d945ebc736cdfe489a9314fb59d5e49, type: 3}
       time: 0.1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: c4172992d81043b4ebe89e36ce9a4140, type: 3}
@@ -38105,6 +38439,8 @@ MonoBehaviour:
     - image: {fileID: 21300000, guid: 8629347016891534686091462faf61f2, type: 3}
       time: 1
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 74bc6528a894ffa44878875618fcee85, type: 3}
@@ -38113,22 +38449,30 @@ MonoBehaviour:
     - canvas: {fileID: 980022409}
       time: 6
       newState: 1
+    Objects: []
+    Components: []
     shouldAudioStop: 1
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 45957d3a2047e1949ae21aea77121bbf, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 5ea06e4f35bce3447a2ebc2d0b54dbdb, type: 3}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   currentVoiceTimingData:
     voice: {fileID: 0}
     sprites: []
     canvasses: []
+    Objects: []
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   animator_body: {fileID: 1014968362}
@@ -40361,12 +40705,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 694119966}
-        m_MethodName: React
-        m_Mode: 5
+      - m_Target: {fileID: 694119969}
+        m_MethodName: Answer
+        m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: wrong
