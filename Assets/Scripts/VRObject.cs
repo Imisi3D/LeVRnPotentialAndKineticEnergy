@@ -13,7 +13,8 @@ public enum HighlightOptions
 public enum HighlightType
 {
     material,
-    sprite
+    sprite,
+    color
 }
 
 public class VRObject : MonoBehaviour
@@ -26,9 +27,13 @@ public class VRObject : MonoBehaviour
     public Material default_Material;
     public Material Correct_Material;
     public Material wrong_Material;
+    public Image image;
     public Sprite default_Sprite;
     public Sprite Correct_Sprite;
     public Sprite wrong_Sprite;
+    public Color default_Color;
+    public Color Correct_Color;
+    public Color wrong_Color;
     #endregion
 
     // called when parent of this component is clicked on with pointer (either using touch pad or trigger).
@@ -57,13 +62,20 @@ public class VRObject : MonoBehaviour
                     if (highlightType == HighlightType.material)
                     {
                         MeshRenderer meshRenderer = gameObject.GetComponent<MeshRenderer>();
-                        meshRenderer.material = default_Material;
+                        if (default_Material != null)
+                            meshRenderer.material = default_Material;
                     }
                     else if (highlightType == HighlightType.sprite)
                     {
-                        Image img = gameObject.GetComponent<Image>();
-                        img.sprite = default_Sprite;
+                        //Image img = gameObject.GetComponent<Image>();
+                        if (default_Sprite != null)
+                            image.sprite = default_Sprite;
 
+                    }else if (highlightType == HighlightType.color)
+                    {
+                        //Image img = gameObject.GetComponent<Image>();
+                        if (default_Color != null)
+                            image.color = default_Color;
                     }
                     break;
                 }
@@ -72,13 +84,20 @@ public class VRObject : MonoBehaviour
                     if (highlightType == HighlightType.material)
                     {
                         MeshRenderer meshRenderer = gameObject.GetComponent<MeshRenderer>();
-                        meshRenderer.material = Correct_Material;
+                        if (Correct_Material != null)
+                            meshRenderer.material = Correct_Material;
                     }
                     else if (highlightType == HighlightType.sprite)
                     {
-                        Image img = gameObject.GetComponent<Image>();
-                        img.sprite = Correct_Sprite;
-
+                        //Image img = gameObject.GetComponent<Image>();
+                        if (Correct_Sprite != null)
+                            image.sprite = Correct_Sprite;
+                    }
+                    else if (highlightType == HighlightType.color)
+                    {
+                        //Image img = gameObject.GetComponent<Image>();
+                        if (Correct_Color != null)
+                            image.color = Correct_Color;
                     }
                     break;
                 }
@@ -87,12 +106,20 @@ public class VRObject : MonoBehaviour
                     if (highlightType == HighlightType.material)
                     {
                         MeshRenderer meshRenderer = gameObject.GetComponent<MeshRenderer>();
-                        meshRenderer.material = wrong_Material;
+                        if (wrong_Material != null)
+                            meshRenderer.material = wrong_Material;
                     }
                     else if (highlightType == HighlightType.sprite)
                     {
-                        Image img = gameObject.GetComponent<Image>();
-                        img.sprite = wrong_Sprite;
+                        //Image img = gameObject.GetComponent<Image>();
+                        if (wrong_Sprite != null)
+                            image.sprite = wrong_Sprite;
+                    }
+                    else if (highlightType == HighlightType.color)
+                    {
+                        //Image img = gameObject.GetComponent<Image>();
+                        if (wrong_Color != null)
+                            image.color = wrong_Color;
                     }
                     break;
                 }

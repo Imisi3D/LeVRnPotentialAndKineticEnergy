@@ -33,7 +33,6 @@ public class Pointer : MonoBehaviour
         PlayerEvents.OnControllerSource += UpdateOrigin;
         PlayerEvents.onTriggerDown += ProcessTriggerDown;
         PlayerEvents.onTouchpadDown += ProcessTouchpadDown;
-
     }
 
     void Start()
@@ -165,11 +164,25 @@ public class Pointer : MonoBehaviour
     private void ProcessTriggerDown()
     {
         if (!currentObject) return;
+        //Interactible interactible = currentObject.GetComponent<Interactible>();
+        //interactible.Pressed();
+
         Interactible interactible = currentObject.GetComponent<Interactible>();
-        interactible.Pressed();
-
+        if (interactible)
+        {
+            interactible.Pressed();
+            print("interactible pressed");
+        }
+        else
+        {
+            VRObject obj = currentObject.GetComponent<VRObject>();
+            if (obj != null)
+            {
+                obj.interact();
+                obj.interact(this);
+            }
+        }
     }
-
 
     private void ProcessTouchpadDown()
     {
@@ -186,6 +199,9 @@ public class Pointer : MonoBehaviour
             attachedObject = obj;
             attachedObject.transform.parent = handAnchor.transform;
             attachedObject.transform.localPosition = Vector3.zero;
+            attachedObject.transform.localEulerAngles = new Vector3(0, 0, 0);
+            BoxCollider box = attachedObject.GetComponent<BoxCollider>();
+            if (box != null) box.enabled = false;
         }
         else
         {
@@ -200,24 +216,30 @@ public class Pointer : MonoBehaviour
         }
     }
 
-    public void Drop()
+    public void Drop(GameObject holder)
     {
-
+        attachedObject.transform.parent = holder.transform;
+        attachedObject.transform.localPosition = Vector3.zero;
+        attachedObject.transform.localEulerAngles = new Vector3(0, 0, 0);
+        BoxCollider box = attachedObject.GetComponent<BoxCollider>();
+        if (box != null) box.enabled = true;
+        attachedObject = null;
     }
 
     private IEnumerator HideMessageAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        if (WhenWasMessageCanvasLatelyActivated + 2.8f > Time.time)
-            StartCoroutine(HideMessageAfterDelay(WhenWasMessageCanvasLatelyActivated + 3 - Time.time));
-        MessageCanvas.SetActive(false);
+        if (WhenWasMessageCanvasLatelyActivated + delay > Time.time)
+            StartCoroutine(HideMessageAfterDelay(WhenWasMessageCanvasLatelyActivated + delay - Time.time));
+        else
+            MessageCanvas.SetActive(false);
     }
 
     public void DisplayMessage(string msg, float delay)
     {
         MessageContent.text = msg;
         MessageCanvas.SetActive(true);
-        StartCoroutine(HideMessageAfterDelay(delay));
         WhenWasMessageCanvasLatelyActivated = Time.time;
+        StartCoroutine(HideMessageAfterDelay(delay));
     }
 }

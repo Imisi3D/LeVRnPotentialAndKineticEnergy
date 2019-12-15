@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//[System.Serializable]
 public class VRDraggableObject : VRObject
 {
     public string type;
+    public GameObject defaultHolder; 
 
 
     void Start()

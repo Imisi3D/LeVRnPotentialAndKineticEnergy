@@ -9,6 +9,9 @@ public class VRDraggableObjectTarget : VRObject
      * If this target supports more than one type, separate types which a ; (e.g: ui;model;formule)
      */
     public string requiredType;
+    public MultiStepInteraction interactionManager;
+    public int remainingTrials = 0;
+    public bool bIsAnswerHolder = false;
 
     public void react(Pointer pointer)
     {
@@ -41,10 +44,10 @@ public class VRDraggableObjectTarget : VRObject
             VRDraggableObject obj = pointer.attachedObject.GetComponent<VRDraggableObject>();
             if (obj != null)
             {
+                interactionManager.Answer(obj, this);
                 if (containsType(obj.type))
                 {
-                    pointer.attachedObject.transform.parent = gameObject.transform.GetChild(0).transform;
-                    pointer.attachedObject.transform.localPosition = Vector3.zero;
+                    pointer.Drop(gameObject);
                 }
                 else
                 {
@@ -58,7 +61,7 @@ public class VRDraggableObjectTarget : VRObject
         }
     }
 
-    private bool containsType(string type)
+    public bool containsType(string type)
     {
         string[] str = requiredType.Split(';');
         foreach (string s in str)

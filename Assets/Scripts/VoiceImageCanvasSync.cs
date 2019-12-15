@@ -196,7 +196,7 @@ public class VoiceImageCanvasSync : MonoBehaviour
     // Updates the animator to perform explanation animation.
     private void explain()
     {
-        // uncomment commmented lines in this block to support 2 animation of explaination (choosing which one should be used is randomly picked).
+        // uncomment commented lines in this block to support 2 animation of explanation (choosing which one should be used is randomly picked).
         //int randomInt = UnityEngine.Random.Range(0, 2);
         if (animator_cloth != null)
         {
