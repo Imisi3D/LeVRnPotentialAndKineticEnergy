@@ -102,6 +102,10 @@ public class MultiStepInteraction : MonoBehaviour
                             // when answer is found, attach it to the corresponding holder.
                             if (holder.containsType(option.type))
                             {
+
+                                VRDraggableObject attached = holder.gameObject.GetComponentInChildren<VRDraggableObject>();
+                                if (attached != null) // if the holder has an object attached to it, return it to its default location
+                                    Utility.AttachToObject(attached.gameObject, attached.defaultHolder);
                                 Utility.AttachToObject(option.gameObject, holder.gameObject);
                                 currentNumberOfCorrectAnswers++;
                             }

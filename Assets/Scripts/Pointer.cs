@@ -48,7 +48,27 @@ public class Pointer : MonoBehaviour
         if (lastObj != null && lastObj != currentObject)
         {
             VRObject obj = lastObj.GetComponent<VRObject>();
-            if (obj != null) obj.applyHighlight(HighlightOptions.none);
+            if (obj != null)
+            {
+                if (obj is VRDraggableObject)
+                {
+                    VRDraggableObject draggable = (VRDraggableObject)obj;
+                    VRDraggableObjectTarget holder = draggable.gameObject.transform.parent.gameObject.GetComponent<VRDraggableObjectTarget>();
+                    if (holder != null && holder.gameObject != draggable.defaultHolder)
+                    {
+                        if (holder.containsType(draggable.type))
+                            obj.applyHighlight(HighlightOptions.correct);
+                        else
+                            obj.applyHighlight(HighlightOptions.wrong);
+                    }
+                    else
+                    {
+                        obj.applyHighlight(HighlightOptions.none);
+                    }
+                }
+                else
+                    obj.applyHighlight(HighlightOptions.none);
+            }
         }
 
         // checking if the object which is selected by pointer is a possible target for a draggable object and if true, call the interaction for that target.
@@ -56,16 +76,16 @@ public class Pointer : MonoBehaviour
         {
             // if the pointer points on VRObject, then highlight that object
             VRObject obj = currentObject.GetComponent<VRObject>();
-            if (obj != null) obj.applyHighlight(HighlightOptions.correct);
+            if (obj != null) obj.applyHighlight(HighlightOptions.hover);
 
-            if (attachedObject != null)
-            {
-                VRDraggableObjectTarget target = currentObject.GetComponent<VRDraggableObjectTarget>();
-                if (target != null)
-                {
-                    target.react(this);
-                }
-            }
+            //if (attachedObject != null)
+            //{
+            //    VRDraggableObjectTarget target = currentObject.GetComponent<VRDraggableObjectTarget>();
+            //    if (target != null)
+            //    {
+            //        target.react(this);
+            //    }
+            //}
         }
 
         if (OnPointerUpdate != null)

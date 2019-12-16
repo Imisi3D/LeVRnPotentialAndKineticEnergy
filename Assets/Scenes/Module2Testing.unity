@@ -231,13 +231,16 @@ MonoBehaviour:
   default_Material: {fileID: 0}
   Correct_Material: {fileID: 0}
   wrong_Material: {fileID: 0}
+  hover_Material: {fileID: 0}
   image: {fileID: 1895166098}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
+  hover_Sprite: {fileID: 0}
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
   wrong_Color: {r: 1, g: 0.29803923, b: 0.3372549, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   requiredType: q1_a6
@@ -394,13 +397,16 @@ MonoBehaviour:
   default_Material: {fileID: 0}
   Correct_Material: {fileID: 0}
   wrong_Material: {fileID: 0}
+  hover_Material: {fileID: 0}
   image: {fileID: 0}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
+  hover_Sprite: {fileID: 0}
   default_Color: {r: 0, g: 0, b: 0, a: 0}
   Correct_Color: {r: 0, g: 0, b: 0, a: 0}
   wrong_Color: {r: 0, g: 0, b: 0, a: 0}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   requiredType: q1_a1
@@ -558,17 +564,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VRPointer: {fileID: 0}
   bShouldHighlight: 0
-  highlightType: 0
+  highlightType: 2
   default_Material: {fileID: 0}
   Correct_Material: {fileID: 0}
   wrong_Material: {fileID: 0}
-  image: {fileID: 0}
+  hover_Material: {fileID: 0}
+  image: {fileID: 197531422}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
-  Correct_Color: {r: 0, g: 0, b: 0, a: 0}
-  wrong_Color: {r: 0, g: 0, b: 0, a: 0}
+  hover_Sprite: {fileID: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
+  Correct_Color: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
+  wrong_Color: {r: 1, g: 0.29803923, b: 0.3372549, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   type: q1_a4
@@ -1037,13 +1046,16 @@ MonoBehaviour:
   default_Material: {fileID: 0}
   Correct_Material: {fileID: 0}
   wrong_Material: {fileID: 0}
+  hover_Material: {fileID: 0}
   image: {fileID: 0}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
+  hover_Sprite: {fileID: 0}
   default_Color: {r: 0, g: 0, b: 0, a: 0}
   Correct_Color: {r: 0, g: 0, b: 0, a: 0}
   wrong_Color: {r: 0, g: 0, b: 0, a: 0}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   requiredType: q1_a2
@@ -1259,13 +1271,16 @@ MonoBehaviour:
   default_Material: {fileID: 2100000, guid: 7ae7dc43beb34534db810dee799107f1, type: 2}
   Correct_Material: {fileID: 2100000, guid: b72f20b13269b4be29ec790ecc04a34b, type: 2}
   wrong_Material: {fileID: 2100000, guid: 708a0f21559b27b48a363e5f26f5e3e8, type: 2}
+  hover_Material: {fileID: 0}
   image: {fileID: 0}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
+  hover_Sprite: {fileID: 0}
   default_Color: {r: 0, g: 0, b: 0, a: 0}
   Correct_Color: {r: 0, g: 0, b: 0, a: 0}
   wrong_Color: {r: 0, g: 0, b: 0, a: 0}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   type: a
@@ -1385,7 +1400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &428108836
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1486,7 +1501,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &452440634
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1823,13 +1838,16 @@ MonoBehaviour:
   default_Material: {fileID: 0}
   Correct_Material: {fileID: 0}
   wrong_Material: {fileID: 0}
+  hover_Material: {fileID: 0}
   image: {fileID: 0}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
+  hover_Sprite: {fileID: 0}
   default_Color: {r: 0, g: 0, b: 0, a: 0}
   Correct_Color: {r: 0, g: 0, b: 0, a: 0}
   wrong_Color: {r: 0, g: 0, b: 0, a: 0}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   requiredType: q1_a4
@@ -2363,13 +2381,16 @@ MonoBehaviour:
   default_Material: {fileID: 0}
   Correct_Material: {fileID: 0}
   wrong_Material: {fileID: 0}
+  hover_Material: {fileID: 0}
   image: {fileID: 0}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
+  hover_Sprite: {fileID: 0}
   default_Color: {r: 0, g: 0, b: 0, a: 0}
   Correct_Color: {r: 0, g: 0, b: 0, a: 0}
   wrong_Color: {r: 0, g: 0, b: 0, a: 0}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   requiredType: q1_a5
@@ -2735,17 +2756,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VRPointer: {fileID: 0}
   bShouldHighlight: 0
-  highlightType: 0
+  highlightType: 2
   default_Material: {fileID: 0}
   Correct_Material: {fileID: 0}
   wrong_Material: {fileID: 0}
-  image: {fileID: 0}
+  hover_Material: {fileID: 0}
+  image: {fileID: 725410920}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
-  Correct_Color: {r: 0, g: 0, b: 0, a: 0}
-  wrong_Color: {r: 0, g: 0, b: 0, a: 0}
+  hover_Sprite: {fileID: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
+  Correct_Color: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
+  wrong_Color: {r: 1, g: 0.29803923, b: 0.3372549, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   type: q1_a3
@@ -2901,17 +2925,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VRPointer: {fileID: 0}
   bShouldHighlight: 0
-  highlightType: 0
+  highlightType: 2
   default_Material: {fileID: 0}
   Correct_Material: {fileID: 0}
   wrong_Material: {fileID: 0}
-  image: {fileID: 0}
+  hover_Material: {fileID: 0}
+  image: {fileID: 739196160}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
-  Correct_Color: {r: 0, g: 0, b: 0, a: 0}
-  wrong_Color: {r: 0, g: 0, b: 0, a: 0}
+  hover_Sprite: {fileID: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
+  Correct_Color: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
+  wrong_Color: {r: 1, g: 0.29803923, b: 0.3372549, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   type: q1_a1
@@ -2986,13 +3013,16 @@ MonoBehaviour:
   default_Material: {fileID: 0}
   Correct_Material: {fileID: 0}
   wrong_Material: {fileID: 0}
+  hover_Material: {fileID: 0}
   image: {fileID: 0}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
+  hover_Sprite: {fileID: 0}
   default_Color: {r: 0, g: 0, b: 0, a: 0}
   Correct_Color: {r: 0, g: 0, b: 0, a: 0}
   wrong_Color: {r: 0, g: 0, b: 0, a: 0}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   requiredType: q1_a3
@@ -3229,17 +3259,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VRPointer: {fileID: 0}
   bShouldHighlight: 0
-  highlightType: 0
+  highlightType: 2
   default_Material: {fileID: 0}
   Correct_Material: {fileID: 0}
   wrong_Material: {fileID: 0}
-  image: {fileID: 0}
+  hover_Material: {fileID: 0}
+  image: {fileID: 881407319}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
-  Correct_Color: {r: 0, g: 0, b: 0, a: 0}
-  wrong_Color: {r: 0, g: 0, b: 0, a: 0}
+  hover_Sprite: {fileID: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
+  Correct_Color: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
+  wrong_Color: {r: 1, g: 0.29803923, b: 0.3372549, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   type: q1_a5
@@ -3552,13 +3585,16 @@ MonoBehaviour:
   default_Material: {fileID: 2100000, guid: 7ae7dc43beb34534db810dee799107f1, type: 2}
   Correct_Material: {fileID: 2100000, guid: 11de06beb922a6c4c9b853769d3f385c, type: 2}
   wrong_Material: {fileID: 2100000, guid: e546369996bf0494a9079155757f9fda, type: 2}
+  hover_Material: {fileID: 0}
   image: {fileID: 0}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
+  hover_Sprite: {fileID: 0}
   default_Color: {r: 0, g: 0, b: 0, a: 0}
   Correct_Color: {r: 0, g: 0, b: 0, a: 0}
   wrong_Color: {r: 0, g: 0, b: 0, a: 0}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   requiredType: b;a
@@ -3987,7 +4023,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1148705588
 Transform:
   m_ObjectHideFlags: 0
@@ -4196,13 +4232,16 @@ MonoBehaviour:
   default_Material: {fileID: 0}
   Correct_Material: {fileID: 0}
   wrong_Material: {fileID: 0}
+  hover_Material: {fileID: 0}
   image: {fileID: 1547685076}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
+  hover_Sprite: {fileID: 0}
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
   wrong_Color: {r: 1, g: 0.29803923, b: 0.3372549, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.76862746}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   requiredType: q1_a1
@@ -4744,7 +4783,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1391780213
 Transform:
   m_ObjectHideFlags: 0
@@ -5076,13 +5115,16 @@ MonoBehaviour:
   default_Material: {fileID: 0}
   Correct_Material: {fileID: 0}
   wrong_Material: {fileID: 0}
+  hover_Material: {fileID: 0}
   image: {fileID: 0}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
+  hover_Sprite: {fileID: 0}
   default_Color: {r: 0, g: 0, b: 0, a: 0}
   Correct_Color: {r: 0, g: 0, b: 0, a: 0}
   wrong_Color: {r: 0, g: 0, b: 0, a: 0}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   type: 
@@ -5300,17 +5342,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VRPointer: {fileID: 0}
   bShouldHighlight: 0
-  highlightType: 0
+  highlightType: 2
   default_Material: {fileID: 0}
   Correct_Material: {fileID: 0}
   wrong_Material: {fileID: 0}
-  image: {fileID: 0}
+  hover_Material: {fileID: 0}
+  image: {fileID: 1492805962}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
-  Correct_Color: {r: 0, g: 0, b: 0, a: 0}
-  wrong_Color: {r: 0, g: 0, b: 0, a: 0}
+  hover_Sprite: {fileID: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
+  Correct_Color: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
+  wrong_Color: {r: 1, g: 0.29803923, b: 0.3372549, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   type: q1_a2
@@ -5612,13 +5657,16 @@ MonoBehaviour:
   default_Material: {fileID: 0}
   Correct_Material: {fileID: 0}
   wrong_Material: {fileID: 0}
+  hover_Material: {fileID: 0}
   image: {fileID: 0}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
+  hover_Sprite: {fileID: 0}
   default_Color: {r: 0, g: 0, b: 0, a: 0}
   Correct_Color: {r: 0, g: 0, b: 0, a: 0}
   wrong_Color: {r: 0, g: 0, b: 0, a: 0}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   requiredType: q1_a6
@@ -6430,17 +6478,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VRPointer: {fileID: 0}
   bShouldHighlight: 0
-  highlightType: 0
+  highlightType: 2
   default_Material: {fileID: 0}
   Correct_Material: {fileID: 0}
   wrong_Material: {fileID: 0}
-  image: {fileID: 0}
+  hover_Material: {fileID: 0}
+  image: {fileID: 1865114875}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
-  Correct_Color: {r: 0, g: 0, b: 0, a: 0}
-  wrong_Color: {r: 0, g: 0, b: 0, a: 0}
+  hover_Sprite: {fileID: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
+  Correct_Color: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
+  wrong_Color: {r: 1, g: 0.29803923, b: 0.3372549, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   type: q1_a6
@@ -6585,13 +6636,16 @@ MonoBehaviour:
   default_Material: {fileID: 0}
   Correct_Material: {fileID: 0}
   wrong_Material: {fileID: 0}
+  hover_Material: {fileID: 0}
   image: {fileID: 0}
   default_Sprite: {fileID: 0}
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
+  hover_Sprite: {fileID: 0}
   default_Color: {r: 0, g: 0, b: 0, a: 0}
   Correct_Color: {r: 0, g: 0, b: 0, a: 0}
   wrong_Color: {r: 0, g: 0, b: 0, a: 0}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   type: 

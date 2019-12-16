@@ -44,14 +44,16 @@ public class VRDraggableObjectTarget : VRObject
             VRDraggableObject obj = pointer.attachedObject.GetComponent<VRDraggableObject>();
             if (obj != null)
             {
+                pointer.Drop(gameObject);
                 interactionManager.Answer(obj, this);
                 if (containsType(obj.type))
                 {
-                    pointer.Drop(gameObject);
+                    obj.applyHighlight(HighlightOptions.correct);
                 }
                 else
                 {
-                    pointer.DisplayMessage("This is not the right place for that.", 2);
+                    obj.applyHighlight(HighlightOptions.wrong);
+                    //pointer.DisplayMessage("This is not the right place for that.", 2);
                 }
             }
             else
