@@ -259,8 +259,8 @@ PlayerSettings:
   AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/belha/Desktop/VR/user.keystore
-  AndroidKeyaliasName: keysotre
+  AndroidKeystoreName: E:/Projects/VR_Project_Assets/user.keystore
+  AndroidKeyaliasName: key
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
