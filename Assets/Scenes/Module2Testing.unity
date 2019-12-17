@@ -1439,7 +1439,7 @@ MonoBehaviour:
   SyncData:
   - voice: {fileID: 8300000, guid: 3785f7d8e41cae047aed6415b3ce268c, type: 3}
     sprites:
-    - image: {fileID: 21300000, guid: a82510e3ec642964b8e2cfbc91af28ec, type: 3}
+    - image: {fileID: 21300000, guid: e1b6f67777e0f0e4ca985cbf1bcc5063, type: 3}
       time: 1
     canvasses: []
     Objects: []
@@ -1750,7 +1750,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b663707f729a610489667ac7f314d581, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0496ce68b4348af46936b46d8bef6d3c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4211,7 +4211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &701404887
 Transform:
   m_ObjectHideFlags: 0
@@ -5804,7 +5804,7 @@ MonoBehaviour:
   hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
-  requiredType: q1_a6
+  requiredType: q1_a2
   interactionManager: {fileID: 1653799642}
   remainingTrials: 0
   bIsAnswerHolder: 1
@@ -5952,7 +5952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &980965169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7189,7 +7189,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1247194764
 Transform:
   m_ObjectHideFlags: 0
@@ -8846,7 +8846,7 @@ MonoBehaviour:
       WhenOutOfTrials: {fileID: 8300000, guid: 5f8299356c8d66e4588c0b2d1c5a3e33, type: 3}
     - holder: {fileID: 967366718}
       location: {fileID: 1939038353}
-      requiredType: q1_a6
+      requiredType: q1_a2
       WhenOutOfTrials: {fileID: 8300000, guid: b1db71886c7d9db4eb0cbb6d841f4b51, type: 3}
     maximumNumberOfTrials: 2
     newOptionsTexts: possessed;moving;with;big;gotten;resting
