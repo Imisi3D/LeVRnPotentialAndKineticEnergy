@@ -66,7 +66,7 @@ public class TransitionManager : MonoBehaviour
     float lastKeyPressedTime = 0f;
     private void Update()
     {
-        if (Input.GetKeyDown("z") && lastKeyPressedTime + 0.5f < Time.time)
+        if (Input.GetKeyDown("1") && lastKeyPressedTime + 0.5f < Time.time)
         {
             lastKeyPressedTime = Time.time;
             SetRequiredAssets(1);
