@@ -67,7 +67,9 @@ public class Pointer : MonoBehaviour
                     }
                 }
                 else
+                {/* if(obj.currentHighlightOption == High)*/
                     obj.applyHighlight(HighlightOptions.none);
+                }
             }
         }
 
@@ -107,8 +109,11 @@ public class Pointer : MonoBehaviour
             else
             {
                 VRObject obj = currentObject.GetComponent<VRObject>();
-                obj.interact();
-                obj.interact(this);
+                if (obj != null)
+                {
+                    obj.interact();
+                    obj.interact(this);
+                }
             }
         }
     }
@@ -251,14 +256,17 @@ public class Pointer : MonoBehaviour
         yield return new WaitForSeconds(delay);
         if (WhenWasMessageCanvasLatelyActivated + delay > Time.time)
             StartCoroutine(HideMessageAfterDelay(WhenWasMessageCanvasLatelyActivated + delay - Time.time));
-        else
+        else if (MessageCanvas != null)
             MessageCanvas.SetActive(false);
     }
 
     public void DisplayMessage(string msg, float delay)
     {
-        MessageContent.text = msg;
-        MessageCanvas.SetActive(true);
+        if (MessageCanvas != null)
+        {
+            MessageContent.text = msg;
+            MessageCanvas.SetActive(true);
+        }
         WhenWasMessageCanvasLatelyActivated = Time.time;
         StartCoroutine(HideMessageAfterDelay(delay));
     }

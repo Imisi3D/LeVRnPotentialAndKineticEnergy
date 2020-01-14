@@ -102,7 +102,6 @@ public class MultiStepInteraction : MonoBehaviour
                             // when answer is found, attach it to the corresponding holder.
                             if (holder.containsType(option.type))
                             {
-
                                 VRDraggableObject attached = holder.gameObject.GetComponentInChildren<VRDraggableObject>();
                                 if (attached != null) // if the holder has an object attached to it, return it to its default location
                                     Utility.AttachToObject(attached.gameObject, attached.defaultHolder);
@@ -135,7 +134,6 @@ public class MultiStepInteraction : MonoBehaviour
         }
     }
 
-
     public void AdaptToStep()
     {
         if (currentStepIndex >= steps.Length) return;
@@ -151,7 +149,7 @@ public class MultiStepInteraction : MonoBehaviour
             foreach (HolderInfo info in currentStep.holdersInfo)
             {
                 VRDraggableObjectTarget target = info.holder.GetComponent<VRDraggableObjectTarget>();
-                target.applyHighlight(HighlightOptions.none);
+                target.applyHighlight(HighlightOptions.none, true);
                 if (target != null)
                 {
                     target.requiredType = info.requiredType;
@@ -170,7 +168,7 @@ public class MultiStepInteraction : MonoBehaviour
             foreach (VRDraggableObject option in options)
             {
                 // removing any highlight.
-                option.applyHighlight(HighlightOptions.none);
+                option.applyHighlight(HighlightOptions.none, true);
                 // reattaching option to its original location/rotation.
                 if (option.defaultHolder != null)
                 {
@@ -184,14 +182,13 @@ public class MultiStepInteraction : MonoBehaviour
                     option.gameObject.GetComponentInChildren<Text>().text = texts[i];
                 i++;
             }
-
         }
         if (pointer.attachedObject != null)
         {
             VRDraggableObject draggable = pointer.attachedObject.GetComponent<VRDraggableObject>();
             if (draggable.defaultHolder != null)
             {
-                pointer.Drop(draggable.gameObject);
+                pointer.Drop(draggable.defaultHolder);
             }
             pointer.attachedObject = null;
         }

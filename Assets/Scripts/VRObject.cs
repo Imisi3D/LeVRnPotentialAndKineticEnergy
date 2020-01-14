@@ -56,13 +56,15 @@ public class VRObject : MonoBehaviour
     }
 
 
-    public void applyHighlight(HighlightOptions highlight)
+    public void applyHighlight(HighlightOptions highlight, bool force = false)
     {
+        if ((currentHighlightOption == HighlightOptions.correct || currentHighlightOption == HighlightOptions.wrong) && !force) return;
         currentHighlightOption = highlight;
         switch (highlight)
         {
             case HighlightOptions.none:
                 {
+
                     if (highlightType == HighlightType.material)
                     {
                         MeshRenderer meshRenderer = gameObject.GetComponent<MeshRenderer>();
@@ -75,14 +77,15 @@ public class VRObject : MonoBehaviour
                         if (default_Sprite != null)
                             image.sprite = default_Sprite;
 
-                    }else if (highlightType == HighlightType.color)
+                    }
+                    else if (highlightType == HighlightType.color)
                     {
                         //Image img = gameObject.GetComponent<Image>();
                         if (default_Color != null)
                             image.color = default_Color;
                     }
                     break;
-                } 
+                }
             case HighlightOptions.hover:
                 {
                     if (highlightType == HighlightType.material)
@@ -97,7 +100,8 @@ public class VRObject : MonoBehaviour
                         if (hover_Sprite != null)
                             image.sprite = hover_Sprite;
 
-                    }else if (highlightType == HighlightType.color)
+                    }
+                    else if (highlightType == HighlightType.color)
                     {
                         //Image img = gameObject.GetComponent<Image>();
                         if (hover_Color != null)
@@ -160,12 +164,12 @@ public class VRObject : MonoBehaviour
      * if blink is true then this object will toggle between none and given option, else it will behave as the basic applyHighlight
      * 
      */
-    public void applyHighlight(HighlightOptions option, bool blink)
+    public void applyHighlight(HighlightOptions option, bool blink, bool force)
     {
         currentHighlightOption = option;
         if (option != HighlightOptions.none)
             currentHighlightOptionB = option;
-        applyHighlight(option);
+        applyHighlight(option, force);
         if (blink)
         {
             StartCoroutine(HighlightAfterDelay(0.5f, option));

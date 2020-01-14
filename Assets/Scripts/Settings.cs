@@ -9,7 +9,7 @@ public class Settings : MonoBehaviour
     private void Start()
     {
         startTime = Time.time;
-        Time.timeScale = 1.5f;
+        //Time.timeScale = 1.5f;
     }
 
     private void Update()
