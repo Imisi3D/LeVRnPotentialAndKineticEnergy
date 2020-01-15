@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public enum HighlightOptions
 {
     none = 0,
@@ -22,8 +23,7 @@ public class VRObject : MonoBehaviour
 {
     public Pointer VRPointer;
     public bool bShouldHighlight = false;
-    public Rigidbody rigidbody;
-    public VoiceImageCanvasSync synchronizer;
+    
     #region Highlight
     public HighlightType highlightType = HighlightType.material;
     public Material default_Material;
@@ -44,12 +44,6 @@ public class VRObject : MonoBehaviour
     // called when parent of this component is clicked on with pointer (either using touch pad or trigger).
     public virtual void interact()
     {
-        rigidbody.useGravity = true;
-        if(synchronizer!=null)
-        {
-            synchronizer.NextSync();
-        }
-        
 
     }
 
