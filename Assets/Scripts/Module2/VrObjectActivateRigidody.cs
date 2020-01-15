@@ -20,6 +20,7 @@ public class VrObjectActivateRigidody : VRObject
     }
     public override void interact()
     {
+        base.interact();
         rigidbody.useGravity = true;
         if (synchronizer != null)
         {
