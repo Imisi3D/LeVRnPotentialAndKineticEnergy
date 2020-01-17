@@ -8,6 +8,9 @@ public class VRDraggableObjectTarget : VRObject
      * The type of object which this target supports
      * If this target supports more than one type, separate types which a ; (e.g: ui;model;formule)
      */
+    public AudioClip audioClipCorrect;
+    public AudioClip audioClipWrong;
+    public AudioSource audioSource;
     public string requiredType;
     public MultiStepInteraction interactionManager;
     public int remainingTrials = 0;
@@ -49,12 +52,24 @@ public class VRDraggableObjectTarget : VRObject
                 {
                     pointer.Drop(gameObject);
                     if (obj.defaultHolder != gameObject)
+                    {
                         obj.applyHighlight(HighlightOptions.correct);
+                        if (audioClipCorrect != null)
+                        {
+                            audioSource.clip = audioClipCorrect;
+                            audioSource.Play();
+                        }
+                    }
                 }
                 else
                 {
                     pointer.Drop(obj.defaultHolder);
                     obj.applyHighlight(HighlightOptions.wrong);
+                    if (audioClipCorrect != null)
+                    {
+                        audioSource.clip = audioClipWrong;
+                        audioSource.Play();
+                    }
                     //pointer.DisplayMessage("This is not the right place for that.", 2);
                 }
             }
