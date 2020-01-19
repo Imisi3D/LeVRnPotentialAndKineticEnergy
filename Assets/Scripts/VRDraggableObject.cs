@@ -21,6 +21,7 @@ public class VRDraggableObject : VRObject
 
     public override void interact(Pointer pointer)
     {
+        if (transform.parent.gameObject != defaultHolder) return;
         pointer.Drag(gameObject);
         print(gameObject.name);
     }
