@@ -272,10 +272,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -823,10 +823,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -1576,10 +1576,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -1620,7 +1620,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5882353}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1838,10 +1838,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
-  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 0}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -1882,7 +1882,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5254902}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2113,10 +2113,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -2358,10 +2358,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -2528,10 +2528,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 8300000, guid: 51a16936de679eb47b16316a1f2765c5, type: 3}
@@ -2966,10 +2966,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -3010,7 +3010,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.57254905}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3494,10 +3494,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -3538,7 +3538,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5882353}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3664,10 +3664,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -3909,10 +3909,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -4079,10 +4079,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -4123,7 +4123,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.57254905}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -5270,10 +5270,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -5770,10 +5770,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -7214,10 +7214,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -7258,7 +7258,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5254902}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -8034,10 +8034,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -8539,10 +8539,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
-  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 0}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -9121,10 +9121,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -9165,7 +9165,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5254902}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -9990,10 +9990,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -10034,7 +10034,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5254902}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -12014,10 +12014,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
-  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 0}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -12680,10 +12680,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 8300000, guid: eb97c87b75bbfd5438bec68ebb32915e, type: 3}
@@ -12724,7 +12724,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5882353}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -13184,10 +13184,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -13258,7 +13258,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.57254905}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -13616,10 +13616,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -13660,7 +13660,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5882353}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -15752,10 +15752,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -15922,10 +15922,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -16510,10 +16510,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -17591,6 +17591,9 @@ MonoBehaviour:
     - gameObject: {fileID: 1950467086}
       time: 5.8
       newActive: 1
+    - gameObject: {fileID: 1565961778}
+      time: 4.8
+      newActive: 0
     Components:
     - component: {fileID: 1718141602}
       time: 5
@@ -17840,6 +17843,16 @@ MonoBehaviour:
       newActive: 0
     Components: []
     shouldAudioStop: 1
+    GoToIndex: -1
+  - voice: {fileID: 8300000, guid: e4c5312c00c38ac4f82cc55706f7b122, type: 3}
+    sprites: []
+    canvasses: []
+    Objects:
+    - gameObject: {fileID: 1842525107}
+      time: 0.1
+      newActive: 0
+    Components: []
+    shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: c20cfc34b1bf5454ebeef1eb426b13b9, type: 3}
     sprites: []
@@ -18564,10 +18577,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 8300000, guid: 6d088988ede544944bff0016c66c449d, type: 3}
@@ -18734,10 +18747,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -19728,10 +19741,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -20417,10 +20430,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
-  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 0}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -20461,7 +20474,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5882353}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -20587,10 +20600,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -21419,10 +21432,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -21463,7 +21476,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.57254905}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -22182,10 +22195,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -22352,10 +22365,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -22597,10 +22610,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -22641,7 +22654,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5254902}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -22878,10 +22891,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -22922,7 +22935,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5882353}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -23574,10 +23587,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -24272,10 +24285,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -24316,7 +24329,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.57254905}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -24530,10 +24543,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -24574,7 +24587,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5254902}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -24869,10 +24882,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 8300000, guid: 6d088988ede544944bff0016c66c449d, type: 3}
@@ -25609,10 +25622,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -26057,10 +26070,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
-  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 0}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 8300000, guid: 4d74b97f77033b34d8e13a4fe0cfffd4, type: 3}
@@ -26836,10 +26849,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -27650,10 +27663,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -27694,7 +27707,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.57254905}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -28111,10 +28124,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
-  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 0}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -29265,10 +29278,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -29467,10 +29480,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -29511,7 +29524,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5254902}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -30070,10 +30083,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 8300000, guid: 61b7f06e63abe364c9e0f8f0c306dc2e, type: 3}
@@ -30114,7 +30127,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5254902}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -30382,10 +30395,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -30892,10 +30905,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -31519,10 +31532,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -31563,7 +31576,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.57254905}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -32645,10 +32658,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -33257,10 +33270,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -33775,10 +33788,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -33819,7 +33832,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5882353}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -33980,10 +33993,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -35899,10 +35912,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -35943,7 +35956,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5882353}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -36069,10 +36082,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -36113,7 +36126,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5882353}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -36239,10 +36252,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -38063,10 +38076,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -39161,10 +39174,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -39331,10 +39344,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -39848,10 +39861,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -40210,10 +40223,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -40595,10 +40608,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -42209,10 +42222,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -42869,10 +42882,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -43039,10 +43052,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -43083,7 +43096,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.57254905}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -43209,10 +43222,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
-  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 0}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 8300000, guid: 50f6712547723454282bea67bd514d43, type: 3}
@@ -44083,10 +44096,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
-  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 0}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 8300000, guid: 4d74b97f77033b34d8e13a4fe0cfffd4, type: 3}
@@ -44127,7 +44140,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.57254905}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -44253,10 +44266,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -44837,10 +44850,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -45175,10 +45188,10 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -45219,7 +45232,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5254902}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
