@@ -275,7 +275,7 @@ MonoBehaviour:
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
+  hover_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -2969,7 +2969,7 @@ MonoBehaviour:
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
+  hover_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -3010,7 +3010,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.57254905}
+    m_HighlightedColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -6031,7 +6031,7 @@ MonoBehaviour:
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
   wrong_Color: {r: 1, g: 0.29803923, b: 0.3372549, a: 1}
-  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
+  hover_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   type: q1_a4
@@ -6778,7 +6778,7 @@ MonoBehaviour:
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
   wrong_Color: {r: 1, g: 0.29803923, b: 0.3372549, a: 1}
-  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
+  hover_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   type: q1_a7
@@ -6804,7 +6804,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.6901961, g: 0.9450981, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -9124,7 +9124,7 @@ MonoBehaviour:
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
+  hover_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -9165,7 +9165,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5254902}
+    m_HighlightedColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -11791,7 +11791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &580911793
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12683,7 +12683,7 @@ MonoBehaviour:
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
+  hover_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 8300000, guid: eb97c87b75bbfd5438bec68ebb32915e, type: 3}
@@ -12724,7 +12724,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.5882353}
+    m_HighlightedColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -13464,7 +13464,7 @@ MonoBehaviour:
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
   wrong_Color: {r: 1, g: 0.29803923, b: 0.3372549, a: 1}
-  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
+  hover_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   type: q1_a2
@@ -17462,14 +17462,14 @@ RectTransform:
   m_GameObject: {fileID: 862128675}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7003276, y: 1.4595, z: 1}
+  m_LocalScale: {x: 0.6388878, y: 1.1466854, z: 1}
   m_Children: []
   m_Father: {fileID: 580911793}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 150.6, y: 65.49998}
+  m_AnchoredPosition: {x: 150.6, y: 70.4}
   m_SizeDelta: {x: 117.57, y: 37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &863213989
@@ -18425,7 +18425,7 @@ MonoBehaviour:
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
   wrong_Color: {r: 1, g: 0.29803923, b: 0.3372549, a: 1}
-  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
+  hover_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   type: q1_a5
@@ -19315,14 +19315,14 @@ RectTransform:
   m_GameObject: {fileID: 937705137}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
-  m_LocalScale: {x: 0.7245909, y: 1.4633948, z: 1}
+  m_LocalScale: {x: 0.666707, y: 1.0835456, z: 1}
   m_Children: []
   m_Father: {fileID: 580911793}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17.6, y: 65.5}
+  m_AnchoredPosition: {x: -16.6, y: 70.3}
   m_SizeDelta: {x: 117.57, y: 37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &938603000
@@ -22198,7 +22198,7 @@ MonoBehaviour:
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
+  hover_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -22239,7 +22239,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -24885,7 +24885,7 @@ MonoBehaviour:
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
+  hover_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 8300000, guid: 6d088988ede544944bff0016c66c449d, type: 3}
@@ -24926,7 +24926,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -30908,7 +30908,7 @@ MonoBehaviour:
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
+  hover_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -30949,7 +30949,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -31902,7 +31902,7 @@ MonoBehaviour:
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.90196085, g: 0.40000004, b: 0.023529414, a: 1}
   wrong_Color: {r: 1, g: 0.29803923, b: 0.3372549, a: 1}
-  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
+  hover_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   type: q1_a6
@@ -34409,7 +34409,7 @@ MonoBehaviour:
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
   wrong_Color: {r: 1, g: 0.29803923, b: 0.3372549, a: 1}
-  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
+  hover_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   type: q1_a8
@@ -40534,14 +40534,14 @@ RectTransform:
   m_GameObject: {fileID: 1960533290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7003276, y: 1.4595, z: 1}
+  m_LocalScale: {x: 0.6558288, y: 1.1282811, z: 1}
   m_Children: []
   m_Father: {fileID: 580911793}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 67, y: 65.49998}
+  m_AnchoredPosition: {x: 67, y: 70.4}
   m_SizeDelta: {x: 117.57, y: 37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1962704242
@@ -41975,16 +41975,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058420592}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0554, y: 1.1006, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -17.199982}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 434248713}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.9}
+  m_AnchoredPosition: {x: -0.000020688969, y: -0.3}
   m_SizeDelta: {x: 115, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2058420594
@@ -43815,7 +43815,7 @@ MonoBehaviour:
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.82745105, g: 0.03137255, b: 0.85098046, a: 1}
   wrong_Color: {r: 1, g: 0.29803923, b: 0.3372549, a: 1}
-  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
+  hover_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   type: q1_a1
@@ -44269,7 +44269,7 @@ MonoBehaviour:
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 1}
   wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 1}
-  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
+  hover_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   audioClipCorrect: {fileID: 0}
@@ -44310,7 +44310,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
     m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -45036,7 +45036,7 @@ MonoBehaviour:
   default_Color: {r: 1, g: 1, b: 1, a: 1}
   Correct_Color: {r: 0.32156864, g: 0.5019608, b: 0.9803922, a: 1}
   wrong_Color: {r: 1, g: 0.29803923, b: 0.3372549, a: 1}
-  hover_Color: {r: 0, g: 0, b: 0, a: 0.6509804}
+  hover_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
   type: q1_a3
