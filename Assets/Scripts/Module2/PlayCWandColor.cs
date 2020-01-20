@@ -37,6 +37,7 @@ public class PlayCWandColor : VRObject
         {
             audioSource.clip = audioClipCorrect;
             audioSource.Play();
+            applyHighlight(HighlightOptions.correct, true);
             image.color = Correct_Color;
             cpt = 0;
             StartCoroutine(ExampleCoroutine(audioSource));
@@ -45,6 +46,7 @@ public class PlayCWandColor : VRObject
         else if (audioClipWrong != null)
         {
             audioSource.clip = audioClipWrong;
+            applyHighlight(HighlightOptions.wrong, true);
             image.color = wrong_Color;
             audioSource.Play();
             cpt++;
