@@ -18,7 +18,7 @@ public class PlayCorrectOrWrong : VRObject
     {
         
     }
-    IEnumerator ExampleCoroutine(AudioSource audioSource)
+    IEnumerator ResumeSynchronizerAfterDelay(AudioSource audioSource)
     {
         yield return new WaitForSeconds(audioSource.clip.length);
         if (synchronizer != null)
@@ -35,7 +35,7 @@ public class PlayCorrectOrWrong : VRObject
             audioSource.clip = audioClip;
             
             audioSource.Play();
-            StartCoroutine(ExampleCoroutine(audioSource));
+            StartCoroutine(ResumeSynchronizerAfterDelay(audioSource));
         }
         
     }

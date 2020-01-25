@@ -65,7 +65,7 @@ public class VRDraggableObjectTarget : VRObject
                 {
                     pointer.Drop(obj.defaultHolder);
                     obj.applyHighlight(HighlightOptions.wrong);
-                    if (audioClipCorrect != null)
+                    if (audioClipWrong != null)
                     {
                         audioSource.clip = audioClipWrong;
                         audioSource.Play();

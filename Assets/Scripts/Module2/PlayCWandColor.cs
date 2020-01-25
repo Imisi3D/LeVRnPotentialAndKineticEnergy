@@ -21,7 +21,7 @@ public class PlayCWandColor : VRObject
     {
 
     }
-    IEnumerator ExampleCoroutine(AudioSource audioSource)
+    IEnumerator ResumeSynchronizerAfterDelay(AudioSource audioSource)
     {
         yield return new WaitForSeconds(audioSource.clip.length);
         if (synchronizer != null)
@@ -40,7 +40,7 @@ public class PlayCWandColor : VRObject
             applyHighlight(HighlightOptions.correct, true);
             image.color = Correct_Color;
             cpt = 0;
-            StartCoroutine(ExampleCoroutine(audioSource));
+            StartCoroutine(ResumeSynchronizerAfterDelay(audioSource));
 
         }
         else if (audioClipWrong != null)
@@ -53,7 +53,7 @@ public class PlayCWandColor : VRObject
             if (cpt == 2)
             {
                 cpt = 0;
-                StartCoroutine(ExampleCoroutine(audioSource));
+                StartCoroutine(ResumeSynchronizerAfterDelay(audioSource));
 
             }
         }

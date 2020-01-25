@@ -11,7 +11,7 @@ public class NextSync : VRObject
     public static int Compt = 0;
     public bool test = false;
 
-    IEnumerator ExampleCoroutine(AudioSource audioSource)
+    IEnumerator ResumeSynchronizerAfterDelay(AudioSource audioSource)
     {
         yield return new WaitForSeconds(audioSource.clip.length);
         if (synchronizer != null)
@@ -23,16 +23,16 @@ public class NextSync : VRObject
     void Start()
     {
         Compt += 2;
-        print("COMMMMMMMMMMMMMMMMMMMMMMPPPPPPPPPPPPPPTTT" + Compt);
+        
         if (Compt == 8)
         {
            
             if (audioClipWrong != null)
             {
                 audioSource.clip = audioClipWrong;
-
+                Compt = 0;
                 audioSource.Play();
-                StartCoroutine(ExampleCoroutine(audioSource));
+                StartCoroutine(ResumeSynchronizerAfterDelay(audioSource));
             }
         }
         else if(Compt==9)
@@ -41,9 +41,9 @@ public class NextSync : VRObject
             if (audioClipCorrect != null)
             {
                 audioSource.clip = audioClipCorrect;
-
+                Compt = 0;
                 audioSource.Play();
-                StartCoroutine(ExampleCoroutine(audioSource));
+                StartCoroutine(ResumeSynchronizerAfterDelay(audioSource));
             }
         }
         
@@ -54,7 +54,7 @@ public class NextSync : VRObject
         if (test)
         {
             Compt++;
-            print("COMMMMMMMMMMMMMMMMMMMMMMPPPPPPPPPPPPPPTTT" + Compt);
+            
         }
         synchronizer.NextSync();
     }
