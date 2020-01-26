@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/OVRInputSelection/Scenes/selection_ui.unity
     guid: 7adfd19eba27b40748b2a0f7ae856c08
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Module2Testing.unity
     guid: c640ac5abc69faf4d97a80216358503e
   - enabled: 0
