@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4258872
 RectTransform:
   m_ObjectHideFlags: 0
@@ -246,14 +246,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 41895437}
-  m_LocalRotation: {x: 0.68364805, y: 0.18008758, z: -0.17590317, w: 0.6850197}
-  m_LocalPosition: {x: 0.821, y: 0.7674, z: 1.066}
+  m_LocalRotation: {x: 0.35126197, y: 0.29971668, z: 0.118586406, w: 0.8790462}
+  m_LocalPosition: {x: 1.4715103, y: 0.9846025, z: 1.0578716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 517837103}
   m_Father: {fileID: 448934323}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 89.644005, y: 86.43101, z: 57.272003}
+  m_LocalEulerAnglesHint: {x: 33.125, y: 46.774002, z: 30.024002}
 --- !u!114 &41895439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1207,9 +1207,9 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 1, g: 1, b: 1, a: 0}
-  Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 0}
-  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 0}
+  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  Correct_Color: {r: 0, g: 0, b: 0, a: 0}
+  wrong_Color: {r: 0, g: 0, b: 0, a: 0}
   hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
@@ -1953,9 +1953,9 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 1, g: 1, b: 1, a: 0}
-  Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 0}
-  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 0}
+  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  Correct_Color: {r: 0, g: 0, b: 0, a: 0}
+  wrong_Color: {r: 0, g: 0, b: 0, a: 0}
   hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
@@ -3188,17 +3188,17 @@ MonoBehaviour:
     - gameObject: {fileID: 41895437}
       time: 12
       newActive: 1
-    Components:
-    - component: {fileID: 41895439}
-      time: 12
-      newEnabled: 1
+    Components: []
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: 41870292760481845928a5164c57cabd, type: 3}
     sprites: []
     canvasses: []
     Objects: []
-    Components: []
+    Components:
+    - component: {fileID: 41895439}
+      time: 5
+      newEnabled: 1
     shouldAudioStop: 0
     GoToIndex: -1
   - voice: {fileID: 8300000, guid: f1146974e6d7e664e870834ffeafea2d, type: 3}
@@ -3598,7 +3598,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: ba08493b14739f44e89db8540ebf391d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ba08493b14739f44e89db8540ebf391d,
         type: 3}
@@ -4063,9 +4063,9 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 1, g: 1, b: 1, a: 0}
-  Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 0}
-  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 0}
+  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  Correct_Color: {r: 0, g: 0, b: 0, a: 0}
+  wrong_Color: {r: 0, g: 0, b: 0, a: 0}
   hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
@@ -4307,9 +4307,9 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 1, g: 1, b: 1, a: 0}
-  Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 0}
-  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 0}
+  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  Correct_Color: {r: 0, g: 0, b: 0, a: 0}
+  wrong_Color: {r: 0, g: 0, b: 0, a: 0}
   hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
@@ -4459,7 +4459,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.6901961, g: 0.9450981, b: 1, a: 1}
-    m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -4965,9 +4965,9 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 1, g: 1, b: 1, a: 0}
-  Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 0}
-  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 0}
+  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  Correct_Color: {r: 0, g: 0, b: 0, a: 0}
+  wrong_Color: {r: 0, g: 0, b: 0, a: 0}
   hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
@@ -6155,7 +6155,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.6901961, g: 0.9450981, b: 1, a: 1}
-    m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -6570,7 +6570,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.6901961, g: 0.9450981, b: 1, a: 1}
-    m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -6759,7 +6759,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288777464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.17, z: 1.53}
+  m_LocalPosition: {x: 0, y: 0.163, z: 1.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2067635883}
@@ -6884,7 +6884,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.6901961, g: 0.9450981, b: 1, a: 1}
-    m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -7921,9 +7921,9 @@ MonoBehaviour:
   Correct_Sprite: {fileID: 0}
   wrong_Sprite: {fileID: 0}
   hover_Sprite: {fileID: 0}
-  default_Color: {r: 1, g: 1, b: 1, a: 0}
-  Correct_Color: {r: 0.1254902, g: 0.9607844, b: 0.70980394, a: 0}
-  wrong_Color: {r: 1, g: 0.29411766, b: 0.3372549, a: 0}
+  default_Color: {r: 0, g: 0, b: 0, a: 0}
+  Correct_Color: {r: 0, g: 0, b: 0, a: 0}
+  wrong_Color: {r: 0, g: 0, b: 0, a: 0}
   hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
@@ -8329,7 +8329,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.6901961, g: 0.9450981, b: 1, a: 1}
-    m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -9264,7 +9264,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.6901961, g: 0.9450981, b: 1, a: 1}
-    m_PressedColor: {r: 0.10588236, g: 0.9607844, b: 0.7137255, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -12037,7 +12037,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 2c2e03ef33a803a4093485c634573178,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: -0.009
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2c2e03ef33a803a4093485c634573178,
         type: 3}
@@ -12087,17 +12087,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 2c2e03ef33a803a4093485c634573178,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2c2e03ef33a803a4093485c634573178,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2c2e03ef33a803a4093485c634573178,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c2e03ef33a803a4093485c634573178, type: 3}
