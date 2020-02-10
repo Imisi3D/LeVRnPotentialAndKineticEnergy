@@ -2034,6 +2034,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 7cee0c9b7306a5748aaba1dbfd2d6505, type: 3}
     sprites: []
     canvasses: []
@@ -2041,6 +2042,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: f2eb2ae6cdd4c0745934d49a7d17363c, type: 3}
     sprites: []
     canvasses: []
@@ -2051,6 +2053,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 44013cda914d52148b1086e0752f569f, type: 3}
     sprites: []
     canvasses:
@@ -2061,6 +2064,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 836a066e633ecd441a870afbc7e304c0, type: 3}
     sprites: []
     canvasses: []
@@ -2074,6 +2078,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: b992d9662ee986945955bdf16df06c39, type: 3}
     sprites: []
     canvasses:
@@ -2084,6 +2089,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 8b4f826165d96104e9940c427ccc1bf5, type: 3}
     sprites: []
     canvasses: []
@@ -2097,6 +2103,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: df799e3e140bd7c47ab382b2b6e9f67e, type: 3}
     sprites: []
     canvasses:
@@ -2107,6 +2114,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: e251f4d9b63b8b14e9a8536a88d8eb98, type: 3}
     sprites: []
     canvasses: []
@@ -2114,6 +2122,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 717a1ea12de40b949bf850805dbda06f, type: 3}
     sprites: []
     canvasses: []
@@ -2121,6 +2130,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   currentVoiceTimingData:
     voice: {fileID: 0}
     sprites: []
@@ -2129,6 +2139,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   animator_body: {fileID: 0}
   animator_cloth: {fileID: 0}
   nextScriptData:
@@ -13258,6 +13269,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: d7ea13eefac7b8d40b773f0cedabe931, type: 3}
     sprites: []
     canvasses: []
@@ -13268,6 +13280,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 3d5a83a47560c2d43a46825246608c8c, type: 3}
     sprites: []
     canvasses: []
@@ -13275,6 +13288,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 25f1a77c820e90d4b937dbb1fa28552f, type: 3}
     sprites: []
     canvasses: []
@@ -13282,6 +13296,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 2977c4df19fd8864cac109637f2ad12a, type: 3}
     sprites: []
     canvasses:
@@ -13295,6 +13310,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 1981c27cf09d3f44eb6e2ce712cc36ff, type: 3}
     sprites: []
     canvasses: []
@@ -13302,6 +13318,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: b244d1ec0a65e5f4faef251b998ae57b, type: 3}
     sprites: []
     canvasses: []
@@ -13309,6 +13326,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   currentVoiceTimingData:
     voice: {fileID: 0}
     sprites: []
@@ -13317,6 +13335,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   animator_body: {fileID: 0}
   animator_cloth: {fileID: 0}
   nextScriptData:
@@ -16912,6 +16931,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: c111e4b65bc881e4e976b69f10a4ba1e, type: 3}
     sprites: []
     canvasses: []
@@ -16979,6 +16999,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 1b5ca9dca546b774994dde1967a3ebf6, type: 3}
     sprites: []
     canvasses: []
@@ -16998,6 +17019,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 2c30e3718c83bd74da1aeb89a3758e93, type: 3}
     sprites: []
     canvasses: []
@@ -17005,6 +17027,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 3a9cf80fbb0606443a93d0fb63f33697, type: 3}
     sprites: []
     canvasses: []
@@ -17036,6 +17059,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: c6fde45a0081adb429c260fb6dfa7f69, type: 3}
     sprites: []
     canvasses: []
@@ -17043,6 +17067,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 291a5fbcb739cee4dbcd00a220a88ee0, type: 3}
     sprites: []
     canvasses: []
@@ -17080,6 +17105,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 951dfe8ea8eda704ea9f5fbd7f1e90ad, type: 3}
     sprites: []
     canvasses: []
@@ -17093,6 +17119,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: ce48824131d37c64a8397f7e8c4562e5, type: 3}
     sprites: []
     canvasses: []
@@ -17100,6 +17127,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 5a6cadf643c5acf4ca5860cbdca153ee, type: 3}
     sprites: []
     canvasses:
@@ -17146,6 +17174,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 25ff2f1e8a01cb14b8bbba630ee344ed, type: 3}
     sprites: []
     canvasses: []
@@ -17186,6 +17215,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 6613b3ba2fcb65e41bb983272ad277f2, type: 3}
     sprites: []
     canvasses: []
@@ -17247,6 +17277,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 6313b3c059a5820438bc1c0327cee4c8, type: 3}
     sprites: []
     canvasses: []
@@ -17299,6 +17330,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: c99c8e5b2c028124bb09b4bc05dbc708, type: 3}
     sprites: []
     canvasses:
@@ -17315,6 +17347,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 708045bebc0aa8a4ab03d4c90a644a2d, type: 3}
     sprites: []
     canvasses: []
@@ -17322,6 +17355,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: ec59fc009024c744eb27a22876aea50d, type: 3}
     sprites: []
     canvasses:
@@ -17353,6 +17387,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 4f1fc0b6c069cea4a83adb2339c6e67b, type: 3}
     sprites: []
     canvasses:
@@ -17384,6 +17419,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 2186c2ca113da454584adf5a107e8957, type: 3}
     sprites: []
     canvasses:
@@ -17403,6 +17439,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: f8aec7a936bbb604d973e3571bbb8128, type: 3}
     sprites: []
     canvasses: []
@@ -17425,6 +17462,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: fa65b4b3b73deed42bcc7bf3c8e13cd0, type: 3}
     sprites: []
     canvasses: []
@@ -17450,6 +17488,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 1af8c54dcc0949441aa6ab89151d7ead, type: 3}
     sprites: []
     canvasses: []
@@ -17505,6 +17544,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   currentVoiceTimingData:
     voice: {fileID: 0}
     sprites: []
@@ -17513,6 +17553,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   animator_body: {fileID: 0}
   animator_cloth: {fileID: 0}
   nextScriptData:
@@ -21403,7 +21444,7 @@ BoxCollider:
   m_GameObject: {fileID: 364722273}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 490, y: 262, z: 1}
   m_Center: {x: 10, y: 0, z: 5}
@@ -21414,7 +21455,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364722273}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 974d4d1c63fef7e48b2bb29a7f5fe64e, type: 3}
   m_Name: 
@@ -21573,7 +21614,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364722273}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aee672c7b0743724ea7d0d722d5e6aa2, type: 3}
   m_Name: 
@@ -21612,7 +21653,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 364722273}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
@@ -30015,6 +30056,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: ae511b2eb3589784181ce97909e9ecc7, type: 3}
     sprites: []
     canvasses: []
@@ -30022,6 +30064,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 1a3037f56f417f044bd90b67e258fad4, type: 3}
     sprites: []
     canvasses: []
@@ -30035,6 +30078,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: bbcbb0dce70e36644ab52c50aec2c410, type: 3}
     sprites: []
     canvasses:
@@ -30045,6 +30089,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 2b4bb5ed87975f14dbb617b6a83e034a, type: 3}
     sprites: []
     canvasses: []
@@ -30061,6 +30106,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: dbd5179f67e22fe4d9021a30c21f4863, type: 3}
     sprites: []
     canvasses:
@@ -30071,6 +30117,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 0f3ce0fd40fb7cc4cb2ee7c28143eca6, type: 3}
     sprites: []
     canvasses: []
@@ -30081,6 +30128,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: e75aadcaf5a786947ab01d1b0338a61d, type: 3}
     sprites: []
     canvasses: []
@@ -30091,6 +30139,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 7500ea6d33a02d5479da432062729fec, type: 3}
     sprites: []
     canvasses:
@@ -30101,6 +30150,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   currentVoiceTimingData:
     voice: {fileID: 0}
     sprites: []
@@ -30109,6 +30159,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   animator_body: {fileID: 0}
   animator_cloth: {fileID: 0}
   nextScriptData:
@@ -40316,6 +40367,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 861b8b24afb673b47bf47a143b6b0d64, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: 7260a8bd6ae3af54db2cc4a16209c7e0, type: 3}
@@ -40333,6 +40385,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 9262b5d6fe54e6547b2e60e344e054f6, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: e5fd88f3b65e37945b362c0ce916e2cd, type: 3}
@@ -40348,6 +40401,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 9bcb0cdd0a017dd47a5bb4d831a3a649, type: 3}
     sprites: []
     canvasses: []
@@ -40355,6 +40409,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: ad6ba0b3a71241947b21a6a77e555d12, type: 3}
     sprites: []
     canvasses:
@@ -40371,6 +40426,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 9cd1e508ed8ff9c45bb21228b394e2ea, type: 3}
     sprites: []
     canvasses:
@@ -40384,6 +40440,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 468c0ecafbc7e4149affeffae591083c, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: 749b116672d2aac4e8121cca426990d4, type: 3}
@@ -40399,6 +40456,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: b0dc4ff49b61ad44d91135b284dd19f7, type: 3}
     sprites: []
     canvasses:
@@ -40415,6 +40473,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: a1abefa7c728d6a4bbe9902669788fc8, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: 006f780b9a37bcd47b990e250fe97cdf, type: 3}
@@ -40430,6 +40489,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 365fd694ee7f05249bfd02ac3738dd2d, type: 3}
     sprites: []
     canvasses:
@@ -40446,6 +40506,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: cb32fbb6ffdf69e4095f44273f1f856e, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: b82d1fcaa53deff49a5d3cceda3f5d21, type: 3}
@@ -40461,6 +40522,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 3bb3167f7d39ee04e9f3e8b3a9d3abc4, type: 3}
     sprites: []
     canvasses:
@@ -40477,6 +40539,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 5ad065d109ae4a84885258dcb7516072, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: 1e49914ea2abd4a4f83352b2bc8b3b3e, type: 3}
@@ -40492,6 +40555,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 826ad41776dd80448830e104aa9aa2de, type: 3}
     sprites: []
     canvasses: []
@@ -40499,6 +40563,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   currentVoiceTimingData:
     voice: {fileID: 0}
     sprites: []
@@ -40507,6 +40572,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   animator_body: {fileID: 0}
   animator_cloth: {fileID: 0}
   nextScriptData:
@@ -49080,6 +49146,7 @@ MonoBehaviour:
   hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
+  number: 0
   rigidbody: {fileID: 839026756}
   synchronizer: {fileID: 1190346255}
 --- !u!54 &839026756
@@ -50096,6 +50163,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 32cf57910bba8a648ac6bbfe2718ff1d, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: d0cf91e9ed7d72049b8987000b23ae69, type: 3}
@@ -50111,6 +50179,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: eb77996756d645d468dd207ffb77d157, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: 81a5bdd04fca3d94fa27ca33095f59ca, type: 3}
@@ -50120,22 +50189,24 @@ MonoBehaviour:
     - gameObject: {fileID: 1911189898}
       time: 24
       newActive: 1
-    - gameObject: {fileID: 495806886}
-      time: 47
-      newActive: 1
-    - gameObject: {fileID: 1081571173}
-      time: 47
-      newActive: 1
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 70c0ff127d407674e9ba21227106cb3a, type: 3}
     sprites: []
     canvasses: []
-    Objects: []
+    Objects:
+    - gameObject: {fileID: 1081571173}
+      time: 1
+      newActive: 1
+    - gameObject: {fileID: 495806886}
+      time: 1
+      newActive: 1
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 92a29a2500c96eb4ba83095bd63a16de, type: 3}
     sprites: []
     canvasses: []
@@ -50149,6 +50220,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: d6bb040cfeb98c24cbcae6e3daf59c37, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: ca895250b2d025045800a05451cf5601, type: 3}
@@ -50158,6 +50230,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 4c0bd92085656c5469966929c0ba30f6, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: 42901423e4fe41c44bf70d79307790b9, type: 3}
@@ -50176,6 +50249,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: b89b8b7f6f4eb95468e924fdda81dead, type: 3}
     sprites: []
     canvasses: []
@@ -50183,6 +50257,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 5805500f4fbca694fbb0bb1cceb40f84, type: 3}
     sprites: []
     canvasses:
@@ -50208,6 +50283,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: e29517048c0a21e4da43f0c4c152f159, type: 3}
     sprites: []
     canvasses:
@@ -50224,6 +50300,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: d99258da37ecdc24386ea9597f2fe60b, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: 1ebcb1afc46da4b42a3ec0a7c9b5bc64, type: 3}
@@ -50239,6 +50316,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 7417e4a307c5e3a41ab998ca57051511, type: 3}
     sprites: []
     canvasses: []
@@ -50252,6 +50330,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: a41b0958c2594094b9e020c78552f3ed, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: 5575a9b798be93c41a74fed60ce81046, type: 3}
@@ -50267,6 +50346,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: a90cef2258c8f4048925adc2521febbc, type: 3}
     sprites: []
     canvasses: []
@@ -50280,6 +50360,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 4068cf5922f071243bbbadb4d33d969e, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: 592ac6e112de43b4c8c69ad5eac18409, type: 3}
@@ -50295,6 +50376,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 1e5023c4e93cfc94a87d9a431a300c7f, type: 3}
     sprites: []
     canvasses: []
@@ -50308,6 +50390,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 1df6f7d8ea303a24294610896d1d5db7, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: 917862425a830944797623ec71bae379, type: 3}
@@ -50323,6 +50406,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: b89ca3210607a5d4abce6f8afa36edda, type: 3}
     sprites: []
     canvasses: []
@@ -50336,6 +50420,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 821b839629fdf7143b449a9fe5f2d39a, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: be2e76f086f78d542b82e7bb1a21731d, type: 3}
@@ -50351,6 +50436,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 95423794652520a4bb222c2578ba5788, type: 3}
     sprites: []
     canvasses: []
@@ -50364,6 +50450,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 10e77a1e4543b474684a40c506d742ee, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: e16c6aebd0911a7439dff4f43a4c5c17, type: 3}
@@ -50379,6 +50466,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 11c80e7178cf7b34aa9f2ad4773987ea, type: 3}
     sprites: []
     canvasses: []
@@ -50392,6 +50480,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: ceda0ec886f87ad47a7b6cd864f7f882, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: c005a3efb9bce7f4fa9f24e7d4051462, type: 3}
@@ -50407,6 +50496,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 8047b9caa91c45140aeb78c850a5882e, type: 3}
     sprites: []
     canvasses: []
@@ -50420,6 +50510,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: e4c5312c00c38ac4f82cc55706f7b122, type: 3}
     sprites: []
     canvasses: []
@@ -50430,6 +50521,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: c20cfc34b1bf5454ebeef1eb426b13b9, type: 3}
     sprites: []
     canvasses: []
@@ -50440,6 +50532,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   currentVoiceTimingData:
     voice: {fileID: 0}
     sprites: []
@@ -50448,6 +50541,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   animator_body: {fileID: 0}
   animator_cloth: {fileID: 0}
   nextScriptData:
@@ -61834,6 +61928,7 @@ MonoBehaviour:
   - {fileID: 195863866}
   - {fileID: 1743230560}
   - {fileID: 103926309}
+  points: []
   currentDestinationIndex: 0
   speed: 3
   rotationSpeed: 2.5
@@ -65595,6 +65690,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 321a7e94631f5f541a6fa05e9cd3f924, type: 3}
     sprites: []
     canvasses: []
@@ -65602,6 +65698,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: a27703f55128ae549a0069115af761c0, type: 3}
     sprites: []
     canvasses: []
@@ -65609,6 +65706,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: c622b893bdd4cb641bc10bf2128a10c5, type: 3}
     sprites: []
     canvasses: []
@@ -65616,6 +65714,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 0a41d2e926006ed4e941f6ba67201410, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: ea216eb2263a5bc4f9d23af4b7c3470f, type: 3}
@@ -65628,6 +65727,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 695ccf796b4015341900f072447a9135, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: dc02afa6b4ff6be45aa009f9659c0b7a, type: 3}
@@ -65640,6 +65740,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 2e5f3ed3045cc354ea15b6dfb67b46b4, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: b62e0af7834e4a643a47c92511c37206, type: 3}
@@ -65652,6 +65753,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: e4208f842b65c554698712aa7ef1b1fc, type: 3}
     sprites: []
     canvasses: []
@@ -65659,6 +65761,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 5a974d9fae30ed24282dd13ea0006506, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: c089a2a593fd8f24cb479735fb168c05, type: 3}
@@ -65671,6 +65774,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 6ccd74a317c035d4ba20862958fcf056, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: fee40059f5b100f45aa77b422a5992c8, type: 3}
@@ -65683,6 +65787,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: e4b02248a5e52ed42b3934a6937da65a, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: 77ae93d3b8351024f8d96d435ea6cab9, type: 3}
@@ -65695,6 +65800,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 9ad8d971997ea5644b63e6e34900a4e7, type: 3}
     sprites: []
     canvasses: []
@@ -65702,6 +65808,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   currentVoiceTimingData:
     voice: {fileID: 0}
     sprites: []
@@ -65710,6 +65817,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   animator_body: {fileID: 0}
   animator_cloth: {fileID: 0}
   nextScriptData:
@@ -69053,6 +69161,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 7ade7e04b01e86e4aa040f4e5e68672b, type: 3}
     sprites: []
     canvasses: []
@@ -69066,6 +69175,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: b9879974ec562f148b977c48731661f3, type: 3}
     sprites: []
     canvasses: []
@@ -69076,6 +69186,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 859856a1d1f505846b65bf90cd2e4e19, type: 3}
     sprites: []
     canvasses: []
@@ -69092,6 +69203,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: d7cebde6565fb3b489523e1c05198c9d, type: 3}
     sprites: []
     canvasses: []
@@ -69099,6 +69211,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 3daf612d325ac304ca8ef91175e406ca, type: 3}
     sprites: []
     canvasses: []
@@ -69106,6 +69219,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: d9683515648b5dd43a1761f704f150d4, type: 3}
     sprites: []
     canvasses: []
@@ -69113,6 +69227,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 6780452dac9306940922655bac47121f, type: 3}
     sprites: []
     canvasses: []
@@ -69132,6 +69247,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 2a369e3a89b179d4bab84402fe3c54f0, type: 3}
     sprites: []
     canvasses: []
@@ -69142,6 +69258,7 @@ MonoBehaviour:
       newEnabled: 0
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: d01f041e828243341bfcea947177f985, type: 3}
     sprites: []
     canvasses: []
@@ -69149,6 +69266,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   currentVoiceTimingData:
     voice: {fileID: 0}
     sprites: []
@@ -69157,6 +69275,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   animator_body: {fileID: 0}
   animator_cloth: {fileID: 0}
   nextScriptData:
@@ -80723,6 +80842,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 04dbdf2802c62ab4e8da3d9931096045, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: 90495461144cac549a14ccbf97053c25, type: 3}
@@ -80735,6 +80855,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 9b645abc30911814f8c1d8726e88290a, type: 3}
     sprites:
     - image: {fileID: 21300000, guid: 34ae02d555a3e1d46ae586eb0c62dcd8, type: 3}
@@ -80744,6 +80865,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: b6bf470eb410cb044aaff6aa2810f431, type: 3}
     sprites: []
     canvasses: []
@@ -80751,6 +80873,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: f2b29c3fb4b83724197b52cbedc6c404, type: 3}
     sprites: []
     canvasses: []
@@ -80764,6 +80887,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 41870292760481845928a5164c57cabd, type: 3}
     sprites: []
     canvasses: []
@@ -80771,6 +80895,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: f1146974e6d7e664e870834ffeafea2d, type: 3}
     sprites: []
     canvasses: []
@@ -80778,6 +80903,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 327bb419368c5974fbed0f3b20ab1050, type: 3}
     sprites: []
     canvasses:
@@ -80791,6 +80917,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 70de930ef34189041b51fd8071072aa6, type: 3}
     sprites: []
     canvasses: []
@@ -80798,6 +80925,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: a45d2119a3825934eb99ebc6a9e9ebeb, type: 3}
     sprites: []
     canvasses: []
@@ -80808,6 +80936,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 6fdcb95a815eaf842b8579058479dd94, type: 3}
     sprites: []
     canvasses: []
@@ -80815,6 +80944,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 5e62a8405349eb04b85609708c1dd645, type: 3}
     sprites: []
     canvasses: []
@@ -80822,6 +80952,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   currentVoiceTimingData:
     voice: {fileID: 0}
     sprites: []
@@ -80830,6 +80961,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   animator_body: {fileID: 0}
   animator_cloth: {fileID: 0}
   nextScriptData:
@@ -82138,7 +82270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1438774962
 Transform:
   m_ObjectHideFlags: 0
@@ -95839,6 +95971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destinationPoints:
   - {fileID: 1642573041}
+  points: []
   currentDestinationIndex: 0
   speed: 2
   rotationSpeed: 200
@@ -99550,6 +99683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destinationPoints:
   - {fileID: 2071488757}
+  points: []
   currentDestinationIndex: 0
   speed: 3
   rotationSpeed: 2.5
@@ -100121,6 +100255,7 @@ MonoBehaviour:
   hover_Color: {r: 0, g: 0, b: 0, a: 0}
   currentHighlightOptionB: 0
   currentHighlightOption: 0
+  number: 0
   rigidbody: {fileID: 1796514955}
   synchronizer: {fileID: 1190346255}
 --- !u!54 &1796514955
@@ -104014,6 +104149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destinationPoints:
   - {fileID: 884553995}
+  points: []
   currentDestinationIndex: 0
   speed: 2
   rotationSpeed: 200
@@ -104428,6 +104564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destinationPoints:
   - {fileID: 1959432682}
+  points: []
   currentDestinationIndex: 0
   speed: 3
   rotationSpeed: 2.5
@@ -118135,6 +118272,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: d97bd70e9d21e9a4b8067e8885fb4f32, type: 3}
     sprites: []
     canvasses: []
@@ -118211,6 +118349,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: e0cfc50083f397540b192355bda18d9d, type: 3}
     sprites: []
     canvasses: []
@@ -118224,6 +118363,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: fa3d6e101c087d84ebef558831fa6018, type: 3}
     sprites: []
     canvasses: []
@@ -118255,6 +118395,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: fb4da475b174b654a8d7273381566bc1, type: 3}
     sprites: []
     canvasses: []
@@ -118298,6 +118439,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 9a606273f5e8b364eb6181e8b0e62615, type: 3}
     sprites: []
     canvasses: []
@@ -118311,6 +118453,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 5b6c97b02ef7f6144b3ec04a0dce0f4c, type: 3}
     sprites: []
     canvasses: []
@@ -118318,6 +118461,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 74b95e27a6cfa4b42928639cede2837b, type: 3}
     sprites: []
     canvasses:
@@ -118361,6 +118505,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 51907f698cb0035498d36209ed91a8a4, type: 3}
     sprites: []
     canvasses: []
@@ -118401,6 +118546,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 10b0a8bd0d5141f43bdd5e128e887c46, type: 3}
     sprites: []
     canvasses: []
@@ -118441,6 +118587,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 4dcc689be3de77b4a8a5e2513c811f4b, type: 3}
     sprites: []
     canvasses: []
@@ -118451,6 +118598,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: c9a6655a157d1aa40a4c1e8fe8726f8b, type: 3}
     sprites: []
     canvasses: []
@@ -118512,6 +118660,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: dd21b392f1c487b448d564369264ec49, type: 3}
     sprites: []
     canvasses:
@@ -118528,6 +118677,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 1ba90811adb8da84291875203b0a8775, type: 3}
     sprites: []
     canvasses:
@@ -118562,6 +118712,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: f3f7bf62ca606024eace3114c69ce4d2, type: 3}
     sprites: []
     canvasses:
@@ -118596,6 +118747,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 7f892b1ac26400945a61ec5cb64607da, type: 3}
     sprites: []
     canvasses:
@@ -118621,6 +118773,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: 0f3434a0a75a0d54da53f5900cc0192f, type: 3}
     sprites: []
     canvasses: []
@@ -118652,6 +118805,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: bf9062f5f4702754ca6c4dcac53bbffa, type: 3}
     sprites: []
     canvasses: []
@@ -118713,6 +118867,7 @@ MonoBehaviour:
       newEnabled: 1
     shouldAudioStop: 1
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   - voice: {fileID: 8300000, guid: fca960fc5e5a5ce4fb11c2c4fef6361b, type: 3}
     sprites: []
     canvasses: []
@@ -118720,6 +118875,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   currentVoiceTimingData:
     voice: {fileID: 0}
     sprites: []
@@ -118728,6 +118884,7 @@ MonoBehaviour:
     Components: []
     shouldAudioStop: 0
     GoToIndex: -1
+    shouldNotAnimateCharacter: 0
   animator_body: {fileID: 0}
   animator_cloth: {fileID: 0}
   nextScriptData:
@@ -120253,6 +120410,7 @@ MonoBehaviour:
   - {fileID: 950785125}
   - {fileID: 1400422097}
   - {fileID: 812280649}
+  points: []
   currentDestinationIndex: 0
   speed: 3
   rotationSpeed: 2.5

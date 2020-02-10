@@ -76,6 +76,8 @@ public class VoiceImageCanvasSync : MonoBehaviour
 
         // if this index is >= 0 and this one has a canvas, wrong answer in the interaction with that canvas will set current index to this one.
         public int GoToIndex = -1;
+
+        public bool shouldNotAnimateCharacter = false;
     }
 
 
@@ -145,7 +147,7 @@ public class VoiceImageCanvasSync : MonoBehaviour
     public VoiceImageCanvasSync nextSynchronizer;
 
     // Updates the animator to perform asking animation.
-    private void ask()
+    public void ask()
     {
         if (animator_cloth != null)
         {
@@ -168,9 +170,8 @@ public class VoiceImageCanvasSync : MonoBehaviour
         }
     }
     // Updates the animator to perform idle animation.
-    private void idle()
+    public void idle()
     {
-
         if (animator_cloth != null)
         {
             animator_cloth.SetBool("idle", true);
@@ -181,7 +182,7 @@ public class VoiceImageCanvasSync : MonoBehaviour
             Debug.LogError("cloth animator is not set");
         }
 
-        if (animator_body)
+        if (animator_body != null)
         {
             animator_body.SetBool("idle", true);
             animator_body.SetBool("ask", false);
@@ -194,14 +195,11 @@ public class VoiceImageCanvasSync : MonoBehaviour
     }
 
     // Updates the animator to perform explanation animation.
-    private void explain()
+    public void explain()
     {
-        // uncomment commented lines in this block to support 2 animation of explanation (choosing which one should be used is randomly picked).
-        //int randomInt = UnityEngine.Random.Range(0, 2);
         if (animator_cloth != null)
         {
             animator_cloth.SetBool("idle", false);
-            //animator_cloth.SetInteger("talkingIndex", randomInt);
             animator_cloth.SetBool("ask", false);
         }
         else
@@ -209,10 +207,9 @@ public class VoiceImageCanvasSync : MonoBehaviour
             Debug.LogError("cloth animator is not set");
         }
 
-        if (animator_body)
+        if (animator_body != null)
         {
             animator_body.SetBool("idle", false);
-            //animator_body.SetInteger("talkingIndex", randomInt);
             animator_body.SetBool("ask", false);
         }
         else
@@ -240,7 +237,7 @@ public class VoiceImageCanvasSync : MonoBehaviour
             {
                 nextSynchronizer.enabled = true;
             }
-            else if (!nextScriptData.sceneName.Equals(SceneManager.GetActiveScene().name) && nextScriptData.sceneName.Length > 1)
+            else if (nextScriptData.sceneName.Length > 1)
             {
                 TransitionManager.transitionParam = nextScriptData.param;
                 SceneManager.LoadScene(nextScriptData.sceneName);
@@ -257,21 +254,21 @@ public class VoiceImageCanvasSync : MonoBehaviour
             {
                 UsedImageRef.enabled = false;
                 UsedImageRef = data.image;
-                //UsedImageRef.enabled = true;
             }
         }
-        //if (currentAudioIndex == imageRefSwitchingIndex && imageRef2 != null)
-        //{
-        //    UsedImageRef = imageRef2;
-        //    imageRef.enabled = false;
-        //    imageRef2.enabled = true;
-        //}
-        if (currentVoiceTimingData.shouldAudioStop)
+        if (currentVoiceTimingData.shouldAudioStop && !currentVoiceTimingData.shouldNotAnimateCharacter)
         {
             StartCoroutine(CallAfterDelay(() => ask(), currentVoiceTimingData.voice.length - 2f));
         }
         audioSource.PlayOneShot(currentVoiceTimingData.voice);
-        explain();
+        if (!currentVoiceTimingData.shouldNotAnimateCharacter)
+        {
+            explain();
+        }
+        else
+        {
+            idle();
+        }
         LastAudioClipStartTime = Time.time;
         if (canvasControllerForClass2 != null)
         {
@@ -333,7 +330,11 @@ public class VoiceImageCanvasSync : MonoBehaviour
         {
             float scheduledTime = objData.time + LastAudioClipStartTime;
             if (scheduledTime <= Time.time && scheduledTime > Time.time - Time.deltaTime)
+            {
                 objData.gameObject.SetActive(objData.newActive);
+                VRObject vrobj = objData.gameObject.GetComponent<VRObject>();
+                if (vrobj != null && objData.newActive) vrobj.enabled = true;
+            }
         }
 
         // syncing components
@@ -345,7 +346,7 @@ public class VoiceImageCanvasSync : MonoBehaviour
         }
 
         // if audio clip finished and can play next audio then start next sync
-        if (LastAudioClipStartTime != 0f && currentVoiceTimingData.voice.length + LastAudioClipStartTime + 0.5f < Time.time)
+        if (LastAudioClipStartTime != 0f && currentVoiceTimingData.voice.length + LastAudioClipStartTime + 0.2f < Time.time)
             if (!currentVoiceTimingData.shouldAudioStop)
             {
                 if (currentVoiceTimingData.GoToIndex >= 0)
@@ -354,7 +355,8 @@ public class VoiceImageCanvasSync : MonoBehaviour
             }
             else
             {
-                idle();
+                if ((animator_body != null && animator_body.GetBool("idle") == false) || (animator_cloth != null && animator_cloth.GetBool("idle") == false))
+                    idle();
             }
     }
 }

@@ -136,6 +136,7 @@ public class MultiStepCanvasInput : MonoBehaviour
         AudioClip playedClip = null;
         bool isCorrect = false;
         print(answeredOptions);
+        
         if (clickedButtonText.text.Equals(awaitedAnswer) || (awaitedAnswer.Contains(";" + clickedButtonText.text + ";") && !answeredOptions.Contains(";" + clickedButtonText.text + ";")))
         {
             // if a correct button is clicked
@@ -182,6 +183,8 @@ public class MultiStepCanvasInput : MonoBehaviour
                     playedClip = audio_wrong;
                 }
         }
+        synchronizer.explain();
+        StartCoroutine(idleAfterDelay(playedClip.length));
         // if was answered correctly and answered all required answers or no need for a correct answer or out of tries
         if ((isCorrect && steps[currentIndex].correctAnswer.Split(';').Length - 3 <= correctAnswersCount) || !steps[currentIndex].mustAnswerCorrectly || possibleTries == 0)
         {
@@ -277,6 +280,12 @@ public class MultiStepCanvasInput : MonoBehaviour
                 }
             }
         }
+    }
+
+    private IEnumerator idleAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        synchronizer.idle();
     }
 
     private bool shouldDisableComp = false;

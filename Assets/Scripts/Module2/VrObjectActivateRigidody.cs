@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class VrObjectActivateRigidody : VRObject
 {
+    public static int count=0;
+    public int number;
     public Rigidbody rigidbody;
     public VoiceImageCanvasSync synchronizer;
     // Start is called before the first frame update
@@ -18,13 +20,19 @@ public class VrObjectActivateRigidody : VRObject
     {
         
     }
+
     public override void interact()
     {
         base.interact();
+        count++;
         rigidbody.useGravity = true;
-        if (synchronizer != null)
+        if (count == number)
         {
-            synchronizer.NextSync();
+            if (synchronizer != null)
+            {
+                synchronizer.NextSync();
+            }
         }
+        
     }
 }

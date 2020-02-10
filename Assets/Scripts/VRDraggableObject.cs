@@ -25,6 +25,4 @@ public class VRDraggableObject : VRObject
         pointer.Drag(gameObject);
         print(gameObject.name);
     }
-
-
 }
