@@ -10,6 +10,7 @@ public class NextSync : VRObject
     public VoiceImageCanvasSync synchronizer;
     public static int Compt = 0;
     public bool test = false;
+    private bool bCanInteract = true;
 
     IEnumerator ResumeSynchronizerAfterDelay(AudioSource audioSource)
     {
@@ -23,10 +24,10 @@ public class NextSync : VRObject
     void Start()
     {
         Compt += 2;
-        
+
         if (Compt == 8)
         {
-           
+
             if (audioClipWrong != null)
             {
                 audioSource.clip = audioClipWrong;
@@ -35,9 +36,9 @@ public class NextSync : VRObject
                 StartCoroutine(ResumeSynchronizerAfterDelay(audioSource));
             }
         }
-        else if(Compt==9)
+        else if (Compt == 9)
         {
-            
+
             if (audioClipCorrect != null)
             {
                 audioSource.clip = audioClipCorrect;
@@ -46,16 +47,25 @@ public class NextSync : VRObject
                 StartCoroutine(ResumeSynchronizerAfterDelay(audioSource));
             }
         }
-        
+
     }
     public override void interact()
     {
+        if (!bCanInteract) return;
         base.interact();
         if (test)
         {
             Compt++;
-            
+
         }
         synchronizer.NextSync();
+        bCanInteract = false;
+        enabled = false;
+
+    }
+
+    private void OnEnable()
+    {
+        bCanInteract = true;
     }
 }
