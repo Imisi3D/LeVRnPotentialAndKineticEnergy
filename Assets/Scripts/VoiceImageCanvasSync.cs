@@ -315,6 +315,8 @@ public class VoiceImageCanvasSync : MonoBehaviour
                 canvasData.canvas.GetComponent<Canvas>().enabled = canvasData.newState;
                 Collider col = canvasData.canvas.GetComponent<BoxCollider>();
                 if (col != null) col.enabled = canvasData.newState;
+                MeshRenderer meshRenderer = canvasData.canvas.GetComponentInChildren<MeshRenderer>();
+                if (meshRenderer != null) meshRenderer.enabled = canvasData.newState;
                 MultiStepCanvasInput comp = canvasData.canvas.GetComponent<MultiStepCanvasInput>();
                 if (comp != null)
                 {

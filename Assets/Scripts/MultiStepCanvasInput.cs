@@ -214,6 +214,9 @@ public class MultiStepCanvasInput : MonoBehaviour
                     Collider col = toActivate.GetComponent<Collider>();
                     if (col != null)
                         col.enabled = true;
+                    MeshRenderer meshRenderer = toActivate.GetComponentInChildren<MeshRenderer>();
+                    if (meshRenderer != null) meshRenderer.enabled = true;
+
                 }
 
                 // if has MultiStepCanvasInput comp, enable it
@@ -248,6 +251,8 @@ public class MultiStepCanvasInput : MonoBehaviour
                 {
                     obj.transform.parent.gameObject.GetComponent<Canvas>().enabled = false;
                     obj.transform.parent.gameObject.GetComponent<BoxCollider>().enabled = false;
+                    MeshRenderer meshRenderer = obj.transform.parent.gameObject.GetComponentInChildren<MeshRenderer>();
+                    if (meshRenderer != null) meshRenderer.enabled = false;
                     for (int i = 0; i < buttons.Length; i++)
                         buttons[i].gameObject.GetComponent<Image>().color = color_Default;
                 }
