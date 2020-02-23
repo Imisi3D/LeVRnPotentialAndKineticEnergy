@@ -57,5 +57,6 @@ public class NextSynAndPlayCW : VRObject
             
         }
         synchronizer.NextSync();
+       
     }
 }
