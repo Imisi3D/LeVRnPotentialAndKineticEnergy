@@ -9,19 +9,19 @@ public class Settings : MonoBehaviour
     private void Start()
     {
         startTime = Time.time;
-        //Time.timeScale = 2f;
+        //Time.timeScale = 1.5f;
     }
 
     private void Update()
     {
-        if(Time.time < 10 + startTime)
-        {
-            if(QualitySettings.antiAliasing == 8)
-            {
-                QualitySettings.antiAliasing = 8;
-                XRSettings.eyeTextureResolutionScale = 1.75f;
+        // to make sure that settings are already set by other scripts used by oculus plugin.
+        if (startTime == 0 || Time.time < startTime + 3f) return;
 
-            }
+        if (QualitySettings.antiAliasing != 4 || XRSettings.eyeTextureResolutionScale != 1.25f)
+        {
+            QualitySettings.antiAliasing = 4;
+            XRSettings.eyeTextureResolutionScale = 1.25f;
+            enabled = false;
         }
     }
 }
