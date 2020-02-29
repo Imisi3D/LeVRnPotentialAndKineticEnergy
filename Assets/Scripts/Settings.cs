@@ -17,12 +17,12 @@ public class Settings : MonoBehaviour
         // to make sure that settings are already set by other scripts used by oculus plugin.
         if ( Time.time < startTime + 3f) return;
 
-        if (QualitySettings.antiAliasing != 4 || XRSettings.eyeTextureResolutionScale != 1.25f)
+        if (QualitySettings.antiAliasing != 4 || XRSettings.eyeTextureResolutionScale != 1.5f)
         {
             print(QualitySettings.antiAliasing);
-            QualitySettings.antiAliasing = 2;
+            QualitySettings.antiAliasing = 4;
             print(XRSettings.eyeTextureResolutionScale);
-            XRSettings.eyeTextureResolutionScale = 1.25f;
+            XRSettings.eyeTextureResolutionScale = 1.5f;
         }
     }
 }

@@ -15,11 +15,6 @@ public class Interactible : MonoBehaviour
      */
     public string type = "";
 
-    /**
-     * The component that is responsible for both scripts Week1Class1Part1 and Week1Class1Part2.
-     */
-    public NumberInputInteraction interactor;
-
 
     /**
      * Hand anchor, used to attach toygun to player's hand.
@@ -48,41 +43,13 @@ public class Interactible : MonoBehaviour
     {
         if (gameObject.tag == "ToyGun")
         {
-            if (interactor.audioSource.isPlaying) return;
             transform.parent = handAnchor.transform;
             transform.localPosition = Vector3.zero;
             transform.localEulerAngles = new Vector3(0f, -90f, 0f);
-            interactor.FruitGame_hasToyGun = true;
             transform.GetChild(0).gameObject.SetActive(false);
-            interactor.FruitGame_instructionText.text = "Shoot at 4 fruits with Algebraic Expressions on them";
             MeshRenderer renderer = gameObject.GetComponent<MeshRenderer>();
-            interactor.shouldHightlightToygun = false;
-            if(interactor.FruitGame_CurrentStep == 1)
-            {
-                StartCoroutine(interactor.FruitGame_NextStep());
-            }
             renderer.material = DefaultMaterial;
             return;
-        }
-
-        if (!interactor.FruitGame_hasToyGun) return;
-        if (interactor.audioSource.isPlaying) return;
-
-        if (interactor.FruitGame_DemandedType.Equals(type))
-        {
-            interactor.audioSource.PlayOneShot(interactor.gun_shot, 0.2f);
-            interactor.FruitGame_currentProgress++;
-            interactor.FruitGame_currentConsecutive++;
-            interactor.PlaySoundForCurrentFruitGameProgress();
-            gameObject.SetActive(false);
-        }
-        else
-        {
-            interactor.audioSource.PlayOneShot(interactor.error);
-            interactor.FruitGame_currentConsecutive = 0;
-            interactor.playSound(interactor.FruitGame_wrong);
-            StartCoroutine(Shake());
-            OVRInput.SetControllerVibration(1, 1, OVRInput.Controller.RTouch);
         }
     }
 
