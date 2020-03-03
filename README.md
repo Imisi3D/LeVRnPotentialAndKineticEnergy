@@ -1,4 +1,29 @@
-VR-Education
+# LeVRnPotentialAndKineticEnergy
+An educational VR project developed to teach Junior Secondary School students about Potential and Kinetic Energy.
+
+## Prerequisites
+- Unity 2019.1.1f1
+
+## Getting Started
+These instructions will get a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on your Oculus Go.
+
+## Installing
+To get a copy of this project working properly on your local machine, follow these simple steps:
+
+- Download the project folder.
+- Open the project with Unity 2019.1.1f1.
+
+To keep the git repository small in size, a lot of the large assets used are not included in the repo but are hosted somewhere else as a .unitypackage.
+
+- Download the .unitypackage here [leVRn-Non-Communicable-Diseases UnityPackage](https://drive.google.com/file/d/1ecPvgyHXnRFar_76sW94xNIIqjv-Ntic/view?usp=sharing)
+- Import the leVRn-Potential-And-Kinetic-Energy UnityPackage into the project.
+- Ensure the platform is set to Android in Build Settings.
+- Download the Oculus SDK used for this project [here](https://drive.google.com/file/d/1NmoFQmk7qaPrjr9PDjEzkipx2NsY7zvs/view?usp=sharing).
+- Import the Oculus SDK into the project.
+- Build the .apk, load it into an Oculus Go and test the experience to ensure everything works fine.
+
+
+## Deployment
 
 ### On your phone
 - Open the Oculus app on your phone
