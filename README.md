@@ -2,7 +2,7 @@
 An educational VR project developed to teach Junior Secondary School students about Potential and Kinetic Energy.
 
 ## Prerequisites
-- Unity 2019.1.1f1
+- Unity 2019.3.3f1
 
 ## Getting Started
 These instructions will get a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on your Oculus Go.
@@ -11,15 +11,8 @@ These instructions will get a copy of the project up and running on your local m
 To get a copy of this project working properly on your local machine, follow these simple steps:
 
 - Download the project folder.
-- Open the project with Unity 2019.1.1f1.
-
-To keep the git repository small in size, a lot of the large assets used are not included in the repo but are hosted somewhere else as a .unitypackage.
-
-- Download the .unitypackage here [leVRn-Non-Communicable-Diseases UnityPackage](https://drive.google.com/file/d/1ecPvgyHXnRFar_76sW94xNIIqjv-Ntic/view?usp=sharing)
-- Import the leVRn-Potential-And-Kinetic-Energy UnityPackage into the project.
+- Open the project with Unity 2019.3.3f1.
 - Ensure the platform is set to Android in Build Settings.
-- Download the Oculus SDK used for this project [here](https://drive.google.com/file/d/1NmoFQmk7qaPrjr9PDjEzkipx2NsY7zvs/view?usp=sharing).
-- Import the Oculus SDK into the project.
 - Build the .apk, load it into an Oculus Go and test the experience to ensure everything works fine.
 
 
@@ -55,7 +48,7 @@ If you are on Windows, you could check if these files have already been download
 - Then type "adb install PathToYourApk\ApkName.apk" and press enter
 
 ## Contributing
-Please read [CONTRIBUTING.md](https://github.com/Imisi3D/LeVRn_Non_Communicable_Diseases/blob/master/Contributing.md) for details on how best to contribute to this project.
+Please read [CONTRIBUTING.md](https://github.com/Imisi3D/LeVRnPotentialAndKineticEnergy/blob/master_2/CONTRIBUTING.md) for details on how best to contribute to this project.
 
 ## Authors
 - **Isiaq Gbadamosi** - [Github](https://github.com/badmusishaq)
