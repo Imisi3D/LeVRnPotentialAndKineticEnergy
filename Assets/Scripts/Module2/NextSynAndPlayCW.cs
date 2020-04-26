@@ -10,6 +10,8 @@ public class NextSynAndPlayCW : VRObject
     public VoiceImageCanvasSync synchronizer;
     public static int Compt = 0;
     public bool test = false;
+    public bool bCanInteract = true;
+    public NextSynAndPlayCW[] otherOptions;
 
     IEnumerator ResumeSynchronizerAfterDelay(AudioSource audioSource)
     {
@@ -32,6 +34,7 @@ public class NextSynAndPlayCW : VRObject
                 audioSource.clip = audioClipWrong;
                 Compt = 0;
                 audioSource.Play();
+                synchronizer.explain();
                 StartCoroutine(ResumeSynchronizerAfterDelay(audioSource));
             }
         }
@@ -43,6 +46,7 @@ public class NextSynAndPlayCW : VRObject
                 audioSource.clip = audioClipCorrect;
                 Compt = 0;
                 audioSource.Play();
+                synchronizer.explain();
                 StartCoroutine(ResumeSynchronizerAfterDelay(audioSource));
             }
         }
@@ -50,6 +54,7 @@ public class NextSynAndPlayCW : VRObject
     }
     public override void interact()
     {
+        if (!bCanInteract) return;
         base.interact();
         if (test)
         {
@@ -57,6 +62,8 @@ public class NextSynAndPlayCW : VRObject
             
         }
         synchronizer.NextSync();
-       
+        bCanInteract = false;
+        foreach (NextSynAndPlayCW option in otherOptions)
+            option.bCanInteract = false;
     }
 }

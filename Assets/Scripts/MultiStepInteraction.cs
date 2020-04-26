@@ -80,40 +80,44 @@ public class MultiStepInteraction : MonoBehaviour
 
         AudioClip clip2Play = null;
         // correct
-        if (holder.bIsAnswerHolder && holder.containsType(obj.type))
-        {
-            currentNumberOfCorrectAnswers++;
-        }
-        // wrong
-        else
-        {
-            holder.remainingTrials--;
-            if (holder.remainingTrials == 0)
+       if (holder.bIsAnswerHolder)
+       {
+            if (/*holder.bIsAnswerHolder && */holder.containsType(obj.type))
             {
-                // searching for the clip to play when out of tries
-                foreach (HolderInfo info in steps[currentStepIndex].holdersInfo)
+                currentNumberOfCorrectAnswers++;
+            }
+            // wrong
+            else
+            {
+                holder.remainingTrials--;
+                if (holder.remainingTrials == 0)
                 {
-                    if (info.holder == holder.gameObject)
+                    // searching for the clip to play when out of tries
+                    foreach (HolderInfo info in steps[currentStepIndex].holdersInfo)
                     {
-                        clip2Play = info.WhenOutOfTrials;
-                        // searching for the right answer
-                        foreach (VRDraggableObject option in options)
+                        if (info.holder == holder.gameObject)
                         {
-                            // when answer is found, attach it to the corresponding holder.
-                            if (holder.containsType(option.type))
+                            clip2Play = info.WhenOutOfTrials;
+                            // searching for the right answer
+                            foreach (VRDraggableObject option in options)
                             {
-                                VRDraggableObject attached = holder.gameObject.GetComponentInChildren<VRDraggableObject>();
-                                if (attached != null) // if the holder has an object attached to it, return it to its default location
-                                    Utility.AttachToObject(attached.gameObject, attached.defaultHolder);
-                                Utility.AttachToObject(option.gameObject, holder.gameObject);
-                                currentNumberOfCorrectAnswers++;
+                                // when answer is found, attach it to the corresponding holder.
+                                if (holder.containsType(option.type))
+                                {
+                                    VRDraggableObject attached = holder.gameObject.GetComponentInChildren<VRDraggableObject>();
+                                    if (attached != null) // if the holder has an object attached to it, return it to its default location
+                                        Utility.AttachToObject(attached.gameObject, attached.defaultHolder);
+                                    Utility.AttachToObject(option.gameObject, holder.gameObject);
+                                    option.applyHighlight(HighlightOptions.correct, true);
+                                    currentNumberOfCorrectAnswers++;
+                                }
                             }
+                            break;
                         }
-                        break;
                     }
+                    if (clip2Play != null)
+                        audioSource.PlayOneShot(clip2Play);
                 }
-                if (clip2Play != null)
-                    audioSource.PlayOneShot(clip2Play);
             }
         }
 
@@ -190,7 +194,6 @@ public class MultiStepInteraction : MonoBehaviour
             {
                 pointer.Drop(draggable.defaultHolder);
             }
-            pointer.attachedObject = null;
         }
     }
 

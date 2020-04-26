@@ -18,18 +18,13 @@ public class SceneControls : MonoBehaviour
     public void restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        if (VoiceImageCanvasSync.SceneTransitionParam.Equals("class2"))
-        {
-            SceneManager.LoadScene("Street");
-        }
-            //VoiceImageCanvasSync.SceneTransitionParam = "";
         Time.timeScale = 1;
     }
 
     // navigate to home.
     public void goToHome()
     {
-        VoiceImageCanvasSync.SceneTransitionParam = "";
+        TransitionManager.transitionParam = "";
         foreach (AudioSource audio in audioSources)
             audio.UnPause();
         SceneManager.LoadScene(homeScene);

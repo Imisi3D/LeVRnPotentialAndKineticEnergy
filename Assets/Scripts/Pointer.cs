@@ -59,7 +59,9 @@ public class Pointer : MonoBehaviour
                         if (holder.containsType(draggable.type))
                             obj.applyHighlight(HighlightOptions.correct);
                         else
+                        {
                             obj.applyHighlight(HighlightOptions.wrong);
+                        }
                     }
                     else
                     {
@@ -243,9 +245,12 @@ public class Pointer : MonoBehaviour
 
     public void Drop(GameObject holder)
     {
+        Vector2 oldSize = attachedObject.GetComponent<RectTransform>().sizeDelta;
         attachedObject.transform.parent = holder.transform;
         attachedObject.transform.localPosition = Vector3.zero;
         attachedObject.transform.localEulerAngles = new Vector3(0, 0, 0);
+        attachedObject.transform.localScale = new Vector3(1, 1, 1);
+        attachedObject.GetComponent<RectTransform>().sizeDelta = oldSize;
         BoxCollider box = attachedObject.GetComponent<BoxCollider>();
         if (box != null) box.enabled = true;
         attachedObject = null;

@@ -40,6 +40,10 @@ public class MoveAlongPoints : CustomComponent
     // rotation speed rad/s
     public float rotationSpeed = 30f;
 
+    public AudioSource audioSource;
+    public AudioClip sound;
+    public AudioClip onHitSound;
+
     private void Start()
     {
         foreach (GameObject obj in destinationPoints)
@@ -83,6 +87,25 @@ public class MoveAlongPoints : CustomComponent
             }
             else
                 enabled = false;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+            if(onHitSound != null)
+             audioSource.PlayOneShot(onHitSound);
+        }
+
+        }
+        private void OnEnable()
+    {
+        if (audioSource != null && sound != null)
+        {
+            audioSource.clip = sound;
+            audioSource.Play();
         }
     }
 }

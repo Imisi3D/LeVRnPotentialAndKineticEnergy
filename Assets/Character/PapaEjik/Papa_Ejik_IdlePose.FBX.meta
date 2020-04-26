@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: f0d7c443716c29d498c5f6b133b43ba6
 ModelImporter:
-  serializedVersion: 26
+  serializedVersion: 19300
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
@@ -23,7 +23,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: 'Material #58'
+      name: Material #58
     second: {fileID: 2100000, guid: c5e6fdae74773cf478eb5f9602428d4d, type: 2}
   - first:
       type: UnityEngine:Material
@@ -61,7 +61,7 @@ ModelImporter:
       name: Std_Upper_Teeth
     second: {fileID: 2100000, guid: dd05e0068d107e34288549f899070ea1, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -158,7 +158,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -183,7 +183,6 @@ ModelImporter:
     normalSmoothingSource: 0
   referencedClips: []
   importAnimation: 1
-  copyAvatar: 1
   humanDescription:
     serializedVersion: 3
     human: []
@@ -758,8 +757,10 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 1305e5d9811fddf46b035efdad67dec9,
     type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 2
   additionalBone: 0
   userData: 
   assetBundleName: 

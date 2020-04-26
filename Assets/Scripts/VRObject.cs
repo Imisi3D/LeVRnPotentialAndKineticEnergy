@@ -23,7 +23,7 @@ public class VRObject : MonoBehaviour
 {
     public Pointer VRPointer;
     public bool bShouldHighlight = false;
-    
+
     #region Highlight
     public HighlightType highlightType = HighlightType.material;
     public Material default_Material;
@@ -151,6 +151,7 @@ public class VRObject : MonoBehaviour
                         if (wrong_Color != null)
                             image.color = wrong_Color;
                     }
+                    removeHighlightAfterDelay(2);
                     break;
                 }
         }
@@ -174,6 +175,17 @@ public class VRObject : MonoBehaviour
         {
             StartCoroutine(HighlightAfterDelay(0.5f, option));
         }
+    }
+
+    private void removeHighlightAfterDelay(float delay)
+    {
+        StartCoroutine(removeHighlightAfterDelayCoroutine(delay));
+    }
+
+    private IEnumerator removeHighlightAfterDelayCoroutine(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        applyHighlight(HighlightOptions.none, true);
     }
 
     private IEnumerator HighlightAfterDelay(float delay, HighlightOptions option = HighlightOptions.none)

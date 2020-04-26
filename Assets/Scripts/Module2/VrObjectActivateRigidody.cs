@@ -6,16 +6,18 @@ using UnityEngine.UI;
 public class VrObjectActivateRigidody : VRObject
 {
     public static int count=0;
+    public bool UseCount = true;
     public int number;
     public Rigidbody rigidbody;
     public VoiceImageCanvasSync synchronizer;
-    // Start is called before the first frame update
+    public AudioClip interactionAudioClip;
+    public AudioSource audioSource;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -24,9 +26,22 @@ public class VrObjectActivateRigidody : VRObject
     public override void interact()
     {
         base.interact();
-        count++;
         rigidbody.useGravity = true;
-        if (count == number)
+        if (audioSource != null && interactionAudioClip != null)
+            audioSource.PlayOneShot(interactionAudioClip);
+        if (UseCount)
+        {
+            count++;
+            if (count == number)
+            {
+                if (synchronizer != null)
+                {
+                    synchronizer.NextSync();
+
+                }
+            }
+        }
+        else if (!UseCount)
         {
             if (synchronizer != null)
             {

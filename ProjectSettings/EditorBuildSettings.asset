@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Module2_Street.unity
     guid: 7f852623b04085d41836b449687e8032
+  - enabled: 1
+    path: Assets/Scenes/Field.unity
+    guid: cbb8fcdd35630634ab1f38b3b5df97be
   m_configObjects: {}

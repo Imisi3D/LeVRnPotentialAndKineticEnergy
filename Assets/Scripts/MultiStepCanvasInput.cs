@@ -48,6 +48,7 @@ public class MultiStepCanvasInput : MonoBehaviour
 
         public bool isAutoSolved = false;
         public Button correctAnswerButton;
+        public bool shouldAnimateCharacter = false;
 
 
         // if true, then in this step the player must answer correctly. Canvas won't disappear when the answer is wrong unless the maximum number of tries is reached.
@@ -121,6 +122,8 @@ public class MultiStepCanvasInput : MonoBehaviour
     public int correctAnswersCount = 0;
     // What was answered (no modification in the component will affect the logic, it is set from code and exposed as DEBUG).
     public string answeredOptions = ";;";
+    // delay before this canvas disappears.
+    public float delayBeforeDisappearince = 0f;
 
     /**
      * This method is called when a button is clicked. 
@@ -136,7 +139,7 @@ public class MultiStepCanvasInput : MonoBehaviour
         AudioClip playedClip = null;
         bool isCorrect = false;
         print(answeredOptions);
-        
+
         if (clickedButtonText.text.Equals(awaitedAnswer) || (awaitedAnswer.Contains(";" + clickedButtonText.text + ";") && !answeredOptions.Contains(";" + clickedButtonText.text + ";")))
         {
             // if a correct button is clicked
@@ -249,12 +252,16 @@ public class MultiStepCanvasInput : MonoBehaviour
                 }
                 else
                 {
-                    obj.transform.parent.gameObject.GetComponent<Canvas>().enabled = false;
-                    obj.transform.parent.gameObject.GetComponent<BoxCollider>().enabled = false;
-                    MeshRenderer meshRenderer = obj.transform.parent.gameObject.GetComponentInChildren<MeshRenderer>();
-                    if (meshRenderer != null) meshRenderer.enabled = false;
-                    for (int i = 0; i < buttons.Length; i++)
-                        buttons[i].gameObject.GetComponent<Image>().color = color_Default;
+                    StartCoroutine(CallAfterDelay(() =>
+                    {
+                        obj.transform.parent.gameObject.GetComponent<Canvas>().enabled = false;
+                        obj.transform.parent.gameObject.GetComponent<BoxCollider>().enabled = false;
+                        MeshRenderer meshRenderer = obj.transform.parent.gameObject.GetComponentInChildren<MeshRenderer>();
+                        if (meshRenderer != null) meshRenderer.enabled = false;
+                        for (int i = 0; i < buttons.Length; i++)
+                            buttons[i].gameObject.GetComponent<Image>().color = color_Default;
+                    }, delayBeforeDisappearince));
+
                 }
                 shouldDisableComp = true;
                 obj.transform.parent.gameObject.GetComponent<ControllerSelection.OVRRaycaster>().enabled = false;

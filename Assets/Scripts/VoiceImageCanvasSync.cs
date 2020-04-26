@@ -74,6 +74,9 @@ public class VoiceImageCanvasSync : MonoBehaviour
         // true means audio will stop after playing this clip.
         public bool shouldAudioStop = false;
 
+        // if true, then at this audio ask animation won't be played.
+        public bool notAQuestion = false;
+
         // if this index is >= 0 and this one has a canvas, wrong answer in the interaction with that canvas will set current index to this one.
         public int GoToIndex = -1;
 
@@ -256,9 +259,16 @@ public class VoiceImageCanvasSync : MonoBehaviour
                 UsedImageRef = data.image;
             }
         }
-        if (currentVoiceTimingData.shouldAudioStop && !currentVoiceTimingData.shouldNotAnimateCharacter)
+        if (currentVoiceTimingData.shouldAudioStop)
         {
-            StartCoroutine(CallAfterDelay(() => ask(), currentVoiceTimingData.voice.length - 2f));
+            if (!currentVoiceTimingData.shouldNotAnimateCharacter && !currentVoiceTimingData.notAQuestion)
+            {
+                StartCoroutine(CallAfterDelay(() => ask(), currentVoiceTimingData.voice.length - 2f));
+            }
+            else
+            {
+                StartCoroutine(CallAfterDelay(() => idle(), currentVoiceTimingData.voice.length - 0.5f));
+            } 
         }
         audioSource.PlayOneShot(currentVoiceTimingData.voice);
         if (!currentVoiceTimingData.shouldNotAnimateCharacter)
@@ -357,7 +367,7 @@ public class VoiceImageCanvasSync : MonoBehaviour
             }
             else
             {
-                if ((animator_body != null && animator_body.GetBool("idle") == false) || (animator_cloth != null && animator_cloth.GetBool("idle") == false))
+                if ((animator_body != null && animator_body.GetBool("ask") == true) || (animator_cloth != null && animator_cloth.GetBool("ask") == true))
                     idle();
             }
     }
