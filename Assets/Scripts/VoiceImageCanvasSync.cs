@@ -243,8 +243,17 @@ public class VoiceImageCanvasSync : MonoBehaviour
             else if (nextScriptData.sceneName.Length > 1)
             {
                 TransitionManager.transitionParam = nextScriptData.param;
-                SceneManager.LoadScene(nextScriptData.sceneName);
+                if (SceneManager.GetActiveScene().name != nextScriptData.sceneName)
+                {
+                    TransitionManager.pendingLoadingSceneName = nextScriptData.sceneName;
+                    SceneManager.LoadScene("LoadingScene");
+                }
+                else
+                {
+                    SceneManager.LoadScene(nextScriptData.sceneName);
+                }
                 SceneTransitionParam = nextScriptData.param;
+
 
             }
             currentVoiceTimingData = null;

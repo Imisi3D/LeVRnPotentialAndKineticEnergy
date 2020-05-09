@@ -8,9 +8,10 @@ public class TransitionManager : MonoBehaviour
     public GameObject[] Assets;
     public VoiceImageCanvasSync[] voiceSynchronizers;
     public static string transitionParam = "";
+    public static string pendingLoadingSceneName = "";
 
     private void Awake()
-    {
+    {   
         int RequiredAssets = 0;
         if (transitionParam.Equals("scene1"))
             RequiredAssets = 0;

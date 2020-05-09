@@ -27,7 +27,13 @@ public class SceneControls : MonoBehaviour
         TransitionManager.transitionParam = "";
         foreach (AudioSource audio in audioSources)
             audio.UnPause();
-        SceneManager.LoadScene(homeScene);
+        if (SceneManager.GetActiveScene().name == homeScene)
+            SceneManager.LoadScene(homeScene);
+        else
+        {
+            TransitionManager.pendingLoadingSceneName = homeScene;
+            SceneManager.LoadScene("LoadingScene");
+        }
         Time.timeScale = 1;
     }
 

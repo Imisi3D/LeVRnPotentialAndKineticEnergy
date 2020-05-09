@@ -19,7 +19,8 @@ public class GotoScene : MonoBehaviour
         {
             string param = "scene" + (sceneIndex + 1).ToString();
             TransitionManager.transitionParam = param;
-            SceneManager.LoadScene(scenesNames[sceneIndex]);
+            TransitionManager.pendingLoadingSceneName = scenesNames[sceneIndex];
+            SceneManager.LoadScene("LoadingScene");
             VoiceImageCanvasSync.SceneTransitionParam = param;
         }
     }

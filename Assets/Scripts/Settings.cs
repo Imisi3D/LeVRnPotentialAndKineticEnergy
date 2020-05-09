@@ -9,7 +9,7 @@ public class Settings : MonoBehaviour
     private void Start()
     {
         startTime = Time.time;
-        //Time.timeScale = 4f;
+        //Time.timeScale = 2f;
     }
 
     private void Update()
@@ -23,7 +23,6 @@ public class Settings : MonoBehaviour
            print(QualitySettings.antiAliasing);
            QualitySettings.antiAliasing = 8;
            XRDevice.UpdateEyeTextureMSAASetting();
-           //print(XRSettings.eyeTextureResolutionScale);
            XRSettings.eyeTextureResolutionScale = 1.5f;
        }
     }
