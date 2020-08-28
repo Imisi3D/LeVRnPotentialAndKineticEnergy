@@ -1078,7 +1078,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: d170e76265b9b014c9431d3854059b4d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d170e76265b9b014c9431d3854059b4d,
         type: 3}
@@ -1198,7 +1198,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: d170e76265b9b014c9431d3854059b4d,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: d170e76265b9b014c9431d3854059b4d,
         type: 3}
@@ -2521,6 +2521,9 @@ MonoBehaviour:
   - {fileID: 971493088}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 6
   rotationSpeed: 30
   audioSource: {fileID: 0}
@@ -2954,6 +2957,9 @@ MonoBehaviour:
     shouldStop: 1
     mustInheritRotation: 1
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 2
   rotationSpeed: 4
   audioSource: {fileID: 0}
@@ -3751,6 +3757,9 @@ MonoBehaviour:
   - {fileID: 1406886048}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 5
   rotationSpeed: 30
   audioSource: {fileID: 0}
@@ -4722,6 +4731,9 @@ MonoBehaviour:
   - {fileID: 1054247537}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 4
   rotationSpeed: 30
   audioSource: {fileID: 143342306}
@@ -7008,6 +7020,9 @@ MonoBehaviour:
   - {fileID: 1870521545}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 5
   rotationSpeed: 30
   audioSource: {fileID: 205242061}
@@ -11637,6 +11652,9 @@ MonoBehaviour:
   - {fileID: 1054247537}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 5
   rotationSpeed: 30
   audioSource: {fileID: 0}
@@ -12680,6 +12698,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   object2Move: {fileID: 1775300207}
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   points:
   - target: {fileID: 664455833}
     shouldStop: 0
@@ -16645,6 +16666,9 @@ MonoBehaviour:
   - {fileID: 1485205403}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 6
   rotationSpeed: 30
   audioSource: {fileID: 0}
@@ -17751,6 +17775,9 @@ MonoBehaviour:
     shouldStop: 0
     mustInheritRotation: 0
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 5
   rotationSpeed: 7
   audioSource: {fileID: 494043526}
@@ -18610,6 +18637,9 @@ MonoBehaviour:
     shouldStop: 0
     mustInheritRotation: 1
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 1.5
   rotationSpeed: 3.14
   audioSource: {fileID: 0}
@@ -19145,6 +19175,9 @@ MonoBehaviour:
     shouldStop: 0
     mustInheritRotation: 1
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 1.5
   rotationSpeed: 3.14
   audioSource: {fileID: 0}
@@ -19308,6 +19341,9 @@ MonoBehaviour:
   - {fileID: 971493088}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 6
   rotationSpeed: 30
   audioSource: {fileID: 0}
@@ -21446,6 +21482,9 @@ MonoBehaviour:
   - {fileID: 2088321365}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 3
   rotationSpeed: 2.5
   audioSource: {fileID: 594607760}
@@ -22489,6 +22528,9 @@ MonoBehaviour:
     shouldStop: 0
     mustInheritRotation: 1
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 1.5
   rotationSpeed: 3.14
   audioSource: {fileID: 0}
@@ -24060,6 +24102,9 @@ MonoBehaviour:
   - {fileID: 1406886048}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 7
   rotationSpeed: 30
   audioSource: {fileID: 0}
@@ -25481,6 +25526,9 @@ MonoBehaviour:
     shouldStop: 1
     mustInheritRotation: 1
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 2
   rotationSpeed: 4
   audioSource: {fileID: 0}
@@ -26169,6 +26217,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -26178,6 +26227,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -26193,6 +26243,7 @@ MonoBehaviour:
     - component: {fileID: 594607755}
       time: 1
       newEnabled: 1
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -26202,6 +26253,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -26214,6 +26266,7 @@ MonoBehaviour:
       newState: 1
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -26232,6 +26285,9 @@ MonoBehaviour:
     - component: {fileID: 894587668}
       time: 1
       newEnabled: 1
+    animationStates:
+    - state: 4
+      time: 1
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -26241,6 +26297,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -26253,6 +26310,7 @@ MonoBehaviour:
       newState: 1
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -26268,6 +26326,7 @@ MonoBehaviour:
     - component: {fileID: 1010289919}
       time: 0.1
       newEnabled: 1
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -26277,6 +26336,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -26289,6 +26349,7 @@ MonoBehaviour:
       time: 1
       newActive: 1
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -26298,6 +26359,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -26310,6 +26372,7 @@ MonoBehaviour:
       newState: 1
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -26320,11 +26383,12 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
     shouldNotAnimateCharacter: 0
-  animator_body: {fileID: 2120816685}
+  animator_body: {fileID: 1332081441}
   animator_cloth: {fileID: 0}
   nextScriptData:
     sceneName: Module2_Street
@@ -29392,6 +29456,75 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &761231909
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 894587672}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 2dfcc282c2c584f449128d01596b850a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfcc282c2c584f449128d01596b850a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.99
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfcc282c2c584f449128d01596b850a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfcc282c2c584f449128d01596b850a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfcc282c2c584f449128d01596b850a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfcc282c2c584f449128d01596b850a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfcc282c2c584f449128d01596b850a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfcc282c2c584f449128d01596b850a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfcc282c2c584f449128d01596b850a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfcc282c2c584f449128d01596b850a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 2dfcc282c2c584f449128d01596b850a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 2dfcc282c2c584f449128d01596b850a,
+        type: 3}
+      propertyPath: m_Name
+      value: Papa_Morenike_Breathing_Idle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2dfcc282c2c584f449128d01596b850a, type: 3}
 --- !u!4 &763965150 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: f0d7c443716c29d498c5f6b133b43ba6,
@@ -29842,6 +29975,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   object2Move: {fileID: 1775300207}
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   points:
   - target: {fileID: 1930283691}
     shouldStop: 0
@@ -30964,6 +31100,9 @@ MonoBehaviour:
   - {fileID: 1089096462}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 5
   rotationSpeed: 30
   audioSource: {fileID: 0}
@@ -31394,6 +31533,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -31403,6 +31543,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -31415,6 +31556,7 @@ MonoBehaviour:
       time: 1
       newActive: 1
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -31427,6 +31569,7 @@ MonoBehaviour:
       newState: 1
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -31442,6 +31585,7 @@ MonoBehaviour:
       time: 1
       newActive: 0
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -31454,6 +31598,7 @@ MonoBehaviour:
       newState: 1
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -31469,6 +31614,7 @@ MonoBehaviour:
       time: 1
       newActive: 0
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -31481,6 +31627,7 @@ MonoBehaviour:
       newState: 1
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -31493,6 +31640,7 @@ MonoBehaviour:
       time: 0.1
       newActive: 0
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -31502,6 +31650,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -31512,11 +31661,12 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
     shouldNotAnimateCharacter: 0
-  animator_body: {fileID: 2120816685}
+  animator_body: {fileID: 1332081441}
   animator_cloth: {fileID: 0}
   nextScriptData:
     sceneName: Module2_SimulationRoom
@@ -32847,6 +32997,9 @@ MonoBehaviour:
   - {fileID: 1089096462}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 6
   rotationSpeed: 30
   audioSource: {fileID: 857471090}
@@ -34049,7 +34202,10 @@ MonoBehaviour:
   - {fileID: 1899804454}
   points: []
   currentDestinationIndex: 0
-  speed: 1
+  characterAnimator: {fileID: 2026973443}
+  movingState: 4
+  idleState: 1
+  speed: 1.5
   rotationSpeed: 2.5
   audioSource: {fileID: 0}
   sound: {fileID: 0}
@@ -34065,6 +34221,7 @@ Transform:
   m_LocalPosition: {x: -1.5387821, y: -2.9932618, z: 5.0163937}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2026973442}
   - {fileID: 1924356561}
   - {fileID: 1309514714}
   m_Father: {fileID: 1277402634}
@@ -35964,6 +36121,9 @@ MonoBehaviour:
   - {fileID: 971493088}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 5
   rotationSpeed: 30
   audioSource: {fileID: 936445137}
@@ -36538,6 +36698,9 @@ MonoBehaviour:
     shouldStop: 0
     mustInheritRotation: 1
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 1.5
   rotationSpeed: 3.14
   audioSource: {fileID: 0}
@@ -37432,6 +37595,9 @@ MonoBehaviour:
   - {fileID: 1203191839}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 5
   rotationSpeed: 30
   audioSource: {fileID: 971679945}
@@ -39417,6 +39583,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   object2Move: {fileID: 1775300207}
+  characterAnimator: {fileID: 1332081441}
+  movingState: 4
+  idleState: 1
   points:
   - target: {fileID: 1954544593}
     shouldStop: 1
@@ -40961,6 +41130,9 @@ MonoBehaviour:
     shouldStop: 0
     mustInheritRotation: 1
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 5
   rotationSpeed: 1.75
   audioSource: {fileID: 0}
@@ -48176,6 +48348,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -48185,6 +48358,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -48194,6 +48368,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -48203,6 +48378,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -48218,6 +48394,7 @@ MonoBehaviour:
     - component: {fileID: 1775300208}
       time: 0.1
       newEnabled: 1
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -48232,6 +48409,7 @@ MonoBehaviour:
       newState: 1
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -48252,6 +48430,7 @@ MonoBehaviour:
     - component: {fileID: 494043525}
       time: 1
       newEnabled: 1
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -48272,6 +48451,7 @@ MonoBehaviour:
       time: 0.1
       newActive: 0
     Components: []
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -48287,6 +48467,7 @@ MonoBehaviour:
     - component: {fileID: 1119948337}
       time: 1
       newEnabled: 1
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -48299,6 +48480,7 @@ MonoBehaviour:
       time: 20
       newActive: 0
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -48316,6 +48498,7 @@ MonoBehaviour:
       time: 1
       newActive: 1
     Components: []
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -48339,6 +48522,7 @@ MonoBehaviour:
       time: 0.1
       newActive: 0
     Components: []
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -48359,6 +48543,7 @@ MonoBehaviour:
       time: 0.1
       newActive: 0
     Components: []
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -48371,6 +48556,7 @@ MonoBehaviour:
       time: 0.1
       newActive: 0
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -48381,6 +48567,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -48575,6 +48762,9 @@ MonoBehaviour:
   - {fileID: 1485205403}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 6
   rotationSpeed: 30
   audioSource: {fileID: 0}
@@ -50509,7 +50699,7 @@ RectTransform:
   - {fileID: 1379202917}
   - {fileID: 1215550037}
   m_Father: {fileID: 894587672}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -125.313, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -51579,6 +51769,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caf4d3e9c2c02da44b3f5fc5ed8c2a5a, type: 3}
+--- !u!95 &1332081441 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -6057140222963153312, guid: e9823076ca930f3429b7fc9dae8ec37f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1886921854}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1335244677
 GameObject:
   m_ObjectHideFlags: 0
@@ -53102,6 +53298,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1886921855}
   - {fileID: 17699330}
   m_Father: {fileID: 1775300207}
   m_RootOrder: 0
@@ -53124,6 +53321,9 @@ MonoBehaviour:
     shouldStop: 0
     mustInheritRotation: 1
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 1332081441}
+  movingState: 4
+  idleState: 1
   speed: 1.75
   rotationSpeed: 3.14
   audioSource: {fileID: 0}
@@ -59080,6 +59280,9 @@ MonoBehaviour:
     shouldStop: 1
     mustInheritRotation: 1
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 2
   rotationSpeed: 4
   audioSource: {fileID: 0}
@@ -64728,6 +64931,9 @@ MonoBehaviour:
   - {fileID: 1485205403}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 3
   rotationSpeed: 30
   audioSource: {fileID: 1600502235}
@@ -71257,6 +71463,9 @@ MonoBehaviour:
   - {fileID: 1870521545}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 6
   rotationSpeed: 30
   audioSource: {fileID: 0}
@@ -72447,6 +72656,9 @@ MonoBehaviour:
     shouldStop: 1
     mustInheritRotation: 1
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 2
   rotationSpeed: 4
   audioSource: {fileID: 0}
@@ -72505,6 +72717,9 @@ MonoBehaviour:
     shouldStop: 1
     mustInheritRotation: 1
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 1332081441}
+  movingState: 4
+  idleState: 1
   speed: 2.1
   rotationSpeed: 4
   audioSource: {fileID: 0}
@@ -74081,6 +74296,9 @@ MonoBehaviour:
     shouldStop: 1
     mustInheritRotation: 1
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 2
   rotationSpeed: 4
   audioSource: {fileID: 0}
@@ -74744,6 +74962,9 @@ MonoBehaviour:
   - {fileID: 1406886048}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 5.5
   rotationSpeed: 30
   audioSource: {fileID: 1875449323}
@@ -75161,6 +75382,86 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886665487}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1886921854
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1364421059}
+    m_Modifications:
+    - target: {fileID: -6057140222963153312, guid: e9823076ca930f3429b7fc9dae8ec37f,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 45127a16b3625844190da7a66599c38e, type: 2}
+    - target: {fileID: -4216859302048453862, guid: e9823076ca930f3429b7fc9dae8ec37f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e9823076ca930f3429b7fc9dae8ec37f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e9823076ca930f3429b7fc9dae8ec37f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e9823076ca930f3429b7fc9dae8ec37f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e9823076ca930f3429b7fc9dae8ec37f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e9823076ca930f3429b7fc9dae8ec37f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e9823076ca930f3429b7fc9dae8ec37f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e9823076ca930f3429b7fc9dae8ec37f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e9823076ca930f3429b7fc9dae8ec37f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e9823076ca930f3429b7fc9dae8ec37f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: e9823076ca930f3429b7fc9dae8ec37f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e9823076ca930f3429b7fc9dae8ec37f,
+        type: 3}
+      propertyPath: m_Name
+      value: Mummy_Eijike_Idle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e9823076ca930f3429b7fc9dae8ec37f, type: 3}
+--- !u!4 &1886921855 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e9823076ca930f3429b7fc9dae8ec37f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1886921854}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1887558244
 GameObject:
   m_ObjectHideFlags: 0
@@ -76455,7 +76756,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: f0d7c443716c29d498c5f6b133b43ba6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f0d7c443716c29d498c5f6b133b43ba6,
         type: 3}
@@ -76596,6 +76897,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f0d7c443716c29d498c5f6b133b43ba6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -580671786865787653, guid: f0d7c443716c29d498c5f6b133b43ba6,
         type: 3}
@@ -77124,6 +77430,9 @@ MonoBehaviour:
     shouldStop: 1
     mustInheritRotation: 1
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 2
   rotationSpeed: 4
   audioSource: {fileID: 0}
@@ -77171,6 +77480,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77201,6 +77511,7 @@ MonoBehaviour:
     - component: {fileID: 1548981410}
       time: 6
       newEnabled: 1
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77225,6 +77536,7 @@ MonoBehaviour:
     - component: {fileID: 343958744}
       time: 0.1
       newEnabled: 1
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77240,6 +77552,7 @@ MonoBehaviour:
       time: 1.5
       newActive: 1
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77264,6 +77577,7 @@ MonoBehaviour:
     - component: {fileID: 1949158592}
       time: 1
       newEnabled: 1
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77285,6 +77599,7 @@ MonoBehaviour:
     - component: {fileID: 780824680}
       time: 0.1
       newEnabled: 1
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77330,6 +77645,7 @@ MonoBehaviour:
       time: 27
       newActive: 1
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77378,6 +77694,7 @@ MonoBehaviour:
       time: 19
       newActive: 1
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77414,6 +77731,7 @@ MonoBehaviour:
       time: 0.1
       newActive: 0
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77441,6 +77759,7 @@ MonoBehaviour:
       time: 13.8
       newActive: 1
     Components: []
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -77465,6 +77784,7 @@ MonoBehaviour:
     - component: {fileID: 343958744}
       time: 0.1
       newEnabled: 1
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77474,6 +77794,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77498,6 +77819,7 @@ MonoBehaviour:
     - component: {fileID: 205242060}
       time: 3
       newEnabled: 1
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77522,6 +77844,7 @@ MonoBehaviour:
     - component: {fileID: 780824680}
       time: 0.1
       newEnabled: 1
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -77531,6 +77854,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77546,6 +77870,7 @@ MonoBehaviour:
       time: 1
       newActive: 1
     Components: []
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -77582,6 +77907,7 @@ MonoBehaviour:
       time: 12
       newActive: 1
     Components: []
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -77606,6 +77932,7 @@ MonoBehaviour:
       time: 12
       newActive: 1
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77618,6 +77945,7 @@ MonoBehaviour:
       time: 0.1
       newActive: 0
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77648,6 +77976,7 @@ MonoBehaviour:
       time: 0.1
       newActive: 0
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77699,6 +78028,7 @@ MonoBehaviour:
     - component: {fileID: 343958744}
       time: 12
       newEnabled: 1
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77726,6 +78056,7 @@ MonoBehaviour:
     - component: {fileID: 780824680}
       time: 0.1
       newEnabled: 1
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77735,6 +78066,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77780,6 +78112,7 @@ MonoBehaviour:
       time: 11
       newActive: 1
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77855,6 +78188,7 @@ MonoBehaviour:
       time: 13
       newActive: 1
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77894,6 +78228,7 @@ MonoBehaviour:
     - component: {fileID: 320940474}
       time: 11
       newEnabled: 1
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -77927,6 +78262,7 @@ MonoBehaviour:
     - component: {fileID: 343958744}
       time: 0.1
       newEnabled: 1
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77954,6 +78290,7 @@ MonoBehaviour:
     - component: {fileID: 780824680}
       time: 0.1
       newEnabled: 1
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -77969,6 +78306,7 @@ MonoBehaviour:
       time: 0.1
       newActive: 1
     Components: []
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -77993,6 +78331,7 @@ MonoBehaviour:
       time: 10.5
       newActive: 1
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -78011,6 +78350,7 @@ MonoBehaviour:
       time: 0.1
       newActive: 0
     Components: []
+    animationStates: []
     shouldAudioStop: 1
     notAQuestion: 0
     GoToIndex: -1
@@ -78035,6 +78375,7 @@ MonoBehaviour:
       time: 11
       newActive: 1
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -78045,6 +78386,7 @@ MonoBehaviour:
     canvasses: []
     Objects: []
     Components: []
+    animationStates: []
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -79287,6 +79629,9 @@ MonoBehaviour:
   - {fileID: 2085210744}
   points: []
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 5
   rotationSpeed: 30
   audioSource: {fileID: 1940807757}
@@ -81328,6 +81673,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2025915288}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2026973441 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2dfcc282c2c584f449128d01596b850a,
+    type: 3}
+  m_PrefabInstance: {fileID: 761231909}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2026973442 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 2dfcc282c2c584f449128d01596b850a,
+    type: 3}
+  m_PrefabInstance: {fileID: 761231909}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2026973443
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026973441}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: e9823076ca930f3429b7fc9dae8ec37f, type: 3}
+  m_Controller: {fileID: 9100000, guid: 45127a16b3625844190da7a66599c38e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2029058982
 GameObject:
   m_ObjectHideFlags: 0
@@ -81986,6 +82362,9 @@ MonoBehaviour:
     shouldStop: 0
     mustInheritRotation: 1
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 1.5
   rotationSpeed: 3.14
   audioSource: {fileID: 0}
@@ -84520,6 +84899,9 @@ MonoBehaviour:
     shouldStop: 1
     mustInheritRotation: 0
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 1
   rotationSpeed: 3.14
   audioSource: {fileID: 2104697213}
@@ -85992,6 +86374,9 @@ MonoBehaviour:
     shouldStop: 0
     mustInheritRotation: 0
   currentDestinationIndex: 0
+  characterAnimator: {fileID: 0}
+  movingState: 0
+  idleState: 0
   speed: 1.2
   rotationSpeed: 1
   audioSource: {fileID: 0}
