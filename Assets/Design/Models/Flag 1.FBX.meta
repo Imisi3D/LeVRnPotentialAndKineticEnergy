@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: af9be0e7e6c11fb468d71fd83c413616
+guid: bb881d2cb9a57af49b1a6a20d6ddc38e
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material #2
-    second: {fileID: 2100000, guid: 17e5c2a90685b8c40a7d8c0f81660cdf, type: 2}
+      name: Flag
+    second: {fileID: 2100000, guid: 7fa65ff01c49d7c44b31916a0caf1155, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Flag_Pole
+    second: {fileID: 2100000, guid: dcc87fc47b2044f49b14db171b2d03e6, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -92,7 +97,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   avatarSetup: 0
   additionalBone: 0
