@@ -57,7 +57,7 @@ public class VoiceImageCanvasSync : MonoBehaviour
 		public bool newEnabled = false;
 	}
 
-	public enum AnimationState { NoUpdate, Idle, Talk, Ask, Walk, Run, Pick, TurnRight, Turn_180, Fall, IdleWheelBarrow, PushWheelbarrow, Point, Congratulations, SadReaction };
+	public enum AnimationState { NoUpdate, Idle, Talk,  Ask, Walk, MoveUp, MoveDown, Run, Pick, TurnRight90, TurnRight180, Fall, IdleWheelBarrow, PushWheelbarrow, PointRight, PointLeft, Slide, KickBall, Congratulations, SadReaction };
 
 	/**
 	 * Holder of data for step.
@@ -328,33 +328,43 @@ public class VoiceImageCanvasSync : MonoBehaviour
 	public void updateCharacterAnimationState(AnimationState newState)
 	{
 		if (animator_body == null) return;
-		animator_body.SetBool("point", false);
 		animator_body.SetBool("idle", false);
 		animator_body.SetBool("walk", false);
 		animator_body.SetBool("run", false);
 		animator_body.SetBool("talk", false);
+		animator_body.SetBool("move_up", false);
+		animator_body.SetBool("move_down", false);
 		animator_body.SetBool("ask", false);
-		animator_body.SetBool("turn_right", false);
-		animator_body.SetBool("turn_180", false);
+		animator_body.SetBool("turn_right_90", false);
+		animator_body.SetBool("turn_right_180", false);
 		animator_body.SetBool("pushWheelbarrow", false);
 		animator_body.SetBool("idleWheelbarrow", false);
 		animator_body.SetBool("congratulations", false);
 		animator_body.SetBool("sad_reaction", false);
+		animator_body.SetBool("slide", false);
+		animator_body.SetBool("kick_ball", false);
+		animator_body.SetBool("point_right", false);
+		animator_body.SetBool("point_left", false);
 
 		switch (newState)
 		{
 			case AnimationState.Idle: { animator_body.SetBool("idle", true); break; }
 			case AnimationState.Walk: { animator_body.SetBool("walk", true); break; }
 			case AnimationState.Run: { animator_body.SetBool("run", true); break; }
-			case AnimationState.Point: { animator_body.SetBool("point", true); break; }
-			case AnimationState.Talk: { animator_body.SetBool("talk", true); break; }
+            case AnimationState.Talk: { animator_body.SetBool("talk", true); break; }
+            case AnimationState.MoveUp: { animator_body.SetBool("move_up", true); break; }
+            case AnimationState.MoveDown: { animator_body.SetBool("move_down", true); break; }
+            case AnimationState.PointRight: { animator_body.SetBool("point_right", true); break; }
+			case AnimationState.PointLeft: { animator_body.SetBool("point_left", true); break; }
 			case AnimationState.Ask: { animator_body.SetBool("ask", true); break; }
-			case AnimationState.TurnRight: { animator_body.SetBool("turn_right", true); break; }
-			case AnimationState.Turn_180: { animator_body.SetBool("turn_180", true); break; }
+			case AnimationState.TurnRight90: { animator_body.SetBool("turn_right_90", true); break; }
+			case AnimationState.TurnRight180: { animator_body.SetBool("turn_right_180", true); break; }
 			case AnimationState.PushWheelbarrow: { animator_body.SetBool("pushWheelbarrow", true); break; }
 			case AnimationState.IdleWheelBarrow: { animator_body.SetBool("idleWheelbarrow", true); break; }
 			case AnimationState.Congratulations: { animator_body.SetBool("congratulations", true); break; }
 			case AnimationState.SadReaction: { animator_body.SetBool("sad_reaction", true); break; }
+			case AnimationState.Slide: { animator_body.SetBool("slide", true); break; }
+			case AnimationState.KickBall: { animator_body.SetBool("kick_ball", true); break; }
 		}
 	}
 
