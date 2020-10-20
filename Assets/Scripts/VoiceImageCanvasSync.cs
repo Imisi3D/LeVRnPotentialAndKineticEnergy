@@ -57,7 +57,7 @@ public class VoiceImageCanvasSync : MonoBehaviour
 		public bool newEnabled = false;
 	}
 
-	public enum AnimationState { NoUpdate, Idle, Talk,  Ask, Walk, MoveUp, MoveDown, Run, Pick, TurnRight90, TurnRight180, Fall, IdleWheelBarrow, PushWheelbarrow, PointRight, PointLeft, Slide, KickBall, Congratulations, SadReaction };
+	public enum AnimationState { NoUpdate, Idle, Talk,  Ask, Walk, MoveUp, MoveDown, Run, Pick, TurnRight90, TurnRight180,  TurnLeft90, TurnLeft180, Fall, IdleWheelBarrow, PushWheelbarrow, PointRight, PointLeft, Slide, KickBall, Congratulations, SadReaction };
 
 	/**
 	 * Holder of data for step.
