@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
+
+/**
+ * Character movement component, to be used for character movement in scene, handles movements and animations.
+ *  - Character's movement and animations are specified using DestinationPoint objects.
+ */
 public class CharacterMovement : CustomComponent
 {
     // Character object, separated for flexibility.
@@ -35,11 +40,23 @@ public class CharacterMovement : CustomComponent
     // Threshold at which character should start turning if he must inherit rotation.
     public float rotationThreshold = 0.3f;
 
+    // Index of current target point.
     public int currentDestinationIndex = 0;
+
+    // Reference to current target point.
     private DestinationPoint currentDestinationPoint;
+
+    // Used to keep track of current animation state of the character.
     private VoiceImageCanvasSync.AnimationState currentAnimationState;
+
+    // Used to know which parameter to modify in the animation controller.
     private string currentAnimationStateParamName;
+
+    // Used to tell the script when to ignore moving the object.
     private float rootMotionAnimationEndTime = -1f;
+
+    // Used to ensure, once the character starts inheriting target's rotation, ignoring rotation threshold.
+    private bool isRotating = false;
 
     void Start()
     {
@@ -63,25 +80,18 @@ public class CharacterMovement : CustomComponent
         destination.y = 0f;
         Quaternion targetRotation = Quaternion.LookRotation(destination - characterLocation);
 
-        if (currentDestinationPoint.mustInheritRotation && distance < rotationThreshold)
+        if ((currentDestinationPoint.mustInheritRotation && distance < rotationThreshold) || isRotating)
         {
             updateAnimationStateParamName(rotationAnimation);
             targetRotation = currentDestinationPoint.target.transform.rotation;
+            isRotating = true;
         }
-        else if (!currentDestinationPoint.shouldUseRootMotion)
+        else if (!currentDestinationPoint.shouldUseRootMotion && !isRotating)
         {
             character.transform.position += character.transform.forward * walkingSpeed * Time.deltaTime;
         }
-
-
-        //        float yawRotationOffset = targetRotation.eulerAngles.y * turningSpeed * Time.deltaTime;
-        //        float difference = (targetRotation * Quaternion.Inverse(character.transform.rotation)).eulerAngles.y;
-        //        if (difference < yawRotationOffset)
-        //            yawRotationOffset = difference;
-        //        print("rotation offset: YAW: " + yawRotationOffset);
         Quaternion rot = Quaternion.Lerp(character.transform.rotation, targetRotation, Time.deltaTime * turningSpeed);
         character.transform.rotation = Quaternion.Euler(0, rot.eulerAngles.y, 0);
-        //character.transform.rotation *= Quaternion.Euler(0, yawRotationOffset, 0);
 
         characterLocation = character.transform.position;
         characterLocation.y = 0f;
@@ -95,7 +105,6 @@ public class CharacterMovement : CustomComponent
         {
             toNextDestination();
         }
-
     }
 
     // Sets the next point as the destination, if no destination is left, deactivate component.
@@ -103,16 +112,14 @@ public class CharacterMovement : CustomComponent
     {
         if (currentDestinationIndex < destinationPoints.Count - 1)
         {
+            isRotating = false;
             currentDestinationIndex++;
             currentDestinationPoint = destinationPoints[currentDestinationIndex];
 
             updateAnimationStateParamName(currentDestinationPoint.animationState);
             if (rootMotionAnimationEndTime == -1 && currentDestinationPoint.shouldUseRootMotion)
             {
-                if (currentDestinationPoint.animationState == VoiceImageCanvasSync.AnimationState.MoveUp)
-                    rootMotionAnimationEndTime = Time.time + 1.1f;
-                else
-                    rootMotionAnimationEndTime = Time.time + 0.75f;
+                rootMotionAnimationEndTime = Time.time + 1.1f;
             }
             else
             {

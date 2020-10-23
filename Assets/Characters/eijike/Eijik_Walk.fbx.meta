@@ -6,7 +6,37 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eijik_Body
+    second: {fileID: 2100000, guid: d4bd0f174a04288458c5eaf2c1abc19c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eijik_Pants
+    second: {fileID: 2100000, guid: 854558e1afe1263489be9ab5dc3ff1a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eijik_Sandle
+    second: {fileID: 2100000, guid: 24b4412c6124e1e499305b232248b27e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eijik_Socks
+    second: {fileID: 2100000, guid: 2e370e209a590524682083afed64f121, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eijik_Sweater
+    second: {fileID: 2100000, guid: dbb754bb6974f3c49adb09cdda6eec16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Eijik_shirt
+    second: {fileID: 2100000, guid: d1291f258bc89f642806597ebb38c42c, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
