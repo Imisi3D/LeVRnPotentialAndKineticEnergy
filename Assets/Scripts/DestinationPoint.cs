@@ -19,6 +19,9 @@ public class DestinationPoint
 	// If true, the script won't move the character, use this if the character is using a root motion animation.
 	public bool shouldUseRootMotion = false;
 
+	// If true, character movement will consider the Y-axis.
+	public bool considerYAxis = false;
+
 	// The animation state with which the moving character should approach this point.
 	public VoiceImageCanvasSync.AnimationState animationState;
 

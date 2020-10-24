@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
@@ -73,7 +74,8 @@ public class CharacterMovement : CustomComponent
             else
                 toNextDestination();
         }
-        float distance = (currentDestinationPoint.target.transform.position - character.transform.position).magnitude;
+        Vector3 offset = currentDestinationPoint.target.transform.position - character.transform.position;
+        float distance = offset.magnitude;
         Vector3 characterLocation = character.transform.position;
         characterLocation.y = 0f;
         Vector3 destination = currentDestinationPoint.target.transform.position;
@@ -89,6 +91,8 @@ public class CharacterMovement : CustomComponent
         else if (!currentDestinationPoint.shouldUseRootMotion && !isRotating)
         {
             character.transform.position += character.transform.forward * walkingSpeed * Time.deltaTime;
+            if (currentDestinationPoint.considerYAxis)
+                character.transform.position += new Vector3(0, 1, 0) * walkingSpeed * Time.deltaTime * Math.Sign(Vector3.Dot(offset, new Vector3(0, 1, 0)));;
         }
         Quaternion rot = Quaternion.Lerp(character.transform.rotation, targetRotation, Time.deltaTime * turningSpeed);
         character.transform.rotation = Quaternion.Euler(0, rot.eulerAngles.y, 0);
@@ -154,11 +158,13 @@ public class CharacterMovement : CustomComponent
             case VoiceImageCanvasSync.AnimationState.TurnLeft180: { currentAnimationStateParamName = "turn_left_180"; break; }
             case VoiceImageCanvasSync.AnimationState.MoveUp: { currentAnimationStateParamName = "move_up"; break; }
             case VoiceImageCanvasSync.AnimationState.MoveDown: { currentAnimationStateParamName = "move_down"; break; }
+            case VoiceImageCanvasSync.AnimationState.Slide: { currentAnimationStateParamName = "slide"; break; }
         }
         if (characterAnimator != null)
         {
             characterAnimator.SetBool("idle", false);
             characterAnimator.SetBool("walk", false);
+            characterAnimator.SetBool("talk", false);
             characterAnimator.SetBool("turn_right_90", false);
             characterAnimator.SetBool("turn_right_180", false);
             characterAnimator.SetBool("turn_left_90", false);
@@ -166,6 +172,7 @@ public class CharacterMovement : CustomComponent
             characterAnimator.SetBool("move_up", false);
             characterAnimator.SetBool("move_down", false);
             characterAnimator.SetBool("run", false);
+            characterAnimator.SetBool("slide", false);
 
             characterAnimator.SetBool(currentAnimationStateParamName, true);
         }

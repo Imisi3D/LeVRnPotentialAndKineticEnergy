@@ -57,7 +57,7 @@ public class VoiceImageCanvasSync : MonoBehaviour
 		public bool newEnabled = false;
 	}
 
-	public enum AnimationState { NoUpdate, Idle, Talk,  Ask, Walk, MoveUp, MoveDown, Run, Pick, TurnRight90, TurnRight180,  TurnLeft90, TurnLeft180, Fall, IdleWheelBarrow, PushWheelbarrow, PointRight, PointLeft, Slide, KickBall, Congratulations, SadReaction };
+	public enum AnimationState { NoUpdate, Idle, Talk,  Ask, Walk, MoveUp, MoveDown, Run, Pick, TurnRight90, TurnRight180,  TurnLeft90, TurnLeft180, Fall, IdleWheelBarrow, PushWheelbarrow, PointRight, PointLeft, Slide, KickBall, Congratulations, SadReaction, Pluck };
 
 	/**
 	 * Holder of data for step.
@@ -166,50 +166,11 @@ public class VoiceImageCanvasSync : MonoBehaviour
 	public void ask()
 	{
 		updateCharacterAnimationState(AnimationState.Ask);
-
-		//if (animator_cloth != null)
-		//{
-		//	animator_cloth.SetBool("idle", false);
-		//	animator_cloth.SetBool("ask", true);
-		//}
-		//else
-		//{
-		//	Debug.LogError("cloth animator is not set");
-		//}
-
-		//if (animator_body)
-		//{
-		//	animator_body.SetBool("idle", false);
-		//	animator_body.SetBool("ask", true);
-		//}
-		//else
-		//{
-		//	Debug.LogError("body animator is not set");
-		//}
 	}
 
 	// Updates the animator to perform idle animation.
 	public void idle()
 	{
-		//if (animator_cloth != null)
-		//{
-		//	animator_cloth.SetBool("idle", true);
-		//	animator_cloth.SetBool("ask", false);
-		//}
-		//else
-		//{
-		//	Debug.LogError("cloth animator is not set");
-		//}
-
-		//if (animator_body != null)
-		//{
-		//	animator_body.SetBool("idle", true);
-		//	animator_body.SetBool("ask", false);
-		//}
-		//else
-		//{
-		//	Debug.LogError("body animator is not set");
-		//}
 		updateCharacterAnimationState(AnimationState.Idle);
 	}
 
@@ -217,26 +178,6 @@ public class VoiceImageCanvasSync : MonoBehaviour
 	public void explain()
 	{
 		updateCharacterAnimationState(AnimationState.Talk);
-
-		//if (animator_cloth != null)
-		//{
-		//	animator_cloth.SetBool("idle", false);
-		//	animator_cloth.SetBool("ask", false);
-		//}
-		//else
-		//{
-		//	Debug.LogError("cloth animator is not set");
-		//}
-
-		//if (animator_body != null)
-		//{
-		//	animator_body.SetBool("idle", false);
-		//	animator_body.SetBool("ask", false);
-		//}
-		//else
-		//{
-		//	Debug.LogError("body animator is not set");
-		//}
 	}
 
 	private IEnumerator CallAfterDelay(System.Action Param, float delay)
@@ -342,6 +283,7 @@ public class VoiceImageCanvasSync : MonoBehaviour
 		animator_body.SetBool("congratulations", false);
 		animator_body.SetBool("sad_reaction", false);
 		animator_body.SetBool("slide", false);
+		animator_body.SetBool("pluck", false);
 		animator_body.SetBool("kick_ball", false);
 		animator_body.SetBool("point_right", false);
 		animator_body.SetBool("point_left", false);
@@ -351,6 +293,7 @@ public class VoiceImageCanvasSync : MonoBehaviour
 			case AnimationState.Idle: { animator_body.SetBool("idle", true); break; }
 			case AnimationState.Walk: { animator_body.SetBool("walk", true); break; }
 			case AnimationState.Run: { animator_body.SetBool("run", true); break; }
+			case AnimationState.Pluck: { animator_body.SetBool("pluck", true); break; }
             case AnimationState.Talk: { animator_body.SetBool("talk", true); break; }
             case AnimationState.MoveUp: { animator_body.SetBool("move_up", true); break; }
             case AnimationState.MoveDown: { animator_body.SetBool("move_down", true); break; }
