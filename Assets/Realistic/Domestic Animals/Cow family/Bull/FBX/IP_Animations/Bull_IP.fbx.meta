@@ -1,0 +1,240 @@
+fileFormatVersion: 2
+guid: ff7e24f0221a444498c48dc566163585
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Arm_Bull
+    100002: Base_bone
+    100004: Boobs
+    100006: //RootNode
+    100008: Bull_LOD0
+    100010: Ear.L
+    100012: Ear.R
+    100014: eye.L
+    100016: eye.R
+    100018: head
+    100020: Help_knee.L
+    100022: Help_knee.R
+    100024: hip_1_f.L
+    100026: hip_1_f.R
+    100028: hip_2_f.L
+    100030: hip_2_f.R
+    100032: hip_b.L
+    100034: hip_b.R
+    100036: hoof_b.L
+    100038: hoof_b.R
+    100040: hoof_b_Helper.L
+    100042: hoof_b_Helper.R
+    100044: hoof_f.L
+    100046: hoof_f.R
+    100048: hoof_f_Helper.L
+    100050: hoof_f_Helper.R
+    100052: mouth
+    100054: neck_01
+    100056: neck_02
+    100058: root_bone
+    100060: shin_b.L
+    100062: shin_b.R
+    100064: shin_f.L
+    100066: shin_f.R
+    100068: Spine_02
+    100070: Spine_03
+    100072: Spine_04
+    100074: Spine_05
+    100076: Spine_base
+    100078: tail_1
+    100080: tail_2
+    100082: tail_3
+    100084: tail_4
+    100086: tail_5
+    100088: thigh_b.L
+    100090: thigh_b.R
+    100092: thigh_f.L
+    100094: thigh_f.R
+    400000: Arm_Bull
+    400002: Base_bone
+    400004: Boobs
+    400006: //RootNode
+    400008: Bull_LOD0
+    400010: Ear.L
+    400012: Ear.R
+    400014: eye.L
+    400016: eye.R
+    400018: head
+    400020: Help_knee.L
+    400022: Help_knee.R
+    400024: hip_1_f.L
+    400026: hip_1_f.R
+    400028: hip_2_f.L
+    400030: hip_2_f.R
+    400032: hip_b.L
+    400034: hip_b.R
+    400036: hoof_b.L
+    400038: hoof_b.R
+    400040: hoof_b_Helper.L
+    400042: hoof_b_Helper.R
+    400044: hoof_f.L
+    400046: hoof_f.R
+    400048: hoof_f_Helper.L
+    400050: hoof_f_Helper.R
+    400052: mouth
+    400054: neck_01
+    400056: neck_02
+    400058: root_bone
+    400060: shin_b.L
+    400062: shin_b.R
+    400064: shin_f.L
+    400066: shin_f.R
+    400068: Spine_02
+    400070: Spine_03
+    400072: Spine_04
+    400074: Spine_05
+    400076: Spine_base
+    400078: tail_1
+    400080: tail_2
+    400082: tail_3
+    400084: tail_4
+    400086: tail_5
+    400088: thigh_b.L
+    400090: thigh_b.R
+    400092: thigh_f.L
+    400094: thigh_f.R
+    2100000: Bull
+    4300000: Bull_LOD0
+    7400000: Arm_Bull|Attack_1
+    7400002: Arm_Bull|Attack_2
+    7400004: Arm_Bull|Attack_3
+    7400006: Arm_Bull|Attack_Run
+    7400008: Arm_Bull|Death_1
+    7400010: Arm_Bull|Death_2
+    7400012: Arm_Bull|Drink
+    7400014: Arm_Bull|Eat
+    7400016: Arm_Bull|Fall_high
+    7400018: Arm_Bull|Fall_landing
+    7400020: Arm_Bull|Fall_low
+    7400022: Arm_Bull|Fall_start
+    7400024: Arm_Bull|Hit_back
+    7400026: Arm_Bull|Hit_front
+    7400028: Arm_Bull|Hit_simple
+    7400030: Arm_Bull|Idle_1
+    7400032: Arm_Bull|Idle_2
+    7400034: Arm_Bull|Idle_3
+    7400036: Arm_Bull|Idle_4
+    7400038: Arm_Bull|Jump_F
+    7400040: Arm_Bull|Jump_place
+    7400042: Arm_Bull|Jump_Run
+    7400044: Arm_Bull|Lie
+    7400046: Arm_Bull|Lie_sleep
+    7400048: Arm_Bull|Piss
+    7400050: Arm_Bull|Run_F
+    7400052: Arm_Bull|Run_L
+    7400054: Arm_Bull|Run_R
+    7400056: Arm_Bull|Swim_B
+    7400058: Arm_Bull|Swim_B_L
+    7400060: Arm_Bull|Swim_B_R
+    7400062: Arm_Bull|Swim_F
+    7400064: Arm_Bull|Swim_F_L
+    7400066: Arm_Bull|Swim_F_R
+    7400068: Arm_Bull|Swim_Idle
+    7400070: Arm_Bull|Swim_Turn_L
+    7400072: Arm_Bull|Swim_Turn_R
+    7400074: Arm_Bull|Trot_F
+    7400076: Arm_Bull|Trot_L
+    7400078: Arm_Bull|Trot_R
+    7400080: Arm_Bull|Turn_180_L
+    7400082: Arm_Bull|Turn_180_R
+    7400084: Arm_Bull|Turn_L
+    7400086: Arm_Bull|Turn_R
+    7400088: Arm_Bull|Walk_B
+    7400090: Arm_Bull|Walk_BL
+    7400092: Arm_Bull|Walk_BR
+    7400094: Arm_Bull|Walk_F
+    7400096: Arm_Bull|Walk_L
+    7400098: Arm_Bull|Walk_R
+    9500000: //RootNode
+    13700000: Bull_LOD0
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bull
+    second: {fileID: 2100000, guid: 4d4a6bb447900cb4f8e4d6752564f36a, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 0
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

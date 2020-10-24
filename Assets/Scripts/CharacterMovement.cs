@@ -142,6 +142,7 @@ public class CharacterMovement : CustomComponent
     // Updates character animation state.
     void updateAnimationStateParamName(VoiceImageCanvasSync.AnimationState animationState)
     {
+        if (animationState == VoiceImageCanvasSync.AnimationState.NoUpdate) return;
         currentAnimationState = animationState;
         switch (currentAnimationState)
         {
