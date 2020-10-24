@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 
@@ -36,7 +34,13 @@ public class CharacterMovement : CustomComponent
     public float distanceThreshhold = 0.1f;
 
     // Threshold at which the character should move up or down.
-    public float verticalMovementThreshold = 0.3f;
+    public float verticalMovementThreshold = 0.02f;
+
+    // Move up animation duration
+    public float moveUpAnimationDuration = 1.1f;
+
+    // Move down animation duration
+    public float moveDownAnimationDuration = 1.1f;
 
     // Threshold at which character should start turning if he must inherit rotation.
     public float rotationThreshold = 0.3f;
@@ -91,8 +95,8 @@ public class CharacterMovement : CustomComponent
         else if (!currentDestinationPoint.shouldUseRootMotion && !isRotating)
         {
             character.transform.position += character.transform.forward * walkingSpeed * Time.deltaTime;
-            if (currentDestinationPoint.considerYAxis)
-                character.transform.position += new Vector3(0, 1, 0) * walkingSpeed * Time.deltaTime * Math.Sign(Vector3.Dot(offset, new Vector3(0, 1, 0)));;
+            if (currentDestinationPoint.considerYAxis && Math.Abs(offset.y) > verticalMovementThreshold)
+                character.transform.position += new Vector3(0, 1, 0) * walkingSpeed * Time.deltaTime * Math.Sign(Vector3.Dot(offset, new Vector3(0, 1, 0))); ;
         }
         Quaternion rot = Quaternion.Lerp(character.transform.rotation, targetRotation, Time.deltaTime * turningSpeed);
         character.transform.rotation = Quaternion.Euler(0, rot.eulerAngles.y, 0);
@@ -123,7 +127,10 @@ public class CharacterMovement : CustomComponent
             updateAnimationStateParamName(currentDestinationPoint.animationState);
             if (rootMotionAnimationEndTime == -1 && currentDestinationPoint.shouldUseRootMotion)
             {
-                rootMotionAnimationEndTime = Time.time + 1.1f;
+                if (currentDestinationPoint.animationState == VoiceImageCanvasSync.AnimationState.MoveUp)
+                    rootMotionAnimationEndTime = Time.time + moveUpAnimationDuration;
+                else
+                    rootMotionAnimationEndTime = Time.time + moveDownAnimationDuration;
             }
             else
             {
