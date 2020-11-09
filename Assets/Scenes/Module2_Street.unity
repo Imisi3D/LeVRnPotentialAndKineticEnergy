@@ -19397,7 +19397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &539411828
 Transform:
   m_ObjectHideFlags: 0
@@ -31137,7 +31137,11 @@ MonoBehaviour:
       time: 1
       newActive: 1
     Components: []
-    animationStates: []
+    animationStates:
+    - state: 16
+      time: 1
+    - state: 2
+      time: 1.5
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
@@ -31166,7 +31170,11 @@ MonoBehaviour:
       time: 1
       newActive: 0
     Components: []
-    animationStates: []
+    animationStates:
+    - state: 16
+      time: 1
+    - state: 2
+      time: 1.5
     shouldAudioStop: 0
     notAQuestion: 0
     GoToIndex: -1
