@@ -11,3 +11,21 @@ LeVRn_Potential_And_Kinetic_Energy is an open-source project, and we love to rec
 
 ## Code of Conduct
 - Please read [Code-Of-Conduct.md](https://github.com/Imisi3D/LeVRn_Non_Communicable_Diseases/blob/master/Code%20of%20Conduct.md) for our list of acceptable and unacceptable behaviours.
+
+## Outstanding Features
+
+### Development
+
+- [ ]  Morenike is shown instead of Niyat briefly at the beginning of scene 12
+- [ ]  The legs of Niyat and Morenike gliding on the floor when standing
+- [ ]  Morenike standing on the slide instead of sitting
+- [ ]  Replace with correct characters: Before Ejike character was modelled, another character was used as a place holder in the scene. Replace the man used for "the boy crossing" and "box on boy's head" with the Ejike character(the boy) as stated in the script.
+- [ ]  Ejike character sinking into the ground
+
+### 3D Design and Animation
+
+- [ ]  Improved field design:The field should be covered with green grass like a football field
+- [ ]  Papa Niyat, Niyat and Papa Ejike are wearing sunglasses. the sunglasses should be removed
+- [ ]  Improve Simulation room design
+- [ ]  The character(Morenike) should hold and drop ball in the field
+- [ ]  Morenike character should sit on Slide and slide down in field
