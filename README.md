@@ -51,4 +51,6 @@ If you are on Windows, you could check if these files have already been download
 Please read [CONTRIBUTING.md](https://github.com/Imisi3D/LeVRnPotentialAndKineticEnergy/blob/master_2/CONTRIBUTING.md) for details on how best to contribute to this project.
 
 ## Authors
-- **Isiaq Gbadamosi** - [Github](https://github.com/badmusishaq)
+- **Isiaq Gbadamosi**
+- **Gregory Onyeahialam**
+- **Judith Okonkwo***
