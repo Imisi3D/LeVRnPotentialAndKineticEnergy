@@ -18,9 +18,9 @@ LeVRn_Potential_And_Kinetic_Energy is an open-source project, and we love to rec
 
 - [ ]  Morenike is shown instead of Niyat briefly at the beginning of scene 12
 - [ ]  The legs of Niyat and Morenike gliding on the floor when standing
-- [ ]  Morenike standing on the slide instead of sitting
 - [ ]  Replace with correct characters: Before Ejike character was modelled, another character was used as a place holder in the scene. Replace the man used for "the boy crossing" and "box on boy's head" with the Ejike character(the boy) as stated in the script.
 - [ ]  Ejike character sinking into the ground
+- [ ]  App crashes when you click on the exit button
 
 ### 3D Design and Animation
 
@@ -28,4 +28,5 @@ LeVRn_Potential_And_Kinetic_Energy is an open-source project, and we love to rec
 - [ ]  Papa Niyat, Niyat and Papa Ejike are wearing sunglasses. the sunglasses should be removed
 - [ ]  Improve Simulation room design
 - [ ]  The character(Morenike) should hold and drop ball in the field
-- [ ]  Morenike character should sit on Slide and slide down in field
+- [ ]  Morenike standing on the slide instead of sitting
+- [ ]  No mouth animation for characters(Niyat and Morenike) when talking
