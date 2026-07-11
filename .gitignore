@@ -32,6 +32,14 @@ ExportedObj/
 *.unityproj
 *.sln
 *.suo
+
+# Exceptions: the upgrade's hand-authored .NET projects and solution are NOT
+# Unity-generated, so they must be tracked despite the blanket rules above.
+!LeVRn.Tutor.sln
+!src/LeVRn.Tutor/LeVRn.Tutor.csproj
+!src/LeVRn.Physics/LeVRn.Physics.csproj
+!tests/LeVRn.Tutor.Tests/LeVRn.Tutor.Tests.csproj
+!tests/LeVRn.Physics.Tests/LeVRn.Physics.Tests.csproj
 *.tmp
 *.user
 *.userprefs
