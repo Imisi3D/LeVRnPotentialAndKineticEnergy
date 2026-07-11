@@ -35,11 +35,13 @@ ExportedObj/
 
 # Exceptions: the upgrade's hand-authored .NET projects and solution are NOT
 # Unity-generated, so they must be tracked despite the blanket rules above.
+# Unity generates its .csproj/.sln at the repo root only, so re-including every
+# project under src/ and tests/ covers current and future tasks without a patch.
+# The solution stays an explicit single-file exception because it lives at the
+# root alongside where Unity's generated .sln would appear.
+!/src/**/*.csproj
+!/tests/**/*.csproj
 !LeVRn.Tutor.sln
-!src/LeVRn.Tutor/LeVRn.Tutor.csproj
-!src/LeVRn.Physics/LeVRn.Physics.csproj
-!tests/LeVRn.Tutor.Tests/LeVRn.Tutor.Tests.csproj
-!tests/LeVRn.Physics.Tests/LeVRn.Physics.Tests.csproj
 *.tmp
 *.user
 *.userprefs
