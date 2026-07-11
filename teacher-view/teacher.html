@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LeVRn Teacher View, Potential and Kinetic Energy</title>
+<style>
+  :root{
+    --ink:#1F2A44; --muted:#5A6478; --line:#D9DEE8; --panel:#FBFBFD; --card:#F0F0F5;
+    --ok:#1E7A3D; --okbg:#E6F4EA; --dev:#8A6D00; --devbg:#FBF1CE; --bad:#9E1B1B; --badbg:#FBE3E0;
+    --teal:#2A9D8F; --chip:#2C7FB8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:Calibri,'Segoe UI',system-ui,-apple-system,sans-serif;background:#EDEFF4;color:var(--ink);line-height:1.45;padding:0 0 40px;}
+  header{background:var(--ink);color:#fff;padding:14px 22px;}
+  header h1{font-size:1.15rem;font-weight:700;}
+  header p{font-size:.82rem;opacity:.8;margin-top:2px;}
+  .wrap{max-width:1120px;margin:18px auto;padding:0 16px;}
+
+  .loader{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:18px;}
+  .drop{display:block;border:2px dashed #B7C0D0;border-radius:12px;padding:22px;text-align:center;color:var(--muted);background:#fff;cursor:pointer;transition:border-color .15s,background .15s;}
+  .drop.hot{border-color:var(--chip);background:#F3F9FD;color:var(--ink);}
+  .drop strong{color:var(--ink);}
+  .drop input{display:none;}
+  .hint{font-size:.8rem;color:var(--muted);margin-top:10px;}
+  .btn{display:inline-block;background:var(--chip);color:#fff;border:none;border-radius:9px;padding:8px 16px;font:inherit;font-weight:700;font-size:.85rem;cursor:pointer;margin-top:12px;}
+  .btn:hover{background:#1F6AA0;}
+
+  .error{background:var(--badbg);border:1px solid var(--bad);color:var(--bad);border-radius:10px;padding:12px 14px;margin-bottom:16px;font-size:.9rem;}
+  .error b{display:block;margin-bottom:3px;}
+
+  .summary{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:16px;}
+  .tile{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 16px;min-width:150px;}
+  .tile .n{font-size:1.6rem;font-weight:800;font-variant-numeric:tabular-nums;}
+  .tile .k{font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);}
+  .tile.flagcount .n{color:var(--bad);}
+
+  h2.section{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:20px 0 8px;}
+
+  table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+  th,td{padding:8px 10px;text-align:left;font-size:.86rem;border-bottom:1px solid var(--line);}
+  th{background:#F4F6FA;font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);white-space:nowrap;}
+  tbody tr{cursor:pointer;}
+  tbody tr:hover{background:#F3F9FD;}
+  tbody tr.flagged{background:var(--badbg);}
+  tbody tr.flagged:hover{background:#F7D6D1;}
+  tbody tr.selected{outline:2px solid var(--chip);outline-offset:-2px;}
+  td.seat{font-weight:700;font-variant-numeric:tabular-nums;}
+  td.num{text-align:right;font-variant-numeric:tabular-nums;}
+
+  .cell{display:inline-block;min-width:52px;text-align:center;border-radius:7px;padding:3px 7px;font-weight:700;font-size:.8rem;font-variant-numeric:tabular-nums;}
+  .secure{background:var(--okbg);color:var(--ok);}
+  .developing{background:var(--devbg);color:var(--dev);}
+  .review{background:var(--badbg);color:var(--bad);}
+  .na{background:#EEF1F5;color:var(--muted);}
+
+  .badge{display:inline-block;border-radius:999px;padding:2px 9px;font-size:.72rem;font-weight:800;letter-spacing:.03em;}
+  .badge.review{background:var(--bad);color:#fff;}
+  .badge.ok{background:var(--okbg);color:var(--ok);}
+  .status-progress{color:var(--muted);font-size:.8rem;}
+
+  .detail{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-top:18px;}
+  .detail h3{font-size:1.05rem;margin-bottom:2px;}
+  .detail .sub{color:var(--muted);font-size:.82rem;margin-bottom:12px;}
+  .detail .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;}
+  .detail .box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;}
+  .detail .box h4{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
+  .obj-row{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:.85rem;}
+  .obj-row .lab{flex:1;}
+  .obj-row .m{width:56px;text-align:right;}
+  .evt{font-size:.84rem;margin-bottom:4px;}
+  .evt .tag{display:inline-block;width:70px;color:var(--muted);}
+  .legend{font-size:.78rem;color:var(--muted);margin-top:10px;}
+  .legend b{color:var(--ink);}
+  .foot{color:var(--muted);font-size:.74rem;margin-top:18px;text-align:center;}
+
+  @media print{
+    body{background:#fff;}
+    .loader,.foot,.printhide{display:none !important;}
+    header{background:#fff;color:var(--ink);border-bottom:2px solid var(--ink);}
+    .tile,table,.detail,.cell,.badge{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    .wrap{margin:0 auto;}
+    table{page-break-inside:auto;}
+    tr{page-break-inside:avoid;}
+    .detail{page-break-before:always;}
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>LeVRn Teacher View</h1>
+  <p>Potential and Kinetic Energy. Class progress at a glance. Works offline, no internet needed.</p>
+</header>
+
+<div class="wrap">
+  <div class="loader printhide">
+    <label class="drop" id="drop">
+      <input type="file" id="file" accept="application/json,.json" multiple>
+      <div><strong>Choose the class export file</strong>, or drag it here.</div>
+      <div class="hint">Select the progress export saved from the headsets. You can pick one file that holds the whole class, or several single learner files at once. A sample file is included at sample/class-sample.json.</div>
+      <span class="btn" id="pick">Choose file</span>
+    </label>
+  </div>
+
+  <div id="errors"></div>
+  <div id="report"></div>
+
+  <div class="foot printhide">No data leaves this page. It reads the file you choose on this device and shows nothing anywhere else.</div>
+</div>
+
+<script>
+"use strict";
+
+// The five objectives, named exactly as in the curriculum, with short column labels.
+var OBJ = {
+  define:   { short:"Define",   full:"Define kinetic and potential energy" },
+  classify: { short:"Classify", full:"Classify everyday examples" },
+  formula:  { short:"Formula",  full:"Apply the KE and PE formulae" },
+  convert:  { short:"Convert",  full:"Explain energy conversion" },
+  conserve: { short:"Conserve", full:"State conservation of energy" }
+};
+var OBJ_ORDER = ["define","classify","formula","convert","conserve"];
+
+var learners = {}; // slotId -> bundle, last load wins
+
+var dropEl = document.getElementById("drop");
+var fileEl = document.getElementById("file");
+document.getElementById("pick").addEventListener("click", function(e){ e.preventDefault(); fileEl.click(); });
+fileEl.addEventListener("change", function(){ readFiles(fileEl.files); });
+["dragenter","dragover"].forEach(function(ev){
+  dropEl.addEventListener(ev, function(e){ e.preventDefault(); e.stopPropagation(); dropEl.classList.add("hot"); });
+});
+["dragleave","drop"].forEach(function(ev){
+  dropEl.addEventListener(ev, function(e){ e.preventDefault(); e.stopPropagation(); dropEl.classList.remove("hot"); });
+});
+dropEl.addEventListener("drop", function(e){ if(e.dataTransfer && e.dataTransfer.files) readFiles(e.dataTransfer.files); });
+
+function readFiles(fileList){
+  clearErrors();
+  var files = Array.prototype.slice.call(fileList || []);
+  if(files.length === 0) return;
+  var pending = files.length;
+  files.forEach(function(f){
+    var reader = new FileReader();
+    reader.onload = function(){ ingest(f.name, reader.result); if(--pending === 0) render(); };
+    reader.onerror = function(){ showError(f.name, "This file could not be read. Please try choosing it again."); if(--pending === 0) render(); };
+    reader.readAsText(f);
+  });
+}
+
+// Turn one file's text into bundles and fold them into the learners map.
+function ingest(fileName, text){
+  var data;
+  try { data = JSON.parse(text); }
+  catch(e){
+    showError(fileName, "This does not look like a progress export. Please choose a file saved from the headset.");
+    return;
+  }
+  var list = [];
+  if(Array.isArray(data)) list = data;
+  else if(data && Array.isArray(data.learners)) list = data.learners;
+  else if(data && typeof data === "object") list = [data];
+
+  var added = 0, bad = 0;
+  list.forEach(function(b){
+    if(isBundle(b)){ learners[b.learnerSlotId] = b; added++; }
+    else bad++;
+  });
+  if(added === 0)
+    showError(fileName, "No learner progress was found in this file. Please check you chose the right export.");
+  else if(bad > 0)
+    showError(fileName, added + " learner records loaded, but " + bad + " entries in this file were not readable and were skipped.");
+}
+
+function isBundle(b){
+  return b && typeof b === "object"
+    && typeof b.learnerSlotId === "string"
+    && Array.isArray(b.objectives)
+    && b.stations && typeof b.stations === "object";
+}
+
+function objOf(bundle, id){
+  for(var i=0;i<bundle.objectives.length;i++) if(bundle.objectives[i].id === id) return bundle.objectives[i];
+  return null;
+}
+function learnerNeedsReview(bundle){
+  return bundle.objectives.some(function(o){ return o.flaggedForReview === true; });
+}
+function bandOf(o){
+  if(!o || o.asked === 0) return "na";
+  if(o.flaggedForReview || o.masteryPercent < 50) return "review";
+  if(o.masteryPercent < 70) return "developing";
+  return "secure";
+}
+function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+function num(x, d){ var n = Number(x); return isFinite(n) ? n.toFixed(d==null?0:d) : "-"; }
+
+function clearErrors(){ document.getElementById("errors").innerHTML = ""; }
+function showError(fileName, msg){
+  var box = document.createElement("div");
+  box.className = "error";
+  box.innerHTML = "<b>Could not read " + esc(fileName) + "</b>" + esc(msg);
+  document.getElementById("errors").appendChild(box);
+}
+
+function render(){
+  var report = document.getElementById("report");
+  var slots = Object.keys(learners).sort();
+  if(slots.length === 0){ report.innerHTML = ""; return; }
+
+  var flaggedCount = slots.filter(function(s){ return learnerNeedsReview(learners[s]); }).length;
+  var completed = slots.filter(function(s){ return learners[s].completed === true; }).length;
+  var avg = Math.round(slots.reduce(function(a,s){ return a + (Number(learners[s].overallPercent)||0); }, 0) / slots.length);
+
+  var html = "";
+  html += '<div class="summary">';
+  html += tile(slots.length, "Learners loaded");
+  html += tile(avg + "%", "Average mastery");
+  html += tile(completed + " of " + slots.length, "Completed the lesson");
+  html += '<div class="tile flagcount"><div class="n">' + flaggedCount + '</div><div class="k">Need review</div></div>';
+  html += '</div>';
+
+  if(flaggedCount > 0)
+    html += '<div class="error"><b>' + flaggedCount + ' of ' + slots.length + ' learners have an objective marked for review.</b>They are highlighted in the table below. Open a learner to see which objective and to plan the re-teach.</div>';
+
+  // Class overview table.
+  html += '<h2 class="section">Class overview</h2>';
+  html += '<table><thead><tr><th>Seat</th>';
+  OBJ_ORDER.forEach(function(id){ html += '<th title="' + esc(OBJ[id].full) + '">' + esc(OBJ[id].short) + '</th>'; });
+  html += '<th class="num">Overall</th><th class="num">Guide switches</th><th>Status</th></tr></thead><tbody>';
+
+  slots.forEach(function(s){
+    var b = learners[s];
+    var flagged = learnerNeedsReview(b);
+    html += '<tr class="' + (flagged?"flagged":"") + '" data-slot="' + esc(s) + '">';
+    html += '<td class="seat">' + esc(s) + '</td>';
+    OBJ_ORDER.forEach(function(id){
+      var o = objOf(b, id);
+      var band = bandOf(o);
+      var label = (o && o.asked > 0) ? (num(o.masteryPercent) + "%") : "n/a";
+      html += '<td><span class="cell ' + band + '">' + label + '</span></td>';
+    });
+    html += '<td class="num">' + num(b.overallPercent) + '%</td>';
+    html += '<td class="num">' + num(b.lensSwitches) + '</td>';
+    html += '<td>' + (flagged ? '<span class="badge review">Needs review</span>'
+                              : (b.completed ? '<span class="badge ok">On track</span>'
+                                             : '<span class="status-progress">In progress</span>')) + '</td>';
+    html += '</tr>';
+  });
+  html += '</tbody></table>';
+
+  html += '<div class="legend"><b>Objectives.</b> '
+        + OBJ_ORDER.map(function(id){ return '<b>' + esc(OBJ[id].short) + '</b> = ' + esc(OBJ[id].full); }).join('. ') + '.</div>';
+
+  html += '<div class="legend"><b>How to read this.</b> Each cell is a learner mastery percent for one objective. '
+        + '<span class="cell secure">70+</span> secure, <span class="cell developing">50-69</span> developing, '
+        + '<span class="cell review">under 50</span> marked for review. "Guide switches" counts how many times a '
+        + 'different peer guide re-explained a question after repeated wrong answers. Select any row for the detail.</div>';
+
+  html += '<div id="detail"></div>';
+  report.innerHTML = html;
+
+  var rows = report.querySelectorAll("tbody tr");
+  Array.prototype.forEach.call(rows, function(tr){
+    tr.addEventListener("click", function(){
+      Array.prototype.forEach.call(rows, function(r){ r.classList.remove("selected"); });
+      tr.classList.add("selected");
+      renderDetail(tr.getAttribute("data-slot"));
+    });
+  });
+}
+
+function tile(n, k){ return '<div class="tile"><div class="n">' + esc(n) + '</div><div class="k">' + esc(k) + '</div></div>'; }
+
+function renderDetail(slot){
+  var b = learners[slot];
+  if(!b) return;
+  var d = document.getElementById("detail");
+  var flagged = learnerNeedsReview(b);
+
+  var html = '<div class="detail">';
+  html += '<h3>Seat ' + esc(slot) + (flagged ? ' <span class="badge review">Needs review</span>' : '') + '</h3>';
+  html += '<div class="sub">Overall mastery ' + num(b.overallPercent) + '%. '
+        + (b.completed ? 'Finished the lesson.' : 'Did not finish the lesson yet.') + '</div>';
+  html += '<div class="grid">';
+
+  // Objectives box.
+  html += '<div class="box"><h4>Objectives</h4>';
+  OBJ_ORDER.forEach(function(id){
+    var o = objOf(b, id);
+    var band = bandOf(o);
+    var m = (o && o.asked > 0) ? (num(o.masteryPercent) + "%") : "n/a";
+    html += '<div class="obj-row"><span class="lab">' + esc(OBJ[id].full) + '</span>'
+          + '<span class="cell ' + band + ' m">' + m + '</span></div>';
+    if(o) html += '<div class="legend" style="margin:0 0 6px">questions answered ' + num(o.asked)
+          + ', attempts ' + num(o.attempts) + (o.flaggedForReview ? ', marked for review' : '') + '</div>';
+  });
+  html += '</div>';
+
+  // Effort box.
+  html += '<div class="box"><h4>Effort</h4>';
+  html += '<div class="evt">A different peer guide re-explained a question <b>' + num(b.lensSwitches) + '</b> time(s).</div>';
+  var totalAttempts = b.objectives.reduce(function(a,o){ return a + (Number(o.attempts)||0); }, 0);
+  var totalAsked = b.objectives.reduce(function(a,o){ return a + (Number(o.asked)||0); }, 0);
+  html += '<div class="evt">' + totalAsked + ' questions answered across ' + totalAttempts + ' attempts.</div>';
+  html += '</div>';
+
+  // Stations box.
+  var st = b.stations || {};
+  html += '<div class="box"><h4>Hands-on stations</h4>';
+  var throws = Array.isArray(st.throws) ? st.throws : [];
+  var hills = Array.isArray(st.hillRuns) ? st.hillRuns : [];
+  var pends = Array.isArray(st.pendulumShortfalls) ? st.pendulumShortfalls : [];
+  if(throws.length === 0 && hills.length === 0 && pends.length === 0){
+    html += '<div class="evt">No station activity recorded.</div>';
+  } else {
+    throws.forEach(function(t){
+      html += '<div class="evt"><span class="tag">Throw</span>speed ' + num(t.velocityMetresPerSecond,1)
+            + ' m/s, energy ' + num(t.kineticEnergyJoules,1) + ' J</div>';
+    });
+    hills.forEach(function(h){
+      html += '<div class="evt"><span class="tag">Hill</span>released at ' + num(h.releaseHeightMetres,2)
+            + ' m, ' + esc(readableOutcome(h.outcome)) + '</div>';
+    });
+    pends.forEach(function(pn){
+      var deg = (Number(pn.shortfallRadians)||0) * 180 / Math.PI;
+      html += '<div class="evt"><span class="tag">Swing</span>stopped ' + num(deg,1) + ' degrees short of the nose</div>';
+    });
+  }
+  html += '</div>';
+
+  html += '</div></div>';
+  d.innerHTML = html;
+  d.scrollIntoView({ behavior:"smooth", block:"nearest" });
+}
+
+function readableOutcome(o){
+  if(o === "JustEnough") return "just cleared the crest";
+  if(o === "Overshoot") return "flew over with energy to spare";
+  if(o === "RolledBack") return "rolled back before the crest";
+  return o || "unknown";
+}
+</script>
+</body>
+</html>

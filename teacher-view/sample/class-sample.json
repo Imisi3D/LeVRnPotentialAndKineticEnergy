@@ -1,0 +1,1015 @@
+[
+  {
+    "exportSchemaVersion": 1,
+    "generatedUtc": "2026-07-11T12:00:00.0000000Z",
+    "learnerSlotId": "slot-01",
+    "startedUtc": "2026-07-11T09:00:00.0000000Z",
+    "lastUpdatedUtc": "2026-07-11T09:00:30.0000000Z",
+    "completed": true,
+    "overallPercent": 100,
+    "lensSwitches": 0,
+    "objectives": [
+      {
+        "id": "define",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "classify",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "formula",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "convert",
+        "asked": 3,
+        "scored": 3,
+        "attempts": 3,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "conserve",
+        "asked": 1,
+        "scored": 1,
+        "attempts": 1,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      }
+    ],
+    "stations": {
+      "throws": [
+        {
+          "velocityMetresPerSecond": 5,
+          "kineticEnergyJoules": 6.25,
+          "atUtc": "2026-07-11T09:00:21.0000000Z"
+        },
+        {
+          "velocityMetresPerSecond": 8.602325267042627,
+          "kineticEnergyJoules": 18.5,
+          "atUtc": "2026-07-11T09:00:23.0000000Z"
+        }
+      ],
+      "hillRuns": [
+        {
+          "releaseHeightMetres": 2.4159667928964588,
+          "outcome": "JustEnough",
+          "atUtc": "2026-07-11T09:00:25.0000000Z"
+        },
+        {
+          "releaseHeightMetres": 2.8493784367813473,
+          "outcome": "Overshoot",
+          "atUtc": "2026-07-11T09:00:27.0000000Z"
+        }
+      ],
+      "pendulumShortfalls": [
+        {
+          "shortfallRadians": 0.46733269527467125,
+          "atUtc": "2026-07-11T09:00:29.0000000Z"
+        }
+      ]
+    }
+  },
+  {
+    "exportSchemaVersion": 1,
+    "generatedUtc": "2026-07-11T12:00:00.0000000Z",
+    "learnerSlotId": "slot-02",
+    "startedUtc": "2026-07-11T09:15:00.0000000Z",
+    "lastUpdatedUtc": "2026-07-11T09:15:30.0000000Z",
+    "completed": true,
+    "overallPercent": 100,
+    "lensSwitches": 0,
+    "objectives": [
+      {
+        "id": "define",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "classify",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "formula",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "convert",
+        "asked": 3,
+        "scored": 3,
+        "attempts": 3,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "conserve",
+        "asked": 1,
+        "scored": 1,
+        "attempts": 1,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      }
+    ],
+    "stations": {
+      "throws": [
+        {
+          "velocityMetresPerSecond": 5.325410782277739,
+          "kineticEnergyJoules": 7.090000000000001,
+          "atUtc": "2026-07-11T09:15:21.0000000Z"
+        },
+        {
+          "velocityMetresPerSecond": 8.602325267042627,
+          "kineticEnergyJoules": 18.5,
+          "atUtc": "2026-07-11T09:15:23.0000000Z"
+        }
+      ],
+      "hillRuns": [
+        {
+          "releaseHeightMetres": 2.8493784367813473,
+          "outcome": "Overshoot",
+          "atUtc": "2026-07-11T09:15:25.0000000Z"
+        },
+        {
+          "releaseHeightMetres": 1.6986607537850895,
+          "outcome": "RolledBack",
+          "atUtc": "2026-07-11T09:15:27.0000000Z"
+        }
+      ],
+      "pendulumShortfalls": [
+        {
+          "shortfallRadians": 0.46733269527467125,
+          "atUtc": "2026-07-11T09:15:29.0000000Z"
+        }
+      ]
+    }
+  },
+  {
+    "exportSchemaVersion": 1,
+    "generatedUtc": "2026-07-11T12:00:00.0000000Z",
+    "learnerSlotId": "slot-03",
+    "startedUtc": "2026-07-11T09:30:00.0000000Z",
+    "lastUpdatedUtc": "2026-07-11T09:30:36.0000000Z",
+    "completed": true,
+    "overallPercent": 92,
+    "lensSwitches": 0,
+    "objectives": [
+      {
+        "id": "define",
+        "asked": 2,
+        "scored": 1.2,
+        "attempts": 4,
+        "masteryPercent": 60,
+        "flaggedForReview": false
+      },
+      {
+        "id": "classify",
+        "asked": 4,
+        "scored": 4,
+        "attempts": 4,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "formula",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "convert",
+        "asked": 3,
+        "scored": 3,
+        "attempts": 3,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "conserve",
+        "asked": 1,
+        "scored": 1,
+        "attempts": 1,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      }
+    ],
+    "stations": {
+      "throws": [
+        {
+          "velocityMetresPerSecond": 5.660388679233963,
+          "kineticEnergyJoules": 8.010000000000002,
+          "atUtc": "2026-07-11T09:30:27.0000000Z"
+        },
+        {
+          "velocityMetresPerSecond": 8.602325267042627,
+          "kineticEnergyJoules": 18.5,
+          "atUtc": "2026-07-11T09:30:29.0000000Z"
+        }
+      ],
+      "hillRuns": [
+        {
+          "releaseHeightMetres": 1.6986607537850895,
+          "outcome": "RolledBack",
+          "atUtc": "2026-07-11T09:30:31.0000000Z"
+        },
+        {
+          "releaseHeightMetres": 2.4159667928964588,
+          "outcome": "JustEnough",
+          "atUtc": "2026-07-11T09:30:33.0000000Z"
+        }
+      ],
+      "pendulumShortfalls": [
+        {
+          "shortfallRadians": 0.46733269527467125,
+          "atUtc": "2026-07-11T09:30:35.0000000Z"
+        }
+      ]
+    }
+  },
+  {
+    "exportSchemaVersion": 1,
+    "generatedUtc": "2026-07-11T12:00:00.0000000Z",
+    "learnerSlotId": "slot-04",
+    "startedUtc": "2026-07-11T09:45:00.0000000Z",
+    "lastUpdatedUtc": "2026-07-11T09:45:34.0000000Z",
+    "completed": true,
+    "overallPercent": 84,
+    "lensSwitches": 0,
+    "objectives": [
+      {
+        "id": "define",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "classify",
+        "asked": 2,
+        "scored": 1.2,
+        "attempts": 4,
+        "masteryPercent": 60,
+        "flaggedForReview": false
+      },
+      {
+        "id": "formula",
+        "asked": 2,
+        "scored": 1.2,
+        "attempts": 4,
+        "masteryPercent": 60,
+        "flaggedForReview": false
+      },
+      {
+        "id": "convert",
+        "asked": 3,
+        "scored": 3,
+        "attempts": 3,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "conserve",
+        "asked": 1,
+        "scored": 1,
+        "attempts": 1,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      }
+    ],
+    "stations": {
+      "throws": [
+        {
+          "velocityMetresPerSecond": 6.003332407921454,
+          "kineticEnergyJoules": 9.010000000000002,
+          "atUtc": "2026-07-11T09:45:25.0000000Z"
+        },
+        {
+          "velocityMetresPerSecond": 8.602325267042627,
+          "kineticEnergyJoules": 18.5,
+          "atUtc": "2026-07-11T09:45:27.0000000Z"
+        }
+      ],
+      "hillRuns": [
+        {
+          "releaseHeightMetres": 2.4159667928964588,
+          "outcome": "JustEnough",
+          "atUtc": "2026-07-11T09:45:29.0000000Z"
+        },
+        {
+          "releaseHeightMetres": 2.8493784367813473,
+          "outcome": "Overshoot",
+          "atUtc": "2026-07-11T09:45:31.0000000Z"
+        }
+      ],
+      "pendulumShortfalls": [
+        {
+          "shortfallRadians": 0.46733269527467125,
+          "atUtc": "2026-07-11T09:45:33.0000000Z"
+        }
+      ]
+    }
+  },
+  {
+    "exportSchemaVersion": 1,
+    "generatedUtc": "2026-07-11T12:00:00.0000000Z",
+    "learnerSlotId": "slot-05",
+    "startedUtc": "2026-07-11T10:00:00.0000000Z",
+    "lastUpdatedUtc": "2026-07-11T10:00:33.0000000Z",
+    "completed": true,
+    "overallPercent": 92,
+    "lensSwitches": 0,
+    "objectives": [
+      {
+        "id": "define",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "classify",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "formula",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "convert",
+        "asked": 3,
+        "scored": 1.7999999999999998,
+        "attempts": 6,
+        "masteryPercent": 60,
+        "flaggedForReview": false
+      },
+      {
+        "id": "conserve",
+        "asked": 1,
+        "scored": 1,
+        "attempts": 1,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      }
+    ],
+    "stations": {
+      "throws": [
+        {
+          "velocityMetresPerSecond": 6.352952069707436,
+          "kineticEnergyJoules": 10.09,
+          "atUtc": "2026-07-11T10:00:24.0000000Z"
+        },
+        {
+          "velocityMetresPerSecond": 8.602325267042627,
+          "kineticEnergyJoules": 18.5,
+          "atUtc": "2026-07-11T10:00:26.0000000Z"
+        }
+      ],
+      "hillRuns": [
+        {
+          "releaseHeightMetres": 2.8493784367813473,
+          "outcome": "Overshoot",
+          "atUtc": "2026-07-11T10:00:28.0000000Z"
+        },
+        {
+          "releaseHeightMetres": 1.6986607537850895,
+          "outcome": "RolledBack",
+          "atUtc": "2026-07-11T10:00:30.0000000Z"
+        }
+      ],
+      "pendulumShortfalls": [
+        {
+          "shortfallRadians": 0.46733269527467125,
+          "atUtc": "2026-07-11T10:00:32.0000000Z"
+        }
+      ]
+    }
+  },
+  {
+    "exportSchemaVersion": 1,
+    "generatedUtc": "2026-07-11T12:00:00.0000000Z",
+    "learnerSlotId": "slot-06",
+    "startedUtc": "2026-07-11T10:15:00.0000000Z",
+    "lastUpdatedUtc": "2026-07-11T10:15:30.0000000Z",
+    "completed": true,
+    "overallPercent": 100,
+    "lensSwitches": 0,
+    "objectives": [
+      {
+        "id": "define",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "classify",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "formula",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "convert",
+        "asked": 3,
+        "scored": 3,
+        "attempts": 3,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "conserve",
+        "asked": 1,
+        "scored": 1,
+        "attempts": 1,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      }
+    ],
+    "stations": {
+      "throws": [
+        {
+          "velocityMetresPerSecond": 6.708203932499369,
+          "kineticEnergyJoules": 11.250000000000002,
+          "atUtc": "2026-07-11T10:15:21.0000000Z"
+        },
+        {
+          "velocityMetresPerSecond": 8.602325267042627,
+          "kineticEnergyJoules": 18.5,
+          "atUtc": "2026-07-11T10:15:23.0000000Z"
+        }
+      ],
+      "hillRuns": [
+        {
+          "releaseHeightMetres": 1.6986607537850895,
+          "outcome": "RolledBack",
+          "atUtc": "2026-07-11T10:15:25.0000000Z"
+        },
+        {
+          "releaseHeightMetres": 2.4159667928964588,
+          "outcome": "JustEnough",
+          "atUtc": "2026-07-11T10:15:27.0000000Z"
+        }
+      ],
+      "pendulumShortfalls": [
+        {
+          "shortfallRadians": 0.46733269527467125,
+          "atUtc": "2026-07-11T10:15:29.0000000Z"
+        }
+      ]
+    }
+  },
+  {
+    "exportSchemaVersion": 1,
+    "generatedUtc": "2026-07-11T12:00:00.0000000Z",
+    "learnerSlotId": "slot-07",
+    "startedUtc": "2026-07-11T10:30:00.0000000Z",
+    "lastUpdatedUtc": "2026-07-11T10:30:55.0000000Z",
+    "completed": true,
+    "overallPercent": 50,
+    "lensSwitches": 4,
+    "objectives": [
+      {
+        "id": "define",
+        "asked": 2,
+        "scored": 0.6,
+        "attempts": 6,
+        "masteryPercent": 30,
+        "flaggedForReview": true
+      },
+      {
+        "id": "classify",
+        "asked": 4,
+        "scored": 2.4,
+        "attempts": 8,
+        "masteryPercent": 60,
+        "flaggedForReview": false
+      },
+      {
+        "id": "formula",
+        "asked": 2,
+        "scored": 0,
+        "attempts": 6,
+        "masteryPercent": 0,
+        "flaggedForReview": true
+      },
+      {
+        "id": "convert",
+        "asked": 3,
+        "scored": 1.7999999999999998,
+        "attempts": 6,
+        "masteryPercent": 60,
+        "flaggedForReview": false
+      },
+      {
+        "id": "conserve",
+        "asked": 1,
+        "scored": 1,
+        "attempts": 1,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      }
+    ],
+    "stations": {
+      "throws": [
+        {
+          "velocityMetresPerSecond": 7.068238818828918,
+          "kineticEnergyJoules": 12.490000000000004,
+          "atUtc": "2026-07-11T10:30:44.0000000Z"
+        },
+        {
+          "velocityMetresPerSecond": 8.602325267042627,
+          "kineticEnergyJoules": 18.5,
+          "atUtc": "2026-07-11T10:30:46.0000000Z"
+        }
+      ],
+      "hillRuns": [
+        {
+          "releaseHeightMetres": 2.4159667928964588,
+          "outcome": "JustEnough",
+          "atUtc": "2026-07-11T10:30:48.0000000Z"
+        },
+        {
+          "releaseHeightMetres": 2.8493784367813473,
+          "outcome": "Overshoot",
+          "atUtc": "2026-07-11T10:30:50.0000000Z"
+        },
+        {
+          "releaseHeightMetres": 1.6986607537850895,
+          "outcome": "RolledBack",
+          "atUtc": "2026-07-11T10:30:52.0000000Z"
+        }
+      ],
+      "pendulumShortfalls": [
+        {
+          "shortfallRadians": 0.46733269527467125,
+          "atUtc": "2026-07-11T10:30:54.0000000Z"
+        }
+      ]
+    }
+  },
+  {
+    "exportSchemaVersion": 1,
+    "generatedUtc": "2026-07-11T12:00:00.0000000Z",
+    "learnerSlotId": "slot-08",
+    "startedUtc": "2026-07-11T10:45:00.0000000Z",
+    "lastUpdatedUtc": "2026-07-11T10:45:38.0000000Z",
+    "completed": true,
+    "overallPercent": 84,
+    "lensSwitches": 0,
+    "objectives": [
+      {
+        "id": "define",
+        "asked": 2,
+        "scored": 1.2,
+        "attempts": 4,
+        "masteryPercent": 60,
+        "flaggedForReview": false
+      },
+      {
+        "id": "classify",
+        "asked": 4,
+        "scored": 4,
+        "attempts": 4,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "formula",
+        "asked": 2,
+        "scored": 1.2,
+        "attempts": 4,
+        "masteryPercent": 60,
+        "flaggedForReview": false
+      },
+      {
+        "id": "convert",
+        "asked": 3,
+        "scored": 3,
+        "attempts": 3,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "conserve",
+        "asked": 1,
+        "scored": 1,
+        "attempts": 1,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      }
+    ],
+    "stations": {
+      "throws": [
+        {
+          "velocityMetresPerSecond": 7.432361670424819,
+          "kineticEnergyJoules": 13.810000000000002,
+          "atUtc": "2026-07-11T10:45:29.0000000Z"
+        },
+        {
+          "velocityMetresPerSecond": 8.602325267042627,
+          "kineticEnergyJoules": 18.5,
+          "atUtc": "2026-07-11T10:45:31.0000000Z"
+        }
+      ],
+      "hillRuns": [
+        {
+          "releaseHeightMetres": 2.8493784367813473,
+          "outcome": "Overshoot",
+          "atUtc": "2026-07-11T10:45:33.0000000Z"
+        },
+        {
+          "releaseHeightMetres": 1.6986607537850895,
+          "outcome": "RolledBack",
+          "atUtc": "2026-07-11T10:45:35.0000000Z"
+        }
+      ],
+      "pendulumShortfalls": [
+        {
+          "shortfallRadians": 0.46733269527467125,
+          "atUtc": "2026-07-11T10:45:37.0000000Z"
+        }
+      ]
+    }
+  },
+  {
+    "exportSchemaVersion": 1,
+    "generatedUtc": "2026-07-11T12:00:00.0000000Z",
+    "learnerSlotId": "slot-09",
+    "startedUtc": "2026-07-11T11:00:00.0000000Z",
+    "lastUpdatedUtc": "2026-07-11T11:00:30.0000000Z",
+    "completed": true,
+    "overallPercent": 100,
+    "lensSwitches": 0,
+    "objectives": [
+      {
+        "id": "define",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "classify",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "formula",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "convert",
+        "asked": 3,
+        "scored": 3,
+        "attempts": 3,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "conserve",
+        "asked": 1,
+        "scored": 1,
+        "attempts": 1,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      }
+    ],
+    "stations": {
+      "throws": [
+        {
+          "velocityMetresPerSecond": 7.8,
+          "kineticEnergyJoules": 15.209999999999999,
+          "atUtc": "2026-07-11T11:00:21.0000000Z"
+        },
+        {
+          "velocityMetresPerSecond": 8.602325267042627,
+          "kineticEnergyJoules": 18.5,
+          "atUtc": "2026-07-11T11:00:23.0000000Z"
+        }
+      ],
+      "hillRuns": [
+        {
+          "releaseHeightMetres": 1.6986607537850895,
+          "outcome": "RolledBack",
+          "atUtc": "2026-07-11T11:00:25.0000000Z"
+        },
+        {
+          "releaseHeightMetres": 2.4159667928964588,
+          "outcome": "JustEnough",
+          "atUtc": "2026-07-11T11:00:27.0000000Z"
+        }
+      ],
+      "pendulumShortfalls": [
+        {
+          "shortfallRadians": 0.46733269527467125,
+          "atUtc": "2026-07-11T11:00:29.0000000Z"
+        }
+      ]
+    }
+  },
+  {
+    "exportSchemaVersion": 1,
+    "generatedUtc": "2026-07-11T12:00:00.0000000Z",
+    "learnerSlotId": "slot-10",
+    "startedUtc": "2026-07-11T11:15:00.0000000Z",
+    "lastUpdatedUtc": "2026-07-11T11:15:35.0000000Z",
+    "completed": true,
+    "overallPercent": 84,
+    "lensSwitches": 0,
+    "objectives": [
+      {
+        "id": "define",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "classify",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "formula",
+        "asked": 2,
+        "scored": 1.2,
+        "attempts": 4,
+        "masteryPercent": 60,
+        "flaggedForReview": false
+      },
+      {
+        "id": "convert",
+        "asked": 3,
+        "scored": 1.7999999999999998,
+        "attempts": 6,
+        "masteryPercent": 60,
+        "flaggedForReview": false
+      },
+      {
+        "id": "conserve",
+        "asked": 1,
+        "scored": 1,
+        "attempts": 1,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      }
+    ],
+    "stations": {
+      "throws": [
+        {
+          "velocityMetresPerSecond": 8.170679286326198,
+          "kineticEnergyJoules": 16.689999999999998,
+          "atUtc": "2026-07-11T11:15:26.0000000Z"
+        },
+        {
+          "velocityMetresPerSecond": 8.602325267042627,
+          "kineticEnergyJoules": 18.5,
+          "atUtc": "2026-07-11T11:15:28.0000000Z"
+        }
+      ],
+      "hillRuns": [
+        {
+          "releaseHeightMetres": 2.4159667928964588,
+          "outcome": "JustEnough",
+          "atUtc": "2026-07-11T11:15:30.0000000Z"
+        },
+        {
+          "releaseHeightMetres": 2.8493784367813473,
+          "outcome": "Overshoot",
+          "atUtc": "2026-07-11T11:15:32.0000000Z"
+        }
+      ],
+      "pendulumShortfalls": [
+        {
+          "shortfallRadians": 0.46733269527467125,
+          "atUtc": "2026-07-11T11:15:34.0000000Z"
+        }
+      ]
+    }
+  },
+  {
+    "exportSchemaVersion": 1,
+    "generatedUtc": "2026-07-11T12:00:00.0000000Z",
+    "learnerSlotId": "slot-11",
+    "startedUtc": "2026-07-11T11:30:00.0000000Z",
+    "lastUpdatedUtc": "2026-07-11T11:30:46.0000000Z",
+    "completed": true,
+    "overallPercent": 60,
+    "lensSwitches": 0,
+    "objectives": [
+      {
+        "id": "define",
+        "asked": 2,
+        "scored": 1.2,
+        "attempts": 4,
+        "masteryPercent": 60,
+        "flaggedForReview": false
+      },
+      {
+        "id": "classify",
+        "asked": 4,
+        "scored": 2.4,
+        "attempts": 8,
+        "masteryPercent": 60,
+        "flaggedForReview": false
+      },
+      {
+        "id": "formula",
+        "asked": 2,
+        "scored": 1.2,
+        "attempts": 4,
+        "masteryPercent": 60,
+        "flaggedForReview": false
+      },
+      {
+        "id": "convert",
+        "asked": 3,
+        "scored": 1.7999999999999998,
+        "attempts": 6,
+        "masteryPercent": 60,
+        "flaggedForReview": false
+      },
+      {
+        "id": "conserve",
+        "asked": 1,
+        "scored": 0.6,
+        "attempts": 2,
+        "masteryPercent": 60,
+        "flaggedForReview": false
+      }
+    ],
+    "stations": {
+      "throws": [
+        {
+          "velocityMetresPerSecond": 8.54400374531753,
+          "kineticEnergyJoules": 18.249999999999996,
+          "atUtc": "2026-07-11T11:30:37.0000000Z"
+        },
+        {
+          "velocityMetresPerSecond": 8.602325267042627,
+          "kineticEnergyJoules": 18.5,
+          "atUtc": "2026-07-11T11:30:39.0000000Z"
+        }
+      ],
+      "hillRuns": [
+        {
+          "releaseHeightMetres": 2.8493784367813473,
+          "outcome": "Overshoot",
+          "atUtc": "2026-07-11T11:30:41.0000000Z"
+        },
+        {
+          "releaseHeightMetres": 1.6986607537850895,
+          "outcome": "RolledBack",
+          "atUtc": "2026-07-11T11:30:43.0000000Z"
+        }
+      ],
+      "pendulumShortfalls": [
+        {
+          "shortfallRadians": 0.46733269527467125,
+          "atUtc": "2026-07-11T11:30:45.0000000Z"
+        }
+      ]
+    }
+  },
+  {
+    "exportSchemaVersion": 1,
+    "generatedUtc": "2026-07-11T12:00:00.0000000Z",
+    "learnerSlotId": "slot-12",
+    "startedUtc": "2026-07-11T11:45:00.0000000Z",
+    "lastUpdatedUtc": "2026-07-11T11:45:30.0000000Z",
+    "completed": true,
+    "overallPercent": 100,
+    "lensSwitches": 0,
+    "objectives": [
+      {
+        "id": "define",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "classify",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "formula",
+        "asked": 2,
+        "scored": 2,
+        "attempts": 2,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "convert",
+        "asked": 3,
+        "scored": 3,
+        "attempts": 3,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      },
+      {
+        "id": "conserve",
+        "asked": 1,
+        "scored": 1,
+        "attempts": 1,
+        "masteryPercent": 100,
+        "flaggedForReview": false
+      }
+    ],
+    "stations": {
+      "throws": [
+        {
+          "velocityMetresPerSecond": 8.919641248391104,
+          "kineticEnergyJoules": 19.89,
+          "atUtc": "2026-07-11T11:45:21.0000000Z"
+        },
+        {
+          "velocityMetresPerSecond": 8.602325267042627,
+          "kineticEnergyJoules": 18.5,
+          "atUtc": "2026-07-11T11:45:23.0000000Z"
+        }
+      ],
+      "hillRuns": [
+        {
+          "releaseHeightMetres": 1.6986607537850895,
+          "outcome": "RolledBack",
+          "atUtc": "2026-07-11T11:45:25.0000000Z"
+        },
+        {
+          "releaseHeightMetres": 2.4159667928964588,
+          "outcome": "JustEnough",
+          "atUtc": "2026-07-11T11:45:27.0000000Z"
+        }
+      ],
+      "pendulumShortfalls": [
+        {
+          "shortfallRadians": 0.46733269527467125,
+          "atUtc": "2026-07-11T11:45:29.0000000Z"
+        }
+      ]
+    }
+  }
+]

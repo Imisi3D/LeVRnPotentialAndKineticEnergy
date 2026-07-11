@@ -41,6 +41,7 @@ namespace LeVRn.Progress
                     ["id"] = o.Id,
                     ["asked"] = o.Asked,
                     ["scored"] = o.Scored,
+                    ["attempts"] = o.Attempts,
                     ["masteryPercent"] = o.MasteryPercent,
                     ["flaggedForReview"] = o.FlaggedForReview
                 });
@@ -134,6 +135,7 @@ namespace LeVRn.Progress
                     RequireString(o, "id", result, "objectives[" + idx + "].");
                     RequireInt(o, "asked", result, "objectives[" + idx + "].");
                     RequireNumber(o, "scored", result, "objectives[" + idx + "].");
+                    RequireInt(o, "attempts", result, "objectives[" + idx + "].");
                     RequireInt(o, "masteryPercent", result, "objectives[" + idx + "].");
                     RequireBool(o, "flaggedForReview", result, "objectives[" + idx + "].");
                     idx++;

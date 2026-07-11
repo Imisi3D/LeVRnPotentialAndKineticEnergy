@@ -94,7 +94,7 @@ lastUpdatedUtc      : string
 completed           : bool
 overallPercent      : number
 lensSwitches        : int
-objectives[]        : { id, asked, scored, masteryPercent, flaggedForReview }
+objectives[]        : { id, asked, scored, attempts, masteryPercent, flaggedForReview }
 stations            : {
   throws[]             : { velocityMetresPerSecond, kineticEnergyJoules, atUtc }
   hillRuns[]           : { releaseHeightMetres, outcome, atUtc }
