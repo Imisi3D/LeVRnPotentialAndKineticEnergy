@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LeVRn Embodied Prototype · Predict, Act, Observe, Explain</title>
+<style>
+  :root{
+    --ink:#1F2A44; --teal:#2A9D8F; --terra:#C1592E; --niyat:#B5478C;
+    --card:#F0F0F5; --chip:#2C7FB8; --ok:#1E7A3D; --bad:#9E1B1B;
+    --pe:#2A9D8F; --ke:#F28C28; --line:#D9DEE8; --panel:#FBFBFD;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:Calibri,'Segoe UI',system-ui,-apple-system,sans-serif;background:#EDEFF4;color:var(--ink);line-height:1.45;}
+  header{background:var(--ink);color:#fff;padding:13px 20px;display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;justify-content:space-between;}
+  header h1{font-size:1.02rem;font-weight:700;}
+  header .sub{font-size:.78rem;opacity:.75;}
+  .badges{display:flex;gap:8px;flex-wrap:wrap;}
+  .badge{font-size:.68rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.12);color:#DCE8F2;border:1px solid rgba(255,255,255,.25);}
+  .badge.green{background:#173B2A;color:#9FE3B8;border-color:#2E6B47;}
+  .wrap{max-width:1180px;margin:20px auto;padding:0 16px;display:grid;grid-template-columns:minmax(0,1.6fr) minmax(270px,1fr);gap:18px;}
+  @media(max-width:900px){.wrap{grid-template-columns:1fr;}}
+
+  .stage-card{background:#0B0E14;border-radius:18px;padding:16px 16px 20px;box-shadow:0 10px 30px rgba(15,25,50,.25);}
+  .tabs{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;}
+  .tab{background:#1A2130;color:#8FA3BF;border:1px solid #2A3550;border-radius:999px;padding:6px 14px;font:inherit;font-size:.78rem;font-weight:700;cursor:pointer;}
+  .tab.active{background:#2C7FB8;color:#fff;border-color:#2C7FB8;}
+  .tab:disabled{opacity:.45;cursor:default;}
+  .viewport{position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;background:#000;border-radius:50%/42%;outline:6px solid #05070B;touch-action:none;}
+  canvas{position:absolute;inset:0;width:100%;height:100%;display:block;}
+
+  .dialogue{position:absolute;left:50%;bottom:5%;transform:translateX(-50%);width:min(88%,520px);background:rgba(240,240,245,.97);border-radius:14px;padding:12px 15px 11px;box-shadow:0 6px 18px rgba(0,0,0,.35);}
+  .speaker{display:flex;align-items:center;gap:8px;margin-bottom:5px;}
+  .avatar{width:24px;height:24px;border-radius:50%;color:#fff;font-weight:800;font-size:.75rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .speaker .name{font-weight:700;font-size:.82rem;}
+  .dialogue p.text{font-size:.9rem;margin-bottom:9px;}
+  .options{display:flex;flex-direction:column;gap:6px;}
+  .opt{display:flex;align-items:center;gap:9px;width:100%;background:#fff;border:1.5px solid #C9CFDA;border-radius:9px;padding:7px 11px;font:inherit;font-size:.87rem;text-align:left;cursor:pointer;}
+  .opt .letter{width:20px;height:20px;border-radius:50%;background:var(--chip);color:#fff;font-size:.68rem;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .opt:hover,.opt:focus-visible{border-color:var(--chip);background:#F3F9FD;outline:none;}
+  .opt.correct{border-color:var(--ok);background:#EAF7EE;}
+  .opt.wrong{border-color:var(--bad);background:#FBEDEA;}
+  .opt:disabled{cursor:default;opacity:.85;}
+  .continue{align-self:flex-end;background:var(--chip);color:#fff;border:none;border-radius:9px;padding:7px 16px;font:inherit;font-weight:700;font-size:.85rem;cursor:pointer;}
+  .continue:hover{background:#1F6AA0;}
+  .act-hint{font-size:.8rem;color:#3E4A63;background:#E7EFF8;border-radius:8px;padding:6px 10px;}
+  .stage-foot{color:#5E6B85;font-size:.7rem;margin-top:11px;text-align:center;}
+
+  /* ledger + panel */
+  .brain{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:14px;}
+  .brain h2{font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:#5A6478;}
+  .ledger{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;}
+  .lrow{display:flex;align-items:center;gap:8px;margin-bottom:7px;font-size:.78rem;}
+  .lrow .tag{width:26px;font-weight:800;}
+  .lbar{flex:1;height:12px;background:#EDF0F5;border-radius:99px;overflow:hidden;}
+  .lbar i{display:block;height:100%;width:0%;border-radius:99px;transition:width .1s linear;}
+  .lbar.pe i{background:var(--pe);} .lbar.ke i{background:var(--ke);}
+  .lval{width:52px;text-align:right;font-variant-numeric:tabular-nums;font-weight:700;font-size:.78rem;}
+  .ltotal{display:flex;justify-content:space-between;font-size:.76rem;color:#5A6478;border-top:1px dashed var(--line);padding-top:7px;margin-top:2px;}
+  .ltotal b{font-variant-numeric:tabular-nums;color:var(--ink);}
+  .log{background:#10141D;color:#B9C6DA;border-radius:10px;padding:9px 11px;font-family:ui-monospace,Consolas,monospace;font-size:.7rem;height:190px;overflow-y:auto;display:flex;flex-direction:column;gap:3px;}
+  .log .ev{color:#7FD1B9;} .log .warn{color:#F0B429;} .log .act{color:#F49CBB;}
+  .note{font-size:.73rem;color:#5A6478;}
+  .restart{background:none;border:1.5px solid var(--line);border-radius:9px;padding:7px 14px;font:inherit;font-size:.8rem;cursor:pointer;color:var(--ink);}
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>LeVRn Embodied Prototype</h1>
+    <div class="sub">Predict · Act · Observe · Explain. Your drag gesture stands in for the tracked controller</div>
+  </div>
+  <div class="badges">
+    <span class="badge green">Offline · zero network</span>
+    <span class="badge">Real gesture physics</span>
+    <span class="badge">No language model</span>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="stage-card">
+    <div class="tabs">
+      <button class="tab active" data-s="0" id="tab0">1 · The Handover</button>
+      <button class="tab" data-s="1" id="tab1">2 · The Nose Test</button>
+      <button class="tab" data-s="2" id="tab2">3 · Just Enough Hill</button>
+    </div>
+    <div class="viewport" id="vp">
+      <canvas id="cv"></canvas>
+      <div class="dialogue" id="dlg">
+        <div class="speaker"><div class="avatar" id="avatar">M</div><span class="name" id="sp-name">Morenike</span></div>
+        <p class="text" id="txt"></p>
+        <div class="options" id="opts"></div>
+      </div>
+    </div>
+    <div class="stage-foot">In the headset these are two tracked controllers with haptics. Here, drag with mouse or finger: the physics reads your actual gesture speed.</div>
+  </div>
+
+  <aside class="brain">
+    <div>
+      <h2>Energy ledger · live</h2>
+      <div class="ledger">
+        <div class="lrow"><span class="tag" style="color:var(--pe)">PE</span><div class="lbar pe"><i id="pe-bar"></i></div><span class="lval" id="pe-val">0 J</span></div>
+        <div class="lrow"><span class="tag" style="color:var(--ke)">KE</span><div class="lbar ke"><i id="ke-bar"></i></div><span class="lval" id="ke-val">0 J</span></div>
+        <div class="ltotal"><span>Total (conserved in flight)</span><b id="tot-val">0 J</b></div>
+      </div>
+    </div>
+    <div>
+      <h2>What your body did · log</h2>
+      <div class="log" id="log"></div>
+    </div>
+    <p class="note">Every number above comes from your gesture: drag speed becomes release velocity, drag height becomes h. The tutor's questions are authored and grounded; your actions are inputs to its state machine.</p>
+    <button class="restart" onclick="location.reload()">Restart</button>
+  </aside>
+</div>
+
+<script>
+"use strict";
+/* =========================================================
+   Embodied prototype · 3 stations · pure local physics
+   Scale: PX_PER_M px = 1 m · g = 10 (school convention)
+   ========================================================= */
+const G = 10;
+const GUIDES = {
+  niyat:{name:"Niyat",color:"#B5478C"},
+  morenike:{name:"Morenike",color:"#2A9D8F"},
+  ejike:{name:"Ejike",color:"#C1592E"}
+};
+const $=id=>document.getElementById(id);
+const cv=$("cv"), vp=$("vp");
+let ctx=cv.getContext("2d"), W=640,H=480, PX=46; /* px per metre */
+
+function resize(){
+  const r=vp.getBoundingClientRect();
+  cv.width=W=Math.round(r.width*devicePixelRatio);
+  cv.height=H=Math.round(r.height*devicePixelRatio);
+  ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
+  W=r.width; H=r.height; PX=W/14; /* 14 m wide world */
+}
+window.addEventListener("resize",resize);
+
+/* ---------- ledger ---------- */
+let ledgerMax=30;
+function ledger(pe,ke){
+  pe=Math.max(0,pe); ke=Math.max(0,ke);
+  const tot=pe+ke; ledgerMax=Math.max(ledgerMax,tot,1);
+  $("pe-bar").style.width=(pe/ledgerMax*100)+"%";
+  $("ke-bar").style.width=(ke/ledgerMax*100)+"%";
+  $("pe-val").textContent=pe.toFixed(1)+" J";
+  $("ke-val").textContent=ke.toFixed(1)+" J";
+  $("tot-val").textContent=tot.toFixed(1)+" J";
+}
+function log(m,c){const d=document.createElement("div");if(c)d.className=c;d.textContent=m;$("log").appendChild(d);$("log").scrollTop=1e9;}
+
+/* ---------- dialogue ---------- */
+function speak(gid,text){
+  const g=GUIDES[gid];
+  $("avatar").textContent=g.name[0]; $("avatar").style.background=g.color;
+  $("sp-name").textContent=g.name; $("txt").textContent=text;
+}
+function menu(gid,text,opts,correctIdx,affirm,retryHint,then){
+  speak(gid,text); const box=$("opts"); box.innerHTML="";
+  opts.forEach((lab,i)=>{
+    const b=document.createElement("button");
+    b.className="opt"; b.innerHTML=`<span class="letter">${String.fromCharCode(65+i)}</span><span>${lab}</span>`;
+    b.onclick=()=>{
+      if(i===correctIdx){
+        b.classList.add("correct");[...box.children].forEach(x=>x.disabled=true);
+        log("answered correctly","ev");
+        setTimeout(()=>{ speak(gid,affirm); box.innerHTML="";
+          const c=document.createElement("button"); c.className="continue"; c.textContent="Continue";
+          c.onclick=then; box.appendChild(c);
+        },550);
+      } else {
+        b.classList.add("wrong"); b.disabled=true;
+        log("wrong answer · hint retrieved","warn");
+        speak(gid,retryHint+"  Try again.");
+      }
+    };
+    box.appendChild(b);
+  });
+}
+function actPrompt(gid,text,hint){
+  speak(gid,text); const box=$("opts"); box.innerHTML="";
+  const d=document.createElement("div"); d.className="act-hint"; d.textContent=hint; box.appendChild(d);
+}
+function doneButton(label,fn){
+  const box=$("opts"); box.innerHTML="";
+  const c=document.createElement("button"); c.className="continue"; c.textContent=label; c.onclick=fn; box.appendChild(c);
+}
+
+/* ---------- shared drawing ---------- */
+function sky(){
+  const g=ctx.createLinearGradient(0,0,0,H);
+  g.addColorStop(0,"#7EC8E3"); g.addColorStop(1,"#C9E9F5");
+  ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+  ctx.fillStyle="rgba(255,214,112,.9)"; ctx.beginPath(); ctx.arc(W*.87,H*.13,H*.07,0,7); ctx.fill();
+}
+function person(x,y,color,scale,label){
+  const s=scale*PX;
+  ctx.fillStyle="#6B4A2B"; ctx.beginPath(); ctx.arc(x,y-1.5*s,0.32*s,0,7); ctx.fill();
+  ctx.fillStyle=color; ctx.fillRect(x-0.3*s,y-1.2*s,0.6*s,0.85*s);
+  ctx.fillStyle="#3B4252"; ctx.fillRect(x-0.26*s,y-0.36*s,0.2*s,0.4*s); ctx.fillRect(x+0.07*s,y-0.36*s,0.2*s,0.4*s);
+  if(label){ctx.fillStyle="#1F2A44";ctx.font=`700 ${Math.max(11,0.3*s)}px Calibri, sans-serif`;ctx.textAlign="center";ctx.fillText(label,x,y-1.95*s);}
+}
+function ballDot(x,y,r){
+  ctx.fillStyle="#E9573F"; ctx.beginPath(); ctx.arc(x,y,r,0,7); ctx.fill();
+  ctx.strokeStyle="#B33A2B"; ctx.lineWidth=2; ctx.stroke();
+  ctx.strokeStyle="rgba(255,255,255,.7)"; ctx.beginPath(); ctx.arc(x,y,r*0.55,-2.4,-0.9); ctx.stroke();
+}
+
+/* ---------- pointer plumbing ---------- */
+let pointer={down:false,x:0,y:0,trail:[]};
+function localXY(e){
+  const r=cv.getBoundingClientRect();
+  const t=e.touches?e.touches[0]:e;
+  return {x:t.clientX-r.left, y:t.clientY-r.top};
+}
+["pointerdown"].forEach(ev=>cv.addEventListener(ev,e=>{
+  const p=localXY(e); pointer.down=true; pointer.x=p.x; pointer.y=p.y;
+  pointer.trail=[{x:p.x,y:p.y,t:performance.now()}];
+  station.onDown&&station.onDown(p);
+}));
+["pointermove"].forEach(ev=>cv.addEventListener(ev,e=>{
+  const p=localXY(e); pointer.x=p.x; pointer.y=p.y;
+  if(pointer.down){ pointer.trail.push({x:p.x,y:p.y,t:performance.now()});
+    if(pointer.trail.length>14) pointer.trail.shift();
+    station.onMove&&station.onMove(p); }
+}));
+["pointerup","pointercancel"].forEach(ev=>cv.addEventListener(ev,()=>{
+  if(pointer.down){ pointer.down=false; station.onUp&&station.onUp(); }
+}));
+function releaseVelocity(){ /* m/s from the drag trail */
+  const tr=pointer.trail; if(tr.length<2) return {vx:0,vy:0,v:0};
+  const a=tr[Math.max(0,tr.length-6)], b=tr[tr.length-1];
+  const dt=Math.max(16,(b.t-a.t))/1000;
+  let vx=(b.x-a.x)/dt/PX, vy=-(b.y-a.y)/dt/PX;
+  const v=Math.hypot(vx,vy), cap=15;
+  if(v>cap){vx*=cap/v;vy*=cap/v;}
+  return {vx,vy,v:Math.min(v,cap)};
+}
+
+/* =========================================================
+   STATION 1 · THE HANDOVER (the client's own example)
+   ========================================================= */
+function makeThrow(){
+  const m=0.5, groundF=0.82, ejikeX=()=>W*0.84;
+  const st={
+    phase:"predict", ball:{x:0,y:0,vx:0,vy:0,held:false,flying:false,r:12},
+    throws:[], caught:false,
+    enter(){
+      resize();
+      this.ball.x=W*0.18; this.ball.y=H*groundF-90; this.ball.flying=false; this.ball.held=false;
+      ledger(m*G*((H*groundF-this.ball.y)/PX),0);
+      menu("morenike",
+        "Here, hold this ball for me. It is sitting still on your palm, up at hand height. What kind of energy does it have right now?",
+        ["Potential energy, stored by its position","Kinetic energy","No energy at all"],0,
+        "Exactly. It is still, so no kinetic energy, but it is raised up, so it stores potential energy from position. Now let us spend it.",
+        "It is not moving at all. But is it high or is it on the ground?",
+        ()=>{ st.phase="act";
+          actPrompt("ejike","Oya, throw it to me! I am standing over there. Put your arm into it.",
+          "Drag the ball and fling it toward Ejike. Release speed is read from your gesture.");
+          log("act phase: throw · release velocity will be read","act");
+        });
+    },
+    onDown(p){ if(this.phase!=="act"&&this.phase!=="retry")return;
+      const b=this.ball; if(Math.hypot(p.x-b.x,p.y-b.y)<34&&!b.flying){b.held=true;} },
+    onMove(p){ const b=this.ball; if(b.held){b.x=p.x;b.y=p.y;
+      ledger(m*G*Math.max(0,(H*groundF-b.y)/PX),0);} },
+    onUp(){ const b=this.ball; if(!b.held)return; b.held=false;
+      const {vx,vy,v}=releaseVelocity();
+      if(v<1.5){log("release too gentle · ball stays put","warn");return;}
+      b.vx=vx; b.vy=vy; b.flying=true;
+      const ke=0.5*m*v*v;
+      this.throws.push({v,ke});
+      log(`THROW ${this.throws.length}: your v = ${v.toFixed(1)} m/s · KE = ½×0.5×v² = ${ke.toFixed(1)} J`,"act");
+      if(this.throws.length===2){
+        const [t1,t2]=this.throws;
+        log(`compare: v ×${(t2.v/t1.v).toFixed(1)} but KE ×${(t2.ke/t1.ke).toFixed(1)} · that is v squared`,"ev");
+      }
+    },
+    update(dt){
+      const b=this.ball;
+      if(b.flying){
+        b.vy-=G*dt; b.x+=b.vx*PX*dt; b.y-=b.vy*PX*dt;
+        const h=Math.max(0,(H*groundF-b.y)/PX);
+        const sp=Math.hypot(b.vx,b.vy);
+        ledger(m*G*h,0.5*m*sp*sp);
+        if(b.y>=H*groundF-12){ /* landed */
+          b.flying=false; b.y=H*groundF-12; b.vx=0;b.vy=0;
+          const nearE=Math.abs(b.x-ejikeX())<W*0.09;
+          if(nearE&&!this.caught){
+            this.caught=true; this.phase="explain";
+            log("caught by Ejike","ev");
+            menu("ejike","Caught it! While that ball was flying through the air to me, what kind of energy was it mainly carrying?",
+              ["Kinetic energy, it was moving","Only potential energy","No energy, it was in the air"],0,
+              "Correct. Your arm gave it kinetic energy. And watch the ledger next throw: at the top of the arc it banks a little potential too, then trades it back. Nice arm. Throw once more, harder or softer, and compare your numbers in the log.",
+              "Was the ball moving on its way to me?",
+              ()=>{ st.phase="act";
+                actPrompt("ejike","Go again! One gentle, one hard, and watch what squaring the speed does to the energy.","Drag and fling. Compare your two throws in the log, then move to station 2.");
+                doneNext(); });
+          } else if(!this.caught){
+            b.x=W*0.18;b.y=H*groundF-90;
+            speak("ejike", b.x<ejikeX()?"Ah, it fell short! Put more energy into the throw, your arm decides the number.":"Over my head! A little less this time.");
+          } else { b.x=W*0.18;b.y=H*groundF-90; }
+        }
+      } else if(!b.held){ ledger(m*G*Math.max(0,(H*groundF-b.y)/PX),0); }
+    },
+    draw(){
+      sky();
+      ctx.fillStyle="#9AA0A8"; ctx.fillRect(0,H*groundF,W,H);
+      ctx.fillStyle="#7C838C"; ctx.fillRect(0,H*groundF,W,4);
+      /* stall */ ctx.fillStyle="#F2B233"; ctx.beginPath(); ctx.moveTo(W*.55,H*.44); ctx.lineTo(W*.63,H*.36); ctx.lineTo(W*.71,H*.44); ctx.closePath(); ctx.fill();
+      ctx.fillStyle="#8A5A33"; ctx.fillRect(W*.56,H*.44,W*.14,6);
+      person(W*0.09,H*groundF,GUIDES.morenike.color,1.05,"Morenike");
+      person(ejikeX(),H*groundF,GUIDES.ejike.color,1.05,"Ejike");
+      /* throw guide arc hint while held */
+      const b=this.ball;
+      if(b.held&&pointer.trail.length>1){
+        ctx.strokeStyle="rgba(44,127,184,.5)"; ctx.lineWidth=2; ctx.beginPath();
+        pointer.trail.forEach((p,i)=>i?ctx.lineTo(p.x,p.y):ctx.moveTo(p.x,p.y)); ctx.stroke();
+      }
+      ballDot(b.x,b.y,b.r);
+    }
+  };
+  return st;
+}
+
+/* =========================================================
+   STATION 2 · THE NOSE TEST (signature)
+   ========================================================= */
+function makeNose(){
+  const L=2.3, m=6; /* tire */
+  const st={
+    phase:"predict", th:0, w:0, holding:false, released:false, maxReturn:-99,
+    pivot(){return{x:W*0.52,y:H*0.12};},
+    noseTh(){return -1.05;}, /* release angle at the nose */
+    enter(){
+      resize(); this.th=0; this.w=0; this.released=false; this.holding=false; this.maxReturn=-99; this.swung=undefined;
+      ledger(0,0);
+      menu("ejike",
+        "See this tire swing on the mango tree? I dare you: pull it right back until it touches the tip of your nose, then let go and do not move. When it swings back at you, it will…",
+        ["Stop just short of my nose, every time","Smack me in the face","Swing back higher than my nose"],0,
+        "Correct, and now you get to feel why. Your body will not believe you yet. Pull it to the nose and release.",
+        "Think about where its energy comes from. Can it come back with more than you gave it?",
+        ()=>{ st.phase="act";
+          actPrompt("morenike","Pull the tire back to the nose marker, then release and hold perfectly still.","Drag the tire to the nose, let go, and watch how close it returns.");
+          log("act phase: pendulum · conservation on your own nose","act");
+        });
+    },
+    onDown(p){ if(this.phase!=="act")return;
+      const P=this.pivot(), bx=P.x+Math.sin(this.th)*L*PX, by=P.y+Math.cos(this.th)*L*PX;
+      if(Math.hypot(p.x-bx,p.y-by)<44){this.holding=true;} },
+    onMove(p){ if(!this.holding)return; const P=this.pivot();
+      this.th=Math.atan2(p.x-P.x,p.y-P.y);
+      this.th=Math.max(-1.35,Math.min(0.4,this.th));
+      const h=L*(1-Math.cos(this.th));
+      ledger(m*G*h,0);
+    },
+    onUp(){ if(!this.holding)return; this.holding=false;
+      if(this.th>this.noseTh()+0.12){ speak("ejike","Pull it all the way to the nose marker first, no cheating!"); return;}
+      this.released=true; this.w=0;
+      const h=L*(1-Math.cos(this.th));
+      log(`released at nose · PE banked = ${(m*G*h).toFixed(1)} J · not one joule more`,"act");
+    },
+    update(dt){
+      if(!this.released)return;
+      const damp=0.9985;
+      const a=-(G/L)*Math.sin(this.th);
+      this.w+=a*dt; this.w*=damp; this.th+=this.w*dt;
+      const h=L*(1-Math.cos(this.th)), v=Math.abs(this.w)*L;
+      ledger(m*G*h,0.5*m*v*v);
+      /* detect return apex on the nose side: must swing away first */
+      if(this.swung===undefined&&this.th>0.15)this.swung=true;
+      if(this.swung&&this.th<-0.5&&Math.abs(this.w)<0.02&&this.phase==="act"){
+        const gapDeg=((this.noseTh()-this.th)* -57.3);
+        if(gapDeg>0.05){
+          this.phase="explain"; this.released=true;
+          log(`returned and stopped ${gapDeg.toFixed(1)}° short of your nose`,"ev");
+          menu("morenike",
+            "There. It came all the way back and stopped a breath short of your face. You flinched, everybody does. Why could it never touch you?",
+            ["It cannot gain more energy than I gave it, and the air took a little","The rope is too short","I leaned back without noticing"],0,
+            "That is conservation of energy, felt in the body. It can only return the energy you banked, minus the whisper the air stole. Science museums do this with a bowling ball. You just did it with a Yaba tire swing.",
+            "Where would extra swing energy have to come from?",
+            ()=>{ doneNext(); speak("morenike","Try releasing it again from anywhere, it can never beat its starting height. When you are ready, station 3 is waiting."); st.phase="free"; });
+        }
+      }
+    },
+    draw(){
+      sky();
+      ctx.fillStyle="#9AA0A8"; ctx.fillRect(0,H*0.82,W,H);
+      /* tree */
+      const P=this.pivot();
+      ctx.fillStyle="#7A5230"; ctx.fillRect(P.x+W*0.16,H*0.28,16,H*0.54);
+      ctx.fillStyle="#4C9A4C"; ctx.beginPath(); ctx.arc(P.x+W*0.17,H*0.24,H*0.14,0,7); ctx.fill();
+      ctx.fillStyle="#7A5230"; ctx.fillRect(P.x-4,P.y-6,W*0.18,10); /* branch */
+      /* you: face at nose position */
+      const nx=P.x+Math.sin(this.noseTh())*L*PX, ny=P.y+Math.cos(this.noseTh())*L*PX;
+      ctx.fillStyle="#6B4A2B"; ctx.beginPath(); ctx.arc(nx-30,ny,24,0,7); ctx.fill();
+      ctx.fillStyle="#513622"; ctx.beginPath(); ctx.arc(nx-8,ny,5,0,7); ctx.fill(); /* nose tip */
+      ctx.fillStyle="#1F2A44"; ctx.font="700 12px Calibri,sans-serif"; ctx.textAlign="center";
+      ctx.fillText("your nose",nx-30,ny-34);
+      /* rope + tire */
+      const bx=P.x+Math.sin(this.th)*L*PX, by=P.y+Math.cos(this.th)*L*PX;
+      ctx.strokeStyle="#8A5A33"; ctx.lineWidth=3; ctx.beginPath(); ctx.moveTo(P.x,P.y); ctx.lineTo(bx,by); ctx.stroke();
+      ctx.strokeStyle="#22262E"; ctx.lineWidth=12; ctx.beginPath(); ctx.arc(bx,by,20,0,7); ctx.stroke();
+    }
+  };
+  return st;
+}
+
+/* =========================================================
+   STATION 3 · JUST ENOUGH HILL (capstone)
+   ========================================================= */
+function makeHill(){
+  const m=1, mu=0.12; /* small friction J per metre */
+  const st={
+    phase:"predict", x:0, dir:1, moving:false, holding:false, h0:0, tries:0, done:false,
+    track(x){ /* x in metres 0..14 -> height metres */
+      const valley=5.4, crest=9.6;
+      if(x<valley) return 3.4*Math.pow((valley-x)/valley,1.5);
+      if(x<crest) return 2.2*Math.pow((x-valley)/(crest-valley),2);
+      return Math.max(0,2.2-2.6*(x-crest));
+    },
+    crestH:2.2, crestX:9.6,
+    toPx(x,h){ return {x:x/14*W, y:H*0.86-h*PX}; },
+    enter(){
+      resize(); this.x=1.2; this.moving=false; this.done=false; this.tries=0;
+      ledger(m*G*this.track(this.x),0);
+      menu("niyat",
+        "Last station, and it is mine. This toy keke rolls on the track with almost no friction. The far hill crest is 2.2 metres high. For the keke to just barely crest it, you should release it from a height that is…",
+        ["A whisker above 2.2 metres, energy in equals energy needed","Twice the crest height, to be safe","Below the crest, speed will carry it"],0,
+        "Correct, mgh at your hand must at least equal mgh at the crest, plus the whisper friction takes. Now prove it with your hands.",
+        "Where does the keke's climbing energy come from, and how much does the crest cost?",
+        ()=>{ st.phase="act";
+          actPrompt("niyat","Place the keke on the left slope, as high or low as you like, and let go. Aim to just crest, not fly over, not roll back.","Drag the keke up or down the left slope, release, iterate. Your release height is your answer.");
+          log("act phase: solve mgh = mgh with your hands","act");
+        });
+    },
+    onDown(p){ if(this.phase!=="act"||this.moving)return;
+      const c=this.toPx(this.x,this.track(this.x));
+      if(Math.hypot(p.x-c.x,p.y-c.y)<40)this.holding=true; },
+    onMove(p){ if(!this.holding)return;
+      let xm=p.x/W*14; xm=Math.max(0.15,Math.min(5.1,xm));
+      this.x=xm; this.h0=this.track(xm);
+      ledger(m*G*this.h0,0);
+    },
+    onUp(){ if(!this.holding)return; this.holding=false;
+      this.h0=this.track(this.x); this.moving=true; this.dir=1; this.dist=0; this.stalls=0; this.tries++;
+      log(`RUN ${this.tries}: released at h = ${this.h0.toFixed(2)} m · PE = ${(m*G*this.h0).toFixed(1)} J (crest needs ${(m*G*this.crestH).toFixed(0)} J)`,"act");
+    },
+    update(dt){
+      if(!this.moving)return;
+      const h=this.track(this.x);
+      const E=m*G*this.h0 - mu*(this.dist||0);
+      const ke=E-m*G*h;
+      const slopeDown = this.track(this.x+0.02) < h; /* falling terrain ahead in dir */
+      if(ke<=0.02 && (this.dist||0)>0.05 && this.x<this.crestX){ /* genuine stall after moving */
+        if(this.dir===1 && this.x>5.4){ this.dir=-1; this.stalls=(this.stalls||0)+1;
+          log(`stalled at h = ${h.toFixed(2)} m on the rise · rolling back`,"warn");
+          speak("niyat","It ran out of energy before the crest. The hill costs 22 joules, you gave it "+(m*G*this.h0).toFixed(0)+". Higher hand, bigger bank.");
+        } else if(this.dir===-1 && this.x<5.4){ this.dir=1; this.stalls=(this.stalls||0)+1; }
+        if((this.stalls||0)>=3){ this.moving=false; ledger(m*G*h,0); doneRetry(); return; }
+      }
+      const v=Math.sqrt(Math.max(0.12,2*Math.max(0,ke)/m)); /* floor keeps it creeping off the mark */
+      this.x+=this.dir*v*dt*1.15; this.dist=(this.dist||0)+v*dt*1.15;
+      ledger(m*G*this.track(this.x),0.5*m*v*v);
+      if(this.x>=this.crestX&&this.dir===1){
+        const vC=v;
+        this.moving=false;
+        if(vC<1.6){ this.done=true; this.phase="explain";
+          log(`JUST ENOUGH: crested at ${vC.toFixed(2)} m/s from h = ${this.h0.toFixed(2)} m in ${this.tries} tries`,"ev");
+          menu("niyat","Beautiful, it barely whispered over the top. Your hands just solved an equation. Which one?",
+            ["mgh at release = mgh at the crest, plus a little for friction","Force equals mass times acceleration","Speed equals distance over time"],0,
+            "Yes. Energy at your hand equals energy the crest demands. You did not calculate it, you iterated it into your fingers, and that is the version you will remember in the exam hall.",
+            "Think about what you were balancing: your release height against the crest's height.",
+            ()=>{ finished(); });
+        } else {
+          log(`overshot: crest speed ${vC.toFixed(1)} m/s · too much energy`,"warn");
+          speak("niyat","It flew over with energy to spare! You banked more than the hill costs. Bring your hand down a little.");
+          setTimeout(()=>{this.x=1.2;doneRetry();},900);
+        }
+      }
+    },
+    draw(){
+      sky();
+      /* track */
+      ctx.fillStyle="#9AA0A8"; ctx.beginPath(); ctx.moveTo(0,H);
+      for(let xm=0;xm<=14.01;xm+=0.1){const p=this.toPx(xm,this.track(xm)); ctx.lineTo(p.x,p.y);}
+      ctx.lineTo(W,H); ctx.closePath(); ctx.fill();
+      ctx.strokeStyle="#7C838C"; ctx.lineWidth=3; ctx.beginPath();
+      for(let xm=0;xm<=14.01;xm+=0.1){const p=this.toPx(xm,this.track(xm)); xm?ctx.lineTo(p.x,p.y):ctx.moveTo(p.x,p.y);}
+      ctx.stroke();
+      /* crest marker */
+      const c=this.toPx(this.crestX,this.crestH);
+      ctx.strokeStyle="rgba(31,42,68,.55)"; ctx.setLineDash([5,5]); ctx.beginPath();
+      ctx.moveTo(c.x,c.y); ctx.lineTo(c.x,H*0.86); ctx.stroke(); ctx.setLineDash([]);
+      ctx.fillStyle="#1F2A44"; ctx.font="700 12px Calibri,sans-serif"; ctx.textAlign="center";
+      ctx.fillText("crest · 2.2 m",c.x,c.y-10);
+      person(W*0.3,H*0.865,GUIDES.niyat.color,1.0,"Niyat");
+      /* keke */
+      const k=this.toPx(this.x,this.track(this.x));
+      ctx.fillStyle="#F2B233"; ctx.fillRect(k.x-16,k.y-26,32,18);
+      ctx.fillStyle="#22262E"; ctx.beginPath(); ctx.arc(k.x-9,k.y-6,6,0,7); ctx.arc(k.x+9,k.y-6,6,0,7); ctx.fill();
+      /* height readout while holding */
+      if(this.holding){
+        ctx.fillStyle="#1F2A44"; ctx.font="700 13px Calibri,sans-serif"; ctx.textAlign="left";
+        ctx.fillText("h = "+this.track(this.x).toFixed(2)+" m",k.x+22,k.y-18);
+      }
+    }
+  };
+  return st;
+}
+
+/* ---------- station shell ---------- */
+const stations=[makeThrow(),makeNose(),makeHill()];
+let station=stations[0], sIdx=0;
+function go(i){
+  sIdx=i; station=stations[i];
+  document.querySelectorAll(".tab").forEach((t,j)=>t.classList.toggle("active",j===i));
+  ledgerMax=30;
+  log(`··· station ${i+1} ···`);
+  station.enter();
+}
+document.querySelectorAll(".tab").forEach(t=>t.onclick=()=>go(+t.dataset.s));
+function doneNext(){
+  const box=$("opts");
+  const c=document.createElement("button"); c.className="continue";
+  c.textContent = sIdx<2 ? "Next station" : "Finish";
+  c.onclick=()=> sIdx<2 ? go(sIdx+1) : finished();
+  box.appendChild(c);
+}
+function doneRetry(){
+  actPrompt("niyat","Adjust and go again. Iteration is the lesson.","Drag the keke to a new height on the left slope and release.");
+}
+function finished(){
+  speak("morenike","Three experiments, and every joule on that ledger came from your own hand. The throw taught your shoulder v squared, the swing taught your nerves conservation, and the hill made your fingers solve mgh equals mgh. That is learning you keep.");
+  $("opts").innerHTML="";
+  const c=document.createElement("button"); c.className="continue"; c.textContent="Run it all again";
+  c.onclick=()=>location.reload(); $("opts").appendChild(c);
+  log("session complete","ev");
+}
+
+/* ---------- main loop ---------- */
+let last=performance.now();
+function loop(now){
+  const dt=Math.min(0.033,(now-last)/1000); last=now;
+  station.update&&station.update(dt);
+  station.draw&&station.draw();
+  requestAnimationFrame(loop);
+}
+resize();
+log("embodied tutor online · offline · gesture physics live","ev");
+go(0);
+requestAnimationFrame(loop);
+</script>
+</body>
+</html>

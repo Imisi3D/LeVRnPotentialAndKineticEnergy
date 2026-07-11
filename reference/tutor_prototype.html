@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LeVRn Tutor Prototype · Offline Grounded AI</title>
+<style>
+  :root{
+    --ink:#1F2A44; --teal:#2A9D8F; --sand:#E9C46A; --peach:#F4E1C1;
+    --terra:#C1592E; --niyat:#B5478C; --sky1:#7EC8E3; --sky2:#C9E9F5;
+    --card:#F0F0F5; --chip:#2C7FB8; --ok:#1E7A3D; --bad:#9E1B1B;
+    --panel:#FBFBFD; --line:#D9DEE8;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    font-family: Calibri, 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background:#EDEFF4; color:var(--ink); line-height:1.45;
+  }
+  header{
+    background:var(--ink); color:#fff; padding:14px 20px;
+    display:flex; flex-wrap:wrap; gap:10px; align-items:baseline; justify-content:space-between;
+  }
+  header h1{font-size:1.05rem; font-weight:700; letter-spacing:.02em;}
+  header .sub{font-size:.8rem; opacity:.75;}
+  .badges{display:flex; gap:8px; flex-wrap:wrap;}
+  .badge{
+    font-size:.7rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+    padding:4px 10px; border-radius:999px; background:rgba(255,255,255,.12); color:#DCE8F2;
+    border:1px solid rgba(255,255,255,.25);
+  }
+  .badge.green{background:#173B2A; color:#9FE3B8; border-color:#2E6B47;}
+  .wrap{
+    max-width:1180px; margin:22px auto; padding:0 16px;
+    display:grid; grid-template-columns: minmax(0,1.5fr) minmax(280px,1fr); gap:20px;
+  }
+  @media (max-width:900px){ .wrap{grid-template-columns:1fr;} }
+
+  /* ---------- Headset viewport (signature) ---------- */
+  .stage-card{background:#0B0E14; border-radius:18px; padding:18px 18px 22px; box-shadow:0 10px 30px rgba(15,25,50,.25);}
+  .stage-title{color:#8FA3BF; font-size:.72rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; margin-bottom:12px; display:flex; justify-content:space-between; gap:8px; flex-wrap:wrap;}
+  .viewport{
+    position:relative; width:100%; aspect-ratio: 4/3; overflow:hidden; background:#000;
+    border-radius:50% / 42%;
+    outline:6px solid #05070B;
+  }
+  .scene{position:absolute; inset:0;}
+  .scene svg{width:100%; height:100%; display:block;}
+  .viewport.raining #skygrad-stop1{stop-color:#5E7A94;}
+  .viewport.raining #skygrad-stop2{stop-color:#9FB3C4;}
+  .rain{opacity:0; transition:opacity 1.2s ease;}
+  .viewport.raining .rain{opacity:1;}
+  .rain line{stroke:#DDEBF7; stroke-width:1.4; stroke-linecap:round;}
+  @keyframes fall{ from{transform:translateY(-40px);} to{transform:translateY(320px);} }
+  .viewport.raining .rain line{animation:fall 0.9s linear infinite;}
+  .rain line:nth-child(2n){animation-duration:0.7s; animation-delay:.2s;}
+  .rain line:nth-child(3n){animation-duration:1.1s; animation-delay:.45s;}
+  @keyframes ride{ from{transform:translateX(-140px);} to{transform:translateX(760px);} }
+  .okada-move{animation:ride 7s linear infinite;}
+  .mango-drop{transition:transform 1.1s cubic-bezier(.4,0,.9,.6);}
+  .mango-drop.dropped{transform:translateY(148px);}
+  @media (prefers-reduced-motion: reduce){
+    .okada-move,{animation:none;}
+    .viewport.raining .rain line{animation:none;}
+  }
+
+  /* dialogue card inside viewport */
+  .dialogue{
+    position:absolute; left:50%; bottom:6%; transform:translateX(-50%);
+    width:min(86%, 500px); background:rgba(240,240,245,.97); border-radius:14px;
+    padding:14px 16px 12px; box-shadow:0 6px 18px rgba(0,0,0,.35);
+  }
+  .speaker{display:flex; align-items:center; gap:8px; margin-bottom:6px;}
+  .avatar{
+    width:26px; height:26px; border-radius:50%; color:#fff; font-weight:800; font-size:.8rem;
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .speaker .name{font-weight:700; font-size:.85rem;}
+  .speaker .lens{font-size:.7rem; color:#5A6478;}
+  .dialogue p.text{font-size:.93rem; margin-bottom:10px;}
+  .options{display:flex; flex-direction:column; gap:7px;}
+  .opt{
+    display:flex; align-items:center; gap:10px; width:100%;
+    background:#fff; border:1.5px solid #C9CFDA; border-radius:9px;
+    padding:8px 12px; font:inherit; font-size:.9rem; text-align:left; cursor:pointer;
+    transition:border-color .15s, background .15s;
+  }
+  .opt .letter{
+    width:22px; height:22px; border-radius:50%; background:var(--chip); color:#fff;
+    font-size:.72rem; font-weight:800; display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .opt:hover, .opt:focus-visible{border-color:var(--chip); background:#F3F9FD; outline:none;}
+  .opt.correct{border-color:var(--ok); background:#EAF7EE;}
+  .opt.wrong{border-color:var(--bad); background:#FBEDEA;}
+  .opt:disabled{cursor:default; opacity:.85;}
+  .continue{
+    margin-top:2px; align-self:flex-end; background:var(--chip); color:#fff; border:none;
+    border-radius:9px; padding:8px 18px; font:inherit; font-weight:700; font-size:.88rem; cursor:pointer;
+  }
+  .continue:hover{background:#1F6AA0;}
+
+  /* laser pointer */
+  .laser{position:absolute; inset:0; pointer-events:none; opacity:0; transition:opacity .12s;}
+  .laser.on{opacity:1;}
+  .laser line{stroke:#E5493A; stroke-width:2.5; stroke-linecap:round;}
+  .laser circle{fill:#2C7FB8; stroke:#fff; stroke-width:2;}
+
+  .stage-foot{color:#5E6B85; font-size:.72rem; margin-top:12px; text-align:center;}
+
+  /* ---------- Tutor brain panel ---------- */
+  .brain{background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:18px; display:flex; flex-direction:column; gap:16px;}
+  .brain h2{font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; color:#5A6478;}
+  .obj{margin-bottom:10px;}
+  .obj .lbl{display:flex; justify-content:space-between; font-size:.8rem; margin-bottom:3px;}
+  .obj .lbl .pct{color:#5A6478; font-variant-numeric:tabular-nums;}
+  .bar{height:7px; background:#E4E8F0; border-radius:99px; overflow:hidden;}
+  .bar i{display:block; height:100%; width:0%; background:var(--teal); border-radius:99px; transition:width .5s ease;}
+  .bar i.review{background:var(--terra);}
+  .log{
+    background:#10141D; color:#B9C6DA; border-radius:10px; padding:10px 12px;
+    font-family:ui-monospace, 'Cascadia Mono', Consolas, monospace; font-size:.72rem;
+    height:210px; overflow-y:auto; display:flex; flex-direction:column; gap:4px;
+  }
+  .log .ev{color:#7FD1B9;} .log .warn{color:#F0B429;} .log .sw{color:#F49CBB;}
+  .stats{display:grid; grid-template-columns:1fr 1fr; gap:8px;}
+  .stat{background:#fff; border:1px solid var(--line); border-radius:10px; padding:9px 11px;}
+  .stat b{display:block; font-size:1.15rem;}
+  .stat span{font-size:.7rem; color:#5A6478;}
+  .brain .note{font-size:.74rem; color:#5A6478;}
+  .restart{background:none; border:1.5px solid var(--line); border-radius:9px; padding:7px 14px; font:inherit; font-size:.82rem; cursor:pointer; color:var(--ink);}
+  .restart:hover{border-color:var(--ink);}
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>LeVRn Tutor Prototype</h1>
+    <div class="sub">Potential &amp; Kinetic Energy · JSS 2 Basic Science · Yaba, Lagos</div>
+  </div>
+  <div class="badges">
+    <span class="badge green">Offline · zero network calls</span>
+    <span class="badge">No language model</span>
+    <span class="badge" id="bank-badge">Authored responses: …</span>
+  </div>
+</header>
+
+<div class="wrap">
+  <!-- ============ HEADSET VIEW ============ -->
+  <div class="stage-card">
+    <div class="stage-title">
+      <span>Headset view · simulated</span>
+      <span id="scene-label">Morning · dry season · Yaba street</span>
+    </div>
+    <div class="viewport" id="viewport">
+      <div class="scene">
+        <svg viewBox="0 0 640 480" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="skygrad" x1="0" y1="0" x2="0" y2="1">
+              <stop id="skygrad-stop1" offset="0" stop-color="#7EC8E3" style="transition:stop-color 1.2s"/>
+              <stop id="skygrad-stop2" offset="1" stop-color="#C9E9F5" style="transition:stop-color 1.2s"/>
+            </linearGradient>
+          </defs>
+          <rect width="640" height="480" fill="url(#skygrad)"/>
+          <circle id="sun" cx="560" cy="70" r="34" fill="#FFD670" opacity=".9"/>
+          <!-- buildings -->
+          <rect x="0" y="150" width="150" height="160" fill="#8FD1C6"/>
+          <rect x="14" y="170" width="34" height="42" rx="4" fill="#DFF3EF"/>
+          <rect x="64" y="170" width="34" height="42" rx="4" fill="#DFF3EF"/>
+          <rect x="150" y="120" width="190" height="190" fill="#F0DBA8"/>
+          <rect x="150" y="104" width="190" height="20" fill="#C1592E"/>
+          <rect x="176" y="150" width="40" height="52" rx="4" fill="#FFF6E0"/>
+          <rect x="248" y="150" width="40" height="52" rx="4" fill="#FFF6E0"/>
+          <rect x="176" y="228" width="52" height="82" fill="#8A5A33"/>
+          <!-- spiral staircase nod -->
+          <rect x="330" y="150" width="10" height="160" fill="#2A9D8F"/>
+          <rect x="322" y="165" width="26" height="6" rx="3" fill="#2A9D8F"/>
+          <rect x="322" y="195" width="26" height="6" rx="3" fill="#2A9D8F"/>
+          <rect x="322" y="225" width="26" height="6" rx="3" fill="#2A9D8F"/>
+          <rect x="322" y="255" width="26" height="6" rx="3" fill="#2A9D8F"/>
+          <rect x="360" y="160" width="160" height="150" fill="#F4E1C1"/>
+          <rect x="360" y="146" width="160" height="18" fill="#B98A5A"/>
+          <rect x="384" y="186" width="36" height="44" rx="4" fill="#FFFDF5"/>
+          <rect x="446" y="186" width="36" height="44" rx="4" fill="#FFFDF5"/>
+          <!-- market stall -->
+          <rect x="540" y="238" width="86" height="8" fill="#8A5A33"/>
+          <rect x="546" y="246" width="8" height="60" fill="#8A5A33"/>
+          <rect x="612" y="246" width="8" height="60" fill="#8A5A33"/>
+          <path d="M534 238 L583 208 L632 238 Z" fill="#F2B233"/>
+          <circle cx="566" cy="252" r="7" fill="#F28C28"/><circle cx="584" cy="252" r="7" fill="#7CB342"/><circle cx="602" cy="252" r="7" fill="#F2C14E"/>
+          <!-- mango tree -->
+          <rect x="86" y="236" width="14" height="74" fill="#7A5230"/>
+          <circle cx="93" cy="212" r="52" fill="#4C9A4C"/>
+          <circle cx="60" cy="228" r="30" fill="#5DAF5D"/>
+          <circle cx="126" cy="226" r="30" fill="#5DAF5D"/>
+          <circle cx="70" cy="206" r="7" fill="#F28C28"/>
+          <circle cx="112" cy="196" r="7" fill="#F28C28"/>
+          <g id="mango" class="mango-drop"><circle cx="96" cy="232" r="8" fill="#F2A03D" stroke="#C87C22" stroke-width="1.5"/></g>
+          <!-- road -->
+          <rect x="0" y="310" width="640" height="170" fill="#9AA0A8"/>
+          <rect x="0" y="310" width="640" height="8" fill="#7C838C"/>
+          <g fill="#E8EBEF">
+            <rect x="20" y="386" width="52" height="8" rx="4"/><rect x="120" y="386" width="52" height="8" rx="4"/>
+            <rect x="220" y="386" width="52" height="8" rx="4"/><rect x="320" y="386" width="52" height="8" rx="4"/>
+            <rect x="420" y="386" width="52" height="8" rx="4"/><rect x="520" y="386" width="52" height="8" rx="4"/>
+          </g>
+          <!-- okada -->
+          <g id="okada" class="okada-move">
+            <circle cx="60" cy="360" r="14" fill="#22262E"/><circle cx="118" cy="360" r="14" fill="#22262E"/>
+            <circle cx="60" cy="360" r="6" fill="#8B939F"/><circle cx="118" cy="360" r="6" fill="#8B939F"/>
+            <path d="M52 356 Q78 330 116 350 L118 356 Z" fill="#F2B233"/>
+            <rect x="70" y="330" width="26" height="10" rx="5" fill="#C1592E"/>
+            <circle cx="94" cy="316" r="9" fill="#6B4A2B"/>
+            <rect x="86" y="324" width="16" height="20" rx="6" fill="#2C7FB8"/>
+          </g>
+          <!-- rain overlay -->
+          <g class="rain" id="rain-group"></g>
+          <!-- flood gutter water, revealed in convert stage -->
+          <g id="flood" opacity="0" style="transition:opacity 1.2s">
+            <rect x="0" y="452" width="640" height="28" fill="#4E7FA8"/>
+            <path d="M0 452 q40 -8 80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 t80 0 v10 h-640 Z" fill="#6FA3C8"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- dialogue card -->
+      <div class="dialogue" id="dialogue">
+        <div class="speaker" id="speaker-row">
+          <div class="avatar" id="avatar">M</div>
+          <span class="name" id="speaker-name">Morenike</span>
+          <span class="lens" id="speaker-lens"></span>
+        </div>
+        <p class="text" id="text"></p>
+        <div class="options" id="options"></div>
+      </div>
+
+      <!-- laser -->
+      <svg class="laser" id="laser" aria-hidden="true">
+        <line id="laser-line" x1="0" y1="0" x2="0" y2="0"/>
+        <circle id="laser-dot" r="5" cx="0" cy="0"/>
+      </svg>
+    </div>
+    <div class="stage-foot">Text and simple graphics stand in for the 3D scene. Input is controller-and-menu, matching the decided design. Everything on this page runs with the network unplugged.</div>
+  </div>
+
+  <!-- ============ TUTOR BRAIN ============ -->
+  <aside class="brain">
+    <div>
+      <h2>Learning objectives · mastery</h2>
+      <div id="objectives"></div>
+    </div>
+    <div>
+      <h2>Tutor decisions · live</h2>
+      <div class="log" id="log"></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b id="stat-switches">0</b><span>lens switches</span></div>
+      <div class="stat"><b id="stat-answers">0</b><span>questions answered</span></div>
+    </div>
+    <p class="note">Every line the guides say is authored and grounded in the JSS 2 second-term scheme. The tutor adapts by state, not by generating text: attempts, mastery and pace pick which authored response is retrieved next.</p>
+    <button class="restart" id="restart">Restart session</button>
+  </aside>
+</div>
+
+<script>
+"use strict";
+/* ============================================================
+   LeVRn offline grounded tutor · no model, no network
+   Adaptivity = state machine + authored response banks.
+   ============================================================ */
+
+const GUIDES = {
+  niyat:    { name:"Niyat",    color:"#B5478C", lens:"numbers and taking things apart" },
+  morenike: { name:"Morenike", color:"#2A9D8F", lens:"the natural world" },
+  ejike:    { name:"Ejike",    color:"#C1592E", lens:"machines and people" }
+};
+
+const OBJECTIVES = [
+  { id:"define",   label:"Define kinetic and potential energy" },
+  { id:"classify", label:"Classify everyday examples" },
+  { id:"formula",  label:"Apply the KE and PE formulae" },
+  { id:"convert",  label:"Explain energy conversion" },
+  { id:"conserve", label:"State conservation of energy" }
+];
+
+/* ---------- Authored script ----------
+   node types:
+   say  {g, text}                      guide speaks, Continue
+   ask  {g, obj, text, opts, correct, affirm, hint, switchTo, switchText, walkthrough}
+   scene{fn}                           scene side-effect
+   Wrong 1 -> hint (same guide). Wrong 2 -> lens switch, re-ask.
+   Wrong 3 -> walkthrough, objective flagged for review.       */
+
+const SCRIPT = [
+  { t:"say", g:"morenike", text:"Welcome back. It is a bright dry-season morning in Yaba and the street is already busy. Today the three of us are taking you through energy: the kind things have when they move, and the kind they store. Ready? Let us look around." },
+
+  /* ---- 1 · Definitions ---- */
+  { t:"ask", g:"morenike", obj:"define",
+    text:"See that okada flying past, and the stone sitting still on the wall by the stall. Both have energy, but different kinds. The okada is moving. What do we call the energy a body has because it is moving?",
+    opts:["Kinetic energy","Potential energy","Heat energy"], correct:0,
+    affirm:"Exactly. Kinetic energy is the energy a body has because of its motion. The faster the okada goes, the more kinetic energy it carries.",
+    hint:"Here is a clue from my reading: kinetic comes from the same root as cinema, moving pictures. Which option is about movement?",
+    switchTo:"ejike",
+    switchText:"Let me try it my way. In my father's workshop, when an engine is running and the parts are turning, that is energy of motion. Switch the engine off and the motion energy is gone. So the okada speeding past has which energy?",
+    walkthrough:"No wahala, let us walk it together. Moving things carry energy of motion, and the name for it is kinetic energy. The okada is moving, so its energy is kinetic. Hold onto that and it will carry you through today." },
+
+  { t:"ask", g:"morenike", obj:"define",
+    text:"Now that mango hanging up in the tree. It is not moving at all, but because of where it is, high up, it could do something if it falls. What do we call energy that is stored because of a body's position or condition?",
+    opts:["Kinetic energy","Potential energy","No energy at all"], correct:1,
+    affirm:"That is it. Potential energy is stored energy a body has because of its position or condition. The mango stores it just by hanging up there.",
+    hint:"The name is hiding in the sentence: the mango has the potential to fall and do work.",
+    switchTo:"niyat",
+    switchText:"Think of my mother's wheelbarrow at the market. When we push it to the top of the ramp and hold it there, we have put stored energy into it because of its position. Stored energy from position, what is it called?",
+    walkthrough:"Together then: energy stored because of position or condition is potential energy. High things, stretched things, squeezed things, they are all storing it, waiting." },
+
+  /* ---- 2 · Classification ---- */
+  { t:"say", g:"ejike", text:"My turn. Definitions are fine, but the street is the real test. I will point at things and you tell me which energy they have. First one is easy, you have seen it before." },
+
+  { t:"ask", g:"ejike", obj:"classify",
+    text:"The okada moving along the road is an example of what form of energy?",
+    opts:["Potential energy","Kinetic energy"], correct:1,
+    affirm:"Correct. Moving along the road means motion, and motion means kinetic energy.",
+    hint:"Is the okada moving or is it storing? Watch it.",
+    switchTo:"morenike",
+    switchText:"Watch it the way I watch birds: a bird sitting on the wire has settled, but a bird in flight is spending energy of motion. The okada is in flight down the road. Which energy?",
+    walkthrough:"The okada is moving, and moving bodies carry kinetic energy. So the answer is kinetic. Storing without moving would be potential." },
+
+  { t:"ask", g:"ejike", obj:"classify",
+    text:"Now that catapult the small boy by the stall is holding, stretched all the way back and not yet released. Which energy is in the stretched rubber?",
+    opts:["Kinetic energy","Potential energy"], correct:1,
+    affirm:"Sharp. The stretched rubber stores elastic potential energy. The moment he releases it, that store becomes motion.",
+    hint:"Nothing is moving yet. Is the rubber spending energy or holding it?",
+    switchTo:"niyat",
+    switchText:"I have taken a catapult apart before, so hear me: stretching the rubber is like loading a spring. You are putting energy in and it waits there because of the rubber's condition. Energy waiting in a stretched thing is which kind?",
+    walkthrough:"Stretched or squeezed things hold potential energy, the elastic kind. It only becomes kinetic when released. So the stretched catapult holds potential energy." },
+
+  /* adaptive extra items inserted here at runtime if learner struggled */
+
+  /* ---- 3 · Formulae ---- */
+  { t:"say", g:"niyat", text:"Now the part I enjoy, putting numbers on it. Two small formulas and you can measure the whole street. Kinetic energy: KE equals half times mass times speed squared. Potential energy: PE equals mass times g times height, and in school we take g as 10." },
+
+  { t:"ask", g:"niyat", obj:"formula",
+    text:"A football of mass 2 kg rolls across the field at 3 metres per second. Using KE = ½ × m × v², what is its kinetic energy?",
+    opts:["9 joules","6 joules","18 joules"], correct:0,
+    affirm:"Correct. Square the speed: 3 times 3 is 9. Half the mass: half of 2 is 1. Multiply: 9 joules. Clean.",
+    hint:"Take it in steps like I do at the market: square the speed first, 3 times 3. Then take half of the mass. Then multiply the two.",
+    switchTo:"ejike",
+    switchText:"When a formula fights you, strip it like an engine. Piece one: v squared, that is 3 times 3, giving 9. Piece two: half of m, half of 2 is 1. Bolt them together: 1 times 9. What do you get?",
+    walkthrough:"Watch the whole assembly: KE = ½ × 2 × 3². The square first: 9. Half of 2 is 1. 1 × 9 = 9 joules. The squared speed is where most people slip, always square before you multiply." },
+
+  { t:"ask", g:"niyat", obj:"formula",
+    text:"That mango in the tree has a mass of 0.2 kg and hangs 5 metres up. Using PE = m × g × h with g as 10, what is its potential energy?",
+    opts:["1 joule","10 joules","100 joules"], correct:1,
+    affirm:"Exactly. 0.2 times 10 is 2, times 5 is 10 joules. That mango is a little store of 10 joules just hanging there.",
+    hint:"Three numbers, two multiplications: 0.2 times 10 first. Then take that answer times 5.",
+    switchTo:"morenike",
+    switchText:"Read it like a sentence: a fifth of a kilogram, lifted by gravity's 10, held 5 metres high. 0.2 × 10 makes 2, and 2 × 5 makes what?",
+    walkthrough:"All together: PE = 0.2 × 10 × 5. First pair: 0.2 × 10 = 2. Then 2 × 5 = 10 joules. If you forgot the g of 10 you would get 1, and that is the common slip." },
+
+  /* ---- 4 · Conversion, the downpour ---- */
+  { t:"scene", fn:"rain" },
+  { t:"say", g:"morenike", text:"Oh, feel that! The first rain is coming early this year. Everybody is running for shelter, but we are staying, because the sky is about to teach our whole lesson. Watch one raindrop with me." },
+
+  { t:"ask", g:"morenike", obj:"convert",
+    text:"Up in that cloud, a raindrop hangs high above the street, full of stored energy. Then it falls, moving faster and faster all the way down. As it falls, what is happening to its energy?",
+    opts:["Potential energy is changing into kinetic energy","Kinetic energy is changing into potential energy","The energy disappears as it falls"], correct:0,
+    affirm:"Beautiful. Height becomes speed. The drop trades its potential energy for kinetic energy all the way down, which is why it lands fast.",
+    hint:"At the top it is high and still. At the bottom it is low and fast. Which direction is the energy flowing, from stored to moving, or moving to stored?",
+    switchTo:"niyat",
+    switchText:"Put my numbers on it: at the cloud, PE is full and KE is zero. Just before the ground, PE is nearly zero and KE is full. Same total, different form. So which is changing into which?",
+    walkthrough:"Follow the drop: it starts high, so it starts with potential energy. Falling gives it speed, and speed is kinetic energy. So potential is converting into kinetic all the way down. Nothing vanishes." },
+
+  { t:"scene", fn:"flood" },
+  { t:"ask", g:"ejike", obj:"convert",
+    text:"Now look at the gutter. All the rain that landed at the high end of the street is rushing down past us, strong enough to push a bucket along. The go-slow will be terrible today. That rushing floodwater, what energy is it showing right now?",
+    opts:["Kinetic energy","Potential energy"], correct:0,
+    affirm:"Correct. Water on the high ground held potential energy. Now it is rushing, that store has become kinetic energy, and it can do real work, good and bad.",
+    hint:"Is the water in the gutter waiting, or is it moving with force?",
+    switchTo:"morenike",
+    switchText:"Rivers taught the world this one: still water high in the hills is a store, falling and rushing water is that store being spent as motion. The gutter water is rushing. Which energy is on show?",
+    walkthrough:"The water was high, storing potential energy. Flowing downhill turned that store into motion, kinetic energy. That is the same conversion as the raindrop, just bigger." },
+
+  { t:"scene", fn:"mango" },
+  { t:"ask", g:"morenike", obj:"convert",
+    text:"And there goes our mango, the rain has knocked it loose! It is falling now. Just before it lands, where is most of its energy?",
+    opts:["Mostly kinetic energy","Mostly potential energy","It has no energy left"], correct:0,
+    affirm:"Yes. At the branch it was all potential. Just before landing it is almost all kinetic, and thoroughly rain-washed.",
+    hint:"The lower it gets, the less height it has left, and the faster it is going.",
+    switchTo:"niyat",
+    switchText:"Track the trade: at the branch, PE 10 joules, KE 0. Halfway down, roughly 5 and 5. Just before the ground, PE almost 0. So where has the energy gone?",
+    walkthrough:"The fall converts height into speed. Just before landing, nearly all the potential energy has become kinetic energy. Its 10 joules did not vanish, they changed clothes." },
+
+  /* ---- 5 · Conservation ---- */
+  { t:"say", g:"niyat", text:"Now add up everything we watched today, the way I total the market ledger. The raindrop, the floodwater, the mango: at every single moment, potential plus kinetic came to the same total. Energy moved between forms, but the sum never changed." },
+
+  { t:"ask", g:"ejike", obj:"conserve",
+    text:"So here is the big law that runs every machine in my father's workshop and every drop of this rain. Which statement is the law of conservation of energy?",
+    opts:["Energy can be created when we need it and destroyed when we are done",
+          "Energy cannot be created or destroyed, it only changes from one form to another",
+          "Energy always disappears slowly until nothing is left"], correct:1,
+    affirm:"That is the law. Energy cannot be created or destroyed, only converted from one form to another. Everything we watched today obeyed it.",
+    hint:"Think of the mango's 10 joules. Were they ever lost, or did they change form?",
+    switchTo:"morenike",
+    switchText:"Nature keeps perfect accounts. The raindrop's store became speed, the speed became the splash. Nothing was created from nowhere and nothing vanished into nowhere. Which statement says that?",
+    walkthrough:"The law says energy is never created or destroyed, only converted between forms. Potential became kinetic in everything we watched, and the totals always balanced." },
+
+  { t:"say", g:"morenike", text:"And that is the lesson, finished just as the rain eases. You watched energy being stored, spent and converted on one ordinary Yaba street. Check your progress beside me, and anything marked for review, one of us will happily take you through again." },
+  { t:"end" }
+];
+
+/* Adaptive extra classification items, inserted only if learner struggled on definitions */
+const EXTRA_CLASSIFY = [
+  { t:"ask", g:"ejike", obj:"classify",
+    text:"Two more, since we are warming up. That keke speeding to beat the go-slow before it builds. Which energy?",
+    opts:["Kinetic energy","Potential energy"], correct:0,
+    affirm:"Correct, moving keke, kinetic energy.",
+    hint:"Is it moving?",
+    switchTo:"niyat",
+    switchText:"Moving equals kinetic, every time. The keke is moving. So?",
+    walkthrough:"It is moving, so it is kinetic energy." },
+  { t:"ask", g:"ejike", obj:"classify",
+    text:"And the crate of drinks sitting up on the high shelf of the stall, not moving. Which energy?",
+    opts:["Kinetic energy","Potential energy"], correct:1,
+    affirm:"Correct. High and still means stored, potential energy.",
+    hint:"It is high up and completely still.",
+    switchTo:"morenike",
+    switchText:"Like a mango before it falls: high, still, storing. Which energy?",
+    walkthrough:"Height plus stillness means potential energy, stored by position." }
+];
+
+/* ============ engine ============ */
+const $ = id => document.getElementById(id);
+const state = {
+  i:0, attempts:0, switched:false,
+  script: SCRIPT.slice(),
+  mastery:{}, asked:{}, scored:{},
+  switches:0, answers:0, defineStruggle:false, extrasInserted:false
+};
+OBJECTIVES.forEach(o=>{ state.mastery[o.id]=0; state.asked[o.id]=0; state.scored[o.id]=0; });
+
+function countBank(){
+  let n=0;
+  const all = SCRIPT.concat(EXTRA_CLASSIFY);
+  all.forEach(nd=>{
+    if(nd.t==="say") n+=1;
+    if(nd.t==="ask") n+=4; /* affirm, hint, switchText, walkthrough */
+  });
+  return n;
+}
+$("bank-badge").textContent = "Authored responses: " + countBank();
+
+function renderObjectives(){
+  $("objectives").innerHTML = OBJECTIVES.map(o=>{
+    const asked = state.asked[o.id], scored=state.scored[o.id];
+    const pct = asked ? Math.round((scored/asked)*100) : 0;
+    const review = asked>0 && pct<50;
+    return `<div class="obj"><div class="lbl"><span>${o.label}</span><span class="pct">${asked?pct+"%":"–"}</span></div>
+      <div class="bar"><i style="width:${pct}%" class="${review?'review':''}"></i></div></div>`;
+  }).join("");
+}
+function log(msg, cls){
+  const d=document.createElement("div");
+  if(cls) d.className=cls;
+  d.textContent=msg;
+  $("log").appendChild(d);
+  $("log").scrollTop = $("log").scrollHeight;
+}
+function setSpeaker(gid){
+  const g=GUIDES[gid];
+  $("avatar").textContent=g.name[0];
+  $("avatar").style.background=g.color;
+  $("speaker-name").textContent=g.name;
+  $("speaker-lens").textContent="· "+g.lens;
+}
+function sceneFx(fn){
+  if(fn==="rain"){ $("viewport").classList.add("raining"); $("sun").setAttribute("opacity","0.15"); $("scene-label").textContent="Afternoon · the downpour arrives"; log("scene: downpour begins (conversion centrepiece)","ev"); }
+  if(fn==="flood"){ $("flood").setAttribute("opacity","1"); log("scene: floodwater in the gutter","ev"); }
+  if(fn==="mango"){ $("mango").classList.add("dropped"); log("scene: mango drops (PE to KE)","ev"); }
+}
+function showSay(node){
+  setSpeaker(node.g);
+  $("text").textContent=node.text;
+  $("options").innerHTML="";
+  const b=document.createElement("button");
+  b.className="continue"; b.textContent="Continue";
+  b.onclick=()=>{ state.i++; step(); };
+  $("options").appendChild(b);
+  b.focus({preventScroll:true});
+}
+function letters(i){ return String.fromCharCode(65+i); }
+function showAsk(node, reaskText, gid){
+  setSpeaker(gid||node.g);
+  $("text").textContent = reaskText || node.text;
+  $("options").innerHTML="";
+  node.opts.forEach((label,idx)=>{
+    const b=document.createElement("button");
+    b.className="opt";
+    b.innerHTML=`<span class="letter">${letters(idx)}</span><span>${label}</span>`;
+    b.onclick=()=>answer(node,idx,b);
+    attachLaser(b);
+    $("options").appendChild(b);
+  });
+}
+function disableOpts(){ [...$("options").children].forEach(x=>x.disabled=true); }
+function answer(node, idx, btn){
+  state.answers++; $("stat-answers").textContent=state.answers;
+  const correct = idx===node.correct;
+  if(correct){
+    btn.classList.add("correct"); disableOpts();
+    state.asked[node.obj]++;
+    const gain = state.attempts===0 ? 1 : state.attempts===1 ? 0.6 : 0.3;
+    state.scored[node.obj]+=gain;
+    log(`answer correct · attempt ${state.attempts+1} · ${node.obj} +${gain.toFixed(1)}`,"ev");
+    if(node.obj==="define" && state.attempts>0) state.defineStruggle=true;
+    renderObjectives();
+    const g = state.switched ? GUIDES[node.switchTo] : GUIDES[node.g];
+    setSpeaker(state.switched? node.switchTo : node.g);
+    setTimeout(()=>{
+      $("text").textContent=node.affirm;
+      $("options").innerHTML="";
+      const b=document.createElement("button");
+      b.className="continue"; b.textContent="Continue";
+      b.onclick=()=>{ state.attempts=0; state.switched=false; state.i++; maybeAdapt(); step(); };
+      $("options").appendChild(b);
+    },650);
+  } else {
+    btn.classList.add("wrong"); disableOpts();
+    state.attempts++;
+    if(state.attempts===1){
+      log(`attempt 1 wrong · retrieving hint (same guide)`,"warn");
+      setTimeout(()=>{ $("text").textContent=node.hint+"  Try again."; showAsk(node, node.hint+"  Try again.", node.g); },700);
+    } else if(state.attempts===2){
+      state.switched=true; state.switches++;
+      $("stat-switches").textContent=state.switches;
+      log(`attempt 2 wrong · lens switch ${GUIDES[node.g].name} → ${GUIDES[node.switchTo].name}`,"sw");
+      setTimeout(()=>{ showAsk(node, node.switchText, node.switchTo); },700);
+    } else {
+      state.asked[node.obj]++; /* scored 0, flags review */
+      if(node.obj==="define") state.defineStruggle=true;
+      log(`attempt 3 wrong · walkthrough given · ${node.obj} flagged for review`,"warn");
+      renderObjectives();
+      setTimeout(()=>{
+        setSpeaker(node.switchTo);
+        $("text").textContent=node.walkthrough;
+        $("options").innerHTML="";
+        const b=document.createElement("button");
+        b.className="continue"; b.textContent="Continue";
+        b.onclick=()=>{ state.attempts=0; state.switched=false; state.i++; maybeAdapt(); step(); };
+        $("options").appendChild(b);
+      },700);
+    }
+  }
+}
+/* difficulty adaptation: extra classification items if definitions were shaky */
+function maybeAdapt(){
+  if(state.extrasInserted) return;
+  const next = state.script[state.i];
+  if(next && next.t==="say" && next.g==="niyat" && state.defineStruggle){
+    state.script.splice(state.i,0,...EXTRA_CLASSIFY);
+    state.extrasInserted=true;
+    log("difficulty: definitions were shaky → 2 extra classification items inserted","sw");
+  } else if(next && next.t==="say" && next.g==="niyat" && !state.defineStruggle){
+    state.extrasInserted=true;
+    log("difficulty: strong start → classification set kept short","ev");
+  }
+}
+function showEnd(){
+  setSpeaker("morenike");
+  const total = OBJECTIVES.reduce((a,o)=>a+(state.asked[o.id]?state.scored[o.id]/state.asked[o.id]:0),0);
+  const pct = Math.round((total/OBJECTIVES.length)*100);
+  $("text").textContent = `Session complete. Overall mastery ${pct}%. Every response you heard was authored in advance and chosen by the tutor's state, with no model and no network. This is the offline tutor both briefs describe, running.`;
+  $("options").innerHTML="";
+  const b=document.createElement("button");
+  b.className="continue"; b.textContent="Run it again";
+  b.onclick=()=>location.reload();
+  $("options").appendChild(b);
+  log(`session end · overall ${pct}%`,"ev");
+}
+function step(){
+  const node = state.script[state.i];
+  if(!node){ showEnd(); return; }
+  if(node.t==="scene"){ sceneFx(node.fn); state.i++; step(); return; }
+  if(node.t==="end"){ showEnd(); return; }
+  if(node.t==="say"){ showSay(node); return; }
+  if(node.t==="ask"){ log(`bank: ${node.obj} · question asked (${GUIDES[node.g].name})`); showAsk(node); return; }
+}
+
+/* ---------- laser pointer ---------- */
+const laser=$("laser"), lline=$("laser-line"), ldot=$("laser-dot"), vp=$("viewport");
+function sizeLaser(){ laser.setAttribute("width",vp.clientWidth); laser.setAttribute("height",vp.clientHeight); laser.setAttribute("viewBox",`0 0 ${vp.clientWidth} ${vp.clientHeight}`); }
+window.addEventListener("resize",sizeLaser);
+function attachLaser(btn){
+  const point=()=>{
+    sizeLaser();
+    const r=btn.getBoundingClientRect(), v=vp.getBoundingClientRect();
+    const x2=r.left - v.left + r.width*0.82, y2=r.top - v.top + r.height/2;
+    lline.setAttribute("x1", v.width*0.94); lline.setAttribute("y1", v.height*1.02);
+    lline.setAttribute("x2", x2); lline.setAttribute("y2", y2);
+    ldot.setAttribute("cx", x2); ldot.setAttribute("cy", y2);
+    laser.classList.add("on");
+  };
+  btn.addEventListener("mouseenter",point);
+  btn.addEventListener("focus",point);
+  btn.addEventListener("touchstart",point,{passive:true});
+  btn.addEventListener("mouseleave",()=>laser.classList.remove("on"));
+  btn.addEventListener("blur",()=>laser.classList.remove("on"));
+}
+
+/* rain lines */
+(function(){
+  const g=$("rain-group");
+  for(let i=0;i<42;i++){
+    const l=document.createElementNS("http://www.w3.org/2000/svg","line");
+    const x=Math.random()*640;
+    l.setAttribute("x1",x); l.setAttribute("y1",-20);
+    l.setAttribute("x2",x-6); l.setAttribute("y2",2);
+    g.appendChild(l);
+  }
+})();
+
+$("restart").onclick=()=>location.reload();
+renderObjectives();
+log("tutor online · offline mode · zero network","ev");
+log(`grounding: JSS2 Basic Science, 2nd term (Work, Energy & Power)`);
+step();
+</script>
+</body>
+</html>

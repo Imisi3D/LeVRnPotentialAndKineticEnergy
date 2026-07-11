@@ -1,0 +1,146 @@
+{
+  "id": "pe-ke",
+  "title": "Potential and Kinetic Energy",
+  "grounding": "JSS2 Basic Science, 2nd term (Work, Energy & Power)",
+  "guides": {
+    "niyat":    { "name": "Niyat",    "color": "#B5478C", "lens": "numbers and taking things apart" },
+    "morenike": { "name": "Morenike", "color": "#2A9D8F", "lens": "the natural world" },
+    "ejike":    { "name": "Ejike",    "color": "#C1592E", "lens": "machines and people" }
+  },
+  "objectives": [
+    { "id": "define",   "label": "Define kinetic and potential energy" },
+    { "id": "classify", "label": "Classify everyday examples" },
+    { "id": "formula",  "label": "Apply the KE and PE formulae" },
+    { "id": "convert",  "label": "Explain energy conversion" },
+    { "id": "conserve", "label": "State conservation of energy" }
+  ],
+  "script": [
+    { "t": "say", "g": "morenike", "text": "Welcome back. It is a bright dry-season morning in Yaba and the street is already busy. Today the three of us are taking you through energy: the kind things have when they move, and the kind they store. Ready? Let us look around." },
+
+    { "t": "ask", "g": "morenike", "obj": "define",
+      "text": "See that okada flying past, and the stone sitting still on the wall by the stall. Both have energy, but different kinds. The okada is moving. What do we call the energy a body has because it is moving?",
+      "opts": ["Kinetic energy", "Potential energy", "Heat energy"], "correct": 0,
+      "affirm": "Exactly. Kinetic energy is the energy a body has because of its motion. The faster the okada goes, the more kinetic energy it carries.",
+      "hint": "Here is a clue from my reading: kinetic comes from the same root as cinema, moving pictures. Which option is about movement?",
+      "switchTo": "ejike",
+      "switchText": "Let me try it my way. In my father's workshop, when an engine is running and the parts are turning, that is energy of motion. Switch the engine off and the motion energy is gone. So the okada speeding past has which energy?",
+      "walkthrough": "No wahala, let us walk it together. Moving things carry energy of motion, and the name for it is kinetic energy. The okada is moving, so its energy is kinetic. Hold onto that and it will carry you through today." },
+
+    { "t": "ask", "g": "morenike", "obj": "define",
+      "text": "Now that mango hanging up in the tree. It is not moving at all, but because of where it is, high up, it could do something if it falls. What do we call energy that is stored because of a body's position or condition?",
+      "opts": ["Kinetic energy", "Potential energy", "No energy at all"], "correct": 1,
+      "affirm": "That is it. Potential energy is stored energy a body has because of its position or condition. The mango stores it just by hanging up there.",
+      "hint": "The name is hiding in the sentence: the mango has the potential to fall and do work.",
+      "switchTo": "niyat",
+      "switchText": "Think of my mother's wheelbarrow at the market. When we push it to the top of the ramp and hold it there, we have put stored energy into it because of its position. Stored energy from position, what is it called?",
+      "walkthrough": "Together then: energy stored because of position or condition is potential energy. High things, stretched things, squeezed things, they are all storing it, waiting." },
+
+    { "t": "say", "g": "ejike", "text": "My turn. Definitions are fine, but the street is the real test. I will point at things and you tell me which energy they have. First one is easy, you have seen it before." },
+
+    { "t": "ask", "g": "ejike", "obj": "classify",
+      "text": "The okada moving along the road is an example of what form of energy?",
+      "opts": ["Potential energy", "Kinetic energy"], "correct": 1,
+      "affirm": "Correct. Moving along the road means motion, and motion means kinetic energy.",
+      "hint": "Is the okada moving or is it storing? Watch it.",
+      "switchTo": "morenike",
+      "switchText": "Watch it the way I watch birds: a bird sitting on the wire has settled, but a bird in flight is spending energy of motion. The okada is in flight down the road. Which energy?",
+      "walkthrough": "The okada is moving, and moving bodies carry kinetic energy. So the answer is kinetic. Storing without moving would be potential." },
+
+    { "t": "ask", "g": "ejike", "obj": "classify",
+      "text": "Now that catapult the small boy by the stall is holding, stretched all the way back and not yet released. Which energy is in the stretched rubber?",
+      "opts": ["Kinetic energy", "Potential energy"], "correct": 1,
+      "affirm": "Sharp. The stretched rubber stores elastic potential energy. The moment he releases it, that store becomes motion.",
+      "hint": "Nothing is moving yet. Is the rubber spending energy or holding it?",
+      "switchTo": "niyat",
+      "switchText": "I have taken a catapult apart before, so hear me: stretching the rubber is like loading a spring. You are putting energy in and it waits there because of the rubber's condition. Energy waiting in a stretched thing is which kind?",
+      "walkthrough": "Stretched or squeezed things hold potential energy, the elastic kind. It only becomes kinetic when released. So the stretched catapult holds potential energy." },
+
+    { "t": "say", "g": "niyat", "text": "Now the part I enjoy, putting numbers on it. Two small formulas and you can measure the whole street. Kinetic energy: KE equals half times mass times speed squared. Potential energy: PE equals mass times g times height, and in school we take g as 10." },
+
+    { "t": "ask", "g": "niyat", "obj": "formula",
+      "text": "A football of mass 2 kg rolls across the field at 3 metres per second. Using KE = ½ × m × v², what is its kinetic energy?",
+      "opts": ["9 joules", "6 joules", "18 joules"], "correct": 0,
+      "affirm": "Correct. Square the speed: 3 times 3 is 9. Half the mass: half of 2 is 1. Multiply: 9 joules. Clean.",
+      "hint": "Take it in steps like I do at the market: square the speed first, 3 times 3. Then take half of the mass. Then multiply the two.",
+      "switchTo": "ejike",
+      "switchText": "When a formula fights you, strip it like an engine. Piece one: v squared, that is 3 times 3, giving 9. Piece two: half of m, half of 2 is 1. Bolt them together: 1 times 9. What do you get?",
+      "walkthrough": "Watch the whole assembly: KE = ½ × 2 × 3². The square first: 9. Half of 2 is 1. 1 × 9 = 9 joules. The squared speed is where most people slip, always square before you multiply." },
+
+    { "t": "ask", "g": "niyat", "obj": "formula",
+      "text": "That mango in the tree has a mass of 0.2 kg and hangs 5 metres up. Using PE = m × g × h with g as 10, what is its potential energy?",
+      "opts": ["1 joule", "10 joules", "100 joules"], "correct": 1,
+      "affirm": "Exactly. 0.2 times 10 is 2, times 5 is 10 joules. That mango is a little store of 10 joules just hanging there.",
+      "hint": "Three numbers, two multiplications: 0.2 times 10 first. Then take that answer times 5.",
+      "switchTo": "morenike",
+      "switchText": "Read it like a sentence: a fifth of a kilogram, lifted by gravity's 10, held 5 metres high. 0.2 × 10 makes 2, and 2 × 5 makes what?",
+      "walkthrough": "All together: PE = 0.2 × 10 × 5. First pair: 0.2 × 10 = 2. Then 2 × 5 = 10 joules. If you forgot the g of 10 you would get 1, and that is the common slip." },
+
+    { "t": "scene", "fn": "rain" },
+
+    { "t": "say", "g": "morenike", "text": "Oh, feel that! The first rain is coming early this year. Everybody is running for shelter, but we are staying, because the sky is about to teach our whole lesson. Watch one raindrop with me." },
+
+    { "t": "ask", "g": "morenike", "obj": "convert",
+      "text": "Up in that cloud, a raindrop hangs high above the street, full of stored energy. Then it falls, moving faster and faster all the way down. As it falls, what is happening to its energy?",
+      "opts": ["Potential energy is changing into kinetic energy", "Kinetic energy is changing into potential energy", "The energy disappears as it falls"], "correct": 0,
+      "affirm": "Beautiful. Height becomes speed. The drop trades its potential energy for kinetic energy all the way down, which is why it lands fast.",
+      "hint": "At the top it is high and still. At the bottom it is low and fast. Which direction is the energy flowing, from stored to moving, or moving to stored?",
+      "switchTo": "niyat",
+      "switchText": "Put my numbers on it: at the cloud, PE is full and KE is zero. Just before the ground, PE is nearly zero and KE is full. Same total, different form. So which is changing into which?",
+      "walkthrough": "Follow the drop: it starts high, so it starts with potential energy. Falling gives it speed, and speed is kinetic energy. So potential is converting into kinetic all the way down. Nothing vanishes." },
+
+    { "t": "scene", "fn": "flood" },
+
+    { "t": "ask", "g": "ejike", "obj": "convert",
+      "text": "Now look at the gutter. All the rain that landed at the high end of the street is rushing down past us, strong enough to push a bucket along. The go-slow will be terrible today. That rushing floodwater, what energy is it showing right now?",
+      "opts": ["Kinetic energy", "Potential energy"], "correct": 0,
+      "affirm": "Correct. Water on the high ground held potential energy. Now it is rushing, that store has become kinetic energy, and it can do real work, good and bad.",
+      "hint": "Is the water in the gutter waiting, or is it moving with force?",
+      "switchTo": "morenike",
+      "switchText": "Rivers taught the world this one: still water high in the hills is a store, falling and rushing water is that store being spent as motion. The gutter water is rushing. Which energy is on show?",
+      "walkthrough": "The water was high, storing potential energy. Flowing downhill turned that store into motion, kinetic energy. That is the same conversion as the raindrop, just bigger." },
+
+    { "t": "scene", "fn": "mango" },
+
+    { "t": "ask", "g": "morenike", "obj": "convert",
+      "text": "And there goes our mango, the rain has knocked it loose! It is falling now. Just before it lands, where is most of its energy?",
+      "opts": ["Mostly kinetic energy", "Mostly potential energy", "It has no energy left"], "correct": 0,
+      "affirm": "Yes. At the branch it was all potential. Just before landing it is almost all kinetic, and thoroughly rain-washed.",
+      "hint": "The lower it gets, the less height it has left, and the faster it is going.",
+      "switchTo": "niyat",
+      "switchText": "Track the trade: at the branch, PE 10 joules, KE 0. Halfway down, roughly 5 and 5. Just before the ground, PE almost 0. So where has the energy gone?",
+      "walkthrough": "The fall converts height into speed. Just before landing, nearly all the potential energy has become kinetic energy. Its 10 joules did not vanish, they changed clothes." },
+
+    { "t": "say", "g": "niyat", "text": "Now add up everything we watched today, the way I total the market ledger. The raindrop, the floodwater, the mango: at every single moment, potential plus kinetic came to the same total. Energy moved between forms, but the sum never changed." },
+
+    { "t": "ask", "g": "ejike", "obj": "conserve",
+      "text": "So here is the big law that runs every machine in my father's workshop and every drop of this rain. Which statement is the law of conservation of energy?",
+      "opts": ["Energy can be created when we need it and destroyed when we are done", "Energy cannot be created or destroyed, it only changes from one form to another", "Energy always disappears slowly until nothing is left"], "correct": 1,
+      "affirm": "That is the law. Energy cannot be created or destroyed, only converted from one form to another. Everything we watched today obeyed it.",
+      "hint": "Think of the mango's 10 joules. Were they ever lost, or did they change form?",
+      "switchTo": "morenike",
+      "switchText": "Nature keeps perfect accounts. The raindrop's store became speed, the speed became the splash. Nothing was created from nowhere and nothing vanished into nowhere. Which statement says that?",
+      "walkthrough": "The law says energy is never created or destroyed, only converted between forms. Potential became kinetic in everything we watched, and the totals always balanced." },
+
+    { "t": "say", "g": "morenike", "text": "And that is the lesson, finished just as the rain eases. You watched energy being stored, spent and converted on one ordinary Yaba street. Check your progress beside me, and anything marked for review, one of us will happily take you through again." },
+
+    { "t": "end" }
+  ],
+  "extraClassify": [
+    { "t": "ask", "g": "ejike", "obj": "classify",
+      "text": "Two more, since we are warming up. That keke speeding to beat the go-slow before it builds. Which energy?",
+      "opts": ["Kinetic energy", "Potential energy"], "correct": 0,
+      "affirm": "Correct, moving keke, kinetic energy.",
+      "hint": "Is it moving?",
+      "switchTo": "niyat",
+      "switchText": "Moving equals kinetic, every time. The keke is moving. So?",
+      "walkthrough": "It is moving, so it is kinetic energy." },
+    { "t": "ask", "g": "ejike", "obj": "classify",
+      "text": "And the crate of drinks sitting up on the high shelf of the stall, not moving. Which energy?",
+      "opts": ["Kinetic energy", "Potential energy"], "correct": 1,
+      "affirm": "Correct. High and still means stored, potential energy.",
+      "hint": "It is high up and completely still.",
+      "switchTo": "morenike",
+      "switchText": "Like a mango before it falls: high, still, storing. Which energy?",
+      "walkthrough": "Height plus stillness means potential energy, stored by position." }
+  ]
+}
